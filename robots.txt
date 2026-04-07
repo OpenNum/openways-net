@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://openways.net/sitemap.xml

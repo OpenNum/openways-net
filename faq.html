@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — OpenWays</title>
+  <meta name="description" content="Frequently asked questions about OpenWays training programs — pricing, formats, bilingual options, and how to get started." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233A6BB8'/><text y='.9em' font-size='65' x='15'>O</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* FAQ category tabs */
+    .faq-tabs {
+      display: flex;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+      margin-bottom: var(--space-10);
+      justify-content: center;
+    }
+    .faq-tab {
+      padding: var(--space-2) var(--space-5);
+      border-radius: var(--radius-full);
+      font-size: var(--text-sm);
+      font-weight: var(--font-weight-semibold);
+      cursor: pointer;
+      border: 2px solid var(--color-border);
+      background: var(--color-surface);
+      color: var(--color-text-secondary);
+      font-family: var(--font-sans);
+      transition: all var(--transition-fast);
+    }
+    .faq-tab:hover,
+    .faq-tab.is-active {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: white;
+    }
+    .faq-category {
+      margin-bottom: var(--space-12);
+    }
+    .faq-category-title {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-primary);
+      margin-bottom: var(--space-5);
+      padding-bottom: var(--space-3);
+      border-bottom: 2px solid var(--color-primary-light);
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+    .still-have-questions {
+      background: var(--color-primary-light);
+      border-radius: var(--radius-xl);
+      padding: var(--space-10) var(--space-8);
+      text-align: center;
+      margin-top: var(--space-12);
+    }
+    .still-have-questions h3 {
+      font-size: var(--text-2xl);
+      margin-bottom: var(--space-4);
+    }
+    .still-have-questions p {
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-6);
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body data-page="faq">
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="OpenWays 首页">
+        <div class="nav-logo-mark" aria-hidden="true">O</div>
+        <span class="nav-logo-text">Open<span>Ways</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html"       class="nav-link" data-i18n="nav_home">首页</a></li>
+        <li><a href="about.html"       class="nav-link" data-i18n="nav_about">关于我们</a></li>
+        <li><a href="services.html"    class="nav-link" data-i18n="nav_services">培训课程</a></li>
+        <li><a href="who-we-help.html" class="nav-link" data-i18n="nav_who">适合谁</a></li>
+        <li><a href="faq.html"         class="nav-link active" data-i18n="nav_faq">常见问题</a></li>
+        <li><a href="contact.html"     class="nav-link" data-i18n="nav_contact">联系我们</a></li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Language selector">
+        <button class="lang-btn active" data-lang-btn="zh-s" title="简体中文">简</button>
+        <button class="lang-btn" data-lang-btn="zh-t" title="繁體中文">繁</button>
+        <button class="lang-btn" data-lang-btn="en" title="English">EN</button>
+      </div>
+      <a href="contact.html" class="btn btn-accent nav-cta" data-i18n="nav_cta">免费咨询</a>
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile" role="dialog" aria-label="Mobile navigation">
+      <a href="index.html"       class="nav-link" data-i18n="nav_home">首页</a>
+      <a href="about.html"       class="nav-link" data-i18n="nav_about">关于我们</a>
+      <a href="services.html"    class="nav-link" data-i18n="nav_services">培训课程</a>
+      <a href="who-we-help.html" class="nav-link" data-i18n="nav_who">适合谁</a>
+      <a href="faq.html"         class="nav-link active" data-i18n="nav_faq">常见问题</a>
+      <a href="contact.html"     class="nav-link" data-i18n="nav_contact">联系我们</a>
+      <div class="lang-switch" style="margin: var(--space-4) 0; justify-content: flex-start;" role="group" aria-label="Language selector">
+        <button class="lang-btn active" data-lang-btn="zh-s">简</button>
+        <button class="lang-btn" data-lang-btn="zh-t">繁</button>
+        <button class="lang-btn" data-lang-btn="en">EN</button>
+      </div>
+      <a href="contact.html" class="btn btn-accent" data-i18n="nav_cta">免费咨询</a>
+    </div>
+  </nav>
+
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span>FAQ</span>
+      </nav>
+      <span class="section-tag">Frequently Asked Questions</span>
+      <h1>Your questions, answered honestly</h1>
+      <p>
+        We've collected the questions we get asked most often and answered them as clearly
+        as we can. If you don't find what you're looking for, just get in touch — we're happy to help.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- FAQ CONTENT -->
+  <section class="section section--white">
+    <div class="container" style="max-width: 800px;">
+
+      <!-- Category tabs (visual only — JS filters below) -->
+      <div class="faq-tabs" role="tablist" aria-label="FAQ categories">
+        <button class="faq-tab is-active" data-category="all" role="tab" aria-selected="true">All Questions</button>
+        <button class="faq-tab" data-category="getting-started" role="tab" aria-selected="false">Getting Started</button>
+        <button class="faq-tab" data-category="programs" role="tab" aria-selected="false">Programs &amp; Training</button>
+        <button class="faq-tab" data-category="pricing" role="tab" aria-selected="false">Pricing &amp; Booking</button>
+        <button class="faq-tab" data-category="format" role="tab" aria-selected="false">Format &amp; Access</button>
+        <button class="faq-tab" data-category="bilingual" role="tab" aria-selected="false">Bilingual Support</button>
+      </div>
+
+      <!-- CATEGORY: Getting Started -->
+      <div class="faq-category" data-category="getting-started">
+        <div class="faq-category-title">
+          <span aria-hidden="true">🚀</span> Getting Started
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do I need any experience or technical knowledge to join?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Not at all. Our training is designed for people at all skill levels —
+              including complete beginners who have never used a computer or smartphone before.
+              We start from wherever you are and build from there, step by step.
+              You will never feel rushed or embarrassed for asking basic questions.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do I know if OpenWays is right for me?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              The easiest way is to book a free 15-minute call. Tell us your situation —
+              what you want to learn, what hasn't worked before, or what you're not sure about —
+              and we'll give you an honest answer. We won't push you into anything that isn't right for you.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do I get started?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Simply fill in our contact form or book a free 15-minute call.
+              We'll respond within one business day, have a brief chat about your needs,
+              and then suggest the best program or session for you.
+              There's no obligation, no deposit required at that stage.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              I'm not confident with technology. Will I still be able to participate?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes, absolutely. In fact, most of the people we work with describe themselves
+              exactly that way. Our trainers are experienced in working with beginners and older adults,
+              and we take the time to make sure you're comfortable before moving on.
+              If you need help getting set up for an online session, we can guide you through that too.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- CATEGORY: Programs & Training -->
+      <div class="faq-category" data-category="programs">
+        <div class="faq-category-title">
+          <span aria-hidden="true">📋</span> Programs &amp; Training
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What topics do you cover?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Our core training areas are: Business Operations (admin tools, scheduling, records),
+              Digital &amp; Technology Skills (smartphones, computers, online safety),
+              Communication &amp; Confidence (emails, customer service, presentations),
+              and Custom Team Training (designed around your specific business needs).
+              If you have something specific in mind that isn't listed, ask us — we can often accommodate it.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How long are the training sessions?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              This depends on the program. Individual sessions typically run 60–90 minutes.
+              Half-day workshops are around 3 hours. Full-day workshops are 6 hours with breaks.
+              Multi-session programs are spread over several weeks with sessions scheduled to suit you.
+              We always build in rest time — long sessions without breaks don't serve anyone.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can you design a training program specifically for my business?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. Our Custom Team Training program does exactly this.
+              We start with a consultation to understand your business, your team's current skills,
+              and your goals. Then we design and deliver a program built around your specific situation.
+              This works well for teams of 2 to 15 people.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you provide materials or resources after the training?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. After each session, we provide summary notes, reference guides, and step-by-step
+              checklists where relevant — so you have something to refer back to. We also offer
+              follow-up support if you get stuck implementing what you've learned.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you offer one-on-one training?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. One-on-one coaching sessions are available for individuals who prefer personal
+              attention and a fully tailored pace. This is especially popular with adult learners
+              and older adults who want to build confidence without the pressure of a group setting.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- CATEGORY: Pricing & Booking -->
+      <div class="faq-category" data-category="pricing">
+        <div class="faq-category-title">
+          <span aria-hidden="true">💰</span> Pricing &amp; Booking
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How much does training cost?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Pricing varies depending on the program, format, and group size.
+              We prefer to give you an accurate quote after a brief conversation rather than
+              publishing fixed prices that may not reflect your actual situation.
+              Book a free call and we'll give you a clear, no-obligation quote.
+              <!-- PLACEHOLDER: Add pricing tiers here when confirmed -->
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Is the initial call really free?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes, completely free. The 15-minute discovery call is just a conversation
+              to understand your needs and see if we're a good fit. There's no charge and
+              no obligation to book anything afterward.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What payment methods do you accept?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              We accept bank transfer (EFT), credit/debit card, and PayPal.
+              For multi-session programs, we can arrange instalment payment options.
+              Invoices are provided for all bookings — useful if you're claiming as a business expense.
+              <!-- PLACEHOLDER: Update payment methods when payment system is confirmed -->
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What is your cancellation policy?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              We understand that life happens. We ask for at least 48 hours notice to reschedule
+              or cancel a session. Cancellations with more than 48 hours notice receive a full refund
+              or credit. We handle last-minute situations on a case-by-case basis and try to be
+              as flexible as possible.
+              <!-- PLACEHOLDER: Confirm exact policy with final terms of service -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- CATEGORY: Format & Access -->
+      <div class="faq-category" data-category="format">
+        <div class="faq-category-title">
+          <span aria-hidden="true">🖥️</span> Format &amp; Access
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Is training available online or only in person?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Both. We offer online sessions via video call (Zoom or Microsoft Teams),
+              and in-person training at selected locations in NSW, Australia.
+              If you're not sure which works best for you, just ask — we're happy to help you
+              figure out what's most comfortable.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What do I need for an online session?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              You need a computer, tablet, or smartphone with a working internet connection.
+              We use Zoom or Microsoft Teams — both are free to use. If you haven't used these before,
+              don't worry: we can walk you through how to get set up before your first session.
+              You don't need to install anything complicated.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What times are sessions available?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              We offer sessions on weekdays and some weekend slots depending on availability.
+              Morning, afternoon, and some evening times are available.
+              We'll work with you to find a time that suits your schedule.
+              <!-- PLACEHOLDER: Update with actual availability calendar link when set up -->
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can I train with a friend or family member at the same time?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes! Training with someone else can be a great way to learn, especially for
+              older adults who want support from a family member. We can accommodate pairs
+              at a slight discount compared to two individual sessions. Just mention this when you enquire.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- CATEGORY: Bilingual Support -->
+      <div class="faq-category" data-category="bilingual">
+        <div class="faq-category-title">
+          <span aria-hidden="true">🌏</span> Bilingual Support
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can training be delivered in Chinese?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. We offer training sessions in Mandarin and Cantonese, as well as English.
+              You can also request a bilingual session that switches between English and Chinese
+              as needed. Just let us know your preference when you enquire and we'll match you
+              with the right trainer.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Are your written materials available in Chinese?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              We are currently developing bilingual materials. For now, we can provide
+              verbal explanations in Chinese during sessions, and some written guides are
+              available in simplified Chinese. Ask us what's available for your specific program.
+              <!-- PLACEHOLDER: Update when bilingual materials are fully ready -->
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              I'm more comfortable in Chinese than English. Is that okay?
+              <span class="faq-question-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Absolutely. Language should never be a barrier to learning. We are proud to
+              serve both English-speaking and Chinese-speaking communities in NSW and beyond.
+              Just let us know your preferred language and we'll arrange everything accordingly.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Still have questions? -->
+      <div class="still-have-questions">
+        <h3>Still have a question?</h3>
+        <p>
+          We're happy to answer anything that isn't covered here.
+          Just send us a message or book a free call — a real person will get back to you.
+        </p>
+        <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary">Send Us a Message</a>
+          <a href="contact.html" class="btn btn-outline">Book a Free Call</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Ready to take the next step?</h2>
+        <p>
+          Book a free 15-minute call and let's figure out together what training will help you most.
+        </p>
+        <div class="btn-actions">
+          <a href="contact.html" class="btn btn-accent btn-lg">Book a Free Call</a>
+          <a href="services.html" class="btn btn-outline-white btn-lg">Browse Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-mark" aria-hidden="true">O</div>
+            <span class="nav-logo-text">Open<span>Ways</span></span>
+          </a>
+          <p>Practical training and learning for small businesses and adult learners. Simple, clear, and genuinely supportive.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="who-we-help.html">Who We Help</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list">
+            <li><a href="services.html">Business Operations</a></li>
+            <li><a href="services.html">Digital &amp; Technology</a></li>
+            <li><a href="services.html">Communication Skills</a></li>
+            <li><a href="services.html">Custom Team Training</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul role="list">
+            <li><a href="mailto:hello@openways.net">hello@openways.net</a></li>
+            <li><a href="contact.html">Book a Free Call</a></li>
+            <li><a href="contact.html">Send Us a Message</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OpenWays. All rights reserved.</p>
+        <div class="footer-lang-switch" role="group" aria-label="Language selector">
+          <button class="footer-lang-btn active" data-lang-btn="zh-s">简体</button>
+          <button class="footer-lang-btn" data-lang-btn="zh-t">繁體</button>
+          <button class="footer-lang-btn" data-lang-btn="en">EN</button>
+        </div>
+        <p>
+          <a href="#" style="color: rgba(255,255,255,0.4); font-size: var(--text-sm);" data-i18n="footer_privacy">隐私政策</a>
+          &nbsp;·&nbsp;
+          <a href="#" style="color: rgba(255,255,255,0.4); font-size: var(--text-sm);" data-i18n="footer_terms">使用条款</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script>
+    // Nav toggle
+    const toggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('navMobile');
+    toggle.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', isOpen);
+      });
+    });
+
+    // Category tabs filter
+    const tabs = document.querySelectorAll('.faq-tab');
+    const categories = document.querySelectorAll('.faq-category');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Update active tab
+        tabs.forEach(t => {
+          t.classList.remove('is-active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('is-active');
+        tab.setAttribute('aria-selected', 'true');
+
+        const selected = tab.dataset.category;
+
+        categories.forEach(cat => {
+          if (selected === 'all' || cat.dataset.category === selected) {
+            cat.style.display = 'block';
+          } else {
+            cat.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

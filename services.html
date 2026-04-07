@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>服务课程 — OpenWays</title>
+  <meta name="description" content="OpenWays 提供两种AI培训：中小企业AI赋能培训和中老年AI生活课。中英双语，一对一支持，悉尼本地团队。" />
+  <meta name="keywords" content="悉尼AI培训, AI企业培训, 中老年AI课程, 悉尼学AI, Sydney AI training, AI for small business Sydney" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://openways.net/services.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="培训课程 — OpenWays 悉尼AI培训" />
+  <meta property="og:description" content="中小企业AI赋能培训和中老年AI生活课。中英双语，一对一支持。" />
+  <meta property="og:url" content="https://openways.net/services.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon PLACEHOLDER -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233A6BB8'/><text y='.9em' font-size='60' x='12' fill='white'>O</text></svg>" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="services">
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="OpenWays 首页">
+        <div class="nav-logo-mark" aria-hidden="true">O</div>
+        <span class="nav-logo-text">Open<span>Ways</span></span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html"       class="nav-link" data-i18n="nav_home">首页</a></li>
+        <li><a href="about.html"       class="nav-link" data-i18n="nav_about">关于我们</a></li>
+        <li><a href="services.html"    class="nav-link active" data-i18n="nav_services">培训课程</a></li>
+        <li><a href="who-we-help.html" class="nav-link" data-i18n="nav_who">适合谁</a></li>
+        <li><a href="faq.html"         class="nav-link" data-i18n="nav_faq">常见问题</a></li>
+        <li><a href="contact.html"     class="nav-link" data-i18n="nav_contact">联系我们</a></li>
+      </ul>
+
+      <div class="lang-switch" role="group" aria-label="Language selector">
+        <button class="lang-btn active" data-lang-btn="zh-s" title="简体中文">简</button>
+        <button class="lang-btn" data-lang-btn="zh-t" title="繁體中文">繁</button>
+        <button class="lang-btn" data-lang-btn="en" title="English">EN</button>
+      </div>
+
+      <a href="contact.html" class="btn btn-accent nav-cta" data-i18n="nav_cta">免费咨询</a>
+
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav-mobile" id="navMobile" role="dialog" aria-label="Mobile navigation">
+      <a href="index.html"       class="nav-link" data-i18n="nav_home">首页</a>
+      <a href="about.html"       class="nav-link" data-i18n="nav_about">关于我们</a>
+      <a href="services.html"    class="nav-link active" data-i18n="nav_services">培训课程</a>
+      <a href="who-we-help.html" class="nav-link" data-i18n="nav_who">适合谁</a>
+      <a href="faq.html"         class="nav-link" data-i18n="nav_faq">常见问题</a>
+      <a href="contact.html"     class="nav-link" data-i18n="nav_contact">联系我们</a>
+
+      <div class="lang-switch" style="margin: var(--space-4) 0; justify-content: flex-start;" role="group" aria-label="Language selector">
+        <button class="lang-btn active" data-lang-btn="zh-s">简</button>
+        <button class="lang-btn" data-lang-btn="zh-t">繁</button>
+        <button class="lang-btn" data-lang-btn="en">EN</button>
+      </div>
+
+      <a href="contact.html" class="btn btn-accent" data-i18n="nav_cta">免费咨询</a>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO — SERVICES PAGE
+  ═══════════════════════════════════════ -->
+  <section class="section" style="padding-top: calc(var(--space-20) + 70px); padding-bottom: var(--space-12); background: linear-gradient(135deg, var(--color-surface) 0%, rgba(58,107,184,0.06) 100%);" aria-labelledby="svcs-hero-heading">
+    <div class="container" style="text-align: center; max-width: 680px;">
+      <span class="section-tag" data-i18n="svcs_hero_tag">培训课程</span>
+      <h1 id="svcs-hero-heading" class="section-title" style="font-size: var(--text-4xl); margin-top: var(--space-3);" data-i18n="svcs_hero_title" data-i18n-html>
+        两种培训路径<br>找到适合您的那一条
+      </h1>
+      <p class="section-subtitle" data-i18n="svcs_hero_sub">
+        中小企业AI赋能，或中老年AI生活课。都有小组培训和一对一支持，不强推，不讲废话。
+      </p>
+
+      <!-- Quick-jump anchors -->
+      <div class="btn-actions" style="margin-top: var(--space-6);">
+        <a href="#svc-business" class="btn btn-primary">
+          🏢 &nbsp;<span data-i18n="svc1_title">AI企业赋能培训</span>
+        </a>
+        <a href="#svc-seniors" class="btn btn-outline">
+          👵 &nbsp;<span data-i18n="svc2_title">中老年AI生活课</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       SERVICE 1 — AI企业赋能培训
+  ═══════════════════════════════════════ -->
+  <section id="svc-business" class="section section--white" aria-labelledby="svc1-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag" data-i18n="svc1_tag">中小企业</span>
+        <h2 class="section-title" id="svc1-heading" data-i18n="svc1_title">AI企业赋能培训</h2>
+        <p class="section-subtitle" data-i18n="svc1_subtitle">让您的团队真正把AI用起来</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-10); align-items: start; margin-bottom: var(--space-12);">
+
+        <div>
+          <p style="font-size: var(--text-lg); line-height: 1.8; color: var(--color-text-secondary); margin-bottom: var(--space-6);" data-i18n="svc1_desc">
+            帮助中小企业把AI工具融入真实经营场景。不讲空洞的技术理论，专注解决您在内容制作、客户沟通、英文表达和日常效率方面的实际问题。
+          </p>
+
+          <div style="background: var(--color-surface); border-radius: var(--radius-xl); padding: var(--space-6);">
+            <h3 style="font-size: var(--text-lg); font-weight: 600; margin-bottom: var(--space-4); color: var(--color-text);">培训涵盖内容</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--space-3);">
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: var(--color-primary); font-size: 1.2em; flex-shrink: 0;">✓</span>
+                <span data-i18n="svc1_i1">内容制作与社媒运营</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: var(--color-primary); font-size: 1.2em; flex-shrink: 0;">✓</span>
+                <span data-i18n="svc1_i2">客户沟通与AI写作</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: var(--color-primary); font-size: 1.2em; flex-shrink: 0;">✓</span>
+                <span data-i18n="svc1_i3">英文表达与翻译辅助</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: var(--color-primary); font-size: 1.2em; flex-shrink: 0;">✓</span>
+                <span data-i18n="svc1_i4">门店效率与流程整理</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: var(--color-primary); font-size: 1.2em; flex-shrink: 0;">✓</span>
+                <span data-i18n="svc1_i5">一对一企业主深度咨询</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div style="background: linear-gradient(135deg, rgba(58,107,184,0.07) 0%, rgba(58,107,184,0.02) 100%); border: 1.5px solid rgba(58,107,184,0.15); border-radius: var(--radius-xl); padding: var(--space-6); margin-bottom: var(--space-6);">
+            <h3 style="font-size: var(--text-lg); font-weight: 600; margin-bottom: var(--space-4); color: var(--color-primary);" data-i18n="svc1_for_title">适合哪些人</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--space-3);">
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="flex-shrink: 0;">👤</span>
+                <span data-i18n="svc1_for_1">正在经营中小企业的老板和团队</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="flex-shrink: 0;">👤</span>
+                <span data-i18n="svc1_for_2">想用AI提升内容制作、客户沟通和日常效率的个体经营者</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="flex-shrink: 0;">👤</span>
+                <span data-i18n="svc1_for_3">想搞清楚AI能帮到自己生意的任何人</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-6);">
+            <span class="badge" data-i18n="svc1_badge1">小组培训</span>
+            <span class="badge" data-i18n="svc1_badge2">一对一咨询</span>
+            <span class="badge" data-i18n="svc1_badge3">线上 &amp; 线下</span>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary" style="display: block; text-align: center;" data-i18n="svc1_cta">了解企业培训</a>
+        </div>
+
+      </div>
+
+      <!-- Industries light mention -->
+      <div style="background: var(--color-surface); border-radius: var(--radius-xl); padding: var(--space-6);">
+        <h3 style="font-size: var(--text-base); font-weight: 600; color: var(--color-text-secondary); text-align: center; margin-bottom: var(--space-4);" data-i18n="s4_tag">服务行业</h3>
+        <div class="industry-grid">
+          <div class="industry-card">
+            <div style="font-size: 2rem; margin-bottom: var(--space-2);">💼</div>
+            <div style="font-weight: 600;" data-i18n="ind1_title">服务业</div>
+            <div style="font-size: var(--text-sm); color: var(--color-text-secondary);" data-i18n="ind1_desc">咨询、专业服务、代理中介</div>
+          </div>
+          <div class="industry-card">
+            <div style="font-size: 2rem; margin-bottom: var(--space-2);">💅</div>
+            <div style="font-weight: 600;" data-i18n="ind2_title">美业</div>
+            <div style="font-size: var(--text-sm); color: var(--color-text-secondary);" data-i18n="ind2_desc">美容、美甲、造型、SPA</div>
+          </div>
+          <div class="industry-card">
+            <div style="font-size: 2rem; margin-bottom: var(--space-2);">🍜</div>
+            <div style="font-weight: 600;" data-i18n="ind3_title">餐饮与零售</div>
+            <div style="font-size: var(--text-sm); color: var(--color-text-secondary);" data-i18n="ind3_desc">餐厅、外卖、零售门店</div>
+          </div>
+          <div class="industry-card">
+            <div style="font-size: 2rem; margin-bottom: var(--space-2);">🏪</div>
+            <div style="font-weight: 600;" data-i18n="ind4_title">其他中小企业</div>
+            <div style="font-size: var(--text-sm); color: var(--color-text-secondary);" data-i18n="ind4_desc">只要是中小企业，我们都来聊聊</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       SERVICE 2 — 中老年AI生活课
+  ═══════════════════════════════════════ -->
+  <section id="svc-seniors" class="section" aria-labelledby="svc2-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag" data-i18n="svc2_tag">中老年学员</span>
+        <h2 class="section-title" id="svc2-heading" data-i18n="svc2_title">中老年AI生活课</h2>
+        <p class="section-subtitle" data-i18n="svc2_subtitle">从零开始，慢慢学，学了就会用</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-10); align-items: start;">
+
+        <div>
+          <div style="background: linear-gradient(135deg, rgba(230,100,60,0.08) 0%, rgba(230,100,60,0.02) 100%); border: 1.5px solid rgba(230,100,60,0.18); border-radius: var(--radius-xl); padding: var(--space-6); margin-bottom: var(--space-6);">
+            <h3 style="font-size: var(--text-lg); font-weight: 600; margin-bottom: var(--space-4); color: var(--color-accent);" data-i18n="svc2_for_title">适合哪些人</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--space-3);">
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="flex-shrink: 0;">👤</span>
+                <span data-i18n="svc2_for_1">50岁以上，想学AI但不知道从哪里开始</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="flex-shrink: 0;">👤</span>
+                <span data-i18n="svc2_for_2">对手机、网络不太自信，想更安全使用</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="flex-shrink: 0;">👤</span>
+                <span data-i18n="svc2_for_3">家人介绍来了解，自己也想试试</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="background: var(--color-surface); border-radius: var(--radius-xl); padding: var(--space-6);">
+            <h3 style="font-size: var(--text-base); font-weight: 600; margin-bottom: var(--space-4); color: var(--color-text);">您不需要担心</h3>
+            <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+              <div style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: #22a06b; flex-shrink: 0; font-size: 1.2em;">✓</span>
+                <span>不催进度，按您自己的节奏</span>
+              </div>
+              <div style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: #22a06b; flex-shrink: 0; font-size: 1.2em;">✓</span>
+                <span>不嫌问题简单，耐心解答</span>
+              </div>
+              <div style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: #22a06b; flex-shrink: 0; font-size: 1.2em;">✓</span>
+                <span>字体大、讲解慢、内容直接</span>
+              </div>
+              <div style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: #22a06b; flex-shrink: 0; font-size: 1.2em;">✓</span>
+                <span>普通话、粤语均可</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-size: var(--text-lg); line-height: 1.8; color: var(--color-text-secondary); margin-bottom: var(--space-6);" data-i18n="svc2_desc">
+            专为50岁以上学员设计。不怕没基础，不担心跟不上。我们用最简单的方式，帮您在日常生活中用上AI，更方便、更安全、更有信心。
+          </p>
+
+          <div style="background: var(--color-surface); border-radius: var(--radius-xl); padding: var(--space-6); margin-bottom: var(--space-6);">
+            <h3 style="font-size: var(--text-lg); font-weight: 600; margin-bottom: var(--space-4); color: var(--color-text);">课程涵盖内容</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--space-3);">
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: var(--color-accent); font-size: 1.2em; flex-shrink: 0;">✓</span>
+                <span data-i18n="svc2_i1">AI助手入门（ChatGPT等）</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: var(--color-accent); font-size: 1.2em; flex-shrink: 0;">✓</span>
+                <span data-i18n="svc2_i2">手机与平板智能使用</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: var(--color-accent); font-size: 1.2em; flex-shrink: 0;">✓</span>
+                <span data-i18n="svc2_i3">网络安全与防诈骗</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: var(--color-accent); font-size: 1.2em; flex-shrink: 0;">✓</span>
+                <span data-i18n="svc2_i4">日常AI工具应用</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--space-3);">
+                <span style="color: var(--color-accent); font-size: 1.2em; flex-shrink: 0;">✓</span>
+                <span data-i18n="svc2_i5">一对一耐心辅导</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-6);">
+            <span class="badge" data-i18n="svc2_badge1">小组课程</span>
+            <span class="badge" data-i18n="svc2_badge2">一对一辅导</span>
+            <span class="badge" data-i18n="svc2_badge3">零基础友好</span>
+          </div>
+
+          <a href="contact.html" class="btn btn-accent" style="display: block; text-align: center;" data-i18n="svc2_cta">了解中老年课程</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       COMING SOON — EXTENSIBLE FRAMEWORK
+       Add future services here as new .coming-soon-item entries
+  ═══════════════════════════════════════ -->
+  <section class="section section--white" aria-label="即将推出的课程">
+    <div class="container" style="max-width: 720px;">
+      <div class="coming-soon-card">
+        <div class="coming-soon-badge" data-i18n="svc_soon_tag">即将推出</div>
+        <h2 style="font-size: var(--text-2xl); font-weight: 700; margin-bottom: var(--space-3);" data-i18n="svc_soon_title">更多课程正在开发中</h2>
+        <p style="color: var(--color-text-secondary); margin-bottom: var(--space-6);" data-i18n="svc_soon_desc">数字货币基础、NFT与数字资产等实用课程，即将陆续推出。</p>
+
+        <div class="coming-soon-items">
+          <div class="coming-soon-item">
+            <span style="font-size: 1.5rem;">₿</span>
+            <span data-i18n="svc_soon_item1">数字货币基础入门</span>
+          </div>
+          <div class="coming-soon-item">
+            <span style="font-size: 1.5rem;">🖼</span>
+            <span data-i18n="svc_soon_item2">NFT 与数字资产</span>
+          </div>
+          <div class="coming-soon-item">
+            <span style="font-size: 1.5rem;">+</span>
+            <span data-i18n="svc_soon_item3">更多课程敬请期待…</span>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-outline" style="margin-top: var(--space-6);" data-i18n="svc_soon_notify">提前告知我</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       HOW IT WORKS — 3 steps
+  ═══════════════════════════════════════ -->
+  <section class="section" aria-labelledby="how-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="s6_tag">如何开始</span>
+        <h2 class="section-title" id="how-heading" data-i18n="s6_title">三步开始，没有复杂流程</h2>
+        <p class="section-subtitle" data-i18n="s6_subtitle">从联系我们到开始培训，整个过程清晰、简单、没有压力。</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number" aria-hidden="true">1</div>
+          <h3 class="step-title" data-i18n="step1_title">联系我们，说说您的情况</h3>
+          <p class="step-desc" data-i18n="step1_desc">免费预约15分钟通话或发送留言。不用准备，直接说您想解决什么问题，想学什么。</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number" aria-hidden="true">2</div>
+          <h3 class="step-title" data-i18n="step2_title">我们推荐合适的方案</h3>
+          <p class="step-desc" data-i18n="step2_desc">我们根据您的实际情况，给出真实可行的建议。不适合的课程，我们不会推销。</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number" aria-hidden="true">3</div>
+          <h3 class="step-title" data-i18n="step3_title">开始学习，真正用起来</h3>
+          <p class="step-desc" data-i18n="step3_desc">按照适合您的节奏开始培训。学完有持续支持，帮您把所学落地到实际场景中。</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: var(--space-10);">
+        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="s6_cta">立即免费咨询</a>
+        <p style="color: var(--color-text-secondary); font-size: var(--text-sm); margin-top: var(--space-3);" data-i18n="s6_note">
+          免费15分钟通话 · 无需承诺 · 24小时内回复
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════ -->
+  <section class="section section--white" aria-labelledby="reviews-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="s7_tag">学员评价</span>
+        <h2 class="section-title" id="reviews-heading" data-i18n="s7_title">真实学员的反馈</h2>
+        <p class="section-subtitle" data-i18n="s7_subtitle">这些是真实合作过的学员和客户的评价，不是编造的。</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars" aria-label="五星好评">★★★★★</div>
+          <p class="testimonial-quote" data-i18n="rev1_quote">
+            以前觉得AI离我很远，和我的生意没关系。上完课后，我现在用ChatGPT帮我写小红书帖子、回复客户，节省了很多时间。老师讲得很清楚，不催人，很耐心。
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">👩</div>
+            <div>
+              <div class="testimonial-name" data-i18n="rev1_name">陈女士</div>
+              <div class="testimonial-role" data-i18n="rev1_role">悉尼美容院老板</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars" aria-label="五星好评">★★★★★</div>
+          <p class="testimonial-quote" data-i18n="rev2_quote">
+            给我们团队安排了一天的培训，讲的都是实际能用的内容——怎么用AI回复Google评论、写菜单描述、和供应商用英文沟通。员工都说学到了东西。
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">👨</div>
+            <div>
+              <div class="testimonial-name" data-i18n="rev2_name">张先生</div>
+              <div class="testimonial-role" data-i18n="rev2_role">悉尼餐厅经理</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars" aria-label="五星好评">★★★★★</div>
+          <p class="testimonial-quote" data-i18n="rev3_quote">
+            我之前对手机和网络很不放心，怕被骗。老师一步一步教我，不嫌我问的问题简单。现在我会用AI帮我翻译英文信件，感觉方便多了。
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">👴</div>
+            <div>
+              <div class="testimonial-name" data-i18n="rev3_name">王女士</div>
+              <div class="testimonial-role" data-i18n="rev3_role">悉尼学员 · 62岁</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CTA BANNER
+  ═══════════════════════════════════════ -->
+  <section class="section" aria-labelledby="svcs-cta-heading">
+    <div class="container">
+      <div class="cta-banner">
+        <h2 id="svcs-cta-heading" data-i18n="s9_title">准备好了解一下吗？</h2>
+        <p data-i18n="s9_desc">预约一次免费的15分钟通话，我们来听您说说情况，然后给您真实可行的建议。</p>
+        <div class="btn-actions">
+          <a href="contact.html" class="btn btn-accent btn-lg" data-i18n="s9_cta1">立即免费咨询</a>
+          <a href="faq.html" class="btn btn-outline-white btn-lg" data-i18n="s8_cta">查看所有常见问题</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="OpenWays">
+            <div class="nav-logo-mark" aria-hidden="true">O</div>
+            <span class="nav-logo-text">Open<span>Ways</span></span>
+          </a>
+          <p data-i18n="footer_tagline">为悉尼中小企业和中老年学员提供实用AI培训。清晰、实用、值得信赖。</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_nav_title">导航</h4>
+          <ul role="list">
+            <li><a href="index.html"       data-i18n="nav_home">首页</a></li>
+            <li><a href="about.html"       data-i18n="nav_about">关于我们</a></li>
+            <li><a href="services.html"    data-i18n="nav_services">培训课程</a></li>
+            <li><a href="who-we-help.html" data-i18n="nav_who">适合谁</a></li>
+            <li><a href="faq.html"         data-i18n="nav_faq">常见问题</a></li>
+            <li><a href="contact.html"     data-i18n="nav_contact">联系我们</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_services_title">培训课程</h4>
+          <ul role="list">
+            <li><a href="#svc-business" data-i18n="svc1_title">AI企业赋能培训</a></li>
+            <li><a href="#svc-seniors"  data-i18n="svc2_title">中老年AI生活课</a></li>
+            <li><a href="services.html" data-i18n="svc_soon_tag" style="color: var(--color-accent);">即将推出</a></li>
+            <li><a href="contact.html"  data-i18n="nav_cta">免费咨询</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact_title">联系方式</h4>
+          <ul role="list">
+            <li><a href="mailto:hello@openways.net">hello@openways.net</a></li>
+            <li><a href="contact.html" data-i18n="nav_cta">免费咨询</a></li>
+            <li><span style="color: rgba(255,255,255,0.5); font-size: var(--text-sm);">悉尼，NSW，澳大利亚</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer_copyright">© 2026 OpenWays. 版权所有。</p>
+
+        <div class="footer-lang-switch" role="group" aria-label="Language selector">
+          <button class="footer-lang-btn active" data-lang-btn="zh-s">简体</button>
+          <button class="footer-lang-btn" data-lang-btn="zh-t">繁體</button>
+          <button class="footer-lang-btn" data-lang-btn="en">EN</button>
+        </div>
+
+        <p>
+          <a href="#" style="color: rgba(255,255,255,0.4); font-size: var(--text-sm);" data-i18n="footer_privacy">隐私政策</a>
+          &nbsp;·&nbsp;
+          <a href="#" style="color: rgba(255,255,255,0.4); font-size: var(--text-sm);" data-i18n="footer_terms">使用条款</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════ -->
+  <script src="i18n.js"></script>
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('navMobile');
+    toggle.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  </script>
+
+</body>
+</html>
