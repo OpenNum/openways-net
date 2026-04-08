@@ -1,176 +1,112 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OpenWays | 悉尼AI培训 · 中小企业AI赋能 · 中老年AI课程</title>
-  <meta name="description" content="OpenWays 是悉尼专业AI培训机构。提供中小企业AI赋能培训和中老年AI生活课程。中英双语，一对一支持，悉尼本地团队。免费咨询。" />
-
-  <!-- SEO: Local Business Keywords -->
-  <meta name="keywords" content="悉尼AI培训, 悉尼学AI, AI企业培训, 中老年AI课程, Sydney AI training, AI for small business Sydney, 中小企业AI, OpenWays" />
+  <title>OpenWays — AI Toolkits for Small Businesses</title>
+  <meta name="description" content="OpenWays provides practical, industry-specific AI toolkits that help small business owners use AI in real work within 7 days. No technical background required." />
+  <meta name="keywords" content="AI toolkit for small business, AI business pack, beauty AI, real estate AI, hospitality AI, small business AI tools" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://openways.net/" />
 
-  <!-- Hreflang for bilingual SEO -->
-  <link rel="alternate" hreflang="zh-Hans" href="https://openways.net/" />
-  <link rel="alternate" hreflang="en" href="https://openways.net/" />
-  <link rel="alternate" hreflang="x-default" href="https://openways.net/" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="OpenWays | 悉尼AI培训专家" />
-  <meta property="og:description" content="专为中小企业和中老年学员的实用AI培训。中英双语，悉尼本地团队。" />
+  <meta property="og:title" content="OpenWays — AI Toolkits for Small Businesses" />
+  <meta property="og:description" content="Practical, industry-specific AI packs to help business owners use AI in real work within 7 days." />
   <meta property="og:url" content="https://openways.net" />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="zh_CN" />
-  <meta property="og:locale:alternate" content="en_AU" />
 
-  <!-- Schema.org Local Business -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
+    "@type": "Organization",
     "name": "OpenWays",
     "url": "https://openways.net",
-    "description": "悉尼AI培训机构，提供中小企业AI赋能培训和中老年AI生活课程",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Sydney",
-      "addressRegion": "NSW",
-      "addressCountry": "AU"
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Sydney"
-    },
-    "knowsLanguage": ["zh-Hans", "zh-Hant", "en"],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "AI培训课程",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "AI企业赋能培训"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "中老年AI生活课"}}
-      ]
-    },
+    "description": "AI toolkits for modern small businesses — practical, industry-specific, ready to use.",
     "contactPoint": {
       "@type": "ContactPoint",
       "email": "hello@openways.net",
-      "contactType": "customer service",
-      "availableLanguage": ["Chinese", "English"]
+      "contactType": "customer service"
     }
   }
   </script>
 
-  <!-- Favicon PLACEHOLDER: replace with final SVG/ICO from Canva -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233A6BB8'/><text y='.9em' font-size='60' x='12' fill='white'>O</text></svg>" />
-
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body data-page="home">
+<body>
 
-  <!-- ═══════════════════════════════════════
-       NAVIGATION
-  ═══════════════════════════════════════ -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <!-- ── NAVIGATION ─────────────────────────────────────────── -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="container nav-inner">
 
-      <!-- Logo: PLACEHOLDER — replace .nav-logo-mark with <img src="logo.svg"> when ready -->
-      <a href="index.html" class="nav-logo" aria-label="OpenWays 首页">
-        <div class="nav-logo-mark" aria-hidden="true">O</div>
-        <span class="nav-logo-text">Open<span>Ways</span></span>
+      <a href="index.html" class="nav-logo" aria-label="OpenWays home">
+        <span class="nav-logo-wordmark">Open<span>Ways</span></span>
       </a>
 
       <ul class="nav-links" role="list">
-        <li><a href="index.html"      class="nav-link active" data-i18n="nav_home">首页</a></li>
-        <li><a href="about.html"      class="nav-link" data-i18n="nav_about">关于我们</a></li>
-        <li><a href="services.html"   class="nav-link" data-i18n="nav_services">培训课程</a></li>
-        <li><a href="who-we-help.html" class="nav-link" data-i18n="nav_who">适合谁</a></li>
-        <li><a href="faq.html"        class="nav-link" data-i18n="nav_faq">常见问题</a></li>
-        <li><a href="contact.html"    class="nav-link" data-i18n="nav_contact">联系我们</a></li>
+        <li><a href="packs.html"   class="nav-link">Packs</a></li>
+        <li><a href="updates.html" class="nav-link">Updates</a></li>
+        <li><a href="faq.html"     class="nav-link">FAQ</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
 
-      <!-- Language Switcher -->
-      <div class="lang-switch" role="group" aria-label="Language selector">
-        <button class="lang-btn active" data-lang-btn="zh-s" title="简体中文">简</button>
-        <button class="lang-btn" data-lang-btn="zh-t" title="繁體中文">繁</button>
-        <button class="lang-btn" data-lang-btn="en" title="English">EN</button>
+      <div class="nav-right">
+        <a href="zh.html" class="nav-lang" title="中文版本">中文</a>
+        <a href="packs.html" class="btn btn-primary btn-sm">Explore Packs</a>
       </div>
 
-      <a href="contact.html" class="btn btn-accent nav-cta" data-i18n="nav_cta">免费咨询</a>
-
-      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" id="navToggle">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-    <!-- Mobile Menu -->
     <div class="nav-mobile" id="navMobile" role="dialog" aria-label="Mobile navigation">
-      <a href="index.html"       class="nav-link active" data-i18n="nav_home">首页</a>
-      <a href="about.html"       class="nav-link" data-i18n="nav_about">关于我们</a>
-      <a href="services.html"    class="nav-link" data-i18n="nav_services">培训课程</a>
-      <a href="who-we-help.html" class="nav-link" data-i18n="nav_who">适合谁</a>
-      <a href="faq.html"         class="nav-link" data-i18n="nav_faq">常见问题</a>
-      <a href="contact.html"     class="nav-link" data-i18n="nav_contact">联系我们</a>
-
-      <div class="lang-switch" style="margin: var(--space-4) 0; justify-content: flex-start;" role="group" aria-label="Language selector">
-        <button class="lang-btn active" data-lang-btn="zh-s">简</button>
-        <button class="lang-btn" data-lang-btn="zh-t">繁</button>
-        <button class="lang-btn" data-lang-btn="en">EN</button>
-      </div>
-
-      <a href="contact.html" class="btn btn-accent" data-i18n="nav_cta">免费咨询</a>
+      <a href="packs.html"   class="nav-link">Packs</a>
+      <a href="updates.html" class="nav-link">Updates</a>
+      <a href="faq.html"     class="nav-link">FAQ</a>
+      <a href="about.html"   class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="zh.html"      class="nav-link">中文</a>
+      <a href="packs.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">Explore Packs</a>
     </div>
   </nav>
 
 
-  <!-- ═══════════════════════════════════════
-       SECTION 1 — HERO
-       SEO keywords: 悉尼AI培训, 悉尼学AI, AI企业培训
-  ═══════════════════════════════════════ -->
+  <!-- ── SECTION 1: HERO ───────────────────────────────────── -->
   <section class="hero" aria-labelledby="hero-heading">
     <div class="container hero-inner">
 
       <div class="hero-content">
-        <div class="hero-badge">
-          <span aria-hidden="true">🇦🇺</span>
-          <span data-i18n="hero_badge">悉尼 · AI培训专家</span>
-        </div>
+        <div class="hero-tag">AI Toolkits · Ready to Use</div>
 
-        <h1 class="hero-title" id="hero-heading" data-i18n="hero_title" data-i18n-html>
-          让AI真正<br>帮到您的<br><span class="highlight">生意和生活</span>
+        <h1 class="hero-title" id="hero-heading">
+          AI Toolkits for<br>Modern <em>Small Businesses</em>
         </h1>
 
-        <p class="hero-subtitle" data-i18n="hero_subtitle" data-i18n-html>
-          OpenWays 提供面向中小企业和中老年学员的AI实战培训。<br>清晰易懂，学了就能用，不讲废话。
+        <p class="hero-sub">
+          Practical, industry-specific packs that help business owners use AI in real work — within 7 days.
         </p>
 
         <div class="hero-actions">
-          <a href="services.html" class="btn btn-primary btn-lg" data-i18n="hero_cta1">查看培训课程</a>
-          <a href="contact.html"  class="btn btn-outline btn-lg"  data-i18n="hero_cta2">免费咨询</a>
+          <a href="packs.html"       class="btn btn-mint btn-lg">Explore Packs</a>
+          <a href="#whats-inside"    class="btn btn-outline-light btn-lg">See What's Inside</a>
         </div>
-
-        <p class="hero-note" data-i18n="hero_note" data-i18n-html>
-          ✅ &nbsp;不讲技术理论 &nbsp;·&nbsp; 真实场景教学 &nbsp;·&nbsp; 学了就能用
-        </p>
       </div>
 
-      <!-- PLACEHOLDER visual: replace with hero illustration from Canva -->
       <div class="hero-visual" aria-hidden="true">
-        <div class="hero-image-placeholder" style="font-size: 0;">
-          <!-- Background gradient serves as placeholder; overlay emoji below for dev preview -->
-          <span style="font-size: 90px; opacity: 0.55;">🤖</span>
-        </div>
-
-        <div class="hero-stat-card hero-stat-card--1">
-          <div>
-            <div class="hero-stat-num" data-i18n="hero_stat1_num">500+</div>
-            <div class="hero-stat-label" data-i18n="hero_stat1_label">学员</div>
+        <div class="hero-card-stack">
+          <div class="hero-card">
+            <div class="hero-card-label">Beauty AI Pack</div>
+            <div class="hero-card-title">Quick Start Guide</div>
+            <div class="hero-card-desc">Step-by-step setup for AI tools in your beauty business — ready in an afternoon.</div>
+            <div class="hero-card-arrow">
+              <a href="pack-beauty.html">View Pack →</a>
+            </div>
           </div>
-        </div>
-
-        <div class="hero-stat-card hero-stat-card--2">
-          <div>
-            <div class="hero-stat-num" data-i18n="hero_stat2_num">98%</div>
-            <div class="hero-stat-label" data-i18n="hero_stat2_label">满意度</div>
+          <div class="hero-card">
+            <div class="hero-card-label">Every Pack Includes</div>
+            <div class="hero-card-title">6 structured resources</div>
+            <div class="hero-card-desc">Prompts · Workflows · Tools · 7-Day Plan · SOP · Bonus Guide</div>
           </div>
         </div>
       </div>
@@ -179,141 +115,128 @@
   </section>
 
 
-  <!-- TRUST BAR -->
-  <div class="trust-bar" role="complementary" aria-label="Trust indicators">
+  <!-- ── TRUST BAR ─────────────────────────────────────────── -->
+  <div class="trust-bar" role="complementary" aria-label="Key benefits">
     <div class="container trust-bar-inner">
-      <div class="trust-item"><span class="trust-item-icon" aria-hidden="true">🎯</span><span class="trust-item-text" data-i18n="trust1">真实场景教学</span></div>
-      <div class="trust-item"><span class="trust-item-icon" aria-hidden="true">🌏</span><span class="trust-item-text" data-i18n="trust2">中英双语授课</span></div>
-      <div class="trust-item"><span class="trust-item-icon" aria-hidden="true">✅</span><span class="trust-item-text" data-i18n="trust3">不讲技术理论</span></div>
-      <div class="trust-item"><span class="trust-item-icon" aria-hidden="true">🤝</span><span class="trust-item-text" data-i18n="trust4">一对一支持</span></div>
-      <div class="trust-item"><span class="trust-item-icon" aria-hidden="true">📍</span><span class="trust-item-text" data-i18n="trust5">悉尼本地团队</span></div>
+      <div class="trust-item">
+        <span class="trust-item-icon" aria-hidden="true">⚡</span>
+        <span class="trust-item-text">Use AI in 7 days</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-item-icon" aria-hidden="true">🏭</span>
+        <span class="trust-item-text">Industry-specific</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-item-icon" aria-hidden="true">📦</span>
+        <span class="trust-item-text">Ready-to-use resources</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-item-icon" aria-hidden="true">🔄</span>
+        <span class="trust-item-text">Ongoing updates</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-item-icon" aria-hidden="true">🌏</span>
+        <span class="trust-item-text">Delivered via Gumroad</span>
+      </div>
     </div>
   </div>
 
 
-  <!-- ═══════════════════════════════════════
-       SECTION 2 — PAIN POINTS (英雄资料核心)
-       让用户对号入座
-  ═══════════════════════════════════════ -->
-  <section class="section section--white" aria-labelledby="pain-heading">
+  <!-- ── SECTION 2: FEATURED PACKS ─────────────────────────── -->
+  <section class="section" aria-labelledby="packs-heading">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="s2_tag">我们解决的问题</span>
-        <h2 class="section-title" id="pain-heading" data-i18n="s2_title">您是不是也有这些烦恼？</h2>
-        <p class="section-subtitle" data-i18n="s2_subtitle">以下是我们最常帮助悉尼中小企业和个体经营者解决的真实问题。</p>
+      <div class="section-header section-header--center">
+        <span class="eyebrow">Industry Packs</span>
+        <h2 class="section-heading" id="packs-heading">Built for your industry</h2>
+        <p class="section-sub">Each pack is designed around the real workflows of a specific business type — not generic advice.</p>
       </div>
 
-      <div class="grid-2">
-        <div class="why-item">
-          <div class="icon-box icon-box--primary" aria-hidden="true">🤷</div>
-          <div class="why-item-content">
-            <h3 data-i18n="pain1_title">不知道AI能帮我做什么</h3>
-            <p data-i18n="pain1_desc">每天看到AI的新闻，但不知道哪些跟我的生意有关，更不知道从哪里开始。</p>
+      <div class="packs-grid">
+
+        <div class="pack-card">
+          <div class="pack-card-icon" aria-hidden="true">💅</div>
+          <div class="pack-card-title">Beauty AI Pack</div>
+          <p class="pack-card-desc">AI prompts, workflows and tools for salons, lash studios, beauty therapists and independent artists.</p>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$49 <span>one-time</span></div>
+            <a href="pack-beauty.html" class="btn btn-primary btn-sm">View Pack</a>
           </div>
         </div>
 
-        <div class="why-item">
-          <div class="icon-box icon-box--accent" aria-hidden="true">⏱️</div>
-          <div class="why-item-content">
-            <h3 data-i18n="pain2_title">内容和推广太费时间</h3>
-            <p data-i18n="pain2_desc">写帖子、回评论、做宣传材料……这些工作把时间都占完了，主营业务反而顾不过来。</p>
+        <div class="pack-card">
+          <div class="pack-card-icon" aria-hidden="true">🏠</div>
+          <div class="pack-card-title">Real Estate AI Pack</div>
+          <p class="pack-card-desc">Use AI for property listings, client follow-ups, content creation and reducing daily admin tasks.</p>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$49 <span>one-time</span></div>
+            <a href="packs.html" class="btn btn-primary btn-sm">View Pack</a>
           </div>
         </div>
 
-        <div class="why-item">
-          <div class="icon-box icon-box--secondary" aria-hidden="true">💬</div>
-          <div class="why-item-content">
-            <h3 data-i18n="pain3_title">英文沟通让人头疼</h3>
-            <p data-i18n="pain3_desc">和供应商、客户、官方机构打交道，英文不够流利总是卡住，错过不少机会。</p>
+        <div class="pack-card">
+          <div class="pack-card-icon" aria-hidden="true">🍽️</div>
+          <div class="pack-card-title">Hospitality AI Pack</div>
+          <p class="pack-card-desc">Save time on promotions, customer replies and operational workflows for cafes, restaurants and venues.</p>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$49 <span>one-time</span></div>
+            <a href="packs.html" class="btn btn-primary btn-sm">View Pack</a>
           </div>
         </div>
 
-        <div class="why-item">
-          <div class="icon-box icon-box--primary" aria-hidden="true">🔄</div>
-          <div class="why-item-content">
-            <h3 data-i18n="pain4_title">重复工作太多，效率太低</h3>
-            <p data-i18n="pain4_desc">很多事情都在手动重复做，感觉可以自动化，但不知道怎么做、从哪里入手。</p>
-          </div>
-        </div>
       </div>
 
-      <div style="text-align:center; margin-top: var(--space-10);">
-        <a href="services.html" class="btn btn-primary" data-i18n="pain_cta">了解我们怎么帮到您</a>
+      <div style="text-align:center; margin-top:var(--s10);">
+        <a href="packs.html" class="btn btn-outline btn-lg">View All Industry Packs</a>
       </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════
-       SECTION 3 — TWO SERVICES
-  ═══════════════════════════════════════ -->
-  <section class="section section--alt" aria-labelledby="services-heading">
+  <!-- ── SECTION 3: WHAT'S INSIDE ──────────────────────────── -->
+  <section class="section section--off" id="whats-inside" aria-labelledby="inside-heading">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="s3_tag">我们的培训课程</span>
-        <h2 class="section-title" id="services-heading" data-i18n="s3_title">两条清晰的路径，帮助不同的您</h2>
-        <p class="section-subtitle" data-i18n="s3_subtitle">每条路径都配有小组培训和一对一咨询。不推销不适合的课程。</p>
+      <div class="section-header section-header--center">
+        <span class="eyebrow">What's Included</span>
+        <h2 class="section-heading" id="inside-heading">What's inside every pack</h2>
+        <p class="section-sub">Each pack is designed to help business owners move from "I don't really understand AI" to "I can actually use AI in my daily work."</p>
       </div>
 
-      <!-- Service Cards: 2 active + 1 coming soon -->
-      <div class="grid-3">
+      <div class="modules-grid">
 
-        <!-- Service 1: AI for SME -->
-        <div class="audience-card card--highlighted" style="--card-accent: var(--color-primary);">
-          <div class="section-tag" style="display:inline-block; margin-bottom: var(--space-4);" data-i18n="svc1_tag">中小企业</div>
-          <div class="icon-box icon-box--primary" aria-hidden="true">💼</div>
-          <h3 data-i18n="svc1_title">AI企业赋能培训</h3>
-          <p style="font-size: var(--text-sm); font-weight: var(--font-weight-semibold); color: var(--color-primary); margin-bottom: var(--space-3);" data-i18n="svc1_subtitle">让您的团队真正把AI用起来</p>
-          <p data-i18n="svc1_desc">帮助中小企业把AI工具融入真实经营场景。不讲空洞的技术理论，专注解决您在内容制作、客户沟通、英文表达和日常效率方面的实际问题。</p>
-          <ul role="list" style="margin: var(--space-4) 0;">
-            <li data-i18n="svc1_i1">内容制作与社媒运营</li>
-            <li data-i18n="svc1_i2">客户沟通与AI写作</li>
-            <li data-i18n="svc1_i3">英文表达与翻译辅助</li>
-            <li data-i18n="svc1_i4">门店效率与流程整理</li>
-            <li data-i18n="svc1_i5">一对一企业主深度咨询</li>
-          </ul>
-          <div class="service-formats" style="margin-bottom: var(--space-5);">
-            <span class="format-badge" data-i18n="svc1_badge1">小组培训</span>
-            <span class="format-badge" data-i18n="svc1_badge2">一对一咨询</span>
-            <span class="format-badge" data-i18n="svc1_badge3">线上 &amp; 线下</span>
-          </div>
-          <a href="services.html" class="btn btn-primary" style="width:100%; justify-content:center;" data-i18n="svc1_cta">了解企业培训</a>
+        <div class="module-item">
+          <div class="module-num">01</div>
+          <div class="module-name">Quick Start Guide</div>
+          <p class="module-desc">A clear, step-by-step walkthrough to get you set up and using AI tools for your specific business type — no overwhelm, no jargon.</p>
         </div>
 
-        <!-- Service 2: AI for Older Adults -->
-        <div class="audience-card" style="--card-accent: var(--color-secondary);">
-          <div class="section-tag" style="display:inline-block; margin-bottom: var(--space-4); background: var(--color-secondary-light); color: var(--color-secondary);" data-i18n="svc2_tag">中老年学员</div>
-          <div class="icon-box icon-box--secondary" aria-hidden="true">🧑‍🎓</div>
-          <h3 data-i18n="svc2_title">中老年AI生活课</h3>
-          <p style="font-size: var(--text-sm); font-weight: var(--font-weight-semibold); color: var(--color-secondary); margin-bottom: var(--space-3);" data-i18n="svc2_subtitle">从零开始，慢慢学，学了就会用</p>
-          <p data-i18n="svc2_desc">专为50岁以上学员设计。不怕没基础，不担心跟不上。我们用最简单的方式，帮您在日常生活中用上AI，更方便、更安全、更有信心。</p>
-          <ul role="list" style="margin: var(--space-4) 0;">
-            <li data-i18n="svc2_i1">AI助手入门（ChatGPT等）</li>
-            <li data-i18n="svc2_i2">手机与平板智能使用</li>
-            <li data-i18n="svc2_i3">网络安全与防诈骗</li>
-            <li data-i18n="svc2_i4">日常AI工具应用</li>
-            <li data-i18n="svc2_i5">一对一耐心辅导</li>
-          </ul>
-          <div class="service-formats" style="margin-bottom: var(--space-5);">
-            <span class="format-badge" style="background: var(--color-secondary-light); color: var(--color-secondary);" data-i18n="svc2_badge1">小组课程</span>
-            <span class="format-badge" style="background: var(--color-secondary-light); color: var(--color-secondary);" data-i18n="svc2_badge2">一对一辅导</span>
-            <span class="format-badge" style="background: var(--color-secondary-light); color: var(--color-secondary);" data-i18n="svc2_badge3">零基础友好</span>
-          </div>
-          <a href="services.html" class="btn btn-outline" style="width:100%; justify-content:center; border-color: var(--color-secondary); color: var(--color-secondary);" data-i18n="svc2_cta">了解中老年课程</a>
+        <div class="module-item">
+          <div class="module-num">02</div>
+          <div class="module-name">Tool Stack</div>
+          <p class="module-desc">A curated list of the best AI tools for your industry — what they do, which ones to prioritize, and how to access them.</p>
         </div>
 
-        <!-- Coming Soon Card (extensible framework for future services) -->
-        <div class="coming-soon-card">
-          <div class="coming-soon-badge" data-i18n="svc_soon_tag">即将推出</div>
-          <div style="font-size: 48px; margin-bottom: var(--space-4);" aria-hidden="true">🔜</div>
-          <h3 data-i18n="svc_soon_title">更多课程正在开发中</h3>
-          <p style="font-size: var(--text-sm); margin: var(--space-3) 0 var(--space-5);" data-i18n="svc_soon_desc">数字货币基础、NFT与数字资产等实用课程，即将陆续推出。</p>
-          <div class="coming-soon-items">
-            <div class="coming-soon-item"><span aria-hidden="true">💰</span> <span data-i18n="svc_soon_item1">数字货币基础入门</span></div>
-            <div class="coming-soon-item"><span aria-hidden="true">🖼️</span> <span data-i18n="svc_soon_item2">NFT 与数字资产</span></div>
-            <div class="coming-soon-item"><span aria-hidden="true">➕</span> <span data-i18n="svc_soon_item3">更多课程敬请期待…</span></div>
-          </div>
-          <a href="contact.html" class="btn btn-outline btn-sm" style="margin-top: var(--space-4);" data-i18n="svc_soon_notify">提前告知我</a>
+        <div class="module-item">
+          <div class="module-num">03</div>
+          <div class="module-name">Prompt Library</div>
+          <p class="module-desc">Ready-to-use prompts written for your industry. Copy, adapt and run — covering content, replies, admin tasks and more.</p>
+        </div>
+
+        <div class="module-item">
+          <div class="module-num">04</div>
+          <div class="module-name">SOP Workflows</div>
+          <p class="module-desc">Standard operating procedures for building repeatable AI-assisted workflows into your existing day-to-day operations.</p>
+        </div>
+
+        <div class="module-item">
+          <div class="module-num">05</div>
+          <div class="module-name">7-Day Action Plan</div>
+          <p class="module-desc">A day-by-day implementation plan so you're not staring at blank tools. By day 7, you'll have AI working in your business.</p>
+        </div>
+
+        <div class="module-item">
+          <div class="module-num">06</div>
+          <div class="module-name">Bonus Guide</div>
+          <p class="module-desc">Extra resources specific to your industry — including advanced prompt templates, AI automation ideas and content planning tools.</p>
         </div>
 
       </div>
@@ -321,399 +244,238 @@
   </section>
 
 
-  <!-- ═══════════════════════════════════════
-       SECTION 4 — INDUSTRIES (轻量版，按英雄建议)
-  ═══════════════════════════════════════ -->
-  <section class="section section--white" aria-labelledby="industry-heading">
+  <!-- ── SECTION 4: WHY IT WORKS ───────────────────────────── -->
+  <section class="section" aria-labelledby="why-heading">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="s4_tag">服务行业</span>
-        <h2 class="section-title" id="industry-heading" data-i18n="s4_title">我们理解不同行业的真实需求</h2>
-        <p class="section-subtitle" data-i18n="s4_subtitle">不同行业的经营场景不同，我们的培训会结合您的实际情况，讲的是您能直接用上的内容。</p>
-      </div>
-
-      <div class="industry-grid">
-        <div class="industry-card">
-          <div class="industry-icon" aria-hidden="true">🤝</div>
-          <h3 data-i18n="ind1_title">服务业</h3>
-          <p data-i18n="ind1_desc">咨询、专业服务、代理中介</p>
-        </div>
-        <div class="industry-card">
-          <div class="industry-icon" aria-hidden="true">💄</div>
-          <h3 data-i18n="ind2_title">美业</h3>
-          <p data-i18n="ind2_desc">美容、美甲、造型、SPA</p>
-        </div>
-        <div class="industry-card">
-          <div class="industry-icon" aria-hidden="true">🍜</div>
-          <h3 data-i18n="ind3_title">餐饮与零售</h3>
-          <p data-i18n="ind3_desc">餐厅、外卖、零售门店</p>
-        </div>
-        <div class="industry-card">
-          <div class="industry-icon" aria-hidden="true">🏪</div>
-          <h3 data-i18n="ind4_title">其他中小企业</h3>
-          <p data-i18n="ind4_desc">只要是中小企业，我们都来聊聊</p>
-        </div>
-      </div>
-
-      <p style="text-align: center; margin-top: var(--space-8); font-size: var(--text-base); color: var(--color-text-secondary);" data-i18n="ind_note" data-i18n-html>
-        您的行业不在上面？<a href="contact.html">联系我们了解</a>
-      </p>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════
-       SECTION 5 — WHY CHOOSE US
-  ═══════════════════════════════════════ -->
-  <section class="section section--alt" aria-labelledby="why-heading">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="s5_tag">为什么选择我们</span>
-        <h2 class="section-title" id="why-heading" data-i18n="s5_title">我们做什么不一样</h2>
+      <div class="section-header section-header--center">
+        <span class="eyebrow">Real Results</span>
+        <h2 class="section-heading" id="why-heading">What AI can do for your business</h2>
+        <p class="section-sub">These aren't theoretical benefits. They're what business owners do with AI after using our toolkits.</p>
       </div>
 
       <div class="why-grid">
+
         <div class="why-item">
-          <div class="icon-box icon-box--primary" aria-hidden="true">🎯</div>
-          <div class="why-item-content">
-            <h3 data-i18n="why1_title">讲真实场景，不讲AI理论</h3>
-            <p data-i18n="why1_desc">我们的培训围绕您生意里的真实问题展开，不会花时间讲您用不上的技术概念。</p>
-          </div>
+          <div class="why-icon" aria-hidden="true">⏱️</div>
+          <div class="why-title">Save time on repetitive work</div>
+          <p class="why-desc">Automate the tasks that eat your day — booking replies, content drafts, summaries and admin.</p>
         </div>
+
         <div class="why-item">
-          <div class="icon-box icon-box--accent" aria-hidden="true">🌏</div>
-          <div class="why-item-content">
-            <h3 data-i18n="why2_title">中英双语，无语言门槛</h3>
-            <p data-i18n="why2_desc">普通话、粤语、英文均可，您用最顺手的语言学习，我们来适配。</p>
-          </div>
+          <div class="why-icon" aria-hidden="true">✍️</div>
+          <div class="why-title">Create content faster</div>
+          <p class="why-desc">Social posts, captions, promotional materials — written in seconds with your voice and tone.</p>
         </div>
+
         <div class="why-item">
-          <div class="icon-box icon-box--secondary" aria-hidden="true">🌱</div>
-          <div class="why-item-content">
-            <h3 data-i18n="why3_title">专为中老年设计，不焦虑</h3>
-            <p data-i18n="why3_desc">不催进度，不做比较，慢慢来才是真正学会。我们专门积累了与中老年学员合作的经验。</p>
-          </div>
+          <div class="why-icon" aria-hidden="true">💬</div>
+          <div class="why-title">Reply to customers efficiently</div>
+          <p class="why-desc">Draft professional, warm responses to enquiries, reviews and messages without the stress.</p>
         </div>
+
         <div class="why-item">
-          <div class="icon-box icon-box--primary" aria-hidden="true">📍</div>
-          <div class="why-item-content">
-            <h3 data-i18n="why4_title">悉尼本地团队</h3>
-            <p data-i18n="why4_desc">我们在悉尼，了解本地华人社区和中小企业面临的实际处境，不是远程的通用课程。</p>
-          </div>
+          <div class="why-icon" aria-hidden="true">🔁</div>
+          <div class="why-title">Build simple workflows</div>
+          <p class="why-desc">Set up repeatable systems so AI handles the same tasks the same way — every time.</p>
         </div>
+
         <div class="why-item">
-          <div class="icon-box icon-box--accent" aria-hidden="true">💡</div>
-          <div class="why-item-content">
-            <h3 data-i18n="why5_title">一对一咨询跟进</h3>
-            <p data-i18n="why5_desc">学完不是终点。一对一咨询帮您把学到的东西真正用到生意和生活里。</p>
-          </div>
+          <div class="why-icon" aria-hidden="true">🚀</div>
+          <div class="why-title">Start without technical skills</div>
+          <p class="why-desc">No coding, no IT knowledge, no overwhelm. If you can use a phone, you can use these tools.</p>
         </div>
-        <div class="why-item">
-          <div class="icon-box icon-box--secondary" aria-hidden="true">🤲</div>
-          <div class="why-item-content">
-            <h3 data-i18n="why6_title">不过度承诺，讲实话</h3>
-            <p data-i18n="why6_desc">AI不是万能的，我们会告诉您什么能做到、什么还做不到，帮您做出实际的判断。</p>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════
-       SECTION 6 — HOW IT WORKS
-  ═══════════════════════════════════════ -->
-  <section class="section section--white" aria-labelledby="how-heading">
+  <!-- ── SECTION 5: UPDATES / MEMBERSHIP ───────────────────── -->
+  <section class="section section--subtle" aria-labelledby="updates-heading">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="s6_tag">如何开始</span>
-        <h2 class="section-title" id="how-heading" data-i18n="s6_title">三步开始，没有复杂流程</h2>
-        <p class="section-subtitle" data-i18n="s6_subtitle">从联系我们到开始培训，整个过程清晰、简单、没有压力。</p>
-      </div>
-
-      <div class="steps">
-        <div class="step">
-          <div class="step-number" aria-hidden="true">1</div>
-          <h3 data-i18n="step1_title">联系我们，说说您的情况</h3>
-          <p data-i18n="step1_desc">免费预约15分钟通话或发送留言。不用准备，直接说您想解决什么问题，想学什么。</p>
+      <div class="updates-banner">
+        <div class="updates-banner-content">
+          <span class="eyebrow eyebrow--light">Stay Current</span>
+          <h2 id="updates-heading">Keep your toolkit current as AI changes</h2>
+          <p>AI tools evolve fast. Our update pass keeps your pack fresh — new prompts, updated workflows, tool changes and industry-specific notes added as the landscape shifts.</p>
+          <div class="updates-pill-list">
+            <span class="updates-pill">Updated tools</span>
+            <span class="updates-pill">New prompts</span>
+            <span class="updates-pill">Revised workflows</span>
+            <span class="updates-pill">Industry notes</span>
+            <span class="updates-pill">Annual add-ons</span>
+          </div>
         </div>
-        <div class="step">
-          <div class="step-number" aria-hidden="true">2</div>
-          <h3 data-i18n="step2_title">我们推荐合适的方案</h3>
-          <p data-i18n="step2_desc">我们根据您的实际情况，给出真实可行的建议。不适合的课程，我们不会推销。</p>
+        <div style="flex-shrink:0;">
+          <a href="updates.html" class="btn btn-outline-light btn-lg">Learn More</a>
         </div>
-        <div class="step">
-          <div class="step-number" aria-hidden="true">3</div>
-          <h3 data-i18n="step3_title">开始学习，真正用起来</h3>
-          <p data-i18n="step3_desc">按照适合您的节奏开始培训。学完有持续支持，帮您把所学落地到实际场景中。</p>
-        </div>
-      </div>
-
-      <div style="text-align:center; margin-top: var(--space-12);">
-        <a href="contact.html" class="btn btn-accent btn-lg" data-i18n="s6_cta">立即免费咨询</a>
-        <p style="margin-top: var(--space-4); font-size: var(--text-sm); color: var(--color-text-muted);" data-i18n="s6_note">
-          免费15分钟通话 · 无需承诺 · 24小时内回复
-        </p>
       </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════
-       SECTION 7 — REVIEWS (真实学员反馈)
-       PLACEHOLDER: replace with real reviews when collected
-  ═══════════════════════════════════════ -->
-  <section class="section section--alt" aria-labelledby="reviews-heading">
+  <!-- ── SECTION 6: FAQ ─────────────────────────────────────── -->
+  <section class="section section--off" aria-labelledby="faq-heading">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="s7_tag">学员评价</span>
-        <h2 class="section-title" id="reviews-heading" data-i18n="s7_title">真实学员的反馈</h2>
-        <p class="section-subtitle" data-i18n="s7_subtitle">这些是真实合作过的学员和客户的评价，不是编造的。</p>
+      <div class="section-header section-header--center">
+        <span class="eyebrow">Questions</span>
+        <h2 class="section-heading" id="faq-heading">Before you buy</h2>
       </div>
 
-      <div class="testimonial-grid">
+      <div class="faq-list" role="list">
 
-        <div class="testimonial-card">
-          <div class="testimonial-stars" aria-label="五星好评">★★★★★</div>
-          <p class="testimonial-quote" data-i18n="rev1_quote">
-            以前觉得AI离我很远，和我的生意没关系。上完课后，我现在用ChatGPT帮我写小红书帖子、回复客户，节省了很多时间。老师讲得很清楚，不催人，很耐心。
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar" aria-hidden="true">👩</div>
-            <div>
-              <div class="testimonial-name" data-i18n="rev1_name">陈女士</div>
-              <div class="testimonial-role" data-i18n="rev1_role">悉尼美容院老板</div>
-            </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Is this for beginners?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes. The packs are designed for business owners with no technical background. Everything is explained in plain language with step-by-step instructions. If you can use Google or send emails, you can use these tools.
           </div>
         </div>
 
-        <div class="testimonial-card">
-          <div class="testimonial-stars" aria-label="五星好评">★★★★★</div>
-          <p class="testimonial-quote" data-i18n="rev2_quote">
-            给我们团队安排了一天的培训，讲的都是实际能用的内容——怎么用AI回复Google评论、写菜单描述、和供应商用英文沟通。员工都说学到了东西。
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar" aria-hidden="true">👨</div>
-            <div>
-              <div class="testimonial-name" data-i18n="rev2_name">张先生</div>
-              <div class="testimonial-role" data-i18n="rev2_role">悉尼餐厅经理</div>
-            </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            What's actually included in each pack?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Each pack includes six structured resources: a Quick Start Guide, Tool Stack, Prompt Library, SOP Workflows, 7-Day Action Plan, and a Bonus Guide. All files are digital and delivered instantly after purchase.
           </div>
         </div>
 
-        <div class="testimonial-card">
-          <div class="testimonial-stars" aria-label="五星好评">★★★★★</div>
-          <p class="testimonial-quote" data-i18n="rev3_quote">
-            我之前对手机和网络很不放心，怕被骗。老师一步一步教我，不嫌我问的问题简单。现在我会用AI帮我翻译英文信件，感觉方便多了。
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar" aria-hidden="true">👴</div>
-            <div>
-              <div class="testimonial-name" data-i18n="rev3_name">王女士</div>
-              <div class="testimonial-role" data-i18n="rev3_role">悉尼学员 · 62岁</div>
-            </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Is this software, or a digital toolkit?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            It's a digital toolkit — a collection of structured documents, templates and guides. You use it alongside free or low-cost AI tools like ChatGPT, Claude or other industry tools. There's nothing to install.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            How do I access the files after purchase?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            All purchases are handled through Gumroad. After checkout, you'll receive a download link by email with instant access to all files in the pack. You own them permanently.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer updates?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes. We offer an annual Update Pass that gives you access to revised versions of your pack as AI tools evolve. This is optional — your original pack doesn't expire, but the updates keep it current.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Can I get help implementing this for my business?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes. If you'd like personalised support beyond the pack, we offer implementation sessions. Reach out via the Contact page and we'll help you map the tools to your specific situation.
           </div>
         </div>
 
       </div>
 
-      <!-- Stats row — PLACEHOLDER: replace with real data -->
-      <div class="stats-grid" style="margin-top: var(--space-16);">
-        <div class="stat-item">
-          <div class="stat-number">500+</div>
-          <div class="stat-label" data-i18n="hero_stat1_label">学员</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">98%</div>
-          <div class="stat-label" data-i18n="hero_stat2_label">满意度</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">3</div>
-          <div class="stat-label">核心课程方向</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">中英</div>
-          <div class="stat-label">双语授课</div>
-        </div>
+      <div style="text-align:center; margin-top:var(--s10);">
+        <a href="faq.html" class="btn btn-outline btn-lg">View All FAQs</a>
       </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════
-       SECTION 8 — FAQ PREVIEW
-  ═══════════════════════════════════════ -->
-  <section class="section section--white" aria-labelledby="faq-preview-heading">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="s8_tag">常见问题</span>
-        <h2 class="section-title" id="faq-preview-heading" data-i18n="s8_title">您可能想问的</h2>
-      </div>
-
-      <div class="faq-list">
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span data-i18n="faq1_q">我没有任何AI基础，可以参加吗？</span>
-            <span class="faq-question-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer" data-i18n="faq1_a">
-            完全可以。我们的课程专门为零基础学员设计。从最基础的地方开始，不会因为您问了"简单"的问题而催促或嫌弃您。
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span data-i18n="faq2_q">培训是线上还是线下？</span>
-            <span class="faq-question-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer" data-i18n="faq2_a">
-            两种都有。可以通过视频通话（Zoom等）在线上课，也可以在悉尼部分区域安排线下见面培训。您选择最方便的方式。
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span data-i18n="faq3_q">可以用中文学习吗？</span>
-            <span class="faq-question-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer" data-i18n="faq3_a">
-            可以。我们提供普通话和粤语授课，也可以中英混合。报名时说明您的语言偏好，我们来安排合适的老师。
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span data-i18n="faq4_q">一对一咨询是什么？和培训课有什么区别？</span>
-            <span class="faq-question-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer" data-i18n="faq4_a">
-            培训课是围绕某个主题系统讲解，一对一咨询则是针对您具体的生意情况或学习问题，单独深入地帮您分析和解答。两者都有，可以组合使用。
-          </div>
-        </div>
-      </div>
-
-      <div style="text-align:center; margin-top: var(--space-8);">
-        <a href="faq.html" class="btn btn-outline" data-i18n="s8_cta">查看所有常见问题</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════
-       SECTION 9 — CTA
-  ═══════════════════════════════════════ -->
-  <section class="section" aria-labelledby="cta-heading">
-    <div class="container">
-      <div class="cta-banner">
-        <h2 id="cta-heading" data-i18n="s9_title">准备好了解一下吗？</h2>
-        <p data-i18n="s9_desc">预约一次免费的15分钟通话，我们来听您说说情况，然后给您真实可行的建议。</p>
-        <div class="btn-actions">
-          <a href="contact.html" class="btn btn-accent btn-lg" data-i18n="s9_cta1">立即免费咨询</a>
-          <a href="services.html" class="btn btn-outline-white btn-lg" data-i18n="s9_cta2">了解培训课程</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════ -->
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
   <footer class="footer" role="contentinfo">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-inner">
+
         <div class="footer-brand">
-          <a href="index.html" class="nav-logo" aria-label="OpenWays">
-            <div class="nav-logo-mark" aria-hidden="true">O</div>
-            <span class="nav-logo-text">Open<span>Ways</span></span>
-          </a>
-          <p data-i18n="footer_tagline">为悉尼中小企业和中老年学员提供实用AI培训。清晰、实用、值得信赖。</p>
+          <div class="nav-logo-wordmark" style="margin-bottom:var(--s4);">Open<span>Ways</span></div>
+          <p class="footer-tagline">AI toolkits for modern small businesses. Practical, industry-specific, ready to use within 7 days.</p>
+          <a href="mailto:hello@openways.net" class="footer-link" style="margin-top:var(--s4); display:inline-block;">hello@openways.net</a>
         </div>
 
-        <div class="footer-col">
-          <h4 data-i18n="footer_nav_title">导航</h4>
-          <ul role="list">
-            <li><a href="index.html"       data-i18n="nav_home">首页</a></li>
-            <li><a href="about.html"       data-i18n="nav_about">关于我们</a></li>
-            <li><a href="services.html"    data-i18n="nav_services">培训课程</a></li>
-            <li><a href="who-we-help.html" data-i18n="nav_who">适合谁</a></li>
-            <li><a href="faq.html"         data-i18n="nav_faq">常见问题</a></li>
-            <li><a href="contact.html"     data-i18n="nav_contact">联系我们</a></li>
-          </ul>
+        <div>
+          <div class="footer-heading">Products</div>
+          <div class="footer-links">
+            <a href="packs.html" class="footer-link">All Packs</a>
+            <a href="pack-beauty.html" class="footer-link">Beauty AI Pack</a>
+            <a href="packs.html" class="footer-link">Real Estate AI Pack</a>
+            <a href="packs.html" class="footer-link">Hospitality AI Pack</a>
+            <a href="updates.html" class="footer-link">Update Pass</a>
+          </div>
         </div>
 
-        <div class="footer-col">
-          <h4 data-i18n="footer_services_title">培训课程</h4>
-          <ul role="list">
-            <li><a href="services.html" data-i18n="svc1_title">AI企业赋能培训</a></li>
-            <li><a href="services.html" data-i18n="svc2_title">中老年AI生活课</a></li>
-            <li><a href="services.html" data-i18n="svc_soon_tag" style="color: var(--color-accent);">即将推出</a></li>
-            <li><a href="contact.html"  data-i18n="nav_cta">免费咨询</a></li>
-          </ul>
+        <div>
+          <div class="footer-heading">Company</div>
+          <div class="footer-links">
+            <a href="about.html"   class="footer-link">About</a>
+            <a href="faq.html"     class="footer-link">FAQ</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="zh.html"      class="footer-link">中文版</a>
+          </div>
         </div>
 
-        <div class="footer-col">
-          <h4 data-i18n="footer_contact_title">联系方式</h4>
-          <ul role="list">
-            <li><a href="mailto:hello@openways.net">hello@openways.net</a></li>
-            <li><a href="contact.html" data-i18n="nav_cta">免费咨询</a></li>
-            <li><span style="color: rgba(255,255,255,0.5); font-size: var(--text-sm);">悉尼，NSW，澳大利亚</span></li>
-          </ul>
+        <div>
+          <div class="footer-heading">Legal</div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Terms of Use</a>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </div>
         </div>
+
       </div>
 
       <div class="footer-bottom">
-        <p data-i18n="footer_copyright">© 2026 OpenWays. 版权所有。</p>
-
-        <!-- Language switcher in footer -->
-        <div class="footer-lang-switch" role="group" aria-label="Language selector">
-          <button class="footer-lang-btn active" data-lang-btn="zh-s">简体</button>
-          <button class="footer-lang-btn" data-lang-btn="zh-t">繁體</button>
-          <button class="footer-lang-btn" data-lang-btn="en">EN</button>
+        <span class="footer-copy">© 2024 OpenWays. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Terms</a>
+          <a href="#">Refund Policy</a>
         </div>
-
-        <p>
-          <a href="#" style="color: rgba(255,255,255,0.4); font-size: var(--text-sm);" data-i18n="footer_privacy">隐私政策</a>
-          &nbsp;·&nbsp;
-          <a href="#" style="color: rgba(255,255,255,0.4); font-size: var(--text-sm);" data-i18n="footer_terms">使用条款</a>
-        </p>
       </div>
     </div>
   </footer>
 
 
-  <!-- ═══════════════════════════════════════
-       SCRIPTS
-  ═══════════════════════════════════════ -->
-  <script src="i18n.js"></script>
   <script>
-    // Mobile nav toggle
-    const toggle = document.getElementById('navToggle');
-    const mobileMenu = document.getElementById('navMobile');
-    toggle.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
     });
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
+
+    // Mobile toggle
+    const toggle = document.getElementById('navToggle');
+    const mobile = document.getElementById('navMobile');
+    toggle.addEventListener('click', () => {
+      const open = mobile.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
     });
 
     // FAQ accordion
     document.querySelectorAll('.faq-question').forEach(btn => {
       btn.addEventListener('click', () => {
         const item = btn.closest('.faq-item');
-        const isOpen = item.classList.toggle('is-open');
-        btn.setAttribute('aria-expanded', isOpen);
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
       });
     });
-
-    // Nav scroll shadow
-    const nav = document.querySelector('.nav');
-    window.addEventListener('scroll', () => {
-      nav.style.boxShadow = window.scrollY > 10 ? 'var(--shadow-sm)' : 'none';
-    }, { passive: true });
   </script>
 
 </body>

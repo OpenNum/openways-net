@@ -1,471 +1,136 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us — OpenWays</title>
-  <meta name="description" content="Get in touch with OpenWays. Book a free 15-minute call, send a message, or ask about our training programs. We respond within one business day." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233A6BB8'/><text y='.9em' font-size='65' x='15'>O</text></svg>" />
+  <title>Contact — OpenWays</title>
+  <meta name="description" content="Get in touch with OpenWays. Questions about AI toolkits, implementation support, or custom requests — we reply within 1 business day." />
+  <link rel="canonical" href="https://openways.net/contact.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Contact page extras */
-    .contact-method-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--space-5);
-      margin-bottom: var(--space-12);
-    }
-    .contact-method-card {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: var(--space-6);
-      text-align: center;
-      transition: all var(--transition-normal);
-    }
-    .contact-method-card:hover {
-      border-color: var(--color-primary);
-      box-shadow: var(--shadow-md);
-      transform: translateY(-2px);
-    }
-    .contact-method-icon {
-      font-size: 40px;
-      margin-bottom: var(--space-4);
-    }
-    .contact-method-card h3 {
-      font-size: var(--text-lg);
-      margin-bottom: var(--space-2);
-    }
-    .contact-method-card p {
-      font-size: var(--text-sm);
-      margin-bottom: var(--space-4);
-    }
-    .form-card {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-xl);
-      padding: var(--space-10);
-      box-shadow: var(--shadow-md);
-    }
-    .form-success {
-      display: none;
-      text-align: center;
-      padding: var(--space-12);
-    }
-    .form-success .icon {
-      font-size: 64px;
-      margin-bottom: var(--space-5);
-    }
-    .response-time-bar {
-      background: var(--color-primary-light);
-      border-radius: var(--radius-lg);
-      padding: var(--space-4) var(--space-6);
-      display: flex;
-      align-items: center;
-      gap: var(--space-3);
-      margin-bottom: var(--space-6);
-      font-size: var(--text-sm);
-      color: var(--color-primary);
-      font-weight: var(--font-weight-medium);
-    }
-    .form-divider {
-      display: flex;
-      align-items: center;
-      gap: var(--space-4);
-      margin: var(--space-6) 0;
-      color: var(--color-text-muted);
-      font-size: var(--text-sm);
-    }
-    .form-divider::before,
-    .form-divider::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--color-border);
-    }
-    .call-booking-card {
-      background: linear-gradient(135deg, var(--color-primary-light), var(--color-secondary-light));
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: var(--space-6);
-      text-align: center;
-    }
-    .call-booking-card h3 {
-      font-size: var(--text-xl);
-      margin-bottom: var(--space-3);
-    }
-    .call-booking-card p {
-      font-size: var(--text-base);
-      margin-bottom: var(--space-5);
-    }
-    /* Inline calendar placeholder */
-    .calendar-placeholder {
-      background: var(--color-surface);
-      border: 2px dashed var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: var(--space-10);
-      text-align: center;
-      color: var(--color-text-muted);
-      margin-top: var(--space-4);
-    }
-    .calendar-placeholder p {
-      font-size: var(--text-sm);
-      margin-top: var(--space-2);
-    }
-    @media (max-width: 768px) {
-      .contact-method-cards { grid-template-columns: 1fr; }
-      .form-card { padding: var(--space-6); }
-    }
-  </style>
 </head>
-<body data-page="contact">
+<body>
 
-  <!-- NAV -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <!-- ── NAVIGATION ─────────────────────────────────────────── -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="OpenWays 首页">
-        <div class="nav-logo-mark" aria-hidden="true">O</div>
-        <span class="nav-logo-text">Open<span>Ways</span></span>
+      <a href="index.html" class="nav-logo" aria-label="OpenWays home">
+        <span class="nav-logo-wordmark">Open<span>Ways</span></span>
       </a>
       <ul class="nav-links" role="list">
-        <li><a href="index.html"       class="nav-link" data-i18n="nav_home">首页</a></li>
-        <li><a href="about.html"       class="nav-link" data-i18n="nav_about">关于我们</a></li>
-        <li><a href="services.html"    class="nav-link" data-i18n="nav_services">培训课程</a></li>
-        <li><a href="who-we-help.html" class="nav-link" data-i18n="nav_who">适合谁</a></li>
-        <li><a href="faq.html"         class="nav-link" data-i18n="nav_faq">常见问题</a></li>
-        <li><a href="contact.html"     class="nav-link active" data-i18n="nav_contact">联系我们</a></li>
+        <li><a href="packs.html"   class="nav-link">Packs</a></li>
+        <li><a href="updates.html" class="nav-link">Updates</a></li>
+        <li><a href="faq.html"     class="nav-link">FAQ</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
       </ul>
-      <div class="lang-switch" role="group" aria-label="Language selector">
-        <button class="lang-btn active" data-lang-btn="zh-s" title="简体中文">简</button>
-        <button class="lang-btn" data-lang-btn="zh-t" title="繁體中文">繁</button>
-        <button class="lang-btn" data-lang-btn="en" title="English">EN</button>
+      <div class="nav-right">
+        <a href="zh.html" class="nav-lang">中文</a>
+        <a href="packs.html" class="btn btn-primary btn-sm">Explore Packs</a>
       </div>
-      <a href="contact.html" class="btn btn-accent nav-cta" data-i18n="nav_cta">免费咨询</a>
-      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" id="navToggle">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav-mobile" id="navMobile" role="dialog" aria-label="Mobile navigation">
-      <a href="index.html"       class="nav-link" data-i18n="nav_home">首页</a>
-      <a href="about.html"       class="nav-link" data-i18n="nav_about">关于我们</a>
-      <a href="services.html"    class="nav-link" data-i18n="nav_services">培训课程</a>
-      <a href="who-we-help.html" class="nav-link" data-i18n="nav_who">适合谁</a>
-      <a href="faq.html"         class="nav-link" data-i18n="nav_faq">常见问题</a>
-      <a href="contact.html"     class="nav-link active" data-i18n="nav_contact">联系我们</a>
-      <div class="lang-switch" style="margin: var(--space-4) 0; justify-content: flex-start;" role="group" aria-label="Language selector">
-        <button class="lang-btn active" data-lang-btn="zh-s">简</button>
-        <button class="lang-btn" data-lang-btn="zh-t">繁</button>
-        <button class="lang-btn" data-lang-btn="en">EN</button>
-      </div>
-      <a href="contact.html" class="btn btn-accent" data-i18n="nav_cta">免费咨询</a>
+    <div class="nav-mobile" id="navMobile">
+      <a href="packs.html"   class="nav-link">Packs</a>
+      <a href="updates.html" class="nav-link">Updates</a>
+      <a href="faq.html"     class="nav-link">FAQ</a>
+      <a href="about.html"   class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="zh.html"      class="nav-link">中文</a>
+      <a href="packs.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">Explore Packs</a>
     </div>
   </nav>
 
-
-  <!-- PAGE HERO -->
-  <section class="page-hero">
+  <!-- ── PAGE HERO ──────────────────────────────────────────── -->
+  <section class="inner-hero">
     <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a>
-        <span class="breadcrumb-sep" aria-hidden="true">/</span>
-        <span>Contact</span>
-      </nav>
-      <span class="section-tag">Get in Touch</span>
-      <h1>We'd love to hear from you</h1>
-      <p>
-        Whether you're ready to book, just exploring your options, or have a question —
-        we're here. A real person will get back to you within one business day.
-      </p>
+      <span class="eyebrow">Contact</span>
+      <h1>Get in touch</h1>
+      <p>Questions about a pack, implementation support, or a custom request — we reply within 1 business day.</p>
     </div>
   </section>
 
-
-  <!-- CONTACT METHODS -->
-  <section class="section section--white">
+  <!-- ── CONTACT SECTION ────────────────────────────────────── -->
+  <section class="section" aria-labelledby="contact-heading">
     <div class="container">
+      <div class="contact-grid">
 
-      <div class="contact-method-cards">
-
-        <div class="contact-method-card">
-          <div class="contact-method-icon" aria-hidden="true">📞</div>
-          <h3>Book a Free Call</h3>
-          <p>15 minutes, no obligation. We'll listen and give you honest advice.</p>
-          <a href="#book-call" class="btn btn-primary btn-sm">Choose a Time</a>
-        </div>
-
-        <div class="contact-method-card">
-          <div class="contact-method-icon" aria-hidden="true">✉️</div>
-          <h3>Send a Message</h3>
-          <p>Prefer to write? Fill in the form below and we'll respond within 24 hours.</p>
-          <a href="#contact-form" class="btn btn-outline btn-sm">Write to Us</a>
-        </div>
-
-        <div class="contact-method-card">
-          <div class="contact-method-icon" aria-hidden="true">📧</div>
-          <h3>Email Directly</h3>
-          <p>Reach us directly at our inbox. We read every message personally.</p>
-          <a href="mailto:hello@openways.net" class="btn btn-outline btn-sm">hello@openways.net</a>
-        </div>
-
-      </div>
-
-      <!-- Response time notice -->
-      <div class="response-time-bar" role="note">
-        <span aria-hidden="true">⏱️</span>
-        We aim to respond to all enquiries within one business day (Mon–Fri, AEST).
-        For urgent matters, please email directly.
-      </div>
-
-
-      <!-- MAIN CONTACT LAYOUT -->
-      <div class="contact-layout">
-
-        <!-- LEFT: Info + FAQ mini -->
+        <!-- Form -->
         <div>
-          <h2 style="font-size: var(--text-2xl); margin-bottom: var(--space-6);">
-            What happens after you contact us?
-          </h2>
+          <h2 class="section-heading" id="contact-heading" style="font-size:var(--text-2xl); margin-bottom:var(--s6);">Send us a message</h2>
 
-          <div style="display: flex; flex-direction: column; gap: var(--space-5); margin-bottom: var(--space-8);">
+          <form action="mailto:hello@openways.net" method="POST" enctype="text/plain" aria-label="Contact form">
 
-            <div style="display: flex; gap: var(--space-4);">
-              <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: var(--font-weight-bold); flex-shrink: 0; font-size: var(--text-sm);">1</div>
-              <div>
-                <strong style="display: block; margin-bottom: var(--space-1);">We read your message</strong>
-                <p style="font-size: var(--text-sm);">Every enquiry goes to a real person, not an automated system. We take time to understand your situation before replying.</p>
-              </div>
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required />
             </div>
 
-            <div style="display: flex; gap: var(--space-4);">
-              <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: var(--font-weight-bold); flex-shrink: 0; font-size: var(--text-sm);">2</div>
-              <div>
-                <strong style="display: block; margin-bottom: var(--space-1);">We reply within 24 hours</strong>
-                <p style="font-size: var(--text-sm);">You'll hear from us with a direct response — either answering your question or suggesting next steps.</p>
-              </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required />
             </div>
 
-            <div style="display: flex; gap: var(--space-4);">
-              <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: var(--font-weight-bold); flex-shrink: 0; font-size: var(--text-sm);">3</div>
-              <div>
-                <strong style="display: block; margin-bottom: var(--space-1);">We find the right fit</strong>
-                <p style="font-size: var(--text-sm);">No pressure, no upselling. We recommend what genuinely makes sense for your situation and budget.</p>
-              </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">What's this about?</label>
+              <select class="form-select" id="subject" name="subject">
+                <option value="">Select a topic</option>
+                <option value="pre-purchase">Question before purchasing</option>
+                <option value="implementation">Implementation support</option>
+                <option value="custom">Custom or business request</option>
+                <option value="notify">Notify me about a new pack</option>
+                <option value="other">Other</option>
+              </select>
             </div>
 
-          </div>
-
-          <!-- Contact details -->
-          <div class="divider"></div>
-
-          <div style="margin-top: var(--space-6);">
-            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-5);">Contact details</h3>
-
-            <div class="contact-info-item">
-              <div class="contact-info-icon" aria-hidden="true">📧</div>
-              <div>
-                <div class="contact-info-label">Email</div>
-                <div class="contact-info-value">
-                  <a href="mailto:hello@openways.net">hello@openways.net</a>
-                </div>
-              </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="Tell us what you're working on or what you need..." required></textarea>
             </div>
 
-            <div class="contact-info-item">
-              <div class="contact-info-icon" aria-hidden="true">🌐</div>
-              <div>
-                <div class="contact-info-label">Website</div>
-                <div class="contact-info-value">openways.net</div>
-              </div>
-            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%; justify-content:center;">
+              Send Message
+            </button>
 
-            <div class="contact-info-item">
-              <div class="contact-info-icon" aria-hidden="true">📍</div>
-              <div>
-                <div class="contact-info-label">Location</div>
-                <div class="contact-info-value">NSW, Australia (online Australia-wide)</div>
-              </div>
-            </div>
-
-            <div class="contact-info-item">
-              <div class="contact-info-icon" aria-hidden="true">🕐</div>
-              <div>
-                <div class="contact-info-label">Business Hours</div>
-                <div class="contact-info-value">Mon–Fri, 9am–5pm AEST</div>
-              </div>
-            </div>
-
-            <!-- PLACEHOLDER: Add phone number and social links when confirmed -->
-          </div>
-
-          <div class="divider"></div>
-
-          <!-- Language note -->
-          <div style="margin-top: var(--space-6); padding: var(--space-5); background: var(--color-secondary-light); border-radius: var(--radius-lg);">
-            <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin: 0;">
-              <strong style="color: var(--color-text);">🌏 Bilingual enquiries welcome.</strong><br>
-              You may write to us in English or Chinese (简体中文 / 繁體中文).
-              We will reply in your preferred language.
+            <p style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--s3); text-align:center;">
+              Or email directly: <a href="mailto:hello@openways.net" style="color:var(--navy);">hello@openways.net</a>
             </p>
-          </div>
+          </form>
         </div>
 
+        <!-- Info -->
+        <div>
+          <h2 class="section-heading" style="font-size:var(--text-2xl); margin-bottom:var(--s6);">Common reasons to reach out</h2>
 
-        <!-- RIGHT: Contact form -->
-        <div id="contact-form">
-          <div class="form-card">
+          <div style="display:flex; flex-direction:column; gap:var(--s5);">
 
-            <h2 style="font-size: var(--text-2xl); margin-bottom: var(--space-2);">Send us a message</h2>
-            <p style="margin-bottom: var(--space-6);">Fill in the form and we'll get back to you within one business day.</p>
-
-            <!-- Form success state (shown on submit) -->
-            <div class="form-success" id="formSuccess" role="alert">
-              <div class="icon">✅</div>
-              <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-3);">Message sent!</h3>
-              <p>Thank you for reaching out. We'll be in touch within one business day.</p>
+            <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+              <div style="font-weight:700; color:var(--navy); margin-bottom:var(--s2);">Questions before purchasing</div>
+              <p style="font-size:var(--text-sm); color:var(--text-secondary);">Not sure if a pack is right for your business? Describe what you do and we'll give you an honest answer.</p>
             </div>
 
-            <!-- Contact form — Formspree (ID: mbdpwygv) -->
-            <form id="contactForm" action="https://formspree.io/f/mbdpwygv" method="POST" novalidate>
-
-              <!-- Formspree special fields -->
-              <input type="hidden" name="_subject" value="New Enquiry — OpenWays" />
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="firstName">First Name <span style="color: var(--color-error);">*</span></label>
-                  <input
-                    class="form-input"
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    placeholder="e.g. Margaret"
-                    required
-                    autocomplete="given-name"
-                  />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="lastName">Last Name</label>
-                  <input
-                    class="form-input"
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    placeholder="e.g. Chen"
-                    autocomplete="family-name"
-                  />
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="email">Email Address <span style="color: var(--color-error);">*</span></label>
-                <input
-                  class="form-input"
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="your@email.com"
-                  required
-                  autocomplete="email"
-                />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="phone">Phone Number (optional)</label>
-                <input
-                  class="form-input"
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="e.g. 0400 123 456"
-                  autocomplete="tel"
-                />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="enquiryType">What are you enquiring about? <span style="color: var(--color-error);">*</span></label>
-                <select class="form-select" id="enquiryType" name="enquiryType" required>
-                  <option value="" disabled selected>Please select…</option>
-                  <option value="general">General question</option>
-                  <option value="business-training">Business training for my company</option>
-                  <option value="team-training">Team / staff training</option>
-                  <option value="individual">Individual / personal training</option>
-                  <option value="digital-skills">Digital &amp; technology skills</option>
-                  <option value="custom">Custom program enquiry</option>
-                  <option value="pricing">Pricing &amp; availability</option>
-                  <option value="other">Something else</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="preferredLanguage">Preferred language for response</label>
-                <select class="form-select" id="preferredLanguage" name="preferredLanguage">
-                  <option value="en" selected>English</option>
-                  <option value="zh-s">Chinese — Simplified (简体中文)</option>
-                  <option value="zh-t">Chinese — Traditional (繁體中文)</option>
-                  <option value="bilingual">Bilingual (English + Chinese)</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="message">Your Message <span style="color: var(--color-error);">*</span></label>
-                <textarea
-                  class="form-textarea"
-                  id="message"
-                  name="message"
-                  placeholder="Tell us a little about your situation, what you want to learn, or any questions you have. There's no wrong answer — just say what's on your mind."
-                  required
-                ></textarea>
-              </div>
-
-              <div class="form-group" style="margin-bottom: var(--space-6);">
-                <label style="display: flex; align-items: flex-start; gap: var(--space-3); cursor: pointer;">
-                  <input
-                    type="checkbox"
-                    name="consent"
-                    id="consent"
-                    required
-                    style="margin-top: 3px; flex-shrink: 0; accent-color: var(--color-primary); width: 18px; height: 18px;"
-                  />
-                  <span style="font-size: var(--text-sm); color: var(--color-text-secondary); line-height: 1.6;">
-                    I agree to OpenWays storing my contact details to respond to this enquiry.
-                    We don't sell data or spam. See our
-                    <a href="#" style="color: var(--color-primary);">Privacy Policy</a>.
-                  </span>
-                </label>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                Send Message
-              </button>
-
-              <p style="text-align: center; margin-top: var(--space-4); font-size: var(--text-sm); color: var(--color-text-muted);">
-                We'll reply within one business day · No spam, ever
-              </p>
-
-            </form>
-          </div>
-
-          <!-- OR: Book a call -->
-          <div class="form-divider">or</div>
-
-          <div class="call-booking-card" id="book-call">
-            <div style="font-size: 40px; margin-bottom: var(--space-4);" aria-hidden="true">📅</div>
-            <h3>Book a Free 15-Minute Call</h3>
-            <p>
-              Prefer to talk? Pick a time that suits you and we'll call you.
-              No preparation needed — just show up and have a chat.
-            </p>
-
-            <!-- PLACEHOLDER: Replace with real booking widget (Calendly, Cal.com, etc.) -->
-            <div class="calendar-placeholder" role="note">
-              <div style="font-size: 36px; margin-bottom: var(--space-3);" aria-hidden="true">🗓️</div>
-              <strong>Booking calendar coming soon</strong>
-              <p>
-                PLACEHOLDER — Connect a scheduling tool here (e.g. Calendly, Cal.com, or Google Calendar booking page).
-                For now, please use the contact form above or email
-                <a href="mailto:hello@openways.net">hello@openways.net</a> to request a call.
-              </p>
+            <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+              <div style="font-weight:700; color:var(--navy); margin-bottom:var(--s2);">Implementation support</div>
+              <p style="font-size:var(--text-sm); color:var(--text-secondary);">If you'd like hands-on help applying the toolkit to your specific workflows, we offer implementation sessions.</p>
             </div>
+
+            <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+              <div style="font-weight:700; color:var(--navy); margin-bottom:var(--s2);">My industry isn't listed</div>
+              <p style="font-size:var(--text-sm); color:var(--text-secondary);">Let us know which industry you're in and we'll tell you when a pack is coming — or discuss alternatives.</p>
+            </div>
+
+            <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+              <div style="font-weight:700; color:var(--navy); margin-bottom:var(--s2);">Chinese language enquiries</div>
+              <p style="font-size:var(--text-sm); color:var(--text-secondary);">We're happy to correspond in Chinese (Mandarin). Visit <a href="zh.html" style="color:var(--navy); text-decoration:underline;">our Chinese page</a> or email us directly.</p>
+            </div>
+
+          </div>
+
+          <div style="margin-top:var(--s8); padding:var(--s6); background:var(--navy-pale); border-radius:var(--r-lg);">
+            <div style="font-size:var(--text-sm); font-weight:600; color:var(--navy); margin-bottom:var(--s2);">Response time</div>
+            <p style="font-size:var(--text-sm); color:var(--text-secondary);">We aim to reply within 1 business day. For urgent questions, email <a href="mailto:hello@openways.net" style="color:var(--navy);">hello@openways.net</a> directly.</p>
           </div>
         </div>
 
@@ -473,222 +138,56 @@
     </div>
   </section>
 
-
-  <!-- MAP / LOCATION PLACEHOLDER -->
-  <section class="section--alt" style="padding: var(--space-12) 0;">
-    <div class="container">
-      <div class="section-header" style="margin-bottom: var(--space-6);">
-        <span class="section-tag">Locations</span>
-        <h2 class="section-title">Where we work</h2>
-        <p class="section-subtitle">
-          We offer in-person training across NSW and online sessions available Australia-wide.
-        </p>
-      </div>
-
-      <!-- PLACEHOLDER: Replace with real map embed when location is confirmed -->
-      <div style="background: var(--color-surface); border: 2px dashed var(--color-border); border-radius: var(--radius-xl); padding: var(--space-16); text-align: center; color: var(--color-text-muted);" role="img" aria-label="Map placeholder — location to be confirmed">
-        <div style="font-size: 56px; margin-bottom: var(--space-4);" aria-hidden="true">🗺️</div>
-        <strong style="font-size: var(--text-lg);">Map Placeholder</strong>
-        <p style="margin-top: var(--space-2); font-size: var(--text-sm);">
-          PLACEHOLDER — Embed a Google Maps iframe here once the business address is confirmed.
-        </p>
-      </div>
-
-      <div class="grid-3" style="margin-top: var(--space-8);">
-        <div class="card" style="text-align: center;">
-          <div style="font-size: 32px; margin-bottom: var(--space-3);" aria-hidden="true">🏙️</div>
-          <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Sydney Metro</h3>
-          <p style="font-size: var(--text-sm);">In-person training available across Greater Sydney</p>
-        </div>
-        <div class="card" style="text-align: center;">
-          <div style="font-size: 32px; margin-bottom: var(--space-3);" aria-hidden="true">🌏</div>
-          <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Online (Australia-wide)</h3>
-          <p style="font-size: var(--text-sm);">Online sessions available to anyone in Australia</p>
-        </div>
-        <div class="card" style="text-align: center;">
-          <div style="font-size: 32px; margin-bottom: var(--space-3);" aria-hidden="true">🏢</div>
-          <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">At Your Location</h3>
-          <p style="font-size: var(--text-sm);">We can come to your business for team training (NSW)</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- FAQ MINI -->
-  <section class="section section--white">
-    <div class="container" style="max-width: 720px;">
-      <div class="section-header">
-        <span class="section-tag">Quick Answers</span>
-        <h2 class="section-title">Before you reach out</h2>
-      </div>
-      <div class="faq-list">
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            How quickly will you respond?
-            <span class="faq-question-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer">
-            We aim to reply to all messages within one business day (Monday to Friday, AEST).
-            For urgent enquiries, please email us directly at hello@openways.net.
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            Is the initial conversation free?
-            <span class="faq-question-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer">
-            Yes, completely. Whether you send a message or book a call, there's no charge
-            and no obligation. We just want to understand your situation and see if we can help.
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            Can I write to you in Chinese?
-            <span class="faq-question-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer">
-            Yes. You can write to us in simplified or traditional Chinese and we'll reply
-            in your preferred language. Just select your preference in the form above.
-          </div>
-        </div>
-      </div>
-      <div style="text-align: center; margin-top: var(--space-8);">
-        <a href="faq.html" class="btn btn-outline">See All FAQs</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- FOOTER -->
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
   <footer class="footer" role="contentinfo">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-inner">
         <div class="footer-brand">
-          <a href="index.html" class="nav-logo">
-            <div class="nav-logo-mark" aria-hidden="true">O</div>
-            <span class="nav-logo-text">Open<span>Ways</span></span>
-          </a>
-          <p>Practical training and learning for small businesses and adult learners. Simple, clear, and genuinely supportive.</p>
+          <div class="nav-logo-wordmark" style="margin-bottom:var(--s4);">Open<span>Ways</span></div>
+          <p class="footer-tagline">AI toolkits for modern small businesses. Practical, industry-specific, ready to use within 7 days.</p>
+          <a href="mailto:hello@openways.net" class="footer-link" style="margin-top:var(--s4); display:inline-block;">hello@openways.net</a>
         </div>
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <ul role="list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="who-we-help.html">Who We Help</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <div>
+          <div class="footer-heading">Products</div>
+          <div class="footer-links">
+            <a href="packs.html" class="footer-link">All Packs</a>
+            <a href="pack-beauty.html" class="footer-link">Beauty AI Pack</a>
+            <a href="updates.html" class="footer-link">Update Pass</a>
+          </div>
         </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul role="list">
-            <li><a href="services.html">Business Operations</a></li>
-            <li><a href="services.html">Digital &amp; Technology</a></li>
-            <li><a href="services.html">Communication Skills</a></li>
-            <li><a href="services.html">Custom Team Training</a></li>
-          </ul>
+        <div>
+          <div class="footer-heading">Company</div>
+          <div class="footer-links">
+            <a href="about.html"   class="footer-link">About</a>
+            <a href="faq.html"     class="footer-link">FAQ</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="zh.html"      class="footer-link">中文版</a>
+          </div>
         </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul role="list">
-            <li><a href="mailto:hello@openways.net">hello@openways.net</a></li>
-            <li><a href="contact.html">Book a Free Call</a></li>
-            <li><a href="contact.html">Send Us a Message</a></li>
-          </ul>
+        <div>
+          <div class="footer-heading">Legal</div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Terms of Use</a>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p data-i18n="footer_copyright">© 2026 OpenWays. 版权所有。</p>
-        <div class="footer-lang-switch" role="group" aria-label="Language selector">
-          <button class="footer-lang-btn active" data-lang-btn="zh-s">简体</button>
-          <button class="footer-lang-btn" data-lang-btn="zh-t">繁體</button>
-          <button class="footer-lang-btn" data-lang-btn="en">EN</button>
-        </div>
-        <p>
-          <a href="#" style="color: rgba(255,255,255,0.4); font-size: var(--text-sm);" data-i18n="footer_privacy">隐私政策</a>
-          &nbsp;·&nbsp;
-          <a href="#" style="color: rgba(255,255,255,0.4); font-size: var(--text-sm);" data-i18n="footer_terms">使用条款</a>
-        </p>
+        <span class="footer-copy">© 2024 OpenWays. All rights reserved.</span>
+        <div class="footer-legal"><a href="#">Terms</a><a href="#">Refund Policy</a></div>
       </div>
     </div>
   </footer>
 
-  <script src="i18n.js"></script>
   <script>
-    // Nav toggle
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
     const toggle = document.getElementById('navToggle');
-    const mobileMenu = document.getElementById('navMobile');
+    const mobile = document.getElementById('navMobile');
     toggle.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
-    });
-
-    // FAQ accordion
-    document.querySelectorAll('.faq-question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.closest('.faq-item');
-        const isOpen = item.classList.toggle('is-open');
-        btn.setAttribute('aria-expanded', isOpen);
-      });
-    });
-
-    // Form submit — Formspree integration
-    // Sends data to Formspree via fetch (AJAX), shows success state without page reload.
-    const form = document.getElementById('contactForm');
-    const successMsg = document.getElementById('formSuccess');
-    const submitBtn = form.querySelector('[type="submit"]');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      if (!form.checkValidity()) {
-        form.reportValidity();
-        return;
-      }
-
-      // Show loading state
-      submitBtn.disabled = true;
-      submitBtn.textContent = '发送中…';
-
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
-        });
-
-        if (response.ok) {
-          // Success
-          form.style.display = 'none';
-          successMsg.style.display = 'block';
-          successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else {
-          // Formspree returned an error
-          const data = await response.json();
-          const msg = data.errors ? data.errors.map(e => e.message).join(', ') : '发送失败，请稍后再试或直接发邮件至 hello@openways.net';
-          alert(msg);
-          submitBtn.disabled = false;
-          submitBtn.textContent = '发送留言';
-        }
-      } catch (err) {
-        alert('网络错误，请检查连接后重试，或直接发邮件至 hello@openways.net');
-        submitBtn.disabled = false;
-        submitBtn.textContent = '发送留言';
-      }
+      const open = mobile.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
     });
   </script>
-
 </body>
 </html>
