@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>联系我们 — OpenWays</title>
+  <meta name="description" content="有关 AI 工具包的问题、落地实施支持或定制需求，欢迎用中文联系我们，1 个工作日内回复。" />
+  <link rel="canonical" href="https://openways.net/zh-contact.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── 导航 ─────────────────────────────────────────── -->
+  <nav class="nav" id="nav" role="navigation" aria-label="主导航">
+    <div class="container nav-inner">
+      <a href="zh.html" class="nav-logo" aria-label="OpenWays 首页">
+        <img src="logo.png" alt="OpenWays" class="nav-logo-img">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="zh-packs.html"   class="nav-link">产品包</a></li>
+        <li><a href="zh-faq.html"     class="nav-link">常见问题</a></li>
+        <li><a href="zh-about.html"   class="nav-link">关于我们</a></li>
+        <li><a href="zh-contact.html" class="nav-link active">联系我们</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="contact.html" class="nav-lang" title="English">EN</a>
+        <a href="zh-packs.html" class="btn btn-primary btn-sm">查看产品包</a>
+      </div>
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="zh-packs.html"   class="nav-link">产品包</a>
+      <a href="zh-faq.html"     class="nav-link">常见问题</a>
+      <a href="zh-about.html"   class="nav-link">关于我们</a>
+      <a href="zh-contact.html" class="nav-link">联系我们</a>
+      <a href="contact.html"    class="nav-link">English</a>
+      <a href="zh-packs.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">查看产品包</a>
+    </div>
+  </nav>
+
+  <!-- ── 页面标题 ──────────────────────────────────────── -->
+  <section class="inner-hero">
+    <div class="container">
+      <span class="eyebrow">联系我们</span>
+      <h1>有问题？欢迎联系</h1>
+      <p>关于产品包的疑问、落地实施支持或定制需求——欢迎用中文或英文联系，1 个工作日内回复。</p>
+    </div>
+  </section>
+
+  <!-- ── 联系内容 ────────────────────────────────────────── -->
+  <section class="section" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- 表单 -->
+        <div>
+          <h2 class="section-heading" id="contact-heading" style="font-size:var(--text-2xl); margin-bottom:var(--s6);">发送消息给我们</h2>
+
+          <form action="mailto:hi@openways.net" method="POST" enctype="text/plain" aria-label="联系表单">
+
+            <div class="form-group">
+              <label class="form-label" for="name">姓名</label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="你的姓名" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">邮箱</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="subject">咨询类型</label>
+              <select class="form-select" id="subject" name="subject">
+                <option value="">选择一个类型</option>
+                <option value="pre-purchase">购买前咨询</option>
+                <option value="implementation">落地实施支持</option>
+                <option value="custom">定制或业务合作</option>
+                <option value="notify">通知我新产品包上线</option>
+                <option value="other">其他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">消息内容</label>
+              <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="告诉我们你的业务情况或需求……" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%; justify-content:center;">
+              发送消息
+            </button>
+
+            <p style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--s3); text-align:center;">
+              也可直接发邮件至 <a href="mailto:hi@openways.net" style="color:var(--navy);">hi@openways.net</a>
+            </p>
+          </form>
+        </div>
+
+        <!-- 信息 -->
+        <div>
+          <h2 class="section-heading" style="font-size:var(--text-2xl); margin-bottom:var(--s6);">常见联系原因</h2>
+
+          <div style="display:flex; flex-direction:column; gap:var(--s5);">
+
+            <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+              <div style="font-weight:700; color:var(--navy); margin-bottom:var(--s2);">购买前有疑问</div>
+              <p style="font-size:var(--text-sm); color:var(--text-secondary);">不确定哪个工具包适合你的业务？告诉我们你做什么，我们给你一个真诚的建议。</p>
+            </div>
+
+            <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+              <div style="font-weight:700; color:var(--navy); margin-bottom:var(--s2);">落地实施支持</div>
+              <p style="font-size:var(--text-sm); color:var(--text-secondary);">如果你希望有人帮你把工具包落地到具体工作流程，我们提供一对一实施辅导服务。</p>
+            </div>
+
+            <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+              <div style="font-weight:700; color:var(--navy); margin-bottom:var(--s2);">我的行业不在列表里</div>
+              <p style="font-size:var(--text-sm); color:var(--text-secondary);">告诉我们你所在的行业，我们会在对应工具包上线时通知你——或者讨论其他替代方案。</p>
+            </div>
+
+            <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+              <div style="font-weight:700; color:var(--navy); margin-bottom:var(--s2);">中文咨询</div>
+              <p style="font-size:var(--text-sm); color:var(--text-secondary);">我们很乐意用中文沟通（普通话）。直接发邮件，或通过下方表单提交即可。</p>
+            </div>
+
+          </div>
+
+          <div style="margin-top:var(--s8); padding:var(--s6); background:var(--navy-pale); border-radius:var(--r-lg);">
+            <div style="font-size:var(--text-sm); font-weight:600; color:var(--navy); margin-bottom:var(--s2);">回复时间</div>
+            <p style="font-size:var(--text-sm); color:var(--text-secondary);">我们通常在 1 个工作日内回复。紧急问题可直接发邮件至 <a href="mailto:hi@openways.net" style="color:var(--navy);">hi@openways.net</a>。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 页脚 ─────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="logo-white.svg" alt="OpenWays" class="footer-logo-img" style="margin-bottom:var(--s4);">
+          <p class="footer-tagline">专为中小企业打造的 AI 工具包。实用、行业专属，7 天内上手。</p>
+          <a href="mailto:hi@openways.net" class="footer-link" style="margin-top:var(--s4); display:inline-block;">hi@openways.net</a>
+        </div>
+        <div>
+          <div class="footer-heading">产品</div>
+          <div class="footer-links">
+            <a href="zh-packs.html"    class="footer-link">全部产品包</a>
+            <a href="pack-beauty.html" class="footer-link">美业 AI 工具包</a>
+            <a href="updates.html"     class="footer-link">更新订阅</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">关于</div>
+          <div class="footer-links">
+            <a href="zh-about.html"   class="footer-link">关于我们</a>
+            <a href="zh-faq.html"     class="footer-link">常见问题</a>
+            <a href="zh-contact.html" class="footer-link">联系我们</a>
+            <a href="index.html"      class="footer-link">English</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">法律</div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">使用条款</a>
+            <a href="#" class="footer-link">退款政策</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2024 OpenWays. 保留所有权利。</span>
+        <div class="footer-legal"><a href="#">条款</a><a href="#">退款政策</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+    const toggle = document.getElementById('navToggle');
+    const mobile = document.getElementById('navMobile');
+    toggle.addEventListener('click', () => {
+      const open = mobile.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  </script>
+</body>
+</html>
