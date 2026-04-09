@@ -26,7 +26,7 @@
       </ul>
       <div class="nav-right">
         <a href="zh.html" class="nav-lang">中文</a>
-        <a href="packs.html" class="btn btn-primary btn-sm">Explore Packs</a>
+        <a href="#purchase" class="btn btn-primary btn-sm">Buy — $49</a>
       </div>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
         <span></span><span></span><span></span>
@@ -39,7 +39,7 @@
       <a href="about.html"   class="nav-link">About</a>
       <a href="contact.html" class="nav-link">Contact</a>
       <a href="zh.html"      class="nav-link">中文</a>
-      <a href="packs.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">Explore Packs</a>
+      <a href="#purchase" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">Buy — $49</a>
     </div>
   </nav>
 
@@ -61,9 +61,9 @@
         <span class="tag" style="margin-bottom:var(--s5);">💅 Beauty &amp; Wellness</span>
 
         <h1 class="product-title">Beauty AI Pack</h1>
-        <p class="product-sub">A practical 7-day AI toolkit for beauty business owners — covering content, client communication, daily admin and workflow automation.</p>
+        <p class="product-sub">A complete 7-day AI system for beauty business owners — covering content creation, client communication, daily admin and repeatable workflows. Start using AI in your business this afternoon.</p>
 
-        <div style="display:flex; gap:var(--s3); flex-wrap:wrap; margin-bottom:var(--s6);">
+        <div style="display:flex; gap:var(--s3); flex-wrap:wrap; margin-bottom:var(--s5);">
           <span class="tag">Salons</span>
           <span class="tag">Lash Studios</span>
           <span class="tag">Beauty Therapists</span>
@@ -71,11 +71,21 @@
           <span class="tag">Independent Artists</span>
         </div>
 
-        <p class="product-for"><strong>Who this is for:</strong> Beauty business owners who want to use AI to save time on content, respond to clients faster, and reduce repetitive admin — without needing any technical background.</p>
+        <p class="product-for"><strong>Best for:</strong> Solo operators and small beauty businesses who want to save time on content, respond to clients faster, and reduce repetitive admin — without any technical background or prior AI experience.</p>
+
+        <p style="font-size:var(--text-sm); color:var(--text-muted); margin-top:var(--s3);">
+          <strong>Not ideal for:</strong> Multi-location chains, complex enterprise CRMs, or businesses needing fully custom automation development.
+        </p>
+
+        <!-- Tool info -->
+        <div style="margin-top:var(--s5); padding:var(--s4); background:rgba(255,255,255,0.08); border-radius:var(--r-md); border:1px solid rgba(255,255,255,0.12);">
+          <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.6); margin-bottom:var(--s2); font-weight:600; text-transform:uppercase; letter-spacing:0.05em;">What tools you'll use</div>
+          <p style="font-size:var(--text-sm); color:rgba(255,255,255,0.75); margin:0; line-height:1.6;">Primarily ChatGPT and Claude — both have free tiers that are enough to get started. No software to install. No paid subscriptions required.</p>
+        </div>
       </div>
 
       <!-- Purchase Card -->
-      <div class="purchase-card" role="complementary" aria-label="Purchase details">
+      <div class="purchase-card" id="purchase" role="complementary" aria-label="Purchase details">
         <div class="purchase-price">$49</div>
         <div class="purchase-price-note">One-time purchase · Instant digital delivery</div>
 
@@ -83,16 +93,16 @@
           <div class="purchase-includes-title">What's included</div>
           <div class="purchase-item">Quick Start Guide</div>
           <div class="purchase-item">Tool Stack</div>
-          <div class="purchase-item">Prompt Library</div>
+          <div class="purchase-item">Prompt Library (40+ prompts)</div>
           <div class="purchase-item">SOP Workflows</div>
           <div class="purchase-item">7-Day Action Plan</div>
           <div class="purchase-item">Bonus Guide</div>
         </div>
 
-        <a href="#" class="btn btn-primary btn-lg purchase-cta" target="_blank" rel="noopener">
-          Buy on Gumroad
+        <a href="https://gumroad.com" class="btn btn-primary btn-lg purchase-cta" target="_blank" rel="noopener">
+          Buy on Gumroad — $49
         </a>
-        <p class="purchase-note">Delivered instantly. Download and use forever.<br>Questions? <a href="contact.html" style="color:var(--navy); text-decoration:underline;">Contact us</a></p>
+        <p class="purchase-note">Delivered instantly. Download and use forever.<br>Questions? <a href="contact.html" style="color:var(--navy); text-decoration:underline;">Contact us before buying</a></p>
 
         <!-- Update pass add-on -->
         <div style="margin-top:var(--s6); padding-top:var(--s6); border-top:1px solid var(--border-light);">
@@ -100,7 +110,7 @@
           <div style="display:flex; align-items:center; justify-content:space-between; margin-top:var(--s3);">
             <div>
               <div style="font-size:var(--text-sm); font-weight:600; color:var(--text);">Annual Update Pass</div>
-              <div style="font-size:var(--text-xs); color:var(--text-muted);">Keep your toolkit current</div>
+              <div style="font-size:var(--text-xs); color:var(--text-muted);">Keep your toolkit current as AI evolves</div>
             </div>
             <div style="font-size:var(--text-base); font-weight:700; color:var(--navy);">+$19/yr</div>
           </div>
@@ -112,96 +122,190 @@
   </section>
 
 
+  <!-- ── SPECIFIC TASKS THIS PACK COVERS ───────────────────── -->
+  <section class="section" aria-labelledby="tasks-heading">
+    <div class="container" style="max-width:860px; margin:0 auto;">
+      <div class="section-header section-header--center">
+        <span class="eyebrow">What You Can Do</span>
+        <h2 class="section-heading" id="tasks-heading">The exact tasks this pack covers</h2>
+        <p class="section-sub">These aren't generic AI use cases. They're the specific tasks beauty business owners do every week.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--s4);">
+        <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+          <div style="font-weight:700; font-size:var(--text-sm); color:var(--navy); margin-bottom:var(--s3);">Client communication</div>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 0 var(--s4); padding:0; line-height:1.9;">
+            <li>New client enquiry replies</li>
+            <li>Booking confirmation and reschedule messages</li>
+            <li>Aftercare instructions and follow-up texts</li>
+            <li>Google review responses</li>
+          </ul>
+        </div>
+        <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+          <div style="font-weight:700; font-size:var(--text-sm); color:var(--navy); margin-bottom:var(--s3);">Social media &amp; content</div>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 0 var(--s4); padding:0; line-height:1.9;">
+            <li>Instagram captions and Reels hooks</li>
+            <li>Seasonal promotions and event posts</li>
+            <li>Before/after post descriptions</li>
+            <li>Content calendar planning</li>
+          </ul>
+        </div>
+        <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+          <div style="font-weight:700; font-size:var(--text-sm); color:var(--navy); margin-bottom:var(--s3);">Business copy</div>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 0 var(--s4); padding:0; line-height:1.9;">
+            <li>Service menu descriptions</li>
+            <li>Holiday and birthday offer copy</li>
+            <li>Client FAQ documents</li>
+            <li>Cancellation policy wording</li>
+          </ul>
+        </div>
+        <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+          <div style="font-weight:700; font-size:var(--text-sm); color:var(--navy); margin-bottom:var(--s3);">Operational workflows</div>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 0 var(--s4); padding:0; line-height:1.9;">
+            <li>Standardise how you reply to common messages</li>
+            <li>Build a repeatable content creation system</li>
+            <li>Create consistent client onboarding copy</li>
+            <li>Automate repetitive admin text tasks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- ── PRODUCT BODY ────────────────────────────────────────── -->
-  <section class="section">
+  <section class="section section--off">
     <div class="container product-body">
 
-      <!-- Left: Content -->
       <div class="product-content-area">
 
-        <!-- What this helps you do -->
+        <!-- What's included with value statements -->
         <div class="product-section">
-          <h2 class="product-section-title">What this pack helps you do</h2>
-          <div class="product-outcomes">
-            <div class="product-outcome">
-              <div class="product-outcome-dot"></div>
-              Create social media content and promotional posts in a fraction of the time
-            </div>
-            <div class="product-outcome">
-              <div class="product-outcome-dot"></div>
-              Reply to client enquiries, booking messages and reviews faster and more professionally
-            </div>
-            <div class="product-outcome">
-              <div class="product-outcome-dot"></div>
-              Reduce time spent on repetitive admin tasks like writing service descriptions and policies
-            </div>
-            <div class="product-outcome">
-              <div class="product-outcome-dot"></div>
-              Build simple, repeatable AI workflows into your existing business operations
-            </div>
-            <div class="product-outcome">
-              <div class="product-outcome-dot"></div>
-              Start using AI confidently without needing any technical knowledge or training
-            </div>
-          </div>
-        </div>
-
-        <!-- What's included -->
-        <div class="product-section">
-          <h2 class="product-section-title">What's included</h2>
+          <h2 class="product-section-title">What's included — and why it matters</h2>
           <div class="included-grid">
 
             <div class="included-item">
               <div class="included-num">01</div>
               <div class="included-name">Quick Start Guide</div>
-              <p class="included-desc">A step-by-step setup walkthrough written specifically for beauty businesses. Get your core AI tools set up and ready in an afternoon.</p>
+              <p class="included-desc">Step-by-step setup written specifically for beauty businesses. Get your core AI tools set up and running in an afternoon.</p>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:var(--s2);">→ You don't need to figure out where to start</p>
             </div>
 
             <div class="included-item">
               <div class="included-num">02</div>
               <div class="included-name">Tool Stack</div>
-              <p class="included-desc">A curated list of the best AI tools for beauty businesses — what each one does, which to prioritise, and how to access them without overpaying.</p>
+              <p class="included-desc">A curated list of the best AI tools for beauty businesses — what each does, which to prioritise, which free tier is enough.</p>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:var(--s2);">→ Avoid buying subscriptions you don't need</p>
             </div>
 
             <div class="included-item">
               <div class="included-num">03</div>
               <div class="included-name">Prompt Library</div>
               <p class="included-desc">40+ ready-to-use prompts for Instagram captions, booking replies, client FAQs, service descriptions, Google review responses and more.</p>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:var(--s2);">→ No more starting from a blank prompt box</p>
             </div>
 
             <div class="included-item">
               <div class="included-num">04</div>
               <div class="included-name">SOP Workflows</div>
               <p class="included-desc">Standard operating procedures for recurring AI tasks — so you build repeatable systems instead of starting from scratch every time.</p>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:var(--s2);">→ Turn your best output into your standard output</p>
             </div>
 
             <div class="included-item">
               <div class="included-num">05</div>
               <div class="included-name">7-Day Action Plan</div>
-              <p class="included-desc">A day-by-day plan so you're never staring at blank tools wondering what to do. By day 7, AI is a functioning part of your business.</p>
+              <p class="included-desc">A day-by-day plan so you always know what to do next. By day 7, AI is a functioning part of your daily business.</p>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:var(--s2);">→ Removes all execution friction from the first week</p>
             </div>
 
             <div class="included-item">
               <div class="included-num">06</div>
               <div class="included-name">Bonus Guide</div>
               <p class="included-desc">Advanced prompt templates, content calendar framework, AI automation ideas and a one-person-business efficiency checklist.</p>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:var(--s2);">→ Room to grow when you're ready</p>
             </div>
 
           </div>
         </div>
 
-        <!-- Preview -->
+
+        <!-- Why beauty businesses buy this -->
         <div class="product-section">
-          <h2 class="product-section-title">Preview</h2>
-          <p style="font-size:var(--text-sm); color:var(--text-secondary); margin-bottom:var(--s5);">A glimpse inside the pack. Full content is delivered after purchase.</p>
-          <div class="preview-strip">
-            <div class="preview-thumb">Quick Start<br>Guide Cover</div>
-            <div class="preview-thumb">Tool Stack<br>Overview</div>
-            <div class="preview-thumb">Prompt Library<br>Sample Page</div>
-            <div class="preview-thumb">7-Day Plan<br>Structure</div>
-            <div class="preview-thumb">SOP<br>Workflow Sample</div>
+          <h2 class="product-section-title">Why beauty businesses buy this pack</h2>
+          <div style="display:flex; flex-direction:column; gap:var(--s4);">
+            <div style="display:flex; gap:var(--s3); align-items:flex-start; padding:var(--s4); background:var(--bg-off); border-radius:var(--r-md);">
+              <span style="color:var(--mint); font-weight:700; font-size:var(--text-lg); flex-shrink:0;">✓</span>
+              <div>
+                <div style="font-weight:600; font-size:var(--text-sm); color:var(--navy);">No blank page</div>
+                <div style="font-size:var(--text-sm); color:var(--text-secondary);">40+ prompts already written for your specific tasks — you copy, adapt and run.</div>
+              </div>
+            </div>
+            <div style="display:flex; gap:var(--s3); align-items:flex-start; padding:var(--s4); background:var(--bg-off); border-radius:var(--r-md);">
+              <span style="color:var(--mint); font-weight:700; font-size:var(--text-lg); flex-shrink:0;">✓</span>
+              <div>
+                <div style="font-weight:600; font-size:var(--text-sm); color:var(--navy);">No tech learning curve</div>
+                <div style="font-size:var(--text-sm); color:var(--text-secondary);">The Quick Start Guide starts from zero. If you've never used AI before, this walks you through everything.</div>
+              </div>
+            </div>
+            <div style="display:flex; gap:var(--s3); align-items:flex-start; padding:var(--s4); background:var(--bg-off); border-radius:var(--r-md);">
+              <span style="color:var(--mint); font-weight:700; font-size:var(--text-lg); flex-shrink:0;">✓</span>
+              <div>
+                <div style="font-weight:600; font-size:var(--text-sm); color:var(--navy);">No generic prompts</div>
+                <div style="font-size:var(--text-sm); color:var(--text-secondary);">Every prompt is written for beauty industry tasks — not adapted from generic business advice that doesn't quite fit.</div>
+              </div>
+            </div>
+            <div style="display:flex; gap:var(--s3); align-items:flex-start; padding:var(--s4); background:var(--bg-off); border-radius:var(--r-md);">
+              <span style="color:var(--mint); font-weight:700; font-size:var(--text-lg); flex-shrink:0;">✓</span>
+              <div>
+                <div style="font-weight:600; font-size:var(--text-sm); color:var(--navy);">No wasted subscriptions</div>
+                <div style="font-size:var(--text-sm); color:var(--text-secondary);">The Tool Stack tells you exactly which free tiers are enough — so you're not paying for tools you don't use.</div>
+              </div>
+            </div>
+            <div style="display:flex; gap:var(--s3); align-items:flex-start; padding:var(--s4); background:var(--bg-off); border-radius:var(--r-md);">
+              <span style="color:var(--mint); font-weight:700; font-size:var(--text-lg); flex-shrink:0;">✓</span>
+              <div>
+                <div style="font-weight:600; font-size:var(--text-sm); color:var(--navy);">Start in one afternoon</div>
+                <div style="font-size:var(--text-sm); color:var(--text-secondary);">The 7-Day Action Plan and Quick Start Guide are designed to get you running the same day you purchase.</div>
+              </div>
+            </div>
           </div>
         </div>
+
+
+        <!-- Preview -->
+        <div class="product-section">
+          <h2 class="product-section-title">A look inside the pack</h2>
+          <p style="font-size:var(--text-sm); color:var(--text-secondary); margin-bottom:var(--s5);">Here's what you'll open after purchasing. Each file is structured, specific and immediately usable — not a template dump.</p>
+          <div class="preview-strip">
+            <div class="preview-thumb" style="text-align:center; padding:var(--s5);">
+              <div style="font-size:1.5rem; margin-bottom:var(--s2);">📋</div>
+              <div style="font-weight:600; font-size:var(--text-xs);">Quick Start Guide</div>
+              <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:4px;">Step-by-step tool setup<br>for beauty businesses</div>
+            </div>
+            <div class="preview-thumb" style="text-align:center; padding:var(--s5);">
+              <div style="font-size:1.5rem; margin-bottom:var(--s2);">🔧</div>
+              <div style="font-weight:600; font-size:var(--text-xs);">Tool Stack</div>
+              <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:4px;">ChatGPT, Claude<br>+ which plans you need</div>
+            </div>
+            <div class="preview-thumb" style="text-align:center; padding:var(--s5);">
+              <div style="font-size:1.5rem; margin-bottom:var(--s2);">💬</div>
+              <div style="font-weight:600; font-size:var(--text-xs);">Prompt Library</div>
+              <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:4px;">40+ industry prompts<br>ready to copy &amp; run</div>
+            </div>
+            <div class="preview-thumb" style="text-align:center; padding:var(--s5);">
+              <div style="font-size:1.5rem; margin-bottom:var(--s2);">📅</div>
+              <div style="font-weight:600; font-size:var(--text-xs);">7-Day Action Plan</div>
+              <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:4px;">Day-by-day plan<br>Day 7: AI is live</div>
+            </div>
+            <div class="preview-thumb" style="text-align:center; padding:var(--s5);">
+              <div style="font-size:1.5rem; margin-bottom:var(--s2);">🔁</div>
+              <div style="font-weight:600; font-size:var(--text-xs);">SOP Workflows</div>
+              <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:4px;">Repeatable systems<br>for recurring tasks</div>
+            </div>
+          </div>
+        </div>
+
 
         <!-- Product FAQ -->
         <div class="product-section">
@@ -224,7 +328,7 @@
                 <span class="faq-icon" aria-hidden="true">+</span>
               </button>
               <div class="faq-answer">
-                The Tool Stack focuses on widely available tools — primarily ChatGPT and Claude, plus a few industry-specific options. Most have free tiers. The pack tells you exactly which plan you need (and when a free account is enough).
+                Primarily ChatGPT and Claude. Both have free tiers that are enough to start. The Tool Stack inside the pack tells you exactly which plan you need (and confirms when a free account is sufficient). No software installation required.
               </div>
             </div>
 
@@ -234,7 +338,7 @@
                 <span class="faq-icon" aria-hidden="true">+</span>
               </button>
               <div class="faq-answer">
-                Yes. The Prompt Library and SOP Workflows are valuable even if you're already familiar with AI basics. They give you structured, industry-specific systems rather than ad hoc usage.
+                Yes. The Prompt Library and SOP Workflows are valuable even if you're already familiar with AI basics. They replace ad hoc usage with structured, industry-specific systems that produce consistent results every time.
               </div>
             </div>
 
@@ -244,7 +348,17 @@
                 <span class="faq-icon" aria-hidden="true">+</span>
               </button>
               <div class="faq-answer">
-                All files are delivered digitally via Gumroad. After purchase you'll receive an email with a download link. Files are PDF and/or editable formats depending on the resource.
+                All files are delivered digitally via Gumroad. After purchase you'll receive an email with an instant download link. Files are PDF and editable formats. You own them permanently.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Not sure if this is right for your business?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                Contact us before buying. Tell us your business type and what you want to use AI for — we'll tell you honestly whether this pack is a good fit, or whether something else would serve you better. We'd rather you not buy than buy the wrong thing.
               </div>
             </div>
 
@@ -253,25 +367,29 @@
 
       </div>
 
-      <!-- Right: Sticky sidebar (repeats purchase on scroll) -->
-      <div class="product-sidebar" style="display:none;" aria-hidden="true">
-        <!-- Hidden on mobile; purchase card above serves this purpose -->
-      </div>
-
     </div>
   </section>
 
 
-  <!-- ── CTA STRIP ──────────────────────────────────────────── -->
+  <!-- ── FINAL PURCHASE BLOCK ───────────────────────────────── -->
   <section class="section section--navy" aria-labelledby="cta-heading">
     <div class="container" style="text-align:center;">
       <span class="eyebrow eyebrow--light">Ready to start?</span>
       <h2 class="section-heading" id="cta-heading" style="color:var(--white); margin:var(--s4) 0;">Get the Beauty AI Pack</h2>
-      <p class="section-sub" style="color:rgba(255,255,255,0.65); margin:0 auto var(--s8);">One-time purchase. Instant delivery. Use it in your business this week.</p>
+
+      <div style="display:inline-flex; flex-direction:column; gap:var(--s2); margin:0 auto var(--s8); background:rgba(255,255,255,0.08); border-radius:var(--r-lg); padding:var(--s6) var(--s10); border:1px solid rgba(255,255,255,0.12);">
+        <div style="font-size:var(--text-4xl); font-weight:800; color:var(--white);">$49</div>
+        <div style="font-size:var(--text-sm); color:rgba(255,255,255,0.6);">One-time purchase · Instant download</div>
+        <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:var(--s2);">6 structured resources · Use immediately · Download forever</div>
+      </div>
+
       <div style="display:flex; gap:var(--s4); justify-content:center; flex-wrap:wrap;">
-        <a href="#" class="btn btn-mint btn-lg" target="_blank" rel="noopener">Buy on Gumroad — $49</a>
+        <a href="https://gumroad.com" class="btn btn-mint btn-lg" target="_blank" rel="noopener">Buy on Gumroad — $49</a>
         <a href="packs.html" class="btn btn-outline-light btn-lg">View All Packs</a>
       </div>
+      <p style="font-size:var(--text-xs); color:rgba(255,255,255,0.4); margin-top:var(--s6);">
+        Not sure this is right for you? <a href="contact.html" style="color:rgba(255,255,255,0.6); text-decoration:underline;">Contact us before buying</a> — we'll give you a straight answer.
+      </p>
     </div>
   </section>
 
@@ -311,7 +429,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span class="footer-copy">© 2024 OpenWays. All rights reserved.</span>
+        <span class="footer-copy">© 2025 OpenWays. All rights reserved.</span>
         <div class="footer-legal">
           <a href="#">Terms</a>
           <a href="#">Refund Policy</a>
