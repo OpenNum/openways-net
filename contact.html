@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G6XV2WSYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5G6XV2WSYW");
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — OpenWays</title>
   <meta name="description" content="Get in touch with OpenWays. Questions about AI toolkits, implementation support, or custom requests — we reply within 1 business day." />
   <link rel="canonical" href="https://openways.net/contact.html" />
+  <link rel="alternate" hreflang="en" href="https://openways.net/contact.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-contact.html" />
+  <meta property="og:title" content="Contact — OpenWays" />
+  <meta property="og:description" content="Get in touch with OpenWays. Questions about AI toolkits, implementation support, or custom requests — we reply within 1 business day." />
+  <meta property="og:url" content="https://openways.net/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Contact — OpenWays" />
+  <meta name="twitter:description" content="Get in touch with OpenWays. Questions about AI toolkits, implementation support, or custom requests — we reply within 1 business day." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,18 +32,19 @@
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="container nav-inner">
       <a href="index.html" class="nav-logo" aria-label="OpenWays home">
-        <img src="logo.svg" alt="OpenWays" class="nav-logo-img">
+        <img src="logo_mark_dark.png" alt="" style="height:26px;width:auto;display:block;flex-shrink:0;">
+        <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.03em;line-height:1;"><span style="color:#0F1034">Open</span><span style="color:#5AA88A">Ways</span></span>
       </a>
       <ul class="nav-links" role="list">
         <li><a href="packs.html"   class="nav-link">Packs</a></li>
-        <li><a href="updates.html" class="nav-link">Updates</a></li>
+        <li><a href="book.html"    class="nav-link">Free Guide</a></li>
         <li><a href="faq.html"     class="nav-link">FAQ</a></li>
         <li><a href="about.html"   class="nav-link">About</a></li>
         <li><a href="contact.html" class="nav-link active">Contact</a></li>
       </ul>
       <div class="nav-right">
         <a href="zh.html" class="nav-lang">中文</a>
-        <a href="packs.html" class="btn btn-primary btn-sm">Explore Packs</a>
+        <a href="packs.html" class="btn btn-primary btn-sm">Browse Packs</a>
       </div>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
         <span></span><span></span><span></span>
@@ -34,12 +52,12 @@
     </div>
     <div class="nav-mobile" id="navMobile">
       <a href="packs.html"   class="nav-link">Packs</a>
-      <a href="updates.html" class="nav-link">Updates</a>
+      <a href="book.html"    class="nav-link">Free Guide</a>
       <a href="faq.html"     class="nav-link">FAQ</a>
       <a href="about.html"   class="nav-link">About</a>
       <a href="contact.html" class="nav-link">Contact</a>
       <a href="zh.html"      class="nav-link">中文</a>
-      <a href="packs.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">Explore Packs</a>
+      <a href="packs.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">Browse Packs</a>
     </div>
   </nav>
 
@@ -88,7 +106,7 @@
         <div>
           <h2 class="section-heading" id="contact-heading" style="font-size:var(--text-2xl); margin-bottom:var(--s6);">Send us a message</h2>
 
-          <form action="mailto:hi@openways.net" method="POST" enctype="text/plain" aria-label="Contact form">
+          <form action="https://formspree.io/f/mbdpwygv" method="POST" aria-label="Contact form">
 
             <div class="form-group">
               <label class="form-label" for="name">Name</label>
@@ -101,14 +119,49 @@
             </div>
 
             <div class="form-group">
+              <label class="form-label" for="business-type">Business type</label>
+              <select class="form-select" id="business-type" name="business-type">
+                <option value="">What kind of business do you run?</option>
+                <option value="beauty">Beauty / Salon / Lash / Nails</option>
+                <option value="restaurant">Restaurant / Cafe / Food</option>
+                <option value="realestate">Real Estate / Property</option>
+                <option value="accounting">Accounting / Tax / Bookkeeping</option>
+                <option value="tcm">TCM / Health / Wellness</option>
+                <option value="education">Education / Tutoring / Training</option>
+                <option value="renovation">Renovation / Building / Trades</option>
+                <option value="solar">Solar / Energy</option>
+                <option value="cleaning">Cleaning / Domestic Services</option>
+                <option value="other-industry">Other industry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
               <label class="form-label" for="subject">What's this about?</label>
               <select class="form-select" id="subject" name="subject">
                 <option value="">Select a topic</option>
                 <option value="pre-purchase">Question before purchasing</option>
+                <option value="which-pack">Not sure which pack to get</option>
                 <option value="implementation">Implementation support</option>
                 <option value="custom">Custom or business request</option>
                 <option value="notify">Notify me about a new pack</option>
                 <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="considering-pack">Which pack are you considering?</label>
+              <select class="form-select" id="considering-pack" name="considering-pack">
+                <option value="">Select a pack (optional)</option>
+                <option value="beauty">Beauty AI Pack</option>
+                <option value="restaurant">Restaurant AI Pack</option>
+                <option value="realestate">Real Estate AI Pack</option>
+                <option value="accounting">Accounting &amp; Tax AI Pack</option>
+                <option value="tcm">TCM Clinic AI Pack</option>
+                <option value="education">Education AI Pack</option>
+                <option value="renovation">Renovation AI Pack</option>
+                <option value="solar">Solar AI Pack</option>
+                <option value="cleaning">Cleaning AI Pack</option>
+                <option value="not-sure">Not sure yet</option>
               </select>
             </div>
 
@@ -122,6 +175,7 @@
             </button>
 
             <p style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--s3); text-align:center;">
+              We reply within 1 business day &middot; English / 中文 available<br>
               Or email directly: <a href="mailto:hi@openways.net" style="color:var(--navy);">hi@openways.net</a>
             </p>
           </form>
@@ -170,7 +224,8 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <img src="logo-white.svg" alt="OpenWays" class="footer-logo-img" style="margin-bottom:var(--s4);">
+          <div style="display:flex;align-items:center;gap:0.4em;"><img src="logo_mark_green.png" alt="" style="height:22px;width:auto;flex-shrink:0;">
+          <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;line-height:1;white-space:nowrap;">Open<span style="color:#5AA88A">Ways</span></span></div>
           <p class="footer-tagline">AI toolkits for modern small businesses. Practical, industry-specific, ready to use within 7 days.</p>
           <a href="mailto:hi@openways.net" class="footer-link" style="margin-top:var(--s4); display:inline-block;">hi@openways.net</a>
         </div>
@@ -194,14 +249,15 @@
         <div>
           <div class="footer-heading">Legal</div>
           <div class="footer-links">
-            <a href="#" class="footer-link">Terms of Use</a>
-            <a href="#" class="footer-link">Refund Policy</a>
+            <a href="terms.html" class="footer-link">Terms of Use</a>
+            <a href="refund.html" class="footer-link">Refund Policy</a>
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span class="footer-copy">© 2025 OpenWays. All rights reserved.</span>
-        <div class="footer-legal"><a href="#">Terms</a><a href="#">Refund Policy</a></div>
+        <div class="footer-legal"><a href="terms.html">Terms</a><a href="refund.html">Refund Policy</a><a href="privacy.html">Privacy</a></div>
       </div>
     </div>
   </footer>

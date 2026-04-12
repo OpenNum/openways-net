@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G6XV2WSYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5G6XV2WSYW");
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OpenWays — AI Toolkits for Small Businesses</title>
-  <meta name="description" content="OpenWays builds practical, industry-specific AI toolkits for small business owners. Not a course. Not generic advice. A structured pack you can use this week." />
+  <meta name="description" content="OpenWays builds practical, industry-specific AI toolkits for small business owners. Not a course. Not generic advice. A structured pack you can start using now." />
   <meta name="keywords" content="AI toolkit small business, beauty AI pack, real estate AI tools, hospitality AI, small business AI workflow" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://openways.net/" />
+  <link rel="alternate" hreflang="en" href="https://openways.net/" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh.html" />
 
   <meta property="og:title" content="OpenWays — AI Toolkits for Small Businesses" />
-  <meta property="og:description" content="Industry-specific AI packs with prompts, workflows and a 7-day plan. Start using AI in your business this week." />
+  <meta property="og:description" content="Industry-specific AI packs with prompts, workflows and a 7-day plan. Start using AI in your business today." />
   <meta property="og:url" content="https://openways.net" />
   <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="OpenWays — AI Toolkits for Small Businesses" />
+  <meta name="twitter:description" content="Industry-specific AI packs with prompts, workflows and a 7-day plan. Start using AI in your business today." />
 
   <script type="application/ld+json">
   {
@@ -34,18 +47,19 @@
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="container nav-inner">
       <a href="index.html" class="nav-logo" aria-label="OpenWays home">
-        <img src="logo.svg" alt="OpenWays" class="nav-logo-img">
+        <img src="logo_mark_dark.png" alt="" style="height:26px;width:auto;display:block;flex-shrink:0;">
+        <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.03em;line-height:1;"><span style="color:#0F1034">Open</span><span style="color:#5AA88A">Ways</span></span>
       </a>
       <ul class="nav-links" role="list">
         <li><a href="packs.html"   class="nav-link">Packs</a></li>
-        <li><a href="updates.html" class="nav-link">Updates</a></li>
+        <li><a href="book.html"    class="nav-link">Free Guide</a></li>
         <li><a href="faq.html"     class="nav-link">FAQ</a></li>
         <li><a href="about.html"   class="nav-link">About</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-right">
         <a href="zh.html" class="nav-lang" title="中文版本">中文</a>
-        <a href="pack-beauty.html" class="btn btn-primary btn-sm">Get the Beauty Pack</a>
+        <a href="packs.html" class="btn btn-primary btn-sm">Browse Packs</a>
       </div>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
         <span></span><span></span><span></span>
@@ -53,12 +67,12 @@
     </div>
     <div class="nav-mobile" id="navMobile" role="dialog" aria-label="Mobile navigation">
       <a href="packs.html"   class="nav-link">Packs</a>
-      <a href="updates.html" class="nav-link">Updates</a>
+      <a href="book.html"    class="nav-link">Free Guide</a>
       <a href="faq.html"     class="nav-link">FAQ</a>
       <a href="about.html"   class="nav-link">About</a>
       <a href="contact.html" class="nav-link">Contact</a>
       <a href="zh.html"      class="nav-link">中文</a>
-      <a href="pack-beauty.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">Get the Beauty Pack</a>
+      <a href="packs.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">Browse Packs</a>
     </div>
   </nav>
 
@@ -68,27 +82,34 @@
     <div class="container hero-inner">
 
       <div class="hero-content">
-        <div class="hero-tag">Industry AI Packs · Ready to Use This Week</div>
 
-        <h1 class="hero-title" id="hero-heading">
-          AI Toolkits Built Around <br><em>Your Business</em>
+        <h1 class="hero-title" id="hero-heading" style="font-size:clamp(3.5rem,8vw,6rem); line-height:1.05; margin-bottom:var(--s4);">
+          <span style="color:var(--mint)">A</span>I for your<br>
+          <span style="font-size:1.15em; padding-left:0.18em;"><span style="color:var(--mint)">I</span>ndustry.</span><br>
+          <span style="white-space:nowrap;"><span style="color:var(--mint)">R</span>eady now.</span>
         </h1>
 
-        <p class="hero-sub">
-          Ready-to-use AI workflows for beauty, real estate and hospitality businesses — built specifically for your industry, not adapted from somewhere generic.
-        </p>
-        <p class="hero-sub" style="font-size:var(--text-sm); margin-top:var(--s3); opacity:0.8;">
-          One-time purchase &nbsp;·&nbsp; Instant digital download &nbsp;·&nbsp; No tech skills needed
-        </p>
+        <div style="display:flex; flex-direction:column; gap:var(--s1); margin:var(--s5) 0 var(--s3); padding-left:0.18em;">
+          <div style="display:flex; align-items:baseline;">
+            <span style="font-size:var(--text-sm); color:rgba(255,255,255,0.25); min-width:12.5em;">20 Prompt Templates</span>
+            <span style="font-size:var(--text-sm); color:rgba(255,255,255,0.45); letter-spacing:0.03em;"><span style="color:rgba(255,255,255,0.60); font-weight:700;">A</span>ccurate</span>
+          </div>
+          <div style="display:flex; align-items:baseline;">
+            <span style="font-size:var(--text-sm); color:rgba(255,255,255,0.25); min-width:12.5em;">5 SOP Workflows</span>
+            <span style="font-size:var(--text-sm); color:rgba(255,255,255,0.45); letter-spacing:0.03em; padding-left:0.2em;"><span style="color:rgba(255,255,255,0.60); font-weight:700;">I</span>ntegrated</span>
+          </div>
+          <div style="display:flex; align-items:baseline;">
+            <span style="font-size:var(--text-sm); color:rgba(255,255,255,0.25); min-width:12.5em;">7-Day Action Plan</span>
+            <span style="font-size:var(--text-sm); color:rgba(255,255,255,0.45); letter-spacing:0.03em;"><span style="color:rgba(255,255,255,0.60); font-weight:700;">R</span>eliable</span>
+          </div>
+        </div>
+        <p style="font-size:var(--text-xs); color:rgba(255,255,255,0.25); margin-bottom:var(--s8); padding-left:0.18em;">Researched and structured for your specific industry.</p>
 
         <div class="hero-actions">
-          <a href="pack-beauty.html" class="btn btn-mint btn-lg">Get the Beauty Pack — $49</a>
-          <a href="packs.html"       class="btn btn-outline-light btn-lg">Explore All Packs</a>
+          <a href="packs.html" class="btn btn-mint btn-lg">Browse Packs</a>
+          <a href="book.html" class="btn btn-outline-light btn-lg">Read Free Guide</a>
         </div>
 
-        <p style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:var(--s4);">
-          Not another course. Not generic advice. A structured pack you can implement this week.
-        </p>
       </div>
 
       <!-- Right: Value-oriented cards -->
@@ -97,15 +118,15 @@
 
           <!-- Card 1: Outcome-focused -->
           <div class="hero-card">
-            <div class="hero-card-label">💅 Beauty AI Pack</div>
+            <!-- UPDATE: pack count --><div class="hero-card-label">🗂️ 9 Industries Available</div>
             <div class="hero-card-title">After 7 days, you'll:</div>
             <ul class="hero-outcome-list">
-              <li>Reply to booking enquiries in under a minute</li>
-              <li>Write a week of content in one session</li>
-              <li>Have a repeatable AI workflow running</li>
+              <li>Have AI working inside your real workflows</li>
+              <li>Cut admin time with 20 ready-to-use prompt templates</li>
+              <li>Run your business in English &amp; Chinese</li>
             </ul>
             <div class="hero-card-arrow">
-              <a href="pack-beauty.html">View Pack →</a>
+              <a href="packs.html">Browse all packs →</a>
             </div>
           </div>
 
@@ -128,7 +149,7 @@
               </div>
             </div>
             <div style="margin-top:var(--s4); padding-top:var(--s4); border-top:1px solid rgba(255,255,255,0.1); font-size:var(--text-xs); color:var(--mint);">
-              6 structured resources · Prompts · Workflows · SOPs
+              9 structured resources — 5 guides + 4 video walkthroughs
             </div>
           </div>
 
@@ -140,7 +161,7 @@
 
 
   <!-- ── TRUST STRIP ────────────────────────────────────────── -->
-  <div class="trust-bar" role="complementary" aria-label="Key benefits">
+  <div class="trust-bar" role="complementary" aria-label="Key benefits" style="padding:var(--s4) 0;">
     <div class="container trust-bar-inner">
       <div class="trust-item">
         <span class="trust-item-icon" aria-hidden="true">💳</span>
@@ -166,6 +187,48 @@
   </div>
 
 
+  <!-- ── FREE BOOK BANNER ─────────────────────────────────── -->
+  <section id="free-guide" style="background:#111827; border-top:1px solid #1f2937; overflow:hidden;">
+    <div class="container" style="max-width:960px; margin:0 auto; padding-top:0; padding-bottom:0;">
+      <div style="display:grid; grid-template-columns:1fr auto; gap:var(--s8); align-items:center; padding:var(--s7) 0;">
+
+        <!-- Left text -->
+        <div>
+          <h2 style="font-size:clamp(1.1rem,2.2vw,1.55rem); font-weight:800; color:#fff; line-height:1.2; margin:0 0 var(--s2); letter-spacing:-0.02em;">An Army of One</h2>
+          <p style="font-size:var(--text-sm); color:rgba(255,255,255,0.48); margin:0 0 var(--s4); line-height:1.6; max-width:400px;">
+            How one person with the right AI systems can operate like a whole team. Read the first few pages — free.
+          </p>
+          <div style="display:flex; align-items:center; gap:var(--s5); flex-wrap:wrap;">
+            <a href="book.html"
+              style="font-size:var(--text-sm); font-weight:700; color:#5AA88A; text-decoration:none; transition:color 0.15s;"
+              onmouseover="this.style.color='#7ec8a8'" onmouseout="this.style.color='#5AA88A'">Get free access →</a>
+            <span style="font-size:11px; letter-spacing:0.02em;">
+              <a href="book.html" style="color:rgba(255,255,255,0.25); text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.45)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">English</a>
+              <span style="color:rgba(255,255,255,0.15);">·</span>
+              <a href="book.html" style="color:rgba(255,255,255,0.25); text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.45)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">繁體中文</a>
+              <span style="color:rgba(255,255,255,0.15);">·</span>
+              <a href="book.html" style="color:rgba(255,255,255,0.25); text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.45)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">简体中文</a>
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: English cover -->
+        <div style="flex-shrink:0; padding:var(--s4) 0;">
+          <a href="https://gumroad.com" target="_blank" rel="noopener">
+            <img
+              src="aoo_cover_en.png"
+              alt="An Army of One — free guide by OpenWays"
+              style="width:clamp(85px,11vw,120px); height:auto; border-radius:6px; box-shadow:0 12px 40px rgba(0,0,0,0.6); display:block; transition:transform 0.2s;"
+              onmouseover="this.style.transform='translateY(-4px) scale(1.03)'" onmouseout="this.style.transform='none'"
+            >
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
   <!-- ── FEATURED PACKS ─────────────────────────────────────── -->
   <section class="section section--feature" aria-labelledby="packs-heading">
     <div class="container">
@@ -173,6 +236,7 @@
         <span class="eyebrow">Industry Packs</span>
         <h2 class="section-heading" id="packs-heading">Choose your industry</h2>
         <p class="section-sub">Each pack is built around the real workflows of a specific business. Not adapted from generic AI advice — written for how your industry actually operates.</p>
+        <!-- UPDATE: pack count --><p style="font-size:var(--text-sm); color:var(--mint-dark); font-weight:600; margin-top:var(--s2);">9 industries available today. More launching regularly.</p>
       </div>
 
       <div class="packs-grid">
@@ -180,15 +244,15 @@
         <div class="pack-card">
           <div class="pack-card-icon" aria-hidden="true">💅</div>
           <div class="pack-card-title">Beauty AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For salons, lash studios, beauty therapists &amp; nail artists</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3); min-height:2.4em;">For salons, lash studios, beauty therapists &amp; nail artists</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8; flex:1;">
             <li>Write IG captions and Reels content in minutes</li>
             <li>Reply to booking enquiries and review messages</li>
             <li>Create service descriptions and promo copy</li>
           </ul>
-          <p style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--s4);">Start using AI in your business this afternoon.</p>
+          <p style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--s4);">Start using AI in your business today.</p>
           <div class="pack-card-footer">
-            <div class="pack-card-price">$49 <span>one-time</span></div>
+            <div class="pack-card-price">$39 USD <span>one-time</span></div>
             <a href="pack-beauty.html" class="btn btn-primary btn-sm">Get Pack</a>
           </div>
         </div>
@@ -196,32 +260,32 @@
         <div class="pack-card">
           <div class="pack-card-icon" aria-hidden="true">🏠</div>
           <div class="pack-card-title">Real Estate AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For independent agents &amp; small agencies</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3); min-height:2.4em;">For independent agents &amp; small agencies</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8; flex:1;">
             <li>Write property listings and appraisal letters</li>
             <li>Draft client follow-ups without the mental load</li>
             <li>Create social content for listings and market updates</li>
           </ul>
           <p style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--s4);">Stop spending your evenings on emails.</p>
           <div class="pack-card-footer">
-            <div class="pack-card-price">$49 <span>one-time</span></div>
-            <a href="contact.html" class="btn btn-primary btn-sm">Get Pack</a>
+            <div class="pack-card-price">$39 USD <span>one-time</span></div>
+            <a href="pack-realestate.html" class="btn btn-primary btn-sm">Get Pack</a>
           </div>
         </div>
 
         <div class="pack-card">
-          <div class="pack-card-icon" aria-hidden="true">🍽️</div>
-          <div class="pack-card-title">Hospitality AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For cafes, restaurants, bars &amp; venues</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
-            <li>Run promotions and events in minutes</li>
-            <li>Respond to Google and Yelp reviews consistently</li>
-            <li>Write menu descriptions and specials copy</li>
+          <div class="pack-card-icon" aria-hidden="true">🍜</div>
+          <div class="pack-card-title">Restaurant AI Pack</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3); min-height:2.4em;">For cafes, restaurants, takeaway shops &amp; food businesses</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8; flex:1;">
+            <li>Write daily specials and social captions in minutes</li>
+            <li>Respond to Google reviews consistently</li>
+            <li>Write menu descriptions and seasonal promo copy</li>
           </ul>
           <p style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--s4);">Simplify the daily tasks that eat your time.</p>
           <div class="pack-card-footer">
-            <div class="pack-card-price">$49 <span>one-time</span></div>
-            <a href="contact.html" class="btn btn-primary btn-sm">Get Pack</a>
+            <div class="pack-card-price">$39 USD <span>one-time</span></div>
+            <a href="pack-restaurant.html" class="btn btn-primary btn-sm">Get Pack</a>
           </div>
         </div>
 
@@ -300,13 +364,33 @@
   </section>
 
 
+  <!-- ── THE REAL COST ──────────────────────────────────────── -->
+  <section class="section" aria-labelledby="real-cost-heading">
+    <div class="container" style="max-width:800px; margin:0 auto; text-align:center;">
+      <span class="eyebrow">The Real Cost</span>
+      <h2 class="section-heading">You could figure all of this out yourself</h2>
+      <div style="padding:var(--s6); background:var(--bg-off); border-radius:var(--r-lg); border:1px solid var(--border-light); margin:var(--s6) auto; max-width:600px; text-align:left;">
+        <div style="display:flex; flex-direction:column; gap:var(--s3); font-size:var(--text-sm); color:var(--text-secondary);">
+          <div>→ Research which AI tools are worth paying for <span style="color:var(--text-muted);">~10 hours</span></div>
+          <div>→ Test prompts until you find ones that work <span style="color:var(--text-muted);">~8 hours</span></div>
+          <div>→ Build workflows that actually fit your business <span style="color:var(--text-muted);">~5 hours</span></div>
+          <div>→ Track AI changes so nothing goes stale <span style="color:var(--text-muted);">ongoing</span></div>
+        </div>
+      </div>
+      <p style="font-size:var(--text-lg); font-weight:700; color:var(--navy); margin-top:var(--s6);">
+        Or: $39 USD. Researched, tested, structured. Start now.
+      </p>
+    </div>
+  </section>
+
+
   <!-- ── WHAT'S INSIDE ──────────────────────────────────────── -->
   <section class="section" id="whats-inside" aria-labelledby="inside-heading">
     <div class="container">
       <div class="section-header section-header--center">
         <span class="eyebrow">What's Included</span>
-        <h2 class="section-heading" id="inside-heading">6 resources, not 6 files</h2>
-        <p class="section-sub">Each resource solves a specific problem — not just to look complete on a contents page.</p>
+        <h2 class="section-heading" id="inside-heading">What's in every pack</h2>
+        <p class="section-sub">Each resource solves a specific problem.</p>
       </div>
 
       <div class="modules-grid">
@@ -328,7 +412,7 @@
         <div class="module-item">
           <div class="module-num">03</div>
           <div class="module-name">Prompt Library</div>
-          <p class="module-desc">40+ ready-to-use prompts written for your industry. Copy, adapt, run. Covers content, client replies, admin tasks and more.</p>
+          <p class="module-desc">20 ready-to-use prompt templates written for your industry. Copy, adapt, run. Covers content, client replies, admin tasks and more.</p>
           <div class="module-value">→ AI output that actually fits your business, not a generic template</div>
         </div>
 
@@ -398,6 +482,7 @@
   </section>
 
 
+
   <!-- ── IS THIS FOR YOU ────────────────────────────────────── -->
   <section class="section" aria-labelledby="fit-heading">
     <div class="container">
@@ -412,7 +497,7 @@
         <div style="padding:var(--s8); background:#f0faf5; border-radius:var(--r-lg); border:2px solid #b8e8d0;">
           <div style="font-size:var(--text-base); font-weight:700; color:var(--navy); margin-bottom:var(--s5);">✅ This is for you if…</div>
           <div style="display:flex; flex-direction:column; gap:var(--s3);">
-            <div style="font-size:var(--text-sm); color:var(--text-secondary);">You run a small business and want results this week, not after a course</div>
+            <div style="font-size:var(--text-sm); color:var(--text-secondary);">You run a small business and want results now, not after a course</div>
             <div style="font-size:var(--text-sm); color:var(--text-secondary);">You're tired of generic AI tips that don't apply to your work</div>
             <div style="font-size:var(--text-sm); color:var(--text-secondary);">You want structured, industry-specific tools — not theory</div>
             <div style="font-size:var(--text-sm); color:var(--text-secondary);">You don't have time to research, experiment or troubleshoot</div>
@@ -456,7 +541,7 @@
             <span class="faq-icon" aria-hidden="true">+</span>
           </button>
           <div class="faq-answer">
-            When you open ChatGPT with a blank prompt, you get generic output. These packs give you 40+ prompts already written for your specific industry, SOP workflows to make results repeatable, a curated tool stack so you don't waste time researching, and a 7-day plan so you know exactly what to do next. The pack replaces weeks of figuring it out yourself — not just the typing.
+            When you open ChatGPT with a blank prompt, you get generic output. These packs give you 20 prompts already written for your specific industry, SOP workflows to make results repeatable, a curated tool stack so you don't waste time researching, and a 7-day plan so you know exactly what to do next. The pack replaces weeks of figuring it out yourself — not just the typing.
           </div>
         </div>
 
@@ -486,7 +571,7 @@
             <span class="faq-icon" aria-hidden="true">+</span>
           </button>
           <div class="faq-answer">
-            Six structured resources: Quick Start Guide, Tool Stack, Prompt Library (40+ prompts), SOP Workflows, 7-Day Action Plan and a Bonus Guide. All digital files — PDFs and editable formats — delivered instantly after purchase via Gumroad.
+            Nine structured resources — 5 guides + 4 video walkthroughs: Quick Start Guide, Tool Stack, Prompt Library (20 prompts), SOP Workflows, 7-Day Action Plan, plus 4 video walkthroughs. All digital files — PDFs and videos — delivered instantly after purchase via Gumroad.
           </div>
         </div>
 
@@ -519,16 +604,18 @@
   </section>
 
 
+
+
   <!-- ── FINAL CTA ──────────────────────────────────────────── -->
   <section class="section section--navy" aria-labelledby="final-cta-heading">
     <div class="container" style="text-align:center;">
       <span class="eyebrow eyebrow--light">Ready to start?</span>
-      <h2 class="section-heading" id="final-cta-heading" style="color:var(--white); margin:var(--s4) 0;">Get the Beauty AI Pack</h2>
-      <p class="section-sub" style="color:rgba(255,255,255,0.65); margin:0 auto var(--s4);">$49 one-time purchase · instant download · 6 structured resources · start this week</p>
-      <p class="section-sub" style="color:rgba(255,255,255,0.45); font-size:var(--text-sm); margin:0 auto var(--s8);">Real Estate and Hospitality packs also available.</p>
+      <h2 class="section-heading" id="final-cta-heading" style="color:var(--white); margin:var(--s4) 0;">Find the Pack for Your Industry</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.65); margin:0 auto var(--s4);">$39 USD one-time purchase · launch pricing · instant download · bilingual (English / 中文) · start today</p>
+      <!-- UPDATE: pack count --><p class="section-sub" style="color:rgba(255,255,255,0.45); font-size:var(--text-sm); margin:0 auto var(--s8);">9 industry packs available — Beauty, Restaurant, Real Estate, TCM, Accounting, Education, Renovation, Solar, Cleaning.</p>
       <div style="display:flex; gap:var(--s4); justify-content:center; flex-wrap:wrap;">
-        <a href="pack-beauty.html" class="btn btn-mint btn-lg">Get the Beauty Pack — $49</a>
-        <a href="packs.html"       class="btn btn-outline-light btn-lg">View All Industry Packs</a>
+        <!-- UPDATE: pack count --><a href="packs.html" class="btn btn-mint btn-lg">Browse All 9 Packs</a>
+        <a href="book.html" class="btn btn-outline-light btn-lg">Read Free Guide</a>
       </div>
       <p style="font-size:var(--text-xs); color:rgba(255,255,255,0.4); margin-top:var(--s6);">Not sure which pack fits? <a href="contact.html" style="color:rgba(255,255,255,0.6); text-decoration:underline;">Ask us first.</a> We'll give you an honest answer.</p>
     </div>
@@ -540,7 +627,10 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <img src="logo-white.svg" alt="OpenWays" class="footer-logo-img" style="margin-bottom:var(--s4);">
+          <div style="display:flex;align-items:center;gap:0.4em;">
+            <img src="logo_mark_green.png" alt="" style="height:22px;width:auto;flex-shrink:0;">
+            <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;line-height:1;white-space:nowrap;">Open<span style="color:#5AA88A">Ways</span></span>
+          </div>
           <p class="footer-tagline">AI toolkits for modern small businesses. Practical, industry-specific, ready to use within 7 days.</p>
           <a href="mailto:hi@openways.net" class="footer-link" style="margin-top:var(--s4); display:inline-block;">hi@openways.net</a>
         </div>
@@ -549,8 +639,8 @@
           <div class="footer-links">
             <a href="packs.html"       class="footer-link">All Packs</a>
             <a href="pack-beauty.html" class="footer-link">Beauty AI Pack</a>
-            <a href="packs.html"       class="footer-link">Real Estate AI Pack</a>
-            <a href="packs.html"       class="footer-link">Hospitality AI Pack</a>
+            <a href="pack-realestate.html"  class="footer-link">Real Estate AI Pack</a>
+            <a href="pack-restaurant.html"  class="footer-link">Restaurant AI Pack</a>
             <a href="updates.html"     class="footer-link">Update Pass</a>
           </div>
         </div>
@@ -566,16 +656,18 @@
         <div>
           <div class="footer-heading">Legal</div>
           <div class="footer-links">
-            <a href="#" class="footer-link">Terms of Use</a>
-            <a href="#" class="footer-link">Refund Policy</a>
+            <a href="terms.html" class="footer-link">Terms of Use</a>
+            <a href="refund.html" class="footer-link">Refund Policy</a>
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span class="footer-copy">© 2025 OpenWays. All rights reserved.</span>
         <div class="footer-legal">
-          <a href="#">Terms</a>
-          <a href="#">Refund Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="refund.html">Refund Policy</a>
+          <a href="privacy.html">Privacy</a>
         </div>
       </div>
     </div>

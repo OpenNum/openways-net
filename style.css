@@ -428,7 +428,7 @@ h1, h2, h3, h4 {
 .hero {
   background: var(--black);
   color: var(--white);
-  padding: calc(var(--nav-h) + var(--s24)) 0 var(--s24);
+  padding: calc(var(--nav-h) + var(--s16)) 0 var(--s16);
   position: relative;
   overflow: hidden;
 }
@@ -462,7 +462,7 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--s16);
-  align-items: center;
+  align-items: start;
 }
 
 .hero-content { max-width: 560px; }
@@ -517,8 +517,8 @@ h1, h2, h3, h4 {
 
 .hero-visual {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .hero-card-stack {
@@ -649,6 +649,7 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   padding-top: var(--s5);
   border-top: 1px solid var(--border-light);
+  margin-top: auto;
 }
 
 .pack-card-price {
@@ -1311,7 +1312,7 @@ h1, h2, h3, h4 {
   border-top: 1px solid var(--border-light);
   border-bottom: 1px solid var(--border-light);
   background: var(--bg-off);
-  padding: var(--s5) 0;
+  padding: var(--s3) 0;
 }
 
 .trust-bar-inner {

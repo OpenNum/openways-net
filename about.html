@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G6XV2WSYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5G6XV2WSYW");
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About — OpenWays</title>
   <meta name="description" content="OpenWays builds practical, industry-specific AI toolkits for small business owners. Here's why we built them, and why the approach works." />
   <link rel="canonical" href="https://openways.net/about.html" />
+  <link rel="alternate" hreflang="en" href="https://openways.net/about.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-about.html" />
+  <meta property="og:title" content="About — OpenWays" />
+  <meta property="og:description" content="OpenWays builds practical, industry-specific AI toolkits for small business owners. Here's why we built them, and why the approach works." />
+  <meta property="og:url" content="https://openways.net/about.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="About — OpenWays" />
+  <meta name="twitter:description" content="OpenWays builds practical, industry-specific AI toolkits for small business owners. Here's why we built them, and why the approach works." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,18 +32,19 @@
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="container nav-inner">
       <a href="index.html" class="nav-logo" aria-label="OpenWays home">
-        <img src="logo.svg" alt="OpenWays" class="nav-logo-img">
+        <img src="logo_mark_dark.png" alt="" style="height:26px;width:auto;display:block;flex-shrink:0;">
+        <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.03em;line-height:1;"><span style="color:#0F1034">Open</span><span style="color:#5AA88A">Ways</span></span>
       </a>
       <ul class="nav-links" role="list">
         <li><a href="packs.html"   class="nav-link">Packs</a></li>
-        <li><a href="updates.html" class="nav-link">Updates</a></li>
+        <li><a href="book.html"    class="nav-link">Free Guide</a></li>
         <li><a href="faq.html"     class="nav-link">FAQ</a></li>
         <li><a href="about.html"   class="nav-link active">About</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-right">
         <a href="zh.html" class="nav-lang">中文</a>
-        <a href="packs.html" class="btn btn-primary btn-sm">Explore Packs</a>
+        <a href="packs.html" class="btn btn-primary btn-sm">Browse Packs</a>
       </div>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
         <span></span><span></span><span></span>
@@ -34,12 +52,12 @@
     </div>
     <div class="nav-mobile" id="navMobile">
       <a href="packs.html"   class="nav-link">Packs</a>
-      <a href="updates.html" class="nav-link">Updates</a>
+      <a href="book.html"    class="nav-link">Free Guide</a>
       <a href="faq.html"     class="nav-link">FAQ</a>
       <a href="about.html"   class="nav-link">About</a>
       <a href="contact.html" class="nav-link">Contact</a>
       <a href="zh.html"      class="nav-link">中文</a>
-      <a href="packs.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">Explore Packs</a>
+      <a href="packs.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">Browse Packs</a>
     </div>
   </nav>
 
@@ -102,21 +120,21 @@
           <div class="method-step-num">01</div>
           <div class="method-step-content">
             <h3>Map real weekly business tasks</h3>
-            <p>Before writing a single prompt, we map out what a business in that industry actually does every week — the messages they send, the content they need, the admin that takes time. The pack is built around those tasks, not around what AI can theoretically do.</p>
+            <p>Before writing a single prompt, we map out what a business in that industry actually does every week — the messages they send, the content they need, the admin that takes time. The pack is built around those tasks, not around what AI can theoretically do. We analyze scheduling patterns, client communication frequencies, content creation cycles, and administrative overhead specific to each industry.</p>
           </div>
         </div>
         <div class="method-step">
           <div class="method-step-num">02</div>
           <div class="method-step-content">
             <h3>Choose the smallest useful AI stack</h3>
-            <p>We identify the minimum set of AI tools that covers those tasks — prioritising tools with free tiers, avoiding unnecessary subscriptions. The goal is to get a business owner operational with as little friction as possible.</p>
+            <p>We identify the minimum set of AI tools that covers those tasks — prioritising tools with free tiers, avoiding unnecessary subscriptions. The goal is to get a business owner operational with as little friction as possible. We test 15–30 tools per industry before recommending 3–5. Every recommendation includes a free tier path.</p>
           </div>
         </div>
         <div class="method-step">
           <div class="method-step-num">03</div>
           <div class="method-step-content">
             <h3>Build prompts and workflows around actual use cases</h3>
-            <p>Every prompt is written for a specific industry task — not adapted from a generic template. The SOP workflows are built around how the business actually operates, so the AI output slots into existing routines rather than creating new ones.</p>
+            <p>Every prompt is written for a specific industry task — not adapted from a generic template. The SOP workflows are built around how the business actually operates, so the AI output slots into existing routines rather than creating new ones. Each prompt is tested across GPT-4o, Claude, and Gemini to ensure consistent quality regardless of which AI tool you prefer.</p>
           </div>
         </div>
         <div class="method-step">
@@ -125,6 +143,37 @@
             <h3>Package into a one-week implementation path</h3>
             <p>All resources are sequenced into a 7-day plan so the business owner always knows what to do next. By the end of the first week, AI is running in the business — not sitting in a downloads folder.</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── ONGOING RESEARCH ──────────────────────────────────── -->
+  <section class="section" aria-labelledby="ongoing-heading">
+    <div class="container" style="max-width:800px; margin:0 auto;">
+      <h2 class="section-heading" id="ongoing-heading" style="margin-bottom:var(--s8);">We don't just build it and walk away</h2>
+
+      <p style="font-size:var(--text-lg); color:var(--text-secondary); line-height:1.8; margin-bottom:var(--s6);">
+        Every pack is backed by ongoing research. Our team continuously tracks AI tool market changes, model updates, pricing shifts, and new capabilities — then feeds that back into updated packs for Update Pass holders.
+      </p>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--s4); margin-top:var(--s6);">
+        <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+          <div style="font-weight:700; font-size:var(--text-sm); color:var(--navy); margin-bottom:var(--s2);">AI tool monitoring</div>
+          <p style="font-size:var(--text-xs); color:var(--text-secondary); line-height:1.6;">We track pricing changes, feature updates, and new entrants across the tools we recommend — so your stack stays current.</p>
+        </div>
+        <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+          <div style="font-weight:700; font-size:var(--text-sm); color:var(--navy); margin-bottom:var(--s2);">Prompt re-testing</div>
+          <p style="font-size:var(--text-xs); color:var(--text-secondary); line-height:1.6;">When AI models update, prompt effectiveness can shift. We re-test and rewrite prompts to maintain output quality.</p>
+        </div>
+        <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+          <div style="font-weight:700; font-size:var(--text-sm); color:var(--navy); margin-bottom:var(--s2);">Industry trend tracking</div>
+          <p style="font-size:var(--text-xs); color:var(--text-secondary); line-height:1.6;">We monitor how AI is being adopted in each industry we cover — new use cases, competitor moves, and practical opportunities.</p>
+        </div>
+        <div style="padding:var(--s5); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
+          <div style="font-weight:700; font-size:var(--text-sm); color:var(--navy); margin-bottom:var(--s2);">Quarterly industry briefs</div>
+          <p style="font-size:var(--text-xs); color:var(--text-secondary); line-height:1.6;">Update Pass holders receive industry-specific AI briefs — not generic newsletters, but curated insights for their business type.</p>
         </div>
       </div>
     </div>
@@ -229,8 +278,8 @@
         </div>
 
         <div style="padding:var(--s6); background:var(--bg-off); border-radius:var(--r-md); border:1px solid var(--border-light);">
-          <div style="font-weight:700; color:var(--navy); margin-bottom:var(--s2);">Not hype</div>
-          <p style="font-size:var(--text-sm); color:var(--text-secondary); line-height:1.6;">We focus on what AI actually does well for small businesses today — not what it might do someday. Practical over promotional.</p>
+          <div style="font-weight:700; color:var(--navy); margin-bottom:var(--s2);">Not a one-time transaction</div>
+          <p style="font-size:var(--text-sm); color:var(--text-secondary); line-height:1.6;">We built OpenWays as an ongoing relationship, not a download-and-forget product. The base pack gets you started. The Update Pass keeps you ahead. Our goal is to be the only AI resource your business needs.</p>
         </div>
 
       </div>
@@ -239,14 +288,13 @@
 
 
   <!-- ── CTA ────────────────────────────────────────────────── -->
-  <section class="section section--navy" aria-label="Packs CTA">
+  <section class="section section--navy" aria-label="Next steps CTA">
     <div class="container" style="text-align:center;">
-      <span class="eyebrow eyebrow--light">Ready to start?</span>
-      <h2 class="section-heading" style="color:var(--white); margin:var(--s4) 0;">Find the pack for your industry</h2>
-      <p class="section-sub" style="color:rgba(255,255,255,0.65); margin:0 auto var(--s8);">One-time purchase. Instant access. Start implementing this week.</p>
-      <div style="display:flex; gap:var(--s4); justify-content:center; flex-wrap:wrap;">
-        <a href="packs.html"   class="btn btn-mint btn-lg">Browse All Packs</a>
-        <a href="contact.html" class="btn btn-outline-light btn-lg">Get in Touch</a>
+      <h2 class="section-heading" style="color:var(--white); margin-bottom:var(--s6);">See how it works for your industry</h2>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:var(--s4);">
+        <a href="packs.html" class="btn btn-mint btn-lg" style="min-width:280px; justify-content:center;">Browse All Packs</a>
+        <a href="book.html" class="btn btn-outline-light" style="min-width:280px; justify-content:center;">Read Free Guide First</a>
+        <a href="contact.html" style="font-size:var(--text-sm); color:rgba(255,255,255,0.6); text-decoration:underline;">Want to know more? Get in touch →</a>
       </div>
     </div>
   </section>
@@ -257,7 +305,8 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <img src="logo-white.svg" alt="OpenWays" class="footer-logo-img" style="margin-bottom:var(--s4);">
+          <div style="display:flex;align-items:center;gap:0.4em;"><img src="logo_mark_green.png" alt="" style="height:22px;width:auto;flex-shrink:0;">
+          <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;line-height:1;white-space:nowrap;">Open<span style="color:#5AA88A">Ways</span></span></div>
           <p class="footer-tagline">AI toolkits for modern small businesses. Practical, industry-specific, ready to use within 7 days.</p>
           <a href="mailto:hi@openways.net" class="footer-link" style="margin-top:var(--s4); display:inline-block;">hi@openways.net</a>
         </div>
@@ -281,14 +330,15 @@
         <div>
           <div class="footer-heading">Legal</div>
           <div class="footer-links">
-            <a href="#" class="footer-link">Terms of Use</a>
-            <a href="#" class="footer-link">Refund Policy</a>
+            <a href="terms.html" class="footer-link">Terms of Use</a>
+            <a href="refund.html" class="footer-link">Refund Policy</a>
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span class="footer-copy">© 2025 OpenWays. All rights reserved.</span>
-        <div class="footer-legal"><a href="#">Terms</a><a href="#">Refund Policy</a></div>
+        <div class="footer-legal"><a href="terms.html">Terms</a><a href="refund.html">Refund Policy</a><a href="privacy.html">Privacy</a></div>
       </div>
     </div>
   </footer>

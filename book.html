@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G6XV2WSYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5G6XV2WSYW");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>An Army of One — Free Guide by OpenWays</title>
+  <meta name="description" content="How one person with the right AI systems can operate like a whole team. Read the first 5 pages free, then get the full guide — no cost." />
+  <link rel="canonical" href="https://openways.net/book.html" />
+  <link rel="alternate" hreflang="en" href="https://openways.net/book.html" />
+  <link rel="alternate" hreflang="x-default" href="https://openways.net/book.html" />
+  <meta property="og:title" content="An Army of One — Free Guide by OpenWays" />
+  <meta property="og:description" content="How one person with the right AI systems can operate like a whole team. Read the first 5 pages free, then get the full guide — no cost." />
+  <meta property="og:url" content="https://openways.net/book.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="An Army of One — Free Guide by OpenWays" />
+  <meta name="twitter:description" content="How one person with the right AI systems can operate like a whole team. Read the first 5 pages free, then get the full guide — no cost." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Page preview strip ── */
+    .preview-pages {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .preview-pages::-webkit-scrollbar { height: 4px; }
+    .preview-pages::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 2px; }
+    .preview-pages::-webkit-scrollbar-thumb { background: #5AA88A; border-radius: 2px; }
+    .preview-page {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      background: #fff;
+    }
+    .preview-page:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 32px rgba(0,0,0,0.18);
+    }
+    .preview-page img {
+      display: block;
+      height: 320px;
+      width: auto;
+      max-width: 230px;
+    }
+    .preview-page-num {
+      text-align: center;
+      font-size: 11px;
+      color: #9ca3af;
+      padding: 6px 0 8px;
+      background: #fff;
+    }
+
+    /* ── Lightbox ── */
+    .lightbox {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.88);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: min(700px, 90vw);
+      max-height: 90vh;
+      border-radius: 8px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+    }
+    .lightbox-close {
+      position: fixed; top: 1.5rem; right: 1.5rem;
+      background: rgba(255,255,255,0.15); border: none;
+      color: #fff; font-size: 1.4rem; border-radius: 50%;
+      width: 40px; height: 40px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.15s;
+    }
+    .lightbox-close:hover { background: rgba(255,255,255,0.3); }
+    .lightbox-nav {
+      position: fixed; top: 50%; transform: translateY(-50%);
+      background: rgba(255,255,255,0.1); border: none;
+      color: #fff; font-size: 1.6rem; border-radius: 50%;
+      width: 48px; height: 48px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.15s;
+    }
+    .lightbox-nav:hover { background: rgba(255,255,255,0.25); }
+    .lightbox-prev { left: 1rem; }
+    .lightbox-next { right: 1rem; }
+
+    /* ── Email gate ── */
+    .email-gate {
+      background: linear-gradient(135deg, #0F1034 0%, #1a2a1e 100%);
+      border-radius: 16px;
+      padding: 2.5rem;
+      text-align: center;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .email-input-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
+    .email-input-row input {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border: 1.5px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .email-input-row input::placeholder { color: rgba(255,255,255,0.35); }
+    .email-input-row input:focus { border-color: #5AA88A; }
+    .email-input-row button {
+      padding: 0.75rem 1.4rem;
+      background: #5AA88A;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.875rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .email-input-row button:hover { background: #4a9278; }
+    @media (max-width: 480px) {
+      .email-input-row { flex-direction: column; }
+    }
+
+    /* ── Blur-out last page effect ── */
+    .preview-page--blur { position: relative; }
+    .preview-page--blur::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 30%, rgba(248,249,250,0.96) 100%);
+      border-radius: 6px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ─────────────────────────────────────────── -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="OpenWays home">
+        <img src="logo_mark_dark.png" alt="" style="height:26px;width:auto;display:block;flex-shrink:0;">
+        <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.03em;line-height:1;"><span style="color:#0F1034">Open</span><span style="color:#5AA88A">Ways</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="packs.html"   class="nav-link">Packs</a></li>
+        <li><a href="book.html"    class="nav-link">Free Guide</a></li>
+        <li><a href="faq.html"     class="nav-link">FAQ</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="zh.html" class="nav-lang">中文</a>
+        <a href="packs.html" class="btn btn-primary btn-sm">Browse Packs</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="packs.html"   class="nav-link">Packs</a>
+      <a href="book.html"    class="nav-link">Free Guide</a>
+      <a href="faq.html"     class="nav-link">FAQ</a>
+      <a href="about.html"   class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="zh.html"      class="nav-link">中文</a>
+      <a href="packs.html" class="btn btn-primary" style="margin-top:1rem;justify-content:center;">Browse Packs</a>
+    </div>
+  </nav>
+
+
+  <!-- ── BOOK HERO ──────────────────────────────────────────── -->
+  <section style="background:#0F1034; padding: 3.5rem 0 3rem;">
+    <div class="container" style="max-width:860px; margin:0 auto;">
+      <div style="display:grid; grid-template-columns:auto 1fr; gap:2.5rem; align-items:center;">
+
+        <!-- Cover -->
+        <div>
+          <img src="aoo_cover_en.png" alt="An Army of One"
+            style="width:clamp(110px,14vw,155px); height:auto; border-radius:8px; box-shadow:0 16px 50px rgba(0,0,0,0.55); display:block;">
+        </div>
+
+        <!-- Info -->
+        <div>
+          <span style="font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#5AA88A; display:block; margin-bottom:0.6rem;">Free guide · OpenWays</span>
+          <h1 style="font-size:clamp(1.6rem,3.5vw,2.4rem); font-weight:800; color:#fff; line-height:1.15; margin:0 0 0.75rem; letter-spacing:-0.02em;">An Army of One</h1>
+          <p style="font-size:0.95rem; color:rgba(255,255,255,0.55); line-height:1.7; margin:0 0 1.4rem; max-width:440px;">
+            How one person — with the right AI systems in place — can operate at the output of a whole team. Written for small business owners. No tech background needed.
+          </p>
+          <div style="display:flex; gap:0.75rem; flex-wrap:wrap; align-items:center;">
+            <a href="#get-access" style="background:#5AA88A; color:#fff; font-weight:700; font-size:0.875rem; padding:0.7rem 1.4rem; border-radius:8px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#4a9278'" onmouseout="this.style.background='#5AA88A'">
+              Get the full guide — free →
+            </a>
+            <span style="font-size:11px; color:rgba(255,255,255,0.28);">
+              Also:
+              <a href="https://gumroad.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.32); text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.6)'" onmouseout="this.style.color='rgba(255,255,255,0.32)'">繁體中文</a>
+              ·
+              <a href="https://gumroad.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.32); text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.6)'" onmouseout="this.style.color='rgba(255,255,255,0.32)'">简体中文</a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── PAGE PREVIEW ───────────────────────────────────────── -->
+  <section class="section" style="padding-bottom:0;">
+    <div class="container" style="max-width:960px; margin:0 auto;">
+
+      <div style="margin-bottom:1.5rem;">
+        <h2 style="font-size:1.1rem; font-weight:700; color:var(--navy); margin:0 0 0.3rem;">Read the first 5 pages</h2>
+        <p style="font-size:var(--text-sm); color:var(--text-muted); margin:0;">Click any page to enlarge. Get the full guide free below.</p>
+      </div>
+
+      <div class="preview-pages" id="previewStrip">
+        <div class="preview-page" onclick="openLightbox(0)">
+          <img src="book-preview/page-01.jpg" alt="An Army of One — page 1" loading="lazy">
+          <div class="preview-page-num">Page 1</div>
+        </div>
+        <div class="preview-page" onclick="openLightbox(1)">
+          <img src="book-preview/page-02.jpg" alt="Page 2" loading="lazy">
+          <div class="preview-page-num">Page 2</div>
+        </div>
+        <div class="preview-page" onclick="openLightbox(2)">
+          <img src="book-preview/page-03.jpg" alt="Page 3" loading="lazy">
+          <div class="preview-page-num">Page 3</div>
+        </div>
+        <div class="preview-page" onclick="openLightbox(3)">
+          <img src="book-preview/page-04.jpg" alt="Page 4" loading="lazy">
+          <div class="preview-page-num">Page 4</div>
+        </div>
+        <div class="preview-page preview-page--blur" onclick="document.getElementById('get-access').scrollIntoView({behavior:'smooth'})">
+          <img src="book-preview/page-05.jpg" alt="Page 5 — get the full guide" loading="lazy">
+          <div class="preview-page-num">Page 5 · · ·</div>
+        </div>
+      </div>
+
+      <p style="font-size:var(--text-xs); color:var(--text-muted); margin-top:1rem; text-align:right;">
+        ← Scroll to see all 5 preview pages
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ── EMAIL GATE / CTA ───────────────────────────────────── -->
+  <section class="section" id="get-access">
+    <div class="container">
+      <div class="email-gate">
+
+        <div style="font-size:1.5rem; margin-bottom:0.75rem;">📖</div>
+        <h2 style="font-size:1.3rem; font-weight:800; color:#fff; margin:0 0 0.5rem;">Get the full guide — free</h2>
+        <p style="font-size:0.875rem; color:rgba(255,255,255,0.5); margin:0 0 0.25rem; line-height:1.6;">
+          Enter your email and we'll send you access. No spam — just the guide and occasional updates from OpenWays.
+        </p>
+        <p style="font-size:11px; color:rgba(255,255,255,0.28); margin:0 0 0.5rem;">
+          You'll be taken to Gumroad to complete the free download.
+        </p>
+
+        <!-- Email form — connect to your email provider (Mailchimp / ConvertKit / Gumroad $0) -->
+        <form class="email-input-row" id="emailForm" onsubmit="handleSubmit(event)">
+          <input
+            type="email"
+            id="emailInput"
+            placeholder="your@email.com"
+            required
+            autocomplete="email"
+            aria-label="Your email address"
+          />
+          <button type="submit">Get free access →</button>
+        </form>
+
+        <p style="font-size:11px; color:rgba(255,255,255,0.22); margin-top:0.75rem;">
+          Also available in
+          <a href="https://gumroad.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.3); text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.6)'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">繁體中文</a>
+          and
+          <a href="https://gumroad.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.3); text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.6)'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">简体中文</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── WHAT'S INSIDE ──────────────────────────────────────── -->
+  <section class="section section--off">
+    <div class="container" style="max-width:700px; margin:0 auto;">
+      <h2 style="font-size:1.2rem; font-weight:700; color:var(--navy); margin:0 0 1.25rem;">What the guide covers</h2>
+      <div style="display:flex; flex-direction:column; gap:0.75rem;">
+        <div style="display:flex; gap:0.75rem; align-items:flex-start;">
+          <span style="color:#5AA88A; font-weight:700; flex-shrink:0;">→</span>
+          <div>
+            <span style="font-size:var(--text-sm); font-weight:600; color:var(--navy);">Why most small businesses use AI wrong</span>
+            <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0.2rem 0 0; line-height:1.6;">Using AI occasionally for one-off tasks vs. building it into your actual workflows — the difference in output is enormous.</p>
+          </div>
+        </div>
+        <div style="display:flex; gap:0.75rem; align-items:flex-start;">
+          <span style="color:#5AA88A; font-weight:700; flex-shrink:0;">→</span>
+          <div>
+            <span style="font-size:var(--text-sm); font-weight:600; color:var(--navy);">The Army of One framework</span>
+            <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0.2rem 0 0; line-height:1.6;">How to map your business operations to AI systems — so every repetitive task gets a consistent, fast answer.</p>
+          </div>
+        </div>
+        <div style="display:flex; gap:0.75rem; align-items:flex-start;">
+          <span style="color:#5AA88A; font-weight:700; flex-shrink:0;">→</span>
+          <div>
+            <span style="font-size:var(--text-sm); font-weight:600; color:var(--navy);">Which tools to use and which to skip</span>
+            <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0.2rem 0 0; line-height:1.6;">A clear breakdown of the AI tools worth your time — and which free tiers are enough to get started.</p>
+          </div>
+        </div>
+        <div style="display:flex; gap:0.75rem; align-items:flex-start;">
+          <span style="color:#5AA88A; font-weight:700; flex-shrink:0;">→</span>
+          <div>
+            <span style="font-size:var(--text-sm); font-weight:600; color:var(--navy);">From overwhelmed to systematic</span>
+            <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0.2rem 0 0; line-height:1.6;">A practical path from "I tried AI a few times" to "AI runs inside my business every day."</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:2rem; padding:1.25rem; background:#fff; border:1.5px solid var(--border-light); border-radius:12px; display:flex; gap:1rem; align-items:center;">
+        <div style="font-size:1.8rem; flex-shrink:0;">🎯</div>
+        <div>
+          <div style="font-size:var(--text-sm); font-weight:700; color:var(--navy); margin-bottom:0.2rem;">Ready to go deeper?</div>
+          <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 0.5rem; line-height:1.5;">The guide shows you what's possible. Our industry packs give you the exact prompts and workflows to make it happen — built for your specific business.</p>
+          <a href="packs.html" style="font-size:var(--text-sm); font-weight:700; color:#5AA88A; text-decoration:none;">Browse industry packs →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── BOTTOM CTA ──────────────────────────────────────────── -->
+  <section class="section section--navy" aria-label="Next steps CTA">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-heading" style="color:var(--white); margin-bottom:var(--s6);">Ready to put this into practice?</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.6); margin-bottom:var(--s6);">The free guide shows you why. The industry pack shows you how.</p>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:var(--s4);">
+        <a href="packs.html" class="btn btn-mint btn-lg" style="min-width:280px; justify-content:center;">Browse Industry Packs</a>
+        <a href="contact.html" style="font-size:var(--text-sm); color:rgba(255,255,255,0.6); text-decoration:underline;">Not sure which pack? Ask us →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── LIGHTBOX ───────────────────────────────────────────── -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+    <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1,event)" aria-label="Previous">‹</button>
+    <img id="lightboxImg" src="" alt="">
+    <button class="lightbox-nav lightbox-next" onclick="navLightbox(1,event)" aria-label="Next">›</button>
+  </div>
+
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div style="display:flex;align-items:center;gap:0.4em;"><img src="logo_mark_green.png" alt="" style="height:22px;width:auto;flex-shrink:0;">
+          <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;line-height:1;white-space:nowrap;">Open<span style="color:#5AA88A">Ways</span></span></div>
+          <p class="footer-tagline" style="margin-top:var(--s4);">AI toolkits for modern small businesses. Practical, industry-specific, ready to use within 7 days.</p>
+          <a href="mailto:hi@openways.net" class="footer-link" style="margin-top:var(--s4); display:inline-block;">hi@openways.net</a>
+        </div>
+        <div>
+          <div class="footer-heading">Free Resource</div>
+          <div class="footer-links">
+            <a href="book.html"    class="footer-link">An Army of One</a>
+            <a href="packs.html"   class="footer-link">All Industry Packs</a>
+            <a href="updates.html" class="footer-link">Update Pass</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <div class="footer-links">
+            <a href="about.html"   class="footer-link">About</a>
+            <a href="faq.html"     class="footer-link">FAQ</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="zh.html"      class="footer-link">中文版</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Legal</div>
+          <div class="footer-links">
+            <a href="terms.html" class="footer-link">Terms of Use</a>
+            <a href="refund.html" class="footer-link">Refund Policy</a>
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 OpenWays. All rights reserved.</span>
+        <div class="footer-legal"><a href="terms.html">Terms</a><a href="refund.html">Refund Policy</a><a href="privacy.html">Privacy</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    // ── Nav scroll ──
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+    const toggle = document.getElementById('navToggle');
+    const mobile = document.getElementById('navMobile');
+    toggle.addEventListener('click', () => {
+      const open = mobile.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+
+    // ── Lightbox ──
+    const pages = ['book-preview/page-01.jpg','book-preview/page-02.jpg','book-preview/page-03.jpg','book-preview/page-04.jpg'];
+    let currentIdx = 0;
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightboxImg');
+
+    function openLightbox(idx) {
+      if (idx >= pages.length) { document.getElementById('get-access').scrollIntoView({behavior:'smooth'}); return; }
+      currentIdx = idx;
+      lbImg.src = pages[idx];
+      lbImg.alt = `An Army of One — page ${idx + 1}`;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox(e) {
+      if (e && e.target !== lb && !e.target.classList.contains('lightbox-close')) return;
+      lb.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function navLightbox(dir, e) {
+      e.stopPropagation();
+      currentIdx = (currentIdx + dir + pages.length) % pages.length;
+      lbImg.src = pages[currentIdx];
+      lbImg.alt = `An Army of One — page ${currentIdx + 1}`;
+    }
+    document.addEventListener('keydown', e => {
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') { lb.classList.remove('open'); document.body.style.overflow = ''; }
+      if (e.key === 'ArrowRight') navLightbox(1, { stopPropagation: ()=>{} });
+      if (e.key === 'ArrowLeft')  navLightbox(-1, { stopPropagation: ()=>{} });
+    });
+
+    // ── Email form → Gumroad $0 ──
+    // Replace GUMROAD_URL_EN / TC / SC with your actual $0 listing URLs once created
+    const GUMROAD_URL_EN = 'https://yangster720.gumroad.com/l/soosjr';   // EN $0 listing
+    const GUMROAD_URL_TC = 'https://yangster720.gumroad.com/l/aotbm';   // TC $0 listing
+    const GUMROAD_URL_SC = 'https://yangster720.gumroad.com/l/miucxd';   // SC $0 listing
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const email = document.getElementById('emailInput').value.trim();
+      if (!email) return;
+      // Open Gumroad $0 page — Gumroad will capture the email on checkout
+      // Optionally: send email to your own service first before redirecting
+      window.open(GUMROAD_URL_EN, '_blank');
+    }
+  </script>
+
+</body>
+</html>

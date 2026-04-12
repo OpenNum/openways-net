@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G6XV2WSYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5G6XV2WSYW");
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>All Packs — OpenWays AI Toolkits</title>
-  <meta name="description" content="Browse all OpenWays industry AI packs. Practical toolkits for beauty, real estate, hospitality, retail and more." />
+  <title>All Industry Packs — OpenWays AI Toolkits</title>
+  <meta name="description" content="Browse all OpenWays AI industry packs. Bilingual (English, Traditional Chinese, Simplified Chinese) AI toolkits for Australian small businesses." />
   <link rel="canonical" href="https://openways.net/packs.html" />
+  <link rel="alternate" hreflang="en" href="https://openways.net/packs.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-packs.html" />
+  <meta property="og:title" content="All Industry Packs — OpenWays AI Toolkits" />
+  <meta property="og:description" content="Browse all OpenWays AI industry packs. Bilingual (English, Traditional Chinese, Simplified Chinese) AI toolkits for Australian small businesses." />
+  <meta property="og:url" content="https://openways.net/packs.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="All Industry Packs — OpenWays AI Toolkits" />
+  <meta name="twitter:description" content="Browse all OpenWays AI industry packs. Bilingual (English, Traditional Chinese, Simplified Chinese) AI toolkits for Australian small businesses." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Category section ── */
+    .cat-section { margin-bottom: var(--s12, 3rem); }
+    .cat-header {
+      display: flex;
+      align-items: center;
+      gap: var(--s3, 0.75rem);
+      margin-bottom: var(--s6, 1.5rem);
+      padding-bottom: var(--s4, 1rem);
+      border-bottom: 2px solid var(--border-light, #e5e7eb);
+    }
+    .cat-icon { font-size: 1.5rem; }
+    .cat-title { font-size: var(--text-lg, 1.125rem); font-weight: 700; color: var(--navy, #0F1034); margin: 0; }
+    .cat-sub { font-size: var(--text-xs, 0.75rem); color: var(--text-muted, #9ca3af); margin: 0; }
+    /* ── Pack row (horizontal in category) ── */
+    .pack-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s4, 1rem);
+    }
+    .pack-chip {
+      display: flex;
+      align-items: center;
+      gap: var(--s3, 0.75rem);
+      padding: var(--s4, 1rem) var(--s5, 1.25rem);
+      background: var(--white, #fff);
+      border: 1.5px solid var(--border-light, #e5e7eb);
+      border-radius: var(--r-md, 10px);
+      text-decoration: none;
+      transition: box-shadow 0.15s, border-color 0.15s;
+      min-width: 220px;
+      flex: 1 1 220px;
+      max-width: 340px;
+    }
+    .pack-chip:hover { border-color: var(--mint, #5AA88A); box-shadow: 0 2px 12px rgba(90,168,138,0.12); }
+    .pack-chip--coming {
+      background: var(--bg-off, #f8f9fa);
+      border-style: dashed;
+      opacity: 0.6;
+      cursor: default;
+      pointer-events: none;
+    }
+    .pack-chip-icon { font-size: 1.4rem; flex-shrink: 0; }
+    .pack-chip-text { flex: 1; }
+    .pack-chip-name { font-size: var(--text-sm, 0.875rem); font-weight: 600; color: var(--navy, #0F1034); display: block; }
+    .pack-chip-lang { font-size: var(--text-xs, 0.75rem); color: var(--text-muted, #9ca3af); }
+    .pack-chip-badge {
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    .badge--available { background: #d1fae5; color: #065f46; }
+    .badge--soon { background: var(--bg-subtle, #f3f4f6); color: var(--text-muted, #9ca3af); }
+    /* ── Search bar ── */
+    .pack-search-wrap {
+      max-width: 480px;
+      margin: 0 auto var(--s10, 2.5rem);
+      position: relative;
+    }
+    .pack-search {
+      width: 100%;
+      padding: var(--s4, 1rem) var(--s5, 1.25rem) var(--s4, 1rem) 2.8rem;
+      border: 2px solid var(--border-light, #e5e7eb);
+      border-radius: var(--r-lg, 12px);
+      font-size: var(--text-base, 1rem);
+      color: var(--navy, #0F1034);
+      background: var(--white, #fff);
+      outline: none;
+      box-sizing: border-box;
+      transition: border-color 0.15s;
+    }
+    .pack-search:focus { border-color: var(--mint, #5AA88A); }
+    .pack-search-icon {
+      position: absolute;
+      left: var(--s4, 1rem);
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted, #9ca3af);
+      font-size: 1rem;
+      pointer-events: none;
+    }
+    /* ── Category filter tabs ── */
+    .cat-filter:hover { border-color: var(--mint, #5AA88A); }
+    .cat-filter.active { background: var(--mint, #5AA88A); color: #fff; border-color: var(--mint, #5AA88A); }
+    /* ── Stats strip ── */
+    .packs-stats {
+      display: flex;
+      gap: var(--s6, 1.5rem);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: var(--s10, 2.5rem);
+    }
+    .packs-stat { text-align: center; }
+    .packs-stat-num { font-size: 2rem; font-weight: 800; color: var(--navy, #0F1034); display: block; }
+    .packs-stat-label { font-size: var(--text-xs, 0.75rem); color: var(--text-muted, #9ca3af); }
+  </style>
 </head>
 <body>
 
@@ -15,18 +130,19 @@
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="container nav-inner">
       <a href="index.html" class="nav-logo" aria-label="OpenWays home">
-        <img src="logo.svg" alt="OpenWays" class="nav-logo-img">
+        <img src="logo_mark_dark.png" alt="" style="height:26px;width:auto;display:block;flex-shrink:0;">
+        <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.03em;line-height:1;"><span style="color:#0F1034">Open</span><span style="color:#5AA88A">Ways</span></span>
       </a>
       <ul class="nav-links" role="list">
         <li><a href="packs.html"   class="nav-link active">Packs</a></li>
-        <li><a href="updates.html" class="nav-link">Updates</a></li>
+        <li><a href="book.html"    class="nav-link">Free Guide</a></li>
         <li><a href="faq.html"     class="nav-link">FAQ</a></li>
         <li><a href="about.html"   class="nav-link">About</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-right">
-        <a href="zh.html" class="nav-lang">中文</a>
-        <a href="pack-beauty.html" class="btn btn-primary btn-sm">Get the Beauty Pack</a>
+        <a href="zh-packs.html" class="nav-lang">中文</a>
+        <a href="packs.html" class="btn btn-primary btn-sm">Browse Packs</a>
       </div>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
         <span></span><span></span><span></span>
@@ -34,215 +150,297 @@
     </div>
     <div class="nav-mobile" id="navMobile">
       <a href="packs.html"   class="nav-link">Packs</a>
-      <a href="updates.html" class="nav-link">Updates</a>
+      <a href="book.html"    class="nav-link">Free Guide</a>
       <a href="faq.html"     class="nav-link">FAQ</a>
       <a href="about.html"   class="nav-link">About</a>
       <a href="contact.html" class="nav-link">Contact</a>
-      <a href="zh.html"      class="nav-link">中文</a>
-      <a href="pack-beauty.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">Get the Beauty Pack</a>
+      <a href="zh-packs.html" class="nav-link">中文</a>
+      <a href="packs.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">Browse Packs</a>
     </div>
   </nav>
 
 
-  <!-- ── PAGE HERO ──────────────────────────────────────────── -->
-  <section class="inner-hero">
-    <div class="container">
-      <span class="eyebrow">Industry Packs</span>
-      <h1>Find the Right Pack for Your Business</h1>
-      <p>Each pack is built around the real workflows of a specific industry. Not generic AI advice — structured resources you can use from day one. Pick your industry below.</p>
+  <!-- ── PAGE HERO + SEARCH ────────────────────────────────── -->
+  <section style="background:var(--navy);padding:var(--s16,4rem) 0 var(--s12,3rem);" aria-labelledby="packs-heading">
+    <div class="container" style="text-align:center;">
+      <!-- UPDATE: pack count --><span class="eyebrow eyebrow--light">9 Industries · 3 Languages · $39 USD One-time · Launch pricing</span>
+      <h1 id="packs-heading" style="color:#fff;font-size:clamp(1.8rem,4vw,2.8rem);margin:var(--s4) 0 var(--s3);letter-spacing:-0.02em;">
+        What industry are you in?
+      </h1>
+      <p style="color:rgba(255,255,255,0.6);font-size:var(--text-base);margin:0 auto var(--s8);max-width:500px;">
+        Type your trade below — salon, cafe, accounting, solar, cleaning — and find your pack instantly.
+      </p>
+
+      <!-- Big search -->
+      <div style="max-width:560px;margin:0 auto var(--s6);position:relative;">
+        <span style="position:absolute;left:1.1rem;top:50%;transform:translateY(-50%);font-size:1.1rem;pointer-events:none;">🔍</span>
+        <input
+          type="text"
+          id="packSearch"
+          placeholder="e.g. salon, cafe, solar, cleaning, accounting…"
+          aria-label="Search industry packs"
+          style="width:100%;padding:1rem 1rem 1rem 3rem;font-size:var(--text-base);border:2px solid rgba(255,255,255,0.15);border-radius:var(--r-lg);background:rgba(255,255,255,0.08);color:#fff;outline:none;box-sizing:border-box;transition:border-color 0.2s;"
+          onfocus="this.style.borderColor='#5AA88A'" onblur="this.style.borderColor='rgba(255,255,255,0.15)'"
+        />
+      </div>
+
+      <!-- Popular searches -->
+      <div style="display:flex;gap:var(--s2);justify-content:center;flex-wrap:wrap;margin-bottom:var(--s6);">
+        <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);line-height:2;">Popular:</span>
+        <button onclick="document.getElementById('packSearch').value='beauty';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">💅 Beauty</button>
+        <button onclick="document.getElementById('packSearch').value='restaurant';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">🍜 Restaurant</button>
+        <button onclick="document.getElementById('packSearch').value='real estate';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">🏠 Real Estate</button>
+        <button onclick="document.getElementById('packSearch').value='tcm';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">🌿 TCM</button>
+        <button onclick="document.getElementById('packSearch').value='solar';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">☀️ Solar</button>
+        <button onclick="document.getElementById('packSearch').value='cleaning';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">🧹 Cleaning</button>
+      </div>
+
+      <!-- Instant search results (shown below search) -->
+      <div id="searchResults" style="display:none;max-width:560px;margin:0 auto;text-align:left;"></div>
+
+      <!-- No results message (in hero) -->
+      <div id="searchNoResults" style="display:none;max-width:560px;margin:0 auto;">
+        <p style="font-size:var(--text-sm);color:rgba(255,255,255,0.5);margin:0;">No matching packs found. <a href="contact.html" style="color:var(--mint);text-decoration:underline;">Tell us your industry</a> and we'll help.</p>
+      </div>
     </div>
   </section>
 
 
-  <!-- ── WHICH PACK IS RIGHT FOR YOU ───────────────────────── -->
-  <section class="section section--off" aria-labelledby="which-pack-heading">
+  <!-- ── BROWSE BY SECTOR ──────────────────────────────────── -->
+  <section style="background:var(--bg-off);border-bottom:1px solid var(--border-light);padding:var(--s6) 0;" aria-label="Browse by industry sector">
+    <div class="container">
+      <div style="display:flex;gap:var(--s2);justify-content:center;flex-wrap:wrap;align-items:center;">
+        <span style="font-size:var(--text-xs);color:var(--text-muted);font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-right:var(--s2);">Browse by sector →</span>
+        <a href="industry-home-property.html" style="display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s2) var(--s4);background:#fff;border:1.5px solid var(--border-light);border-radius:var(--r-md);text-decoration:none;font-size:var(--text-sm);font-weight:600;color:var(--navy);transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#5AA88A';this.style.boxShadow='0 2px 8px rgba(90,168,138,0.15)'" onmouseout="this.style.borderColor='var(--border-light)';this.style.boxShadow='none'">🏠 Home &amp; Property</a>
+        <a href="industry-health-wellness.html" style="display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s2) var(--s4);background:#fff;border:1.5px solid var(--border-light);border-radius:var(--r-md);text-decoration:none;font-size:var(--text-sm);font-weight:600;color:var(--navy);transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#5AA88A';this.style.boxShadow='0 2px 8px rgba(90,168,138,0.15)'" onmouseout="this.style.borderColor='var(--border-light)';this.style.boxShadow='none'">💆 Health &amp; Wellness</a>
+        <a href="industry-food-hospitality.html" style="display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s2) var(--s4);background:#fff;border:1.5px solid var(--border-light);border-radius:var(--r-md);text-decoration:none;font-size:var(--text-sm);font-weight:600;color:var(--navy);transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#5AA88A';this.style.boxShadow='0 2px 8px rgba(90,168,138,0.15)'" onmouseout="this.style.borderColor='var(--border-light)';this.style.boxShadow='none'">🍜 Food &amp; Hospitality</a>
+        <a href="industry-professional-services.html" style="display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s2) var(--s4);background:#fff;border:1.5px solid var(--border-light);border-radius:var(--r-md);text-decoration:none;font-size:var(--text-sm);font-weight:600;color:var(--navy);transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#5AA88A';this.style.boxShadow='0 2px 8px rgba(90,168,138,0.15)'" onmouseout="this.style.borderColor='var(--border-light)';this.style.boxShadow='none'">📊 Professional Services</a>
+        <a href="industry-trades-technical.html" style="display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s2) var(--s4);background:#fff;border:1.5px solid var(--border-light);border-radius:var(--r-md);text-decoration:none;font-size:var(--text-sm);font-weight:600;color:var(--navy);transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#5AA88A';this.style.boxShadow='0 2px 8px rgba(90,168,138,0.15)'" onmouseout="this.style.borderColor='var(--border-light)';this.style.boxShadow='none'">⚙️ Trades &amp; Technical</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── STATS STRIP ───────────────────────────────────────── -->
+  <section class="section" style="padding-top:var(--s8);padding-bottom:0;">
+    <div class="container">
+      <div class="packs-stats">
+        <!-- UPDATE: pack count --><div class="packs-stat"><span class="packs-stat-num">9</span><span class="packs-stat-label">Industry Packs Available</span></div>
+        <div class="packs-stat"><span class="packs-stat-num">20</span><span class="packs-stat-label">Prompts Per Pack</span></div>
+        <div class="packs-stat"><span class="packs-stat-num">$39 USD</span><span class="packs-stat-label">One-time Purchase</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── EVERY PACK INCLUDES (strip) ──────────────────────── -->
+  <section class="section" style="padding-top:0;padding-bottom:var(--s6);">
+    <div class="container">
+      <div style="background:var(--bg-off);border:1.5px solid var(--border-light);border-radius:var(--r-lg);padding:var(--s5) var(--s6);text-align:center;">
+        <span style="font-size:var(--text-xs);font-weight:700;color:var(--mint-dark);letter-spacing:0.06em;text-transform:uppercase;">Every pack includes</span>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary);margin:var(--s2) 0 0;line-height:1.8;">
+          Quick Start Guide &nbsp;&middot;&nbsp; Tool Stack &nbsp;&middot;&nbsp; 20 Prompts &nbsp;&middot;&nbsp; SOP Workflows &nbsp;&middot;&nbsp; 7-Day Action Plan &nbsp;&middot;&nbsp; Bonus Guide &nbsp;&middot;&nbsp; 3 Languages (English, 简体中文, 繁體中文)
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── PACK CARD CATALOG ─────────────────────────────────── -->
+  <section class="section section--off" id="packCatalog" aria-label="Available industry packs">
     <div class="container">
       <div class="section-header section-header--center">
-        <span class="eyebrow">Find Your Pack</span>
-        <h2 class="section-heading" id="which-pack-heading">Which pack is right for you?</h2>
-        <p class="section-sub">Each pack is purpose-built for one industry. Use this table to match your business to the right toolkit.</p>
+        <!-- UPDATE: pack count --><span class="eyebrow">9 Packs Available</span>
+        <h2 class="section-heading">Choose the pack built for your industry</h2>
       </div>
 
-      <div style="overflow-x:auto; margin-top:var(--s8);">
-        <table style="width:100%; border-collapse:collapse; font-size:var(--text-sm);">
-          <thead>
-            <tr style="background:var(--navy); color:var(--white);">
-              <th style="padding:var(--s4) var(--s5); text-align:left; border-radius:var(--r-sm) 0 0 0;">Industry</th>
-              <th style="padding:var(--s4) var(--s5); text-align:left;">Best for</th>
-              <th style="padding:var(--s4) var(--s5); text-align:left;">Core tasks covered</th>
-              <th style="padding:var(--s4) var(--s5); text-align:left;">Status</th>
-              <th style="padding:var(--s4) var(--s5); text-align:left; border-radius:0 var(--r-sm) 0 0;">Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom:1px solid var(--border-light); background:var(--white);">
-              <td style="padding:var(--s4) var(--s5); font-weight:700; color:var(--navy);">💅 Beauty</td>
-              <td style="padding:var(--s4) var(--s5); color:var(--text-secondary);">Salons, lash studios, beauty therapists, nail artists</td>
-              <td style="padding:var(--s4) var(--s5); color:var(--text-secondary);">Social content, booking replies, review responses, service copy</td>
-              <td style="padding:var(--s4) var(--s5);"><span class="tag" style="font-size:var(--text-xs);">Available now</span></td>
-              <td style="padding:var(--s4) var(--s5);"><a href="pack-beauty.html" class="btn btn-primary btn-sm">Get Pack — $49</a></td>
-            </tr>
-            <tr style="border-bottom:1px solid var(--border-light); background:var(--bg-off);">
-              <td style="padding:var(--s4) var(--s5); font-weight:700; color:var(--navy);">🏠 Real Estate</td>
-              <td style="padding:var(--s4) var(--s5); color:var(--text-secondary);">Independent agents, small agencies</td>
-              <td style="padding:var(--s4) var(--s5); color:var(--text-secondary);">Property listings, client follow-ups, social content, appraisal letters</td>
-              <td style="padding:var(--s4) var(--s5);"><span class="tag" style="font-size:var(--text-xs);">Available now</span></td>
-              <td style="padding:var(--s4) var(--s5);"><a href="contact.html" class="btn btn-primary btn-sm">Get Pack — $49</a></td>
-            </tr>
-            <tr style="border-bottom:1px solid var(--border-light); background:var(--white);">
-              <td style="padding:var(--s4) var(--s5); font-weight:700; color:var(--navy);">🍽️ Hospitality</td>
-              <td style="padding:var(--s4) var(--s5); color:var(--text-secondary);">Cafes, restaurants, bars, event venues</td>
-              <td style="padding:var(--s4) var(--s5); color:var(--text-secondary);">Promotions, review responses, menu copy, event announcements</td>
-              <td style="padding:var(--s4) var(--s5);"><span class="tag" style="font-size:var(--text-xs);">Available now</span></td>
-              <td style="padding:var(--s4) var(--s5);"><a href="contact.html" class="btn btn-primary btn-sm">Get Pack — $49</a></td>
-            </tr>
-            <tr style="border-bottom:1px solid var(--border-light); background:var(--bg-off); opacity:0.6;">
-              <td style="padding:var(--s4) var(--s5); font-weight:700; color:var(--navy);">🛍️ Retail</td>
-              <td style="padding:var(--s4) var(--s5); color:var(--text-secondary);">Local retail shops, boutiques</td>
-              <td style="padding:var(--s4) var(--s5); color:var(--text-secondary);">Product descriptions, customer service, campaign copy</td>
-              <td style="padding:var(--s4) var(--s5);"><span style="font-size:var(--text-xs); background:var(--bg-subtle); color:var(--text-muted); padding:2px 8px; border-radius:4px;">Coming soon</span></td>
-              <td style="padding:var(--s4) var(--s5);"><a href="contact.html" class="btn btn-outline btn-sm">Notify Me</a></td>
-            </tr>
-            <tr style="background:var(--white); opacity:0.6;">
-              <td style="padding:var(--s4) var(--s5); font-weight:700; color:var(--navy);">🏋️ Fitness</td>
-              <td style="padding:var(--s4) var(--s5); color:var(--text-secondary);">PTs, yoga studios, wellness practitioners</td>
-              <td style="padding:var(--s4) var(--s5); color:var(--text-secondary);">Client comms, programme copy, social content</td>
-              <td style="padding:var(--s4) var(--s5);"><span style="font-size:var(--text-xs); background:var(--bg-subtle); color:var(--text-muted); padding:2px 8px; border-radius:4px;">Coming soon</span></td>
-              <td style="padding:var(--s4) var(--s5);"><a href="contact.html" class="btn btn-outline btn-sm">Notify Me</a></td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- Category filter tabs -->
+      <div id="categoryFilters" style="display:flex;gap:var(--s2,0.5rem);justify-content:center;flex-wrap:wrap;margin-bottom:var(--s8,2rem);">
+        <button class="cat-filter active" data-filter="all" style="padding:0.5rem 1.25rem;border-radius:999px;border:1.5px solid var(--border-light,#e5e7eb);background:#fff;font-size:var(--text-sm,0.875rem);font-weight:600;color:var(--navy,#0F1034);cursor:pointer;transition:all 0.15s;">All</button>
+        <button class="cat-filter" data-filter="services" style="padding:0.5rem 1.25rem;border-radius:999px;border:1.5px solid var(--border-light,#e5e7eb);background:#fff;font-size:var(--text-sm,0.875rem);font-weight:600;color:var(--navy,#0F1034);cursor:pointer;transition:all 0.15s;">Services</button>
+        <button class="cat-filter" data-filter="food-hospitality" style="padding:0.5rem 1.25rem;border-radius:999px;border:1.5px solid var(--border-light,#e5e7eb);background:#fff;font-size:var(--text-sm,0.875rem);font-weight:600;color:var(--navy,#0F1034);cursor:pointer;transition:all 0.15s;">Food &amp; Hospitality</button>
+        <button class="cat-filter" data-filter="professional" style="padding:0.5rem 1.25rem;border-radius:999px;border:1.5px solid var(--border-light,#e5e7eb);background:#fff;font-size:var(--text-sm,0.875rem);font-weight:600;color:var(--navy,#0F1034);cursor:pointer;transition:all 0.15s;">Professional</button>
+        <button class="cat-filter" data-filter="health-wellness" style="padding:0.5rem 1.25rem;border-radius:999px;border:1.5px solid var(--border-light,#e5e7eb);background:#fff;font-size:var(--text-sm,0.875rem);font-weight:600;color:var(--navy,#0F1034);cursor:pointer;transition:all 0.15s;">Health &amp; Wellness</button>
+        <button class="cat-filter" data-filter="trade-home" style="padding:0.5rem 1.25rem;border-radius:999px;border:1.5px solid var(--border-light,#e5e7eb);background:#fff;font-size:var(--text-sm,0.875rem);font-weight:600;color:var(--navy,#0F1034);cursor:pointer;transition:all 0.15s;">Trade &amp; Home</button>
       </div>
 
-      <p style="font-size:var(--text-xs); color:var(--text-muted); text-align:center; margin-top:var(--s4);">Not sure which fits your business? <a href="contact.html" style="color:var(--navy); text-decoration:underline;">Contact us</a> — we'll tell you honestly.</p>
-    </div>
-  </section>
+      <div class="packs-grid" id="packGrid">
 
-
-  <!-- ── WHAT'S IN EVERY PACK ───────────────────────────────── -->
-  <section class="section" aria-labelledby="every-pack-heading">
-    <div class="container">
-      <div class="section-header section-header--center">
-        <span class="eyebrow">Every Pack Includes</span>
-        <h2 class="section-heading" id="every-pack-heading">6 structured resources</h2>
-        <p class="section-sub">Quick Start Guide &nbsp;·&nbsp; Tool Stack &nbsp;·&nbsp; Prompt Library (40+ prompts) &nbsp;·&nbsp; SOP Workflows &nbsp;·&nbsp; 7-Day Action Plan &nbsp;·&nbsp; Bonus Guide</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ── AVAILABLE PACKS ────────────────────────────────────── -->
-  <section class="section section--off" aria-labelledby="packs-available-heading">
-    <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">Available Now</span>
-        <h2 class="section-heading" id="packs-available-heading">Ready to buy and use this week</h2>
-        <p class="section-sub">One-time purchase. Instant digital download. Start implementing the same day.</p>
-      </div>
-
-      <div class="packs-grid packs-grid--lg">
-
-        <div class="pack-card">
+        <!-- 1 · Beauty -->
+        <div class="pack-card" data-category="services" data-keywords="beauty salon lash nail hairdresser spa 美业 美容 美发 指甲 睫毛">
           <div class="pack-card-icon" aria-hidden="true">💅</div>
-          <span class="tag" style="margin-bottom:var(--s3);">Available now</span>
           <div class="pack-card-title">Beauty AI Pack</div>
           <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For salons, lash studios, beauty therapists &amp; nail artists</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
-            <li>Write Instagram captions and Reels content</li>
-            <li>Reply to booking enquiries and Google reviews</li>
-            <li>Create service descriptions and seasonal promos</li>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+            <li>Write IG captions and Reels content in minutes</li>
+            <li>Reply to booking enquiries and review messages</li>
+            <li>Create service descriptions and promo copy</li>
           </ul>
-          <p style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--s4);">Use AI in your business this afternoon.</p>
           <div class="pack-card-footer">
-            <div class="pack-card-price">$49 <span>one-time</span></div>
-            <a href="pack-beauty.html" class="btn btn-primary btn-sm">View &amp; Get Pack</a>
+            <div class="pack-card-price">$39 USD <span>one-time</span></div>
+            <a href="pack-beauty.html" class="btn btn-primary btn-sm">Get Pack</a>
           </div>
         </div>
 
-        <div class="pack-card">
+        <!-- 2 · Real Estate -->
+        <div class="pack-card" data-category="trade-home" data-keywords="real estate agent property listing house apartment 房产 中介 房地产">
           <div class="pack-card-icon" aria-hidden="true">🏠</div>
-          <span class="tag" style="margin-bottom:var(--s3);">Available now</span>
           <div class="pack-card-title">Real Estate AI Pack</div>
           <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For independent agents &amp; small agencies</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
             <li>Write property listings and appraisal letters</li>
             <li>Draft client follow-ups without the mental load</li>
-            <li>Create social posts for listings and market updates</li>
+            <li>Create social content for listings and market updates</li>
           </ul>
-          <p style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--s4);">Stop spending evenings on admin writing.</p>
           <div class="pack-card-footer">
-            <div class="pack-card-price">$49 <span>one-time</span></div>
-            <a href="contact.html" class="btn btn-primary btn-sm">Get Pack</a>
+            <div class="pack-card-price">$39 USD <span>one-time</span></div>
+            <a href="pack-realestate.html" class="btn btn-primary btn-sm">Get Pack</a>
           </div>
         </div>
 
-        <div class="pack-card">
-          <div class="pack-card-icon" aria-hidden="true">🍽️</div>
-          <span class="tag" style="margin-bottom:var(--s3);">Available now</span>
-          <div class="pack-card-title">Hospitality AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For cafes, restaurants, bars &amp; venues</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
-            <li>Create promotions and event announcements fast</li>
-            <li>Respond to Google and Yelp reviews consistently</li>
-            <li>Write menu copy and daily specials</li>
+        <!-- 3 · Restaurant -->
+        <div class="pack-card" data-category="food-hospitality" data-keywords="restaurant cafe food hospitality dining catering 餐饮 餐厅 咖啡 茶餐厅">
+          <div class="pack-card-icon" aria-hidden="true">🍜</div>
+          <div class="pack-card-title">Restaurant AI Pack</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For cafes, restaurants, takeaway shops &amp; food businesses</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+            <li>Write daily specials and social captions in minutes</li>
+            <li>Respond to Google reviews consistently</li>
+            <li>Write menu descriptions and seasonal promo copy</li>
           </ul>
-          <p style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--s4);">Simplify the tasks that eat your time every day.</p>
           <div class="pack-card-footer">
-            <div class="pack-card-price">$49 <span>one-time</span></div>
-            <a href="contact.html" class="btn btn-primary btn-sm">Get Pack</a>
+            <div class="pack-card-price">$39 USD <span>one-time</span></div>
+            <a href="pack-restaurant.html" class="btn btn-primary btn-sm">Get Pack</a>
           </div>
         </div>
 
+        <!-- 4 · Accounting -->
+        <div class="pack-card" data-category="professional" data-keywords="accounting tax bookkeeping BAS GST accountant financial 会计 税务 报税 记账">
+          <div class="pack-card-icon" aria-hidden="true">📊</div>
+          <div class="pack-card-title">Accounting &amp; Tax AI Pack</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For accountants, bookkeepers &amp; tax agents</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+            <li>Draft client emails for tax deadlines and lodgements</li>
+            <li>Write educational content about BAS, GST and deductions</li>
+            <li>Create social posts that build trust and authority</li>
+          </ul>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$39 USD <span>one-time</span></div>
+            <a href="pack-accounting.html" class="btn btn-primary btn-sm">Get Pack</a>
+          </div>
+        </div>
+
+        <!-- 5 · TCM Clinic -->
+        <div class="pack-card" data-category="health-wellness" data-keywords="tcm chinese medicine acupuncture clinic herbal 中医 针灸 中医诊所 推拿">
+          <div class="pack-card-icon" aria-hidden="true">🌿</div>
+          <div class="pack-card-title">TCM Clinic AI Pack</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For acupuncture clinics, herbalists &amp; TCM practitioners</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+            <li>Write patient education content about treatments</li>
+            <li>Create bilingual social posts and clinic updates</li>
+            <li>Draft appointment reminders and follow-up messages</li>
+          </ul>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$39 USD <span>one-time</span></div>
+            <a href="pack-tcm.html" class="btn btn-primary btn-sm">Get Pack</a>
+          </div>
+        </div>
+
+        <!-- 6 · Education -->
+        <div class="pack-card" data-category="professional" data-keywords="tutor tutoring education training school teacher course 补习 培训 教育 学校">
+          <div class="pack-card-icon" aria-hidden="true">📚</div>
+          <div class="pack-card-title">Education AI Pack</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For tutoring centres, training providers &amp; educators</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+            <li>Write course descriptions and enrolment follow-ups</li>
+            <li>Create parent communications and progress updates</li>
+            <li>Draft social content that showcases student outcomes</li>
+          </ul>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$39 USD <span>one-time</span></div>
+            <a href="pack-education.html" class="btn btn-primary btn-sm">Get Pack</a>
+          </div>
+        </div>
+
+        <!-- 7 · Home Renovation -->
+        <div class="pack-card" data-category="trade-home" data-keywords="renovation builder construction home improvement kitchen bathroom 装修 建筑 房屋 施工">
+          <div class="pack-card-icon" aria-hidden="true">🔨</div>
+          <div class="pack-card-title">Renovation AI Pack</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For builders, renovators &amp; home improvement businesses</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+            <li>Write project quotes and client update emails</li>
+            <li>Create before-and-after social content</li>
+            <li>Draft supplier communications and scope documents</li>
+          </ul>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$39 USD <span>one-time</span></div>
+            <a href="pack-renovation.html" class="btn btn-primary btn-sm">Get Pack</a>
+          </div>
+        </div>
+
+        <!-- 8 · Solar -->
+        <div class="pack-card" data-category="trade-home" data-keywords="solar energy panel installation renewable electrician 太阳能 光伏 能源 安装">
+          <div class="pack-card-icon" aria-hidden="true">☀️</div>
+          <div class="pack-card-title">Solar AI Pack</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For solar installers &amp; renewable energy businesses</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+            <li>Write proposals and system comparison summaries</li>
+            <li>Create educational posts about solar savings</li>
+            <li>Draft customer follow-ups and referral requests</li>
+          </ul>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$39 USD <span>one-time</span></div>
+            <a href="pack-solar.html" class="btn btn-primary btn-sm">Get Pack</a>
+          </div>
+        </div>
+
+        <!-- 9 · Home Cleaning -->
+        <div class="pack-card" data-category="services" data-keywords="cleaning cleaner domestic maid home service commercial 家政 清洁 保洁 上门">
+          <div class="pack-card-icon" aria-hidden="true">✨</div>
+          <div class="pack-card-title">Cleaning AI Pack</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For home cleaners, cleaning companies &amp; domestic services</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+            <li>Write service quotes and booking confirmations</li>
+            <li>Reply to enquiries and collect review testimonials</li>
+            <li>Create social posts and referral incentive copy</li>
+          </ul>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$39 USD <span>one-time</span></div>
+            <a href="pack-cleaning.html" class="btn btn-primary btn-sm">Get Pack</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- "More industries coming" block -->
+      <div style="margin-top:var(--s10); padding:var(--s8); background:var(--bg-off); border-radius:var(--r-xl); text-align:center; border:1px dashed var(--border);">
+        <h3 style="font-size:var(--text-lg); font-weight:700; color:var(--navy); margin-bottom:var(--s3);">Don't see your industry?</h3>
+        <p style="font-size:var(--text-sm); color:var(--text-secondary); margin-bottom:var(--s5); max-width:480px; margin-left:auto; margin-right:auto;">We're building new industry packs regularly. Tell us what you need and we'll prioritise accordingly.</p>
+        <a href="contact.html" class="btn btn-outline">Request Your Industry →</a>
+      </div>
+
+      <div style="text-align:center; margin-top:var(--s6); padding:var(--s5); background:var(--white); border:1px solid var(--border); border-radius:var(--r-lg);">
+        <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0;">
+          <strong style="color:var(--navy);">Need packs for multiple industries?</strong>
+          <a href="contact.html" style="color:var(--mint-dark); text-decoration:underline;">Contact us for bundle pricing →</a>
+        </p>
+      </div>
+
+      <!-- No results message (hidden by default) -->
+      <div id="noResults" style="display:none;text-align:center;padding:var(--s10) 0;">
+        <p style="font-size:var(--text-lg);color:var(--text-muted);margin-bottom:var(--s4);">No matching packs found.</p>
+        <p style="font-size:var(--text-sm);color:var(--text-muted);">Try a different search, or <a href="contact.html" style="color:var(--mint-dark);font-weight:600;">tell us your industry</a> and we'll point you to the right pack.</p>
       </div>
     </div>
   </section>
 
 
-  <!-- ── COMING SOON ────────────────────────────────────────── -->
-  <section class="section" aria-labelledby="coming-soon-heading">
-    <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">Coming Next</span>
-        <h2 class="section-heading" id="coming-soon-heading">More industries in development</h2>
-        <p class="section-sub">Register your interest and we'll let you know when your pack is ready.</p>
-      </div>
-
-      <div class="packs-grid packs-grid--lg">
-
-        <div class="pack-card" style="opacity:0.6;">
-          <div class="pack-card-icon" aria-hidden="true">🛍️</div>
-          <span class="tag" style="margin-bottom:var(--s3); background:var(--bg-subtle); color:var(--text-muted);">Coming soon</span>
-          <div class="pack-card-title">Retail AI Pack</div>
-          <p class="pack-card-desc">AI tools for product descriptions, customer service replies, inventory copy and local retail marketing campaigns.</p>
-          <div class="pack-card-footer">
-            <div class="pack-card-price" style="color:var(--text-muted);">$49 <span>one-time</span></div>
-            <a href="contact.html" class="btn btn-outline btn-sm">Notify Me</a>
-          </div>
-        </div>
-
-        <div class="pack-card" style="opacity:0.6;">
-          <div class="pack-card-icon" aria-hidden="true">🏋️</div>
-          <span class="tag" style="margin-bottom:var(--s3); background:var(--bg-subtle); color:var(--text-muted);">Coming soon</span>
-          <div class="pack-card-title">Fitness &amp; Wellness AI Pack</div>
-          <p class="pack-card-desc">For personal trainers, yoga studios, nutritionists and wellness practitioners — reduce admin and grow your client base.</p>
-          <div class="pack-card-footer">
-            <div class="pack-card-price" style="color:var(--text-muted);">$49 <span>one-time</span></div>
-            <a href="contact.html" class="btn btn-outline btn-sm">Notify Me</a>
-          </div>
-        </div>
-
-        <div class="pack-card" style="opacity:0.6;">
-          <div class="pack-card-icon" aria-hidden="true">🔧</div>
-          <span class="tag" style="margin-bottom:var(--s3); background:var(--bg-subtle); color:var(--text-muted);">Coming soon</span>
-          <div class="pack-card-title">Trades &amp; Services AI Pack</div>
-          <p class="pack-card-desc">For electricians, plumbers, cleaners and trades businesses — quotes, customer communication and workflow automation.</p>
-          <div class="pack-card-footer">
-            <div class="pack-card-price" style="color:var(--text-muted);">$49 <span>one-time</span></div>
-            <a href="contact.html" class="btn btn-outline btn-sm">Notify Me</a>
-          </div>
-        </div>
-
-      </div>
+  <!-- ── NOT SURE WHICH PACK? ──────────────────────────────── -->
+  <section class="section" aria-label="Not sure which pack">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-heading">Not sure which pack fits?</h2>
+      <p class="section-sub" style="margin:var(--s4) auto var(--s8);max-width:520px;">Tell us what your business does and we'll recommend the right pack. We reply within 1 business day — English and Chinese available.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Ask Us</a>
     </div>
   </section>
 
@@ -254,12 +452,12 @@
         <div class="updates-banner-content">
           <span class="eyebrow eyebrow--light">Optional Add-on</span>
           <h2>Keep your pack current as AI evolves</h2>
-          <p>AI tools change fast. The optional Update Pass ($19/year) keeps your pack current — revised prompts, updated tools, new workflows and industry notes. Add it after purchase, not required upfront.</p>
+          <p>AI tools change fast. The optional Update Pass keeps your pack current — revised prompts, updated tools, new workflows and industry notes. Add it after purchase, not required upfront.</p>
           <div class="updates-pill-list">
-            <span class="updates-pill">Revised prompts</span>
-            <span class="updates-pill">Updated tools</span>
-            <span class="updates-pill">New workflows</span>
-            <span class="updates-pill">Industry notes</span>
+            <span class="updates-pill">Monthly new AI tools</span>
+            <span class="updates-pill">Updated prompts</span>
+            <span class="updates-pill">Industry news</span>
+            <span class="updates-pill">Local regulation alerts</span>
           </div>
         </div>
         <div style="flex-shrink:0;">
@@ -275,7 +473,8 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <img src="logo-white.svg" alt="OpenWays" class="footer-logo-img" style="margin-bottom:var(--s4);">
+          <div style="display:flex;align-items:center;gap:0.4em;"><img src="logo_mark_green.png" alt="" style="height:22px;width:auto;flex-shrink:0;">
+          <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;line-height:1;white-space:nowrap;">Open<span style="color:#5AA88A">Ways</span></span></div>
           <p class="footer-tagline">AI toolkits for modern small businesses. Practical, industry-specific, ready to use within 7 days.</p>
           <a href="mailto:hi@openways.net" class="footer-link" style="margin-top:var(--s4); display:inline-block;">hi@openways.net</a>
         </div>
@@ -283,7 +482,6 @@
           <div class="footer-heading">Products</div>
           <div class="footer-links">
             <a href="packs.html" class="footer-link">All Packs</a>
-            <a href="pack-beauty.html" class="footer-link">Beauty AI Pack</a>
             <a href="updates.html" class="footer-link">Update Pass</a>
           </div>
         </div>
@@ -293,28 +491,31 @@
             <a href="about.html"   class="footer-link">About</a>
             <a href="faq.html"     class="footer-link">FAQ</a>
             <a href="contact.html" class="footer-link">Contact</a>
-            <a href="zh.html"      class="footer-link">中文版</a>
+            <a href="zh-packs.html" class="footer-link">中文版</a>
           </div>
         </div>
         <div>
           <div class="footer-heading">Legal</div>
           <div class="footer-links">
-            <a href="#" class="footer-link">Terms of Use</a>
-            <a href="#" class="footer-link">Refund Policy</a>
+            <a href="terms.html" class="footer-link">Terms of Use</a>
+            <a href="refund.html" class="footer-link">Refund Policy</a>
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span class="footer-copy">© 2025 OpenWays. All rights reserved.</span>
         <div class="footer-legal">
-          <a href="#">Terms</a>
-          <a href="#">Refund Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="refund.html">Refund Policy</a>
+          <a href="privacy.html">Privacy</a>
         </div>
       </div>
     </div>
   </footer>
 
   <script>
+    // ── Nav scroll ──
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
     const toggle = document.getElementById('navToggle');
@@ -322,6 +523,99 @@
     toggle.addEventListener('click', () => {
       const open = mobile.classList.toggle('open');
       toggle.setAttribute('aria-expanded', String(open));
+    });
+
+    // ── Pack search ──
+    const searchInput = document.getElementById('packSearch');
+    const packCards = document.querySelectorAll('#packGrid .pack-card');
+    const noResults = document.getElementById('noResults');
+    const searchResults = document.getElementById('searchResults');
+    const searchNoResults = document.getElementById('searchNoResults');
+
+    // Pack data for instant results
+    const packData = [
+      { icon: '💅', name: 'Beauty AI Pack', audience: 'Salons, lash studios, beauty therapists', href: 'pack-beauty.html', keywords: 'beauty salon lash nail hairdresser spa 美业 美容 美发 指甲 睫毛' },
+      { icon: '🏠', name: 'Real Estate AI Pack', audience: 'Independent agents & small agencies', href: 'pack-realestate.html', keywords: 'real estate agent property listing house apartment 房产 中介 房地产' },
+      { icon: '🍜', name: 'Restaurant AI Pack', audience: 'Cafes, restaurants, takeaway & food businesses', href: 'pack-restaurant.html', keywords: 'restaurant cafe food hospitality dining catering 餐饮 餐厅 咖啡 茶餐厅' },
+      { icon: '📊', name: 'Accounting & Tax AI Pack', audience: 'Accountants, bookkeepers & tax agents', href: 'pack-accounting.html', keywords: 'accounting tax bookkeeping BAS GST accountant financial 会计 税务 报税 记账' },
+      { icon: '🌿', name: 'TCM Clinic AI Pack', audience: 'Acupuncture clinics, herbalists & TCM practitioners', href: 'pack-tcm.html', keywords: 'tcm chinese medicine acupuncture clinic herbal 中医 针灸 中医诊所 推拿' },
+      { icon: '📚', name: 'Education AI Pack', audience: 'Tutoring centres, training providers & educators', href: 'pack-education.html', keywords: 'tutor tutoring education training school teacher course 补习 培训 教育 学校' },
+      { icon: '🔨', name: 'Renovation AI Pack', audience: 'Builders, renovators & home improvement', href: 'pack-renovation.html', keywords: 'renovation builder construction home improvement kitchen bathroom 装修 建筑 房屋 施工' },
+      { icon: '☀️', name: 'Solar AI Pack', audience: 'Solar installers & renewable energy businesses', href: 'pack-solar.html', keywords: 'solar energy panel installation renewable electrician 太阳能 光伏 能源 安装' },
+      { icon: '✨', name: 'Cleaning AI Pack', audience: 'Home cleaners, cleaning companies & domestic services', href: 'pack-cleaning.html', keywords: 'cleaning cleaner domestic maid home service commercial 家政 清洁 保洁 上门' },
+    ];
+
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.trim().toLowerCase();
+
+      // Reset card grid visibility
+      packCards.forEach(card => card.style.display = '');
+      noResults.style.display = 'none';
+
+      if (!q) {
+        searchResults.style.display = 'none';
+        searchNoResults.style.display = 'none';
+        return;
+      }
+
+      // Filter and show instant results below search
+      const matches = packData.filter(p =>
+        (p.keywords + ' ' + p.name + ' ' + p.audience).toLowerCase().includes(q)
+      );
+
+      if (matches.length > 0) {
+        searchResults.innerHTML = matches.map(p =>
+          `<a href="${p.href}" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:10px;text-decoration:none;margin-bottom:0.5rem;transition:background 0.15s,border-color 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)';this.style.borderColor='#5AA88A'" onmouseout="this.style.background='rgba(255,255,255,0.08)';this.style.borderColor='rgba(255,255,255,0.12)'">
+            <span style="font-size:1.4rem;flex-shrink:0;">${p.icon}</span>
+            <span style="flex:1;">
+              <span style="font-size:0.95rem;font-weight:700;color:#fff;display:block;">${p.name}</span>
+              <span style="font-size:0.75rem;color:rgba(255,255,255,0.5);">${p.audience}</span>
+            </span>
+            <span style="font-size:0.8rem;font-weight:700;color:#5AA88A;flex-shrink:0;">$39 USD →</span>
+          </a>`
+        ).join('');
+        searchResults.style.display = 'block';
+        searchNoResults.style.display = 'none';
+      } else {
+        searchResults.style.display = 'none';
+        searchNoResults.style.display = 'block';
+      }
+
+      // Also filter the main card grid below
+      let anyCardMatch = false;
+      packCards.forEach(card => {
+        const keywords = card.dataset.keywords || '';
+        const title = card.querySelector('.pack-card-title')?.textContent || '';
+        const text = card.textContent || '';
+        const cardMatch = (keywords + ' ' + title + ' ' + text).toLowerCase().includes(q);
+        card.style.display = cardMatch ? '' : 'none';
+        if (cardMatch) anyCardMatch = true;
+      });
+      noResults.style.display = anyCardMatch ? 'none' : 'block';
+    });
+
+    // ── Category filter tabs ──
+    const filterBtns = document.querySelectorAll('#categoryFilters .cat-filter');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active state
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        // Filter cards
+        const filter = btn.dataset.filter;
+        packCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        // Clear search when using category filter
+        searchInput.value = '';
+        searchResults.style.display = 'none';
+        searchNoResults.style.display = 'none';
+        noResults.style.display = 'none';
+      });
     });
   </script>
 

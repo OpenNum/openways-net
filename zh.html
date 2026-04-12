@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G6XV2WSYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5G6XV2WSYW");
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OpenWays — 中小企业 AI 工具包</title>
-  <meta name="description" content="OpenWays 为中小企业提供实用的行业专属 AI 工具包。美业、房产、餐饮。买了即用，7 天内 AI 真正跑在你的业务里。" />
+  <title>OpenWays — 中小企业 AI 行业包</title>
+  <meta name="description" content="OpenWays 为中小企业提供实用的行业专属 AI 行业包。美业、房产、餐饮。买了即用，7 天内 AI 真正跑在您的业务里。" />
   <link rel="canonical" href="https://openways.net/zh.html" />
+  <meta property="og:title" content="OpenWays — 中小企业 AI 行业包" />
+  <meta property="og:description" content="OpenWays 为中小企业提供实用的行业专属 AI 行业包。美业、房产、餐饮。买了即用，7 天内 AI 真正跑在您的业务里。" />
+  <meta property="og:url" content="https://openways.net/zh.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="OpenWays — 中小企业 AI 行业包" />
+  <meta name="twitter:description" content="OpenWays 为中小企业提供实用的行业专属 AI 行业包。美业、房产、餐饮。买了即用，7 天内 AI 真正跑在您的业务里。" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh.html" />
+  <link rel="alternate" hreflang="en" href="https://openways.net/" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,29 +32,33 @@
   <nav class="nav" id="nav" role="navigation" aria-label="主导航">
     <div class="container nav-inner">
       <a href="index.html" class="nav-logo" aria-label="OpenWays 首页">
-        <img src="logo.svg" alt="OpenWays" class="nav-logo-img">
+        <img src="logo_mark_dark.png" alt="" style="height:26px;width:auto;display:block;flex-shrink:0;">
+        <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.03em;line-height:1;">Open<span style="color:#5AA88A">Ways</span></span>
       </a>
       <ul class="nav-links" role="list">
-        <li><a href="zh-packs.html"   class="nav-link">产品包</a></li>
+        <li><a href="zh-packs.html"   class="nav-link">行业定制</a></li>
+        <li><a href="book.html"     class="nav-link">免费指南</a></li>
         <li><a href="zh-faq.html"     class="nav-link">常见问题</a></li>
         <li><a href="zh-about.html"   class="nav-link">关于我们</a></li>
         <li><a href="zh-contact.html" class="nav-link">联系我们</a></li>
       </ul>
       <div class="nav-right">
         <a href="index.html" class="nav-lang" title="English">EN</a>
-        <a href="mailto:hi@openways.net" class="btn btn-primary btn-sm">联系咨询</a>
+        <a href="zh-packs.html" class="btn btn-primary btn-sm">浏览行业包</a>
+
       </div>
       <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" id="navToggle">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="nav-mobile" id="navMobile">
-      <a href="zh-packs.html"   class="nav-link">产品包</a>
+      <a href="zh-packs.html"   class="nav-link">行业定制</a>
+      <a href="book.html"     class="nav-link">免费指南</a>
       <a href="zh-faq.html"     class="nav-link">常见问题</a>
       <a href="zh-about.html"   class="nav-link">关于我们</a>
       <a href="zh-contact.html" class="nav-link">联系我们</a>
       <a href="index.html"      class="nav-link">English</a>
-      <a href="mailto:hi@openways.net" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">联系咨询</a>
+      <a href="zh-packs.html" class="btn btn-primary" style="margin-top:1rem; justify-content:center;">浏览行业包</a>
     </div>
   </nav>
 
@@ -45,55 +66,64 @@
   <section class="hero" aria-labelledby="zh-hero-heading">
     <div class="container hero-inner">
       <div class="hero-content">
-        <div class="hero-tag">行业专属 AI 工具包 · 买了即用</div>
-        <h1 class="hero-title" id="zh-hero-heading">
-          专为中小企业 <br>打造的 <em>AI 工具包</em>
+        <h1 class="hero-title" id="zh-hero-heading" style="font-size:clamp(3.5rem,8vw,6rem); line-height:1.05; margin-bottom:var(--s4); letter-spacing:0.06em;">
+          <span style="color:var(--mint)">中</span>小企业<br>
+          <span style="color:var(--mint)">国</span>际版<span style="color:var(--mint)">AI</span><br>
+          <span style="color:var(--mint)">行</span>业定制
         </h1>
-        <p class="hero-sub">
-          不是 AI 课程，不是通用建议。<br>
-          是专门为你的行业设计的结构化工具包，买了这周就能用。
-        </p>
-        <p class="hero-sub" style="font-size:var(--text-sm); margin-top:var(--s3); opacity:0.8;">
-          一次性购买 &nbsp;·&nbsp; 即时数字交付 &nbsp;·&nbsp; 无需技术背景
-        </p>
-        <div class="hero-actions">
-          <a href="pack-beauty.html" class="btn btn-mint btn-lg">查看美业工具包 — $49</a>
-          <a href="mailto:hi@openways.net" class="btn btn-outline-light btn-lg">中文咨询</a>
+        <div style="display:flex; flex-direction:column; gap:var(--s1); margin:var(--s5) 0 var(--s3); padding-left:0.18em;">
+          <div style="display:flex; align-items:baseline;">
+            <span style="font-size:var(--text-sm); color:rgba(255,255,255,0.25); min-width:12.5em;">20 提示词模版</span>
+            <span style="font-size:var(--text-sm); color:rgba(255,255,255,0.45); letter-spacing:0.03em;">奥妙</span>
+          </div>
+          <div style="display:flex; align-items:baseline;">
+            <span style="font-size:var(--text-sm); color:rgba(255,255,255,0.25); min-width:12.5em;">5 SOP 工作流</span>
+            <span style="font-size:var(--text-sm); color:rgba(255,255,255,0.45); letter-spacing:0.03em;">周全</span>
+          </div>
+          <div style="display:flex; align-items:baseline;">
+            <span style="font-size:var(--text-sm); color:rgba(255,255,255,0.25); min-width:12.5em;">7 天行动计划</span>
+            <span style="font-size:var(--text-sm); color:rgba(255,255,255,0.45); letter-spacing:0.03em;">强效</span>
+          </div>
         </div>
-        <p style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:var(--s4);">
-          所有产品包目前为英文版。购买前如有疑问，欢迎直接发邮件用中文咨询。
-        </p>
+        <p style="font-size:var(--text-xs); color:rgba(255,255,255,0.25); margin-bottom:var(--s8); padding-left:0.18em;">我们针对您的行业研究与定制，即刻可用，提升业绩！</p>
+        <div class="hero-actions">
+          <a href="zh-packs.html" class="btn btn-mint btn-lg">浏览行业包</a>
+          <a href="book.html" class="btn btn-outline-light btn-lg">阅读免费指南</a>
+        </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="hero-card-stack">
           <div class="hero-card">
-            <div class="hero-card-label">💅 美业 AI 工具包</div>
-            <div class="hero-card-title">7 天后你能做到：</div>
+            <div class="hero-card-label">🗂️ 9 个行业可选</div>
+            <div class="hero-card-title">7 天后您将：</div>
             <ul class="hero-outcome-list">
-              <li>1 分钟内回复预约咨询</li>
-              <li>一次坐下来写完一周内容</li>
-              <li>把 AI 变成每天都在跑的工作流</li>
+              <li>让 AI 融入您的真实工作流</li>
+              <li>用 20 个现成提示词模板节省行政时间</li>
+              <li>中英双语运营您的业务</li>
             </ul>
             <div class="hero-card-arrow">
-              <a href="pack-beauty.html">查看详情 →</a>
+              <a href="zh-packs.html">浏览所有行业包 →</a>
             </div>
           </div>
           <div class="hero-card">
-            <div class="hero-card-label">每个工具包包含</div>
-            <div class="hero-card-title">6 项结构化资源</div>
+            <div class="hero-card-label">每个行业包包含</div>
+            <div class="hero-card-title">结构化 7 天系统</div>
             <div class="hero-day-strip">
               <div class="hero-day-item">
                 <span class="hero-day-label">第 1 天</span>
-                <span>配置工具，无需技术背景</span>
+                <span>配置工具——无需技术背景</span>
               </div>
               <div class="hero-day-item">
                 <span class="hero-day-label">第 3 天</span>
-                <span>第一个 AI 工作流跑起来</span>
+                <span>第一个 AI 工作流在您的业务中运行</span>
               </div>
               <div class="hero-day-item">
                 <span class="hero-day-label">第 7 天</span>
-                <span>AI 已经融入日常运营</span>
+                <span>AI 融入您的日常运营</span>
               </div>
+            </div>
+            <div style="margin-top:var(--s4); padding-top:var(--s4); border-top:1px solid rgba(255,255,255,0.1); font-size:var(--text-xs); color:var(--mint);">
+              9 项结构化资源 — 5 份指南 + 4 个视频教程
             </div>
           </div>
         </div>
@@ -102,43 +132,95 @@
   </section>
 
   <!-- ── TRUST BAR ─────────────────────────────────────────── -->
-  <div class="trust-bar" role="complementary">
+  <div class="trust-bar" role="complementary" style="padding:var(--s4) 0;">
     <div class="container trust-bar-inner">
       <div class="trust-item"><span class="trust-item-icon" aria-hidden="true">💳</span><span class="trust-item-text">一次性购买，永久使用</span></div>
       <div class="trust-item"><span class="trust-item-icon" aria-hidden="true">⚡</span><span class="trust-item-text">即时数字交付</span></div>
       <div class="trust-item"><span class="trust-item-icon" aria-hidden="true">🤖</span><span class="trust-item-text">配合 ChatGPT / Claude 使用</span></div>
       <div class="trust-item"><span class="trust-item-icon" aria-hidden="true">🧠</span><span class="trust-item-text">零技术背景可上手</span></div>
-      <div class="trust-item"><span class="trust-item-icon" aria-hidden="true">🌏</span><span class="trust-item-text">可中文咨询</span></div>
+      <div class="trust-item"><span class="trust-item-icon" aria-hidden="true">📅</span><span class="trust-item-text">7 天实施计划</span></div>
     </div>
   </div>
 
+  <!-- ── 一人胜千军 FREE BOOK BANNER ──────────────────────────── -->
+  <section id="free-guide-zh" style="background:#111827; border-top:1px solid #1f2937; overflow:hidden;">
+    <div class="container" style="max-width:960px; margin:0 auto; padding-top:0; padding-bottom:0;">
+      <div style="display:grid; grid-template-columns:1fr auto; gap:var(--s8); align-items:center; padding:var(--s7) 0;">
+        <div>
+          <h2 style="font-size:clamp(1.1rem,2.2vw,1.55rem); font-weight:800; color:#fff; line-height:1.2; margin:0 0 var(--s2); letter-spacing:-0.02em;">一人胜千军</h2>
+          <p style="font-size:var(--text-sm); color:rgba(255,255,255,0.48); margin:0 0 var(--s4); line-height:1.8; max-width:400px;">
+            一个人+正确的AI系统<br>
+            未来也可以战胜千军万马！<br>
+            请找个安静的角落🏠，倒一杯☕️，仔细阅读📖。
+          </p>
+          <div style="display:flex; align-items:center; gap:var(--s5); flex-wrap:wrap;">
+            <a href="book.html"
+              style="font-size:var(--text-sm); font-weight:700; color:#5AA88A; text-decoration:none; transition:color 0.15s;"
+              onmouseover="this.style.color='#7ec8a8'" onmouseout="this.style.color='#5AA88A'">免费获取 →</a>
+            <span style="font-size:11px; letter-spacing:0.02em;">
+              <a href="book.html" style="color:rgba(255,255,255,0.25); text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.45)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">English</a>
+              <span style="color:rgba(255,255,255,0.15);">·</span>
+              <a href="book.html" style="color:rgba(255,255,255,0.25); text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.45)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">繁體中文</a>
+              <span style="color:rgba(255,255,255,0.15);">·</span>
+              <a href="book.html" style="color:rgba(255,255,255,0.25); text-decoration:none;" onmouseover="this.style.color='rgba(255,255,255,0.45)'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">简体中文</a>
+            </span>
+          </div>
+        </div>
+        <div style="flex-shrink:0; padding:var(--s4) 0;">
+          <a href="book.html">
+            <img
+              src="aoo_thumbnail_sc.jpg"
+              alt="一人胜千军 — OpenWays 免费指南"
+              style="width:clamp(100px,14vw,160px); height:auto; border-radius:6px; box-shadow:0 12px 40px rgba(0,0,0,0.6); display:block; transition:transform 0.2s;"
+              onmouseover="this.style.transform='translateY(-4px) scale(1.03)'" onmouseout="this.style.transform='none'"
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ── 产品包介绍 ──────────────────────────────────────────── -->
-  <section class="section" aria-labelledby="zh-packs-heading">
+  <section class="section" style="padding-top:var(--s10);" aria-labelledby="zh-packs-heading">
     <div class="container">
       <div class="section-header section-header--center">
-        <span class="eyebrow">行业产品包</span>
-        <h2 class="section-heading" id="zh-packs-heading">选择你的行业</h2>
-        <p class="section-sub">每个产品包都针对特定行业的真实工作场景从头设计，不是从通用模板改出来的。</p>
+        <span class="eyebrow">行业定制</span>
+        <h2 class="section-heading" id="zh-packs-heading">选择您的行业</h2>
+        <p class="section-sub">每个行业包都针对其自身真实工作场景设计，<br>并经专业团队修正，并非来自通用模版。</p>
       </div>
 
       <div class="packs-grid">
         <div class="pack-card">
           <div class="pack-card-icon" aria-hidden="true">💅</div>
-          <div class="pack-card-title">美业 AI 工具包</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于美容院、睫毛店、美发沙龙、美甲工作室</p>
+          <div class="pack-card-title">美业 AI 行业包</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于美容院、美甲店、美发沙龙、美容治疗师</p>
           <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
             <li>写 Instagram 内容和活动文案</li>
             <li>回复预约咨询和 Google 评论</li>
             <li>制作服务介绍和节日促销文案</li>
           </ul>
           <div class="pack-card-footer">
-            <div class="pack-card-price">$49 <span>一次性购买</span></div>
+            <div class="pack-card-price">$39 USD <span>一次性购买</span></div>
             <a href="pack-beauty.html" class="btn btn-primary btn-sm">查看详情</a>
           </div>
         </div>
         <div class="pack-card">
+          <div class="pack-card-icon" aria-hidden="true">🍽️</div>
+          <div class="pack-card-title">餐饮业 AI 行业包</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于咖啡馆、餐厅、酒吧和活动场馆</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
+            <li>快速制作促销和活动公告</li>
+            <li>回复 Google 和大众点评评论</li>
+            <li>撰写菜单介绍和每日特惠文案</li>
+          </ul>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$39 USD <span>一次性购买</span></div>
+            <a href="pack-restaurant.html" class="btn btn-primary btn-sm">查看详情</a>
+          </div>
+        </div>
+        <div class="pack-card">
           <div class="pack-card-icon" aria-hidden="true">🏠</div>
-          <div class="pack-card-title">房产 AI 工具包</div>
+          <div class="pack-card-title">房产 AI 行业包</div>
           <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于独立经纪人和小型中介机构</p>
           <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
             <li>撰写房源介绍和估价信件</li>
@@ -146,28 +228,98 @@
             <li>制作房源社交媒体内容</li>
           </ul>
           <div class="pack-card-footer">
-            <div class="pack-card-price">$49 <span>一次性购买</span></div>
-            <a href="mailto:hi@openways.net" class="btn btn-primary btn-sm">咨询购买</a>
+            <div class="pack-card-price">$39 USD <span>一次性购买</span></div>
+            <a href="pack-realestate.html" class="btn btn-primary btn-sm">查看详情</a>
           </div>
         </div>
         <div class="pack-card">
-          <div class="pack-card-icon" aria-hidden="true">🍽️</div>
-          <div class="pack-card-title">餐饮业 AI 工具包</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于咖啡馆、餐厅、酒吧和活动场地</p>
+          <div class="pack-card-icon" aria-hidden="true">🧮</div>
+          <div class="pack-card-title">会计税务 AI 行业包</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于会计师、税务师和记账服务商</p>
           <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
-            <li>快速制作促销和活动公告</li>
-            <li>回复 Google 和大众点评评论</li>
-            <li>撰写菜单介绍和每日特惠文案</li>
+            <li>撰写客户沟通邮件和年度通知</li>
+            <li>制作专业服务说明和报价模板</li>
+            <li>生成合规提醒和财税科普内容</li>
           </ul>
           <div class="pack-card-footer">
-            <div class="pack-card-price">$49 <span>一次性购买</span></div>
-            <a href="mailto:hi@openways.net" class="btn btn-primary btn-sm">咨询购买</a>
+            <div class="pack-card-price">$39 USD <span>一次性购买</span></div>
+            <a href="pack-accounting.html" class="btn btn-primary btn-sm">查看详情</a>
+          </div>
+        </div>
+        <div class="pack-card">
+          <div class="pack-card-icon" aria-hidden="true">🏥</div>
+          <div class="pack-card-title">中医诊所 AI 行业包</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于中医诊所、针灸馆和养生中心</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
+            <li>撰写养生科普和治疗方案说明</li>
+            <li>回复患者咨询和在线评论</li>
+            <li>制作社交媒体和健康教育内容</li>
+          </ul>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$39 USD <span>一次性购买</span></div>
+            <a href="pack-tcm.html" class="btn btn-primary btn-sm">查看详情</a>
+          </div>
+        </div>
+        <div class="pack-card">
+          <div class="pack-card-icon" aria-hidden="true">📚</div>
+          <div class="pack-card-title">教育 AI 行业包</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于补习机构、培训中心和教育顾问</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
+            <li>制作课程介绍和招生宣传文案</li>
+            <li>撰写家长沟通和学员通知</li>
+            <li>生成教学辅助材料和评估模板</li>
+          </ul>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$39 USD <span>一次性购买</span></div>
+            <a href="pack-education.html" class="btn btn-primary btn-sm">查看详情</a>
+          </div>
+        </div>
+        <div class="pack-card">
+          <div class="pack-card-icon" aria-hidden="true">🔨</div>
+          <div class="pack-card-title">装修 AI 行业包</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于装修公司、建筑承包商和室内设计师</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
+            <li>撰写项目报价单和施工方案说明</li>
+            <li>制作案例展示和客户推荐信</li>
+            <li>回复客户咨询和跟进通知</li>
+          </ul>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$39 USD <span>一次性购买</span></div>
+            <a href="pack-renovation.html" class="btn btn-primary btn-sm">查看详情</a>
+          </div>
+        </div>
+        <div class="pack-card">
+          <div class="pack-card-icon" aria-hidden="true">☀️</div>
+          <div class="pack-card-title">太阳能 AI 行业包</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于太阳能安装商和新能源销售公司</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
+            <li>制作客户方案和投资回报分析文案</li>
+            <li>撰写跟进邮件和异议处理话术</li>
+            <li>生成安装案例和客户推荐内容</li>
+          </ul>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$39 USD <span>一次性购买</span></div>
+            <a href="pack-solar.html" class="btn btn-primary btn-sm">查看详情</a>
+          </div>
+        </div>
+        <div class="pack-card">
+          <div class="pack-card-icon" aria-hidden="true">🧹</div>
+          <div class="pack-card-title">清洁 AI 行业包</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于清洁公司和家政服务商</p>
+          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
+            <li>制作服务报价和客户合同模板</li>
+            <li>回复客户评价和预约咨询</li>
+            <li>生成社交推广和季节性促销内容</li>
+          </ul>
+          <div class="pack-card-footer">
+            <div class="pack-card-price">$39 USD <span>一次性购买</span></div>
+            <a href="pack-cleaning.html" class="btn btn-primary btn-sm">查看详情</a>
           </div>
         </div>
       </div>
 
       <div style="text-align:center; margin-top:var(--s10);">
-        <a href="packs.html" class="btn btn-outline btn-lg">查看全部产品包（英文）</a>
+        <!-- UPDATE: pack count --><a href="zh-packs.html" class="btn btn-outline btn-lg">查看全部 9 个行业包</a>
       </div>
     </div>
   </section>
@@ -187,20 +339,20 @@
           <p style="font-size:var(--text-sm); color:var(--text-secondary); line-height:1.8;">弄清楚用哪个 AI 工具、写什么 prompt、如何建立工作流、从哪里开始——自己试出来通常需要 10–20 小时。大多数企业主要么放弃，要么偶尔用一下但没有系统。</p>
         </div>
         <div>
-          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy); margin-bottom:var(--s5);">工具包给你现成的系统</div>
+          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy); margin-bottom:var(--s5);">行业包给您现成的系统</div>
           <div style="display:flex; flex-direction:column; gap:var(--s4);">
             <div style="display:flex; gap:var(--s3);">
               <span style="color:var(--mint); font-weight:700; flex-shrink:0;">✓</span>
               <div>
                 <div style="font-weight:600; font-size:var(--text-sm); color:var(--navy);">行业专属提示词库</div>
-                <div style="font-size:var(--text-xs); color:var(--text-secondary);">40+ 条针对你行业真实任务写好的提示词</div>
+                <div style="font-size:var(--text-xs); color:var(--text-secondary);">20 条针对您行业真实任务写好的提示词</div>
               </div>
             </div>
             <div style="display:flex; gap:var(--s3);">
               <span style="color:var(--mint); font-weight:700; flex-shrink:0;">✓</span>
               <div>
                 <div style="font-weight:600; font-size:var(--text-sm); color:var(--navy);">工具选型已经做完</div>
-                <div style="font-size:var(--text-xs); color:var(--text-secondary);">告诉你用哪个 AI 工具、哪个方案、哪个免费版就够</div>
+                <div style="font-size:var(--text-xs); color:var(--text-secondary);">告诉您用哪个 AI 工具、哪个方案、哪个免费版就够</div>
               </div>
             </div>
             <div style="display:flex; gap:var(--s3);">
@@ -228,44 +380,44 @@
     <div class="container">
       <div class="section-header section-header--center">
         <span class="eyebrow">包含内容</span>
-        <h2 class="section-heading" id="zh-inside-heading">每个工具包里有什么</h2>
+        <h2 class="section-heading" id="zh-inside-heading">每个行业包里有什么</h2>
       </div>
 
       <div class="modules-grid">
         <div class="module-item">
           <div class="module-num">01</div>
           <div class="module-name">快速启动指南</div>
-          <p class="module-desc">针对你的行业量身设计的上手指南，无需技术背景，一个下午完成工具配置。</p>
+          <p class="module-desc">针对您的行业量身设计的上手指南，无需技术背景，一个下午完成工具配置。</p>
           <div class="module-value">→ 不需要先研究从哪里开始</div>
         </div>
         <div class="module-item">
           <div class="module-num">02</div>
           <div class="module-name">工具推荐清单</div>
-          <p class="module-desc">精选适合你行业的 AI 工具，告诉你用哪个、哪个方案、哪些免费版够用。</p>
+          <p class="module-desc">精选适合您行业的 AI 工具，告诉您用哪个、哪个方案、哪些免费版够用。</p>
           <div class="module-value">→ 不花冤枉钱买用不上的订阅</div>
         </div>
         <div class="module-item">
           <div class="module-num">03</div>
           <div class="module-name">提示词模板库</div>
-          <p class="module-desc">40+ 条行业专属提示词，拿来即用，覆盖内容制作、客户回复、行政文案等。</p>
+          <p class="module-desc">20 条行业专属提示词，拿来即用，覆盖内容制作、客户回复、行政文案等。</p>
           <div class="module-value">→ 永远不用从空白 prompt 开始</div>
         </div>
         <div class="module-item">
           <div class="module-num">04</div>
           <div class="module-name">SOP 工作流程</div>
           <p class="module-desc">标准操作流程，把 AI 固化为可重复的日常工作方式，不用每次重新摸索。</p>
-          <div class="module-value">→ 最好的输出变成你的标准输出</div>
+          <div class="module-value">→ 最好的输出变成您的标准输出</div>
         </div>
         <div class="module-item">
           <div class="module-num">05</div>
           <div class="module-name">7 天行动计划</div>
-          <p class="module-desc">逐日推进计划，第 7 天结束时，AI 已经真正跑在你的业务里。</p>
+          <p class="module-desc">逐日推进计划，第 7 天结束时，AI 已经真正跑在您的业务里。</p>
           <div class="module-value">→ 消除第一周的所有执行阻力</div>
         </div>
         <div class="module-item">
           <div class="module-num">06</div>
           <div class="module-name">附赠指南</div>
-          <p class="module-desc">进阶提示词、AI 自动化思路、内容规划框架等额外资源，等你准备好了再用。</p>
+          <p class="module-desc">进阶提示词、AI 自动化思路、内容规划框架等额外资源，等您准备好了再用。</p>
           <div class="module-value">→ 有成长空间，随时可以深入</div>
         </div>
       </div>
@@ -284,7 +436,7 @@
         <div style="display:flex; gap:var(--s5); align-items:flex-start; padding:var(--s6); background:var(--bg-off); border-radius:var(--r-lg);">
           <div style="width:36px; height:36px; background:var(--navy); color:var(--white); border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; flex-shrink:0;">1</div>
           <div>
-            <div style="font-weight:700; color:var(--navy); margin-bottom:var(--s2);">选择适合你行业的产品包</div>
+            <div style="font-weight:700; color:var(--navy); margin-bottom:var(--s2);">选择适合您行业的产品包</div>
             <p style="font-size:var(--text-sm); color:var(--text-secondary);">美业、房产或餐饮。不确定哪个适合？直接发邮件问我们。</p>
           </div>
         </div>
@@ -305,8 +457,7 @@
       </div>
 
       <div style="margin-top:var(--s8); padding:var(--s6); background:var(--navy-pale); border-radius:var(--r-lg); text-align:center;">
-        <p style="font-size:var(--text-sm); color:var(--text-secondary); margin-bottom:var(--s4);">所有产品包目前为英文版内容。如需中文咨询，欢迎直接发邮件。</p>
-        <a href="mailto:hi@openways.net" class="btn btn-primary">发邮件咨询（中文）</a>
+        <a href="zh-contact.html" class="btn btn-primary">联系我们咨询（中文）</a>
         <p style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--s3);">1 个工作日内回复 · hi@openways.net</p>
       </div>
     </div>
@@ -317,29 +468,107 @@
     <div class="container" style="max-width:860px; margin:0 auto;">
       <div class="section-header section-header--center">
         <span class="eyebrow">适合对象</span>
-        <h2 class="section-heading" id="zh-fit-heading">这个工具包适合你吗？</h2>
+        <h2 class="section-heading" id="zh-fit-heading">这个行业包适合您吗？</h2>
       </div>
 
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--s8);">
         <div style="padding:var(--s8); background:#f0faf5; border-radius:var(--r-lg); border:2px solid #b8e8d0;">
-          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy); margin-bottom:var(--s5);">✅ 适合你如果…</div>
+          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy); margin-bottom:var(--s5);">✅ 适合您如果…</div>
           <div style="display:flex; flex-direction:column; gap:var(--s3);">
-            <div style="font-size:var(--text-sm); color:var(--text-secondary);">你经营小型企业，想这周就出结果，不想先上课</div>
-            <div style="font-size:var(--text-sm); color:var(--text-secondary);">你厌倦了通用 AI 建议，它们根本不适用于你的业务</div>
-            <div style="font-size:var(--text-sm); color:var(--text-secondary);">你想要结构化的行业专属工具，而不是理论知识</div>
-            <div style="font-size:var(--text-sm); color:var(--text-secondary);">你没时间研究、试错、排查问题</div>
-            <div style="font-size:var(--text-sm); color:var(--text-secondary);">你愿意用 ChatGPT 或 Claude 作为主要 AI 工具</div>
+            <div style="font-size:var(--text-sm); color:var(--text-secondary);">您经营小型企业，想马上出结果，不想先上课</div>
+            <div style="font-size:var(--text-sm); color:var(--text-secondary);">您厌倦了通用 AI 建议，它们根本不适用于您的业务</div>
+            <div style="font-size:var(--text-sm); color:var(--text-secondary);">您想要结构化的行业专属工具，而不是理论知识</div>
+            <div style="font-size:var(--text-sm); color:var(--text-secondary);">您没时间研究、试错、排查问题</div>
+            <div style="font-size:var(--text-sm); color:var(--text-secondary);">您愿意用 ChatGPT 或 Claude 作为主要 AI 工具</div>
           </div>
         </div>
         <div style="padding:var(--s8); background:var(--bg-off); border-radius:var(--r-lg); border:1px solid var(--border-light);">
-          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy); margin-bottom:var(--s5);">❌ 不适合你如果…</div>
+          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy); margin-bottom:var(--s5);">❌ 不适合您如果…</div>
           <div style="display:flex; flex-direction:column; gap:var(--s3);">
-            <div style="font-size:var(--text-sm); color:var(--text-secondary);">你需要企业级定制自动化或系统集成</div>
-            <div style="font-size:var(--text-sm); color:var(--text-secondary);">你想了解 AI 模型原理（我们完全跳过理论）</div>
-            <div style="font-size:var(--text-sm); color:var(--text-secondary);">你期望的是 SaaS 软件，而不是数字工具包</div>
-            <div style="font-size:var(--text-sm); color:var(--text-secondary);">你的业务需要复杂的多系统开发</div>
+            <div style="font-size:var(--text-sm); color:var(--text-secondary);">您需要企业级定制自动化或系统集成</div>
+            <div style="font-size:var(--text-sm); color:var(--text-secondary);">您想了解 AI 模型原理（我们完全跳过理论）</div>
+            <div style="font-size:var(--text-sm); color:var(--text-secondary);">您期望的是 SaaS 软件，而不是数字行业包</div>
+            <div style="font-size:var(--text-sm); color:var(--text-secondary);">您的业务需要复杂的多系统开发</div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 常见问题 ──────────────────────────────────────────────── -->
+  <section class="section section--off" aria-labelledby="zh-faq-heading">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="eyebrow">常见问题</span>
+        <h2 class="section-heading" id="zh-faq-heading">购买前您可能想知道</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            产品包是中文的吗？
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            产品包提供英文、简体中文和繁體中文三个版本。提示词可以直接复制粘贴到 ChatGPT 或 Claude 里使用。购买前如有疑问，欢迎用中文联系我们。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            我需要什么技术背景吗？
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            不需要。行业包是为完全没有技术背景的小企业主设计的。您只需要会使用浏览器和 ChatGPT（或 Claude），快速启动指南会一步步带您完成所有设置。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            这和网上免费的 AI 教程有什么区别？
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            免费教程通常是通用建议，需要您自己研究、试错、筛选工具。我们的行业包是针对您的具体行业从头设计的完整系统——包含精准的提示词、已经帮您选好的工具、标准操作流程和 7 天行动计划。买了马上就能用，不需要自己摸索。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            使用 AI 工具需要额外付费吗？
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            大多数推荐工具都有免费版，足够您开始使用。行业包会清楚标注哪些工具免费、哪些需要付费，以及什么时候值得升级。您不会被要求在第一天就花额外的钱。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            我可以退款吗？
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            可以。如果您购买后觉得不适合，联系我们即可退款。我们不会设置复杂的退款条件——如果产品不适合您，您不应该为此买单。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            不确定哪个行业包适合我怎么办？
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            直接<a href="zh-contact.html" style="color:var(--navy); font-weight:600;">联系我们</a>，告诉我们您做什么业务。我们会给您一个直接的建议——如果我们觉得现有行业包不适合您，也会告诉您。
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:var(--s8);">
+        <a href="zh-faq.html" class="btn btn-outline">查看全部常见问题</a>
       </div>
     </div>
   </section>
@@ -351,10 +580,10 @@
         <div class="updates-banner-content">
           <span class="eyebrow eyebrow--light">有疑问？</span>
           <h2>欢迎用中文联系我们</h2>
-          <p>不确定哪个产品包适合你的业务？想了解更多细节？直接发邮件，中文沟通，1 个工作日内回复。我们不会给你发销售话术——会给你一个直接的答案。</p>
+          <p>不确定哪个产品包适合您的业务？想了解更多细节？直接发邮件，中文沟通，1 个工作日内回复。我们不会给您发销售话术——会给您一个直接的答案。</p>
         </div>
         <div style="flex-shrink:0;">
-          <a href="mailto:hi@openways.net" class="btn btn-outline-light btn-lg">发邮件 hi@openways.net</a>
+          <a href="zh-contact.html" class="btn btn-outline-light btn-lg">发消息给我们</a>
         </div>
       </div>
     </div>
@@ -365,15 +594,16 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <img src="logo-white.svg" alt="OpenWays" class="footer-logo-img" style="margin-bottom:var(--s4);">
-          <p class="footer-tagline">专为中小企业打造的 AI 工具包。实用、行业专属，7 天内上手。</p>
+          <div style="display:flex;align-items:center;gap:0.4em;"><img src="logo_mark_green.png" alt="" style="height:22px;width:auto;flex-shrink:0;">
+          <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;line-height:1;white-space:nowrap;">Open<span style="color:#5AA88A">Ways</span></span></div>
+          <p class="footer-tagline">专为中小企业打造的 AI 行业包。实用、行业专属，7 天内上手。</p>
           <a href="mailto:hi@openways.net" class="footer-link" style="margin-top:var(--s4); display:inline-block;">hi@openways.net</a>
         </div>
         <div>
           <div class="footer-heading">产品</div>
           <div class="footer-links">
             <a href="zh-packs.html"    class="footer-link">全部产品包</a>
-            <a href="pack-beauty.html" class="footer-link">美业 AI 工具包</a>
+            <a href="pack-beauty.html" class="footer-link">美业 AI 行业包</a>
             <a href="updates.html"     class="footer-link">更新订阅</a>
           </div>
         </div>
@@ -389,14 +619,15 @@
         <div>
           <div class="footer-heading">法律</div>
           <div class="footer-links">
-            <a href="#" class="footer-link">使用条款</a>
-            <a href="#" class="footer-link">退款政策</a>
+            <a href="terms.html" class="footer-link">使用条款</a>
+            <a href="refund.html" class="footer-link">退款政策</a>
+            <a href="privacy.html" class="footer-link">隐私政策</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span class="footer-copy">© 2025 OpenWays. 保留所有权利。</span>
-        <div class="footer-legal"><a href="#">使用条款</a><a href="#">退款政策</a></div>
+        <div class="footer-legal"><a href="terms.html">条款</a><a href="refund.html">退款政策</a><a href="privacy.html">隐私</a></div>
       </div>
     </div>
   </footer>
@@ -409,6 +640,17 @@
     toggle.addEventListener('click', () => {
       const open = mobile.classList.toggle('open');
       toggle.setAttribute('aria-expanded', String(open));
+    });
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+      });
     });
   </script>
 </body>
