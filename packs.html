@@ -190,7 +190,7 @@
         <button onclick="document.getElementById('packSearch').value='beauty';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">💅 Beauty</button>
         <button onclick="document.getElementById('packSearch').value='restaurant';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">🍜 Restaurant</button>
         <button onclick="document.getElementById('packSearch').value='real estate';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">🏠 Real Estate</button>
-        <button onclick="document.getElementById('packSearch').value='tcm';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">🌿 TCM</button>
+        <button onclick="document.getElementById('packSearch').value='clinic';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">🏥 Clinic</button>
         <button onclick="document.getElementById('packSearch').value='solar';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">☀️ Solar</button>
         <button onclick="document.getElementById('packSearch').value='cleaning';document.getElementById('packSearch').dispatchEvent(new Event('input'))" style="font-size:var(--text-xs);color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">🧹 Cleaning</button>
       </div>
@@ -330,11 +330,11 @@
           </div>
         </div>
 
-        <!-- 5 · TCM Clinic -->
-        <div class="pack-card" data-category="health-wellness" data-keywords="tcm chinese medicine acupuncture clinic herbal 中医 针灸 中医诊所 推拿">
-          <div class="pack-card-icon" aria-hidden="true">🌿</div>
-          <div class="pack-card-title">TCM Clinic AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For acupuncture clinics, herbalists &amp; TCM practitioners</p>
+        <!-- 5 · Clinic -->
+        <div class="pack-card" data-category="health-wellness" data-keywords="clinic gp doctor physio chiro acupuncture allied health medical 诊所 医生 全科 物理治疗 针灸">
+          <div class="pack-card-icon" aria-hidden="true">🏥</div>
+          <div class="pack-card-title">Clinic AI Pack</div>
+          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For GPs, physios, allied health &amp; wellness practices</p>
           <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
             <li>Write patient education content about treatments</li>
             <li>Create bilingual social posts and clinic updates</li>
@@ -342,7 +342,7 @@
           </ul>
           <div class="pack-card-footer">
             <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-tcm.html" class="btn btn-primary btn-sm">Get Pack</a>
+            <a href="pack-clinic.html" class="btn btn-primary btn-sm">Get Pack</a>
           </div>
         </div>
 
@@ -538,7 +538,7 @@
       { icon: '🏠', name: 'Real Estate AI Pack', audience: 'Independent agents & small agencies', href: 'pack-realestate.html', keywords: 'real estate agent property listing house apartment 房产 中介 房地产' },
       { icon: '🍜', name: 'Restaurant AI Pack', audience: 'Cafes, restaurants, takeaway & food businesses', href: 'pack-restaurant.html', keywords: 'restaurant cafe food hospitality dining catering 餐饮 餐厅 咖啡 茶餐厅' },
       { icon: '📊', name: 'Accounting & Tax AI Pack', audience: 'Accountants, bookkeepers & tax agents', href: 'pack-accounting.html', keywords: 'accounting tax bookkeeping BAS GST accountant financial 会计 税务 报税 记账' },
-      { icon: '🌿', name: 'TCM Clinic AI Pack', audience: 'Acupuncture clinics, herbalists & TCM practitioners', href: 'pack-tcm.html', keywords: 'tcm chinese medicine acupuncture clinic herbal 中医 针灸 中医诊所 推拿' },
+      { icon: '🏥', name: 'Clinic AI Pack', audience: 'GPs, physios, allied health & wellness practices', href: 'pack-clinic.html', keywords: 'clinic gp doctor physio chiro acupuncture allied health medical 诊所 医生 全科 物理治疗 针灸' },
       { icon: '📚', name: 'Education AI Pack', audience: 'Tutoring centres, training providers & educators', href: 'pack-education.html', keywords: 'tutor tutoring education training school teacher course 补习 培训 教育 学校' },
       { icon: '🔨', name: 'Renovation AI Pack', audience: 'Builders, renovators & home improvement', href: 'pack-renovation.html', keywords: 'renovation builder construction home improvement kitchen bathroom 装修 建筑 房屋 施工' },
       { icon: '☀️', name: 'Solar AI Pack', audience: 'Solar installers & renewable energy businesses', href: 'pack-solar.html', keywords: 'solar energy panel installation renewable electrician 太阳能 光伏 能源 安装' },
