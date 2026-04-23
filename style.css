@@ -1895,13 +1895,23 @@ h1, h2, h3, h4 {
 .stats-band-item {
   text-align: center;
   padding: var(--s2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stats-band-num-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+  line-height: 1;
+  min-height: clamp(2.25rem, 5vw, 3.5rem);
 }
 .stats-band-num {
   font-size: clamp(2.25rem, 5vw, 3.5rem);
   font-weight: 800;
   color: var(--mint);
   line-height: 1;
-  display: block;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.02em;
 }
@@ -1909,13 +1919,14 @@ h1, h2, h3, h4 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
   color: var(--mint);
-  margin-left: 2px;
+  line-height: 1;
 }
 .stats-band-label {
   font-size: var(--text-sm);
   color: rgba(255, 255, 255, 0.7);
   margin-top: var(--s3);
   line-height: 1.4;
+  max-width: 220px;
 }
 
 /* ── Before / After comparison cards ───────────────────────── */
