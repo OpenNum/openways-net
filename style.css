@@ -176,6 +176,64 @@
 }
 .cat-card--soon .cat-card-meta { color: var(--text-muted); }
 
+/* ── Category Section (用于 packs.html / zh-packs.html 按大类分区) ── */
+.cat-section { margin-bottom: var(--s10); }
+.cat-section + .cat-section {
+  padding-top: var(--s8);
+  border-top: 1px solid var(--border-light);
+}
+.cat-section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+  margin-bottom: var(--s6);
+  flex-wrap: wrap;
+}
+.cat-section-icon {
+  --cat: var(--mint);
+  font-size: 1.6rem;
+  width: 48px;
+  height: 48px;
+  background: color-mix(in srgb, var(--cat) 14%, transparent);
+  border-left: 4px solid var(--cat);
+  border-radius: var(--r-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cat-section-header-text { flex: 1; min-width: 200px; }
+.cat-section-header h3 {
+  font-size: var(--text-xl);
+  color: var(--navy);
+  margin: 0 0 var(--s1);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.cat-section-header p {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+.cat-section-link {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--cat, var(--mint));
+  text-decoration: none;
+  padding: var(--s2) var(--s3);
+  border-radius: var(--r-sm);
+  transition: background var(--t-fast);
+}
+.cat-section-link:hover {
+  background: color-mix(in srgb, var(--cat, var(--mint)) 10%, transparent);
+}
+.cat-section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--s5);
+}
+
 /* ── Coming Soon 占位卡（用于 industry-*.html 大类页底部） ── */
 .coming-grid {
   display: grid;

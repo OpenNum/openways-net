@@ -258,159 +258,246 @@
         <h2 class="section-heading">Choose the pack built for your industry</h2>
       </div>
 
-      <!-- Category filter tabs -->
-      <div id="categoryFilters" style="display:flex;gap:var(--s2,0.5rem);justify-content:center;flex-wrap:wrap;margin-bottom:var(--s8,2rem);">
-        <button class="cat-filter active" data-filter="all" style="padding:0.5rem 1.25rem;border-radius:999px;border:1.5px solid var(--border-light,#e5e7eb);background:#fff;font-size:var(--text-sm,0.875rem);font-weight:600;color:var(--navy,#0F1034);cursor:pointer;transition:all 0.15s;">All</button>
-        <button class="cat-filter" data-filter="services" style="padding:0.5rem 1.25rem;border-radius:999px;border:1.5px solid var(--border-light,#e5e7eb);background:#fff;font-size:var(--text-sm,0.875rem);font-weight:600;color:var(--navy,#0F1034);cursor:pointer;transition:all 0.15s;">Services</button>
-        <button class="cat-filter" data-filter="food-hospitality" style="padding:0.5rem 1.25rem;border-radius:999px;border:1.5px solid var(--border-light,#e5e7eb);background:#fff;font-size:var(--text-sm,0.875rem);font-weight:600;color:var(--navy,#0F1034);cursor:pointer;transition:all 0.15s;">Food &amp; Hospitality</button>
-        <button class="cat-filter" data-filter="professional" style="padding:0.5rem 1.25rem;border-radius:999px;border:1.5px solid var(--border-light,#e5e7eb);background:#fff;font-size:var(--text-sm,0.875rem);font-weight:600;color:var(--navy,#0F1034);cursor:pointer;transition:all 0.15s;">Professional</button>
-        <button class="cat-filter" data-filter="health-wellness" style="padding:0.5rem 1.25rem;border-radius:999px;border:1.5px solid var(--border-light,#e5e7eb);background:#fff;font-size:var(--text-sm,0.875rem);font-weight:600;color:var(--navy,#0F1034);cursor:pointer;transition:all 0.15s;">Health &amp; Wellness</button>
-        <button class="cat-filter" data-filter="trade-home" style="padding:0.5rem 1.25rem;border-radius:999px;border:1.5px solid var(--border-light,#e5e7eb);background:#fff;font-size:var(--text-sm,0.875rem);font-weight:600;color:var(--navy,#0F1034);cursor:pointer;transition:all 0.15s;">Trade &amp; Home</button>
-      </div>
+      <div id="packGrid">
 
-      <div class="packs-grid" id="packGrid">
-
-        <!-- 1 · Beauty -->
-        <div class="pack-card" data-category="services" data-keywords="beauty salon lash nail hairdresser spa 美业 美容 美发 指甲 睫毛">
-          <div class="pack-card-icon" aria-hidden="true">💅</div>
-          <div class="pack-card-title">Beauty AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For salons, lash studios, beauty therapists &amp; nail artists</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
-            <li>Write IG captions and Reels content in minutes</li>
-            <li>Reply to booking enquiries and review messages</li>
-            <li>Create service descriptions and promo copy</li>
-          </ul>
-          <div class="pack-card-footer">
-            <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-beauty.html" class="btn btn-primary btn-sm">Get Pack</a>
+        <!-- Food & Hospitality -->
+        <div class="cat-section">
+          <div class="cat-section-header">
+            <span class="cat-section-icon" style="--cat:var(--cat-food);">🍜</span>
+            <div class="cat-section-header-text">
+              <h3>Food &amp; Hospitality</h3>
+              <p>Cafes, restaurants, takeaway, bakeries, food trucks</p>
+            </div>
+            <a href="industry-food-hospitality.html" class="cat-section-link" style="--cat:var(--cat-food);">View all →</a>
+          </div>
+          <div class="cat-section-grid">
+            <div class="pack-card" data-category="food-hospitality" data-keywords="restaurant cafe food hospitality dining catering 餐饮 餐厅 咖啡 茶餐厅">
+              <div class="pack-card-icon" aria-hidden="true">🍜</div>
+              <div class="pack-card-title">Restaurant AI Pack</div>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For cafes, restaurants, takeaway shops &amp; food businesses</p>
+              <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+                <li>Write daily specials and social captions in minutes</li>
+                <li>Respond to Google reviews consistently</li>
+                <li>Write menu descriptions and seasonal promo copy</li>
+              </ul>
+              <div class="pack-card-footer">
+                <div class="pack-card-price">A$49 <span>one-time</span></div>
+                <a href="pack-restaurant.html" class="btn btn-primary btn-sm">Get Pack</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- 2 · Real Estate -->
-        <div class="pack-card" data-category="trade-home" data-keywords="real estate agent property listing house apartment 房产 中介 房地产">
-          <div class="pack-card-icon" aria-hidden="true">🏠</div>
-          <div class="pack-card-title">Real Estate AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For independent agents &amp; small agencies</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
-            <li>Write property listings and appraisal letters</li>
-            <li>Draft client follow-ups without the mental load</li>
-            <li>Create social content for listings and market updates</li>
-          </ul>
-          <div class="pack-card-footer">
-            <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-realestate.html" class="btn btn-primary btn-sm">Get Pack</a>
+        <!-- Health & Wellness -->
+        <div class="cat-section">
+          <div class="cat-section-header">
+            <span class="cat-section-icon" style="--cat:var(--cat-health);">💆</span>
+            <div class="cat-section-header-text">
+              <h3>Health &amp; Wellness</h3>
+              <p>Beauty salons, clinics, TCM, allied health, wellness</p>
+            </div>
+            <a href="industry-health-wellness.html" class="cat-section-link" style="--cat:var(--cat-health);">View all →</a>
+          </div>
+          <div class="cat-section-grid">
+            <div class="pack-card" data-category="health-wellness" data-keywords="beauty salon lash nail hairdresser spa 美业 美容 美发 指甲 睫毛">
+              <div class="pack-card-icon" aria-hidden="true">💅</div>
+              <div class="pack-card-title">Beauty AI Pack</div>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For salons, lash studios, beauty therapists &amp; nail artists</p>
+              <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+                <li>Write IG captions and Reels content in minutes</li>
+                <li>Reply to booking enquiries and review messages</li>
+                <li>Create service descriptions and promo copy</li>
+              </ul>
+              <div class="pack-card-footer">
+                <div class="pack-card-price">A$49 <span>one-time</span></div>
+                <a href="pack-beauty.html" class="btn btn-primary btn-sm">Get Pack</a>
+              </div>
+            </div>
+            <div class="pack-card" data-category="health-wellness" data-keywords="clinic gp doctor physio chiro acupuncture allied health medical tcm 诊所 医生 全科 物理治疗 针灸 中医">
+              <div class="pack-card-icon" aria-hidden="true">🏥</div>
+              <div class="pack-card-title">Clinic AI Pack</div>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For GPs, physios, allied health &amp; wellness practices</p>
+              <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+                <li>Write patient education content about treatments</li>
+                <li>Create bilingual social posts and clinic updates</li>
+                <li>Draft appointment reminders and follow-up messages</li>
+              </ul>
+              <div class="pack-card-footer">
+                <div class="pack-card-price">A$49 <span>one-time</span></div>
+                <a href="pack-clinic.html" class="btn btn-primary btn-sm">Get Pack</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- 3 · Restaurant -->
-        <div class="pack-card" data-category="food-hospitality" data-keywords="restaurant cafe food hospitality dining catering 餐饮 餐厅 咖啡 茶餐厅">
-          <div class="pack-card-icon" aria-hidden="true">🍜</div>
-          <div class="pack-card-title">Restaurant AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For cafes, restaurants, takeaway shops &amp; food businesses</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
-            <li>Write daily specials and social captions in minutes</li>
-            <li>Respond to Google reviews consistently</li>
-            <li>Write menu descriptions and seasonal promo copy</li>
-          </ul>
-          <div class="pack-card-footer">
-            <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-restaurant.html" class="btn btn-primary btn-sm">Get Pack</a>
+        <!-- Home & Property -->
+        <div class="cat-section">
+          <div class="cat-section-header">
+            <span class="cat-section-icon" style="--cat:var(--cat-home);">🏠</span>
+            <div class="cat-section-header-text">
+              <h3>Home &amp; Property</h3>
+              <p>Real estate, renovation, property services</p>
+            </div>
+            <a href="industry-home-property.html" class="cat-section-link" style="--cat:var(--cat-home);">View all →</a>
+          </div>
+          <div class="cat-section-grid">
+            <div class="pack-card" data-category="home-property" data-keywords="real estate agent property listing house apartment 房产 中介 房地产">
+              <div class="pack-card-icon" aria-hidden="true">🏠</div>
+              <div class="pack-card-title">Real Estate AI Pack</div>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For independent agents &amp; small agencies</p>
+              <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+                <li>Write property listings and appraisal letters</li>
+                <li>Draft client follow-ups without the mental load</li>
+                <li>Create social content for listings and market updates</li>
+              </ul>
+              <div class="pack-card-footer">
+                <div class="pack-card-price">A$49 <span>one-time</span></div>
+                <a href="pack-realestate.html" class="btn btn-primary btn-sm">Get Pack</a>
+              </div>
+            </div>
+            <div class="pack-card" data-category="home-property" data-keywords="renovation builder construction home improvement kitchen bathroom 装修 建筑 房屋 施工">
+              <div class="pack-card-icon" aria-hidden="true">🔨</div>
+              <div class="pack-card-title">Renovation AI Pack</div>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For builders, renovators &amp; home improvement businesses</p>
+              <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+                <li>Write project quotes and client update emails</li>
+                <li>Create before-and-after social content</li>
+                <li>Draft supplier communications and scope documents</li>
+              </ul>
+              <div class="pack-card-footer">
+                <div class="pack-card-price">A$49 <span>one-time</span></div>
+                <a href="pack-renovation.html" class="btn btn-primary btn-sm">Get Pack</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- 4 · Accounting -->
-        <div class="pack-card" data-category="professional" data-keywords="accounting tax bookkeeping BAS GST accountant financial 会计 税务 报税 记账">
-          <div class="pack-card-icon" aria-hidden="true">📊</div>
-          <div class="pack-card-title">Accounting &amp; Tax AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For accountants, bookkeepers &amp; tax agents</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
-            <li>Draft client emails for tax deadlines and lodgements</li>
-            <li>Write educational content about BAS, GST and deductions</li>
-            <li>Create social posts that build trust and authority</li>
-          </ul>
-          <div class="pack-card-footer">
-            <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-accounting.html" class="btn btn-primary btn-sm">Get Pack</a>
+        <!-- Professional Services -->
+        <div class="cat-section">
+          <div class="cat-section-header">
+            <span class="cat-section-icon" style="--cat:var(--cat-pro);">📊</span>
+            <div class="cat-section-header-text">
+              <h3>Professional Services</h3>
+              <p>Accounting, legal, migration, mortgage, insurance</p>
+            </div>
+            <a href="industry-professional-services.html" class="cat-section-link" style="--cat:var(--cat-pro);">View all →</a>
+          </div>
+          <div class="cat-section-grid">
+            <div class="pack-card" data-category="professional-services" data-keywords="accounting tax bookkeeping BAS GST accountant financial 会计 税务 报税 记账">
+              <div class="pack-card-icon" aria-hidden="true">📊</div>
+              <div class="pack-card-title">Accounting &amp; Tax AI Pack</div>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For accountants, bookkeepers &amp; tax agents</p>
+              <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+                <li>Draft client emails for tax deadlines and lodgements</li>
+                <li>Write educational content about BAS, GST and deductions</li>
+                <li>Create social posts that build trust and authority</li>
+              </ul>
+              <div class="pack-card-footer">
+                <div class="pack-card-price">A$49 <span>one-time</span></div>
+                <a href="pack-accounting.html" class="btn btn-primary btn-sm">Get Pack</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- 5 · Clinic -->
-        <div class="pack-card" data-category="health-wellness" data-keywords="clinic gp doctor physio chiro acupuncture allied health medical 诊所 医生 全科 物理治疗 针灸">
-          <div class="pack-card-icon" aria-hidden="true">🏥</div>
-          <div class="pack-card-title">Clinic AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For GPs, physios, allied health &amp; wellness practices</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
-            <li>Write patient education content about treatments</li>
-            <li>Create bilingual social posts and clinic updates</li>
-            <li>Draft appointment reminders and follow-up messages</li>
-          </ul>
-          <div class="pack-card-footer">
-            <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-clinic.html" class="btn btn-primary btn-sm">Get Pack</a>
+        <!-- Education & Training -->
+        <div class="cat-section">
+          <div class="cat-section-header">
+            <span class="cat-section-icon" style="--cat:var(--cat-edu);">🎓</span>
+            <div class="cat-section-header-text">
+              <h3>Education &amp; Training</h3>
+              <p>Tutoring centres, driving schools, training providers</p>
+            </div>
+            <a href="industry-education-training.html" class="cat-section-link" style="--cat:var(--cat-edu);">View all →</a>
+          </div>
+          <div class="cat-section-grid">
+            <div class="pack-card" data-category="education-training" data-keywords="tutor tutoring education training school teacher course 补习 培训 教育 学校">
+              <div class="pack-card-icon" aria-hidden="true">📚</div>
+              <div class="pack-card-title">Education AI Pack</div>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For tutoring centres, training providers &amp; educators</p>
+              <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+                <li>Write course descriptions and enrolment follow-ups</li>
+                <li>Create parent communications and progress updates</li>
+                <li>Draft social content that showcases student outcomes</li>
+              </ul>
+              <div class="pack-card-footer">
+                <div class="pack-card-price">A$49 <span>one-time</span></div>
+                <a href="pack-education.html" class="btn btn-primary btn-sm">Get Pack</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- 6 · Education -->
-        <div class="pack-card" data-category="professional" data-keywords="tutor tutoring education training school teacher course 补习 培训 教育 学校">
-          <div class="pack-card-icon" aria-hidden="true">📚</div>
-          <div class="pack-card-title">Education AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For tutoring centres, training providers &amp; educators</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
-            <li>Write course descriptions and enrolment follow-ups</li>
-            <li>Create parent communications and progress updates</li>
-            <li>Draft social content that showcases student outcomes</li>
-          </ul>
-          <div class="pack-card-footer">
-            <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-education.html" class="btn btn-primary btn-sm">Get Pack</a>
+        <!-- Trades & Technical -->
+        <div class="cat-section">
+          <div class="cat-section-header">
+            <span class="cat-section-icon" style="--cat:var(--cat-trades);">⚙️</span>
+            <div class="cat-section-header-text">
+              <h3>Trades &amp; Technical</h3>
+              <p>Solar, electrical, HVAC, plumbing, building trades</p>
+            </div>
+            <a href="industry-trades-technical.html" class="cat-section-link" style="--cat:var(--cat-trades);">View all →</a>
+          </div>
+          <div class="cat-section-grid">
+            <div class="pack-card" data-category="trades-technical" data-keywords="solar energy panel installation renewable electrician 太阳能 光伏 能源 安装">
+              <div class="pack-card-icon" aria-hidden="true">☀️</div>
+              <div class="pack-card-title">Solar AI Pack</div>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For solar installers &amp; renewable energy businesses</p>
+              <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+                <li>Write proposals and system comparison summaries</li>
+                <li>Create educational posts about solar savings</li>
+                <li>Draft customer follow-ups and referral requests</li>
+              </ul>
+              <div class="pack-card-footer">
+                <div class="pack-card-price">A$49 <span>one-time</span></div>
+                <a href="pack-solar.html" class="btn btn-primary btn-sm">Get Pack</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- 7 · Home Renovation -->
-        <div class="pack-card" data-category="trade-home" data-keywords="renovation builder construction home improvement kitchen bathroom 装修 建筑 房屋 施工">
-          <div class="pack-card-icon" aria-hidden="true">🔨</div>
-          <div class="pack-card-title">Renovation AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For builders, renovators &amp; home improvement businesses</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
-            <li>Write project quotes and client update emails</li>
-            <li>Create before-and-after social content</li>
-            <li>Draft supplier communications and scope documents</li>
-          </ul>
-          <div class="pack-card-footer">
-            <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-renovation.html" class="btn btn-primary btn-sm">Get Pack</a>
+        <!-- Lifestyle Services -->
+        <div class="cat-section">
+          <div class="cat-section-header">
+            <span class="cat-section-icon" style="--cat:var(--cat-life);">🧹</span>
+            <div class="cat-section-header-text">
+              <h3>Lifestyle Services</h3>
+              <p>Cleaning, removalists, home services, domestic help</p>
+            </div>
+            <a href="industry-lifestyle-services.html" class="cat-section-link" style="--cat:var(--cat-life);">View all →</a>
+          </div>
+          <div class="cat-section-grid">
+            <div class="pack-card" data-category="lifestyle-services" data-keywords="cleaning cleaner domestic maid home service commercial 家政 清洁 保洁 上门">
+              <div class="pack-card-icon" aria-hidden="true">✨</div>
+              <div class="pack-card-title">Cleaning AI Pack</div>
+              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For home cleaners, cleaning companies &amp; domestic services</p>
+              <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
+                <li>Write service quotes and booking confirmations</li>
+                <li>Reply to enquiries and collect review testimonials</li>
+                <li>Create social posts and referral incentive copy</li>
+              </ul>
+              <div class="pack-card-footer">
+                <div class="pack-card-price">A$49 <span>one-time</span></div>
+                <a href="pack-cleaning.html" class="btn btn-primary btn-sm">Get Pack</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- 8 · Solar -->
-        <div class="pack-card" data-category="trade-home" data-keywords="solar energy panel installation renewable electrician 太阳能 光伏 能源 安装">
-          <div class="pack-card-icon" aria-hidden="true">☀️</div>
-          <div class="pack-card-title">Solar AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For solar installers &amp; renewable energy businesses</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
-            <li>Write proposals and system comparison summaries</li>
-            <li>Create educational posts about solar savings</li>
-            <li>Draft customer follow-ups and referral requests</li>
-          </ul>
-          <div class="pack-card-footer">
-            <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-solar.html" class="btn btn-primary btn-sm">Get Pack</a>
+        <!-- Digital & Creative (Coming Soon) -->
+        <div class="cat-section">
+          <div class="cat-section-header">
+            <span class="cat-section-icon" style="--cat:var(--cat-digital);">💡</span>
+            <div class="cat-section-header-text">
+              <h3>Digital &amp; Creative</h3>
+              <p>Web design, digital marketing, SEO, content studios</p>
+            </div>
+            <a href="industry-digital-creative.html" class="cat-section-link" style="--cat:var(--cat-digital);">Preview →</a>
           </div>
-        </div>
-
-        <!-- 9 · Home Cleaning -->
-        <div class="pack-card" data-category="services" data-keywords="cleaning cleaner domestic maid home service commercial 家政 清洁 保洁 上门">
-          <div class="pack-card-icon" aria-hidden="true">✨</div>
-          <div class="pack-card-title">Cleaning AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">For home cleaners, cleaning companies &amp; domestic services</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8;">
-            <li>Write service quotes and booking confirmations</li>
-            <li>Reply to enquiries and collect review testimonials</li>
-            <li>Create social posts and referral incentive copy</li>
-          </ul>
-          <div class="pack-card-footer">
-            <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-cleaning.html" class="btn btn-primary btn-sm">Get Pack</a>
+          <div class="coming-grid">
+            <div class="coming-card"><span class="coming-card-icon">🌐</span><span class="coming-card-name">Web Design</span><span class="coming-card-status">In development</span></div>
+            <div class="coming-card"><span class="coming-card-icon">📣</span><span class="coming-card-name">Digital Marketing</span><span class="coming-card-status">In development</span></div>
+            <div class="coming-card"><span class="coming-card-icon">🔍</span><span class="coming-card-name">SEO</span><span class="coming-card-status">In development</span></div>
           </div>
         </div>
 
@@ -598,29 +685,7 @@
       noResults.style.display = anyCardMatch ? 'none' : 'block';
     });
 
-    // ── Category filter tabs ──
-    const filterBtns = document.querySelectorAll('#categoryFilters .cat-filter');
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        // Update active state
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        // Filter cards
-        const filter = btn.dataset.filter;
-        packCards.forEach(card => {
-          if (filter === 'all' || card.dataset.category === filter) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-        // Clear search when using category filter
-        searchInput.value = '';
-        searchResults.style.display = 'none';
-        searchNoResults.style.display = 'none';
-        noResults.style.display = 'none';
-      });
-    });
+    // Filter tabs removed — site now uses 8-category sections for navigation
   </script>
 
 </body>
