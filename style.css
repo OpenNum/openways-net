@@ -89,6 +89,126 @@
   /* --- LAYOUT --- */
   --container: 1120px;
   --nav-h:     68px;
+
+  /* --- CATEGORY ACCENTS (固化，未来不再变动) --- */
+  /* 8 一级大类的辅助色。用于卡片左侧竖条 + 图标背景圆圈，
+     不做大面积填色，保留 navy+mint 主调。*/
+  --cat-food:    #F59E0B; /* 餐饮食品 Food & Hospitality */
+  --cat-health:  #5AA88A; /* 医疗健康 Health & Wellness (= mint) */
+  --cat-home:    #3B82F6; /* 房产家居 Home & Property */
+  --cat-pro:     #6366F1; /* 专业服务 Professional Services */
+  --cat-edu:     #8B5CF6; /* 教育培训 Education & Training */
+  --cat-trades:  #EF4444; /* 建筑维修 Trades & Technical */
+  --cat-life:    #06B6D4; /* 生活服务 Lifestyle Services */
+  --cat-digital: #EC4899; /* 数字创意 Digital & Creative */
+}
+
+/* ── Category Grid (8 一级大类 + Coming Soon 占位) ────────── */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s5);
+  max-width: var(--container);
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .cat-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 640px) {
+  .cat-grid { grid-template-columns: repeat(2, 1fr); gap: var(--s4); }
+}
+
+.cat-card {
+  --cat: var(--mint);
+  background: var(--white);
+  border: 1.5px solid var(--border-light);
+  border-left: 4px solid var(--cat);
+  border-radius: var(--r-lg);
+  padding: var(--s6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--t-fast), box-shadow var(--t-fast), border-color var(--t-fast);
+  min-height: 180px;
+}
+.cat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--cat);
+}
+.cat-card--soon {
+  border-style: dashed;
+  opacity: 0.85;
+}
+.cat-card--soon:hover { opacity: 1; }
+
+.cat-card-icon {
+  font-size: 1.6rem;
+  width: 44px;
+  height: 44px;
+  background: color-mix(in srgb, var(--cat) 14%, transparent);
+  border-radius: var(--r-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cat-card-title {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--navy);
+  margin-top: var(--s2);
+}
+.cat-card-desc {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+.cat-card-meta {
+  font-size: var(--text-xs);
+  color: var(--cat);
+  font-weight: 600;
+  margin-top: auto;
+  padding-top: var(--s3);
+}
+.cat-card--soon .cat-card-meta { color: var(--text-muted); }
+
+/* ── Coming Soon 占位卡（用于 industry-*.html 大类页底部） ── */
+.coming-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--s4);
+  max-width: 860px;
+  margin: 0 auto;
+}
+.coming-card {
+  background: var(--bg-subtle);
+  border: 1.5px dashed var(--border);
+  border-radius: var(--r-md);
+  padding: var(--s5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  opacity: 0.75;
+  filter: grayscale(0.3);
+}
+.coming-card-icon { font-size: 1.4rem; opacity: 0.6; }
+.coming-card-name {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.coming-card-status {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: auto;
+  padding-top: var(--s2);
 }
 
 /* ── Reset ──────────────────────────────────────────────────── */
