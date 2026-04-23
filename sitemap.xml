@@ -169,6 +169,27 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://openways.net/industry-education-training.html</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://openways.net/industry-lifestyle-services.html</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://openways.net/industry-digital-creative.html</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <!-- Chinese pages -->
   <url>
     <loc>https://openways.net/zh.html</loc>

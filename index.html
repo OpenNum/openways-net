@@ -229,65 +229,73 @@
   </section>
 
 
-  <!-- ── FEATURED PACKS ─────────────────────────────────────── -->
+  <!-- ── INDUSTRY CATEGORIES ────────────────────────────────── -->
   <section class="section section--feature" aria-labelledby="packs-heading">
     <div class="container">
       <div class="section-header section-header--center">
-        <span class="eyebrow">Industry Packs</span>
+        <span class="eyebrow">Industry Categories</span>
         <h2 class="section-heading" id="packs-heading">Choose your industry</h2>
-        <p class="section-sub">Each pack is built around the real workflows of a specific business. Not adapted from generic AI advice — written for how your industry actually operates.</p>
-        <!-- UPDATE: pack count --><p style="font-size:var(--text-sm); color:var(--mint-dark); font-weight:600; margin-top:var(--s2);">9 industries available today. More launching regularly.</p>
+        <p class="section-sub">Every pack is built around the real workflows of a specific business. Start by picking the category that fits you — then choose the pack underneath.</p>
+        <p style="font-size:var(--text-sm); color:var(--mint-dark); font-weight:600; margin-top:var(--s2);">8 industry categories · 9 packs available today · more launching regularly.</p>
       </div>
 
-      <div class="packs-grid">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:var(--s5); max-width:1120px; margin:0 auto;">
 
-        <div class="pack-card">
-          <div class="pack-card-icon" aria-hidden="true">💅</div>
-          <div class="pack-card-title">Beauty AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3); min-height:2.4em;">For salons, lash studios, beauty therapists &amp; nail artists</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8; flex:1;">
-            <li>Write IG captions and Reels content in minutes</li>
-            <li>Reply to booking enquiries and review messages</li>
-            <li>Create service descriptions and promo copy</li>
-          </ul>
-          <p style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--s4);">Start using AI in your business today.</p>
-          <div class="pack-card-footer">
-            <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-beauty.html" class="btn btn-primary btn-sm">Get Pack</a>
-          </div>
-        </div>
+        <a href="industry-food-hospitality.html" style="background:var(--white); border:1.5px solid var(--border-light); border-radius:var(--r-lg); padding:var(--s6); display:flex; flex-direction:column; gap:var(--s2); text-decoration:none; transition:transform 0.15s, border-color 0.15s;" onmouseover="this.style.borderColor='var(--mint)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border-light)';this.style.transform='none'">
+          <div style="font-size:2rem;">🍜</div>
+          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy);">Food &amp; Hospitality</div>
+          <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0; line-height:1.6;">Cafes, restaurants, takeaway, bakeries, food trucks.</p>
+          <div style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:auto; padding-top:var(--s3);">1 pack available →</div>
+        </a>
 
-        <div class="pack-card">
-          <div class="pack-card-icon" aria-hidden="true">🏠</div>
-          <div class="pack-card-title">Real Estate AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3); min-height:2.4em;">For independent agents &amp; small agencies</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8; flex:1;">
-            <li>Write property listings and appraisal letters</li>
-            <li>Draft client follow-ups without the mental load</li>
-            <li>Create social content for listings and market updates</li>
-          </ul>
-          <p style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--s4);">Stop spending your evenings on emails.</p>
-          <div class="pack-card-footer">
-            <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-realestate.html" class="btn btn-primary btn-sm">Get Pack</a>
-          </div>
-        </div>
+        <a href="industry-health-wellness.html" style="background:var(--white); border:1.5px solid var(--border-light); border-radius:var(--r-lg); padding:var(--s6); display:flex; flex-direction:column; gap:var(--s2); text-decoration:none; transition:transform 0.15s, border-color 0.15s;" onmouseover="this.style.borderColor='var(--mint)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border-light)';this.style.transform='none'">
+          <div style="font-size:2rem;">💆</div>
+          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy);">Health &amp; Wellness</div>
+          <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0; line-height:1.6;">Beauty salons, clinics, TCM, allied health, wellness.</p>
+          <div style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:auto; padding-top:var(--s3);">2 packs available →</div>
+        </a>
 
-        <div class="pack-card">
-          <div class="pack-card-icon" aria-hidden="true">🍜</div>
-          <div class="pack-card-title">Restaurant AI Pack</div>
-          <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3); min-height:2.4em;">For cafes, restaurants, takeaway shops &amp; food businesses</p>
-          <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.8; flex:1;">
-            <li>Write daily specials and social captions in minutes</li>
-            <li>Respond to Google reviews consistently</li>
-            <li>Write menu descriptions and seasonal promo copy</li>
-          </ul>
-          <p style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--s4);">Simplify the daily tasks that eat your time.</p>
-          <div class="pack-card-footer">
-            <div class="pack-card-price">A$49 <span>one-time</span></div>
-            <a href="pack-restaurant.html" class="btn btn-primary btn-sm">Get Pack</a>
-          </div>
-        </div>
+        <a href="industry-home-property.html" style="background:var(--white); border:1.5px solid var(--border-light); border-radius:var(--r-lg); padding:var(--s6); display:flex; flex-direction:column; gap:var(--s2); text-decoration:none; transition:transform 0.15s, border-color 0.15s;" onmouseover="this.style.borderColor='var(--mint)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border-light)';this.style.transform='none'">
+          <div style="font-size:2rem;">🏠</div>
+          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy);">Home &amp; Property</div>
+          <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0; line-height:1.6;">Real estate, renovation, property services.</p>
+          <div style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:auto; padding-top:var(--s3);">2 packs available →</div>
+        </a>
+
+        <a href="industry-professional-services.html" style="background:var(--white); border:1.5px solid var(--border-light); border-radius:var(--r-lg); padding:var(--s6); display:flex; flex-direction:column; gap:var(--s2); text-decoration:none; transition:transform 0.15s, border-color 0.15s;" onmouseover="this.style.borderColor='var(--mint)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border-light)';this.style.transform='none'">
+          <div style="font-size:2rem;">📊</div>
+          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy);">Professional Services</div>
+          <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0; line-height:1.6;">Accounting, legal, migration, mortgage, insurance.</p>
+          <div style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:auto; padding-top:var(--s3);">1 pack available →</div>
+        </a>
+
+        <a href="industry-education-training.html" style="background:var(--white); border:1.5px solid var(--border-light); border-radius:var(--r-lg); padding:var(--s6); display:flex; flex-direction:column; gap:var(--s2); text-decoration:none; transition:transform 0.15s, border-color 0.15s;" onmouseover="this.style.borderColor='var(--mint)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border-light)';this.style.transform='none'">
+          <div style="font-size:2rem;">🎓</div>
+          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy);">Education &amp; Training</div>
+          <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0; line-height:1.6;">Tutoring centres, driving schools, training providers.</p>
+          <div style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:auto; padding-top:var(--s3);">1 pack available →</div>
+        </a>
+
+        <a href="industry-trades-technical.html" style="background:var(--white); border:1.5px solid var(--border-light); border-radius:var(--r-lg); padding:var(--s6); display:flex; flex-direction:column; gap:var(--s2); text-decoration:none; transition:transform 0.15s, border-color 0.15s;" onmouseover="this.style.borderColor='var(--mint)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border-light)';this.style.transform='none'">
+          <div style="font-size:2rem;">⚙️</div>
+          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy);">Trades &amp; Technical</div>
+          <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0; line-height:1.6;">Solar, electrical, HVAC, plumbing, building trades.</p>
+          <div style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:auto; padding-top:var(--s3);">1 pack available →</div>
+        </a>
+
+        <a href="industry-lifestyle-services.html" style="background:var(--white); border:1.5px solid var(--border-light); border-radius:var(--r-lg); padding:var(--s6); display:flex; flex-direction:column; gap:var(--s2); text-decoration:none; transition:transform 0.15s, border-color 0.15s;" onmouseover="this.style.borderColor='var(--mint)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border-light)';this.style.transform='none'">
+          <div style="font-size:2rem;">🧹</div>
+          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy);">Lifestyle Services</div>
+          <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0; line-height:1.6;">Cleaning, removalists, home services, domestic help.</p>
+          <div style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-top:auto; padding-top:var(--s3);">1 pack available →</div>
+        </a>
+
+        <a href="industry-digital-creative.html" style="background:var(--white); border:1.5px dashed var(--border-light); border-radius:var(--r-lg); padding:var(--s6); display:flex; flex-direction:column; gap:var(--s2); text-decoration:none; transition:transform 0.15s, border-color 0.15s; opacity:0.85;" onmouseover="this.style.borderColor='var(--mint)';this.style.transform='translateY(-2px)';this.style.opacity='1'" onmouseout="this.style.borderColor='var(--border-light)';this.style.transform='none';this.style.opacity='0.85'">
+          <div style="font-size:2rem;">💡</div>
+          <div style="font-size:var(--text-base); font-weight:700; color:var(--navy);">Digital &amp; Creative</div>
+          <p style="font-size:var(--text-sm); color:var(--text-secondary); margin:0; line-height:1.6;">Web design, digital marketing, SEO, content studios.</p>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); font-weight:600; margin-top:auto; padding-top:var(--s3);">Coming soon →</div>
+        </a>
 
       </div>
 
