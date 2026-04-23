@@ -98,14 +98,7 @@
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://openways.net/pack-tcm.html</loc>
-    <lastmod>2026-04-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
+<url>
     <loc>https://openways.net/pack-education.html</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>monthly</changefreq>
