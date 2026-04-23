@@ -2087,3 +2087,15 @@ h1, h2, h3, h4 {
   color: var(--text-secondary);
   line-height: 1.75;
 }
+
+
+/* ── Updates 3-card pricing grid (responsive) ─────────────── */
+@media (max-width: 900px) {
+  section[aria-labelledby="pricing-heading"] > div > div[style*="grid-template-columns:repeat(3, 1fr)"] {
+    grid-template-columns: 1fr !important;
+    max-width: 480px !important;
+  }
+  section[aria-labelledby="pricing-heading"] > div > div[style*="grid-template-columns:repeat(2, 1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+}
