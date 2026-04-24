@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node (defensive)
+/node_modules/
+
+# Claude Code local state (do NOT push session files)
+/.claude/
+
+# Local-only data — large media & reference (not deployed)
+# These directories stay on your Mac and are NOT part of the Vercel site.
+/book/
+/gumroad video/
+/gumroad-covers/
+/products/
+/production/
+/reference/
+
+# Local environment
+.env
+.env.local
