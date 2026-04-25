@@ -116,6 +116,18 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Chinese landing pages — full 中文 hero + AU/INTL purchase cards -->
+  <url><loc>https://openways.net/zh-pack-accounting.html</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openways.net/zh-pack-restaurant.html</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openways.net/zh-pack-beauty.html</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openways.net/zh-pack-clinic.html</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openways.net/zh-pack-realestate.html</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openways.net/zh-pack-renovation.html</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openways.net/zh-pack-education.html</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openways.net/zh-pack-solar.html</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openways.net/zh-pack-cleaning.html</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://openways.net/zh-pack-signage.html</loc><lastmod>2026-04-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
 <url>
     <loc>https://openways.net/pack-education.html</loc>
     <lastmod>2026-04-11</lastmod>
