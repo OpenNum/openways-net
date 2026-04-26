@@ -70,3 +70,26 @@ beauty, restaurant, accounting, realestate, cleaning, education, renovation, sol
 
 ## 英雄端操作
 production/docs/ 下有操作手冊，指導 Mac Mini（英雄）執行批量任務
+
+---
+
+## 知识沉淀到第二大脑（2026-04-24 起）
+
+本项目产生的**跨项目经验**应同步写一份到 Obsidian vault：
+
+路径：`~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vincent Second Brain/raw/claude-outputs/`
+
+命名格式：`{debug|method|decision}-YYYY-MM-DD-主题.md`
+
+**适用场景**：
+- 关键调试心得（例：PDF 中文标点禁则、繁简混用乱码修复）
+- 新掌握的方法论（例：行业包分步制作法）
+- 跨项目可复用的设计（例：ANZSIC 分类骨架、品牌气质规范）
+
+**不适用**：
+- 仅限 OpenWays 的业务数据（行业研究、价格、地址）→ 留在 `reference/research/`
+- 代码修改本身 → 走 git commit
+
+月底执行 `compile the wiki` 会把 raw/claude-outputs/ 沉到 vault 对应领域（OpenWays 经验主要进 `wiki/ai-engineering/` 和 `wiki/business-operations/`）。
+
+完整规则见 vault 根 [CLAUDE.md](~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vincent Second Brain/CLAUDE.md) 与 plan 第 9 节。
