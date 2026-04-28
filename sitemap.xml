@@ -293,11 +293,41 @@
 
   <url>
     <loc>https://openways.net/zh-about.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/about.html"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-about.html"/>
+  </url>
+
+  <!-- Legal pages -->
+  <url>
+    <loc>https://openways.net/terms.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://openways.net/privacy.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://openways.net/refund.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Payment guide (zh) -->
+  <url>
+    <loc>https://openways.net/zh-pay.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
 
 </urlset>
