@@ -300,6 +300,44 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-about.html"/>
   </url>
 
+  <!-- Custom AI Setup -->
+  <url>
+    <loc>https://openways.net/custom.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/custom.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-custom.html"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-custom.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/custom.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-custom.html"/>
+  </url>
+
+  <!-- Partners program -->
+  <url>
+    <loc>https://openways.net/partners.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/partners.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-partners.html"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-partners.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/partners.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-partners.html"/>
+  </url>
+
   <!-- Legal pages -->
   <url>
     <loc>https://openways.net/terms.html</loc>
