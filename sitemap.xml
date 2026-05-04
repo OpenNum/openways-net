@@ -200,6 +200,41 @@
     <priority>0.9</priority>
   </url>
 
+  <url>
+    <loc>https://openways.net/pack-commercial-cleaning.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-pack-commercial-cleaning.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://openways.net/pack-domestic-help.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-pack-domestic-help.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://openways.net/pack-clinic.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Chinese landing pages — full 中文 hero + AU/INTL purchase cards -->
   <url><loc>https://openways.net/zh-pack-driving-school.html</loc><lastmod>2026-04-30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://openways.net/zh-pack-electrician.html</loc><lastmod>2026-04-30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
@@ -430,6 +465,106 @@
     <lastmod>2026-04-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
+  </url>
+
+
+  <url>
+    <loc>https://openways.net/zh-terms.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-terms.html"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-privacy.html"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-refund.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/refund.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-refund.html"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-industry-food-hospitality.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/industry-food-hospitality.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-industry-food-hospitality.html"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-industry-health-wellness.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/industry-health-wellness.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-industry-health-wellness.html"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-industry-home-property.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/industry-home-property.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-industry-home-property.html"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-industry-professional-services.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/industry-professional-services.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-industry-professional-services.html"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-industry-education-training.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/industry-education-training.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-industry-education-training.html"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-industry-trades-technical.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/industry-trades-technical.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-industry-trades-technical.html"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-industry-lifestyle-services.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/industry-lifestyle-services.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-industry-lifestyle-services.html"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/zh-industry-digital-creative.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/industry-digital-creative.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-industry-digital-creative.html"/>
   </url>
 
 </urlset>

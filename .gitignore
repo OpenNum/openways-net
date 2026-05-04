@@ -31,3 +31,6 @@ __pycache__/
 # Local environment
 .env
 .env.local
+
+# Backup files (备份，不入仓)
+*.OLD.html
