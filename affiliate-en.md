@@ -2,7 +2,7 @@
 
 **Version**: 1.0
 **Effective**: 29 April 2026
-**Issuer**: OpenWays (operated by Patrick Yang, Sydney, Australia)
+**Issuer**: OpenWays (operated by Vince Young, Sydney, Australia)
 
 ---
 
@@ -74,12 +74,12 @@ If OpenWays migrates the Mainland China track to a third-party platform (e.g., X
 
 - Sharing your affiliate link or promo code on personal websites, social media, email newsletters, paid ads (subject to platform rules), and 1-on-1 conversations
 - Reposting OpenWays-published content (blog posts, social media, case studies) with attribution
-- Quoting Patrick Yang, OpenWays product features, or pricing accurately
+- Quoting Vince Young, OpenWays product features, or pricing accurately
 
 ### 4.2 Prohibited
 
 - **Misrepresentation**: Exaggerating product capabilities, fabricating testimonials, or making claims OpenWays has not made
-- **Trademark abuse**: Using "OpenWays", "Patrick Yang", or related logos in domain names, ad headlines, or branded creative without written permission
+- **Trademark abuse**: Using "OpenWays", "Vince Young", or related logos in domain names, ad headlines, or branded creative without written permission
 - **Pricing discounts**: Selling OpenWays products below the official Gumroad price, bundling them into your own offerings, or representing them as part of your own brand
 - **Spam**: Mass unsolicited email, automated DMs, or comment spam to drive clicks
 - **Dishonest tracking**: Cookie stuffing, link cloaking that disguises destination, redirect chains designed to capture other affiliates' clicks
