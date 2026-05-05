@@ -34,3 +34,5 @@ __pycache__/
 
 # Backup files (备份，不入仓)
 *.OLD.html
+*.OLD
+*.OLD.md
