@@ -88,7 +88,7 @@
       <div style="display:flex; gap:var(--s3); flex-wrap:wrap; margin-top:var(--s5);">
         <a href="mailto:hi@openways.net" class="btn btn-primary">📧 发邮件</a>
         <a href="https://wa.me/61479135888" target="_blank" rel="noopener" class="btn btn-outline-light">💬 WhatsApp +61 479 135 888</a>
-        <a href="weixin://" class="btn btn-outline-light" onclick="navigator.clipboard?.writeText('openclaude'); this.textContent='✓ 已复制: openclaude'; setTimeout(()=>{this.textContent='💬 微信: openclaude';}, 2000); return false;">💬 微信: openclaude</a>
+        <button type="button" class="btn btn-outline-light" onclick="navigator.clipboard && navigator.clipboard.writeText('openclaude'); this.textContent='✓ 已复制，去微信粘贴添加'; setTimeout(()=>{this.textContent='💬 微信: openclaude';}, 3000);">💬 微信: openclaude</button>
       </div>
     </div>
   </section>

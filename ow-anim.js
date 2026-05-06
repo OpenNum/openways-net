@@ -32,6 +32,9 @@
   }
 
   // ── Count-up numbers ────────────────────────────────────────
+  // SEO-friendly: HTML 中已经是真实数字，DOM 加载时不重置为 0。
+  // 只在元素进入 viewport 时才临时设 0 并启动动画。
+  // 爬虫不滚动 → 看到的始终是 HTML 真实数字。
   const counters = document.querySelectorAll('[data-count]');
   if ('IntersectionObserver' in window && counters.length) {
     const countObs = new IntersectionObserver(function (entries) {
@@ -43,6 +46,8 @@
         const decimals = (el.dataset.count.indexOf('.') >= 0)
           ? el.dataset.count.split('.')[1].length
           : 0;
+        // 进入 viewport 才把 DOM 临时归零，启动动画
+        el.textContent = '0';
         const start = performance.now();
         const animate = function (now) {
           const progress = Math.min((now - start) / duration, 1);
@@ -56,9 +61,8 @@
         countObs.unobserve(el);
       });
     }, { threshold: 0.5 });
+    // 不再预填 0；DOM 保留 HTML 真实数字（SEO 友好）
     counters.forEach(function (el) {
-      // Pre-fill with 0 so layout doesn't shift
-      el.textContent = '0';
       countObs.observe(el);
     });
   }
