@@ -418,6 +418,15 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-custom.html"/>
   </url>
 
+  <!-- Market entry consulting -->
+  <url>
+    <loc>https://openways.net/zh-market-entry.html</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-market-entry.html"/>
+  </url>
+
   <!-- Partners program -->
   <url>
     <loc>https://openways.net/partners.html</loc>
