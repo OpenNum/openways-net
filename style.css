@@ -348,6 +348,7 @@ h1, h2, h3, h4 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--navy);
+  text-wrap: balance;
 }
 
 .section--dark h1,
@@ -362,6 +363,11 @@ h1, h2, h3, h4 {
 .section-heading {
   font-size: var(--text-4xl);
   margin-bottom: var(--s4);
+  text-wrap: balance;
+}
+
+p, .section-sub, .hero-sub, li {
+  text-wrap: pretty;
 }
 
 .section-sub {
