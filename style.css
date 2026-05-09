@@ -540,6 +540,22 @@ p, .section-sub, .hero-sub, li {
   background: var(--bg-subtle);
 }
 
+/* 出海咨询 — 中文区独有，特殊高亮 */
+.nav-link--featured {
+  color: var(--mint-dark) !important;
+  font-weight: 600;
+  padding: 0.18rem 0.65rem !important;
+  border-radius: 999px;
+  background: rgba(90, 168, 138, 0.10);
+  border: 1px solid rgba(90, 168, 138, 0.32);
+  transition: background var(--t-fast), border-color var(--t-fast);
+}
+.nav-link--featured:hover {
+  background: rgba(90, 168, 138, 0.20) !important;
+  border-color: rgba(90, 168, 138, 0.55) !important;
+  color: var(--mint-dark) !important;
+}
+
 /* Nav right side */
 .nav-right {
   display: flex;
