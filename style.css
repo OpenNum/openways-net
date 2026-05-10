@@ -349,6 +349,7 @@ h1, h2, h3, h4 {
   line-height: 1.2;
   color: var(--navy);
   text-wrap: balance;
+  word-break: keep-all;
 }
 
 .section--dark h1,
