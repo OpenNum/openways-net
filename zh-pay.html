@@ -125,30 +125,22 @@
       </div>
 
       <!-- 二维码区域 -->
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--s6); max-width:640px; margin:0 auto var(--s10);">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--s6); max-width:640px; margin:0 auto var(--s10); align-items:start;">
 
         <!-- 微信支付 -->
-        <div style="text-align:center; padding:var(--s6); background:#fff; border-radius:var(--r-lg); border:2px solid #07C160; box-shadow:0 4px 24px rgba(7,193,96,0.1);">
-          <div style="display:inline-flex; align-items:center; gap:var(--s2); margin-bottom:var(--s4);">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="#07C160"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.3.3 0 0 0 .166-.054l1.9-1.106a.58.58 0 0 1 .47-.054 10.5 10.5 0 0 0 3.088.462c.245 0 .485-.017.728-.034-.215-.645-.334-1.326-.334-2.033 0-3.58 3.39-6.49 7.573-6.49.257 0 .509.013.762.036C16.655 4.948 13.074 2.188 8.69 2.188zM5.785 5.99a1.11 1.11 0 1 1 0 2.22 1.11 1.11 0 0 1 0-2.22zm5.812 0a1.11 1.11 0 1 1 0 2.22 1.11 1.11 0 0 1 0-2.22zm4.062 3.924c-3.621 0-6.56 2.493-6.56 5.566 0 3.074 2.94 5.567 6.56 5.567a8.2 8.2 0 0 0 2.516-.396.47.47 0 0 1 .381.044l1.547.9a.24.24 0 0 0 .134.044.237.237 0 0 0 .236-.24c0-.058-.023-.116-.039-.172l-.317-1.205a.48.48 0 0 1 .174-.54C22.956 18.79 24 17.058 24 15.08c0-3.073-2.94-5.567-6.56-5.567h.219zm-2.585 3.12a.907.907 0 1 1 0 1.814.907.907 0 0 1 0-1.814zm4.95 0a.907.907 0 1 1 0 1.814.907.907 0 0 1 0-1.814z"/></svg>
-            <span style="font-weight:800; font-size:var(--text-base); color:#07C160;">微信支付</span>
-          </div>
-          <div style="background:#f8f8f8; border-radius:var(--r-md); padding:var(--s4); margin-bottom:var(--s3);">
+        <div style="display:flex; flex-direction:column; text-align:center; padding:var(--s6); background:#fff; border-radius:var(--r-lg); border:2px solid #07C160; box-shadow:0 4px 24px rgba(7,193,96,0.1);">
+          <div style="background:#f8f8f8; border-radius:var(--r-md); padding:var(--s4); flex:1;">
             <img src="pay-wechat.jpg" alt="微信支付收款码" style="width:100%; max-width:240px; border-radius:8px;">
           </div>
-          <p style="font-size:var(--text-xs); color:var(--text-muted); margin:0;">打开微信 → 扫一扫</p>
+          <p style="font-size:var(--text-xs); color:var(--text-muted); margin:var(--s3) 0 0;">打开微信 → 扫一扫</p>
         </div>
 
         <!-- 支付宝 -->
-        <div style="text-align:center; padding:var(--s6); background:#fff; border-radius:var(--r-lg); border:2px solid #1677FF; box-shadow:0 4px 24px rgba(22,119,255,0.1);">
-          <div style="display:inline-flex; align-items:center; gap:var(--s2); margin-bottom:var(--s4);">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="#1677FF"><path d="M21.422 14.752c-1.386-.612-3.74-1.645-5.63-2.476.9-1.79 1.583-3.852 1.93-5.99h-4.168V4.483h5.07V3.347h-5.07V.5h-2.375s.006.089.006.322c0 .233-.008 2.525-.008 2.525H6.223v1.136h4.954v1.803H7.27v1.09h8.944a17 17 0 0 1-1.506 4.345c-1.853-.73-3.466-1.218-4.116-1.218-2.673 0-4.373 1.529-4.373 3.36 0 1.831 1.494 3.553 4.683 3.553 2.085 0 4.097-1.089 5.645-2.773 2.373 1.32 6.453 3.19 6.453 3.19V14.75zM10.787 19.33c-2.327 0-3.188-1.088-3.188-2.14 0-1.16.995-2.106 2.57-2.106 1.264 0 2.937.6 4.97 1.628-1.257 1.6-2.837 2.618-4.352 2.618M22.5 0h-21A1.5 1.5 0 0 0 0 1.5v21A1.5 1.5 0 0 0 1.5 24h21a1.5 1.5 0 0 0 1.5-1.5v-21A1.5 1.5 0 0 0 22.5 0" /></svg>
-            <span style="font-weight:800; font-size:var(--text-base); color:#1677FF;">支付宝</span>
-          </div>
-          <div style="background:#f8f8f8; border-radius:var(--r-md); padding:var(--s4); margin-bottom:var(--s3);">
+        <div style="display:flex; flex-direction:column; text-align:center; padding:var(--s6); background:#fff; border-radius:var(--r-lg); border:2px solid #1677FF; box-shadow:0 4px 24px rgba(22,119,255,0.1);">
+          <div style="background:#f8f8f8; border-radius:var(--r-md); padding:var(--s4); flex:1;">
             <img src="pay-alipay.jpg" alt="支付宝收款码" style="width:100%; max-width:240px; border-radius:8px;">
           </div>
-          <p style="font-size:var(--text-xs); color:var(--text-muted); margin:0;">打开支付宝 → 扫一扫</p>
+          <p style="font-size:var(--text-xs); color:var(--text-muted); margin:var(--s3) 0 0;">打开支付宝 → 扫一扫</p>
         </div>
 
       </div>
