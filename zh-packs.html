@@ -247,7 +247,7 @@
   <!-- ── 页面标题 ──────────────────────────────────────── -->
   <section class="inner-hero">
     <div class="container">
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--s8); align-items:center;">
+      <div class="packs-hero-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:var(--s8); align-items:center;">
         <div>
           <span class="eyebrow">我们用 AI 帮您在同行中脱颖而出 · A$49 · 限时价</span>
           <h1>适合您行业的 AI 行业包</h1>
@@ -338,13 +338,13 @@
 
     <div class="container" style="position:relative; z-index:1;">
       <a href="zh-pay.html" style="text-decoration:none; color:inherit; display:block;">
-        <div style="display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:var(--s6); max-width:980px; margin:0 auto;">
+        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:var(--s6); max-width:980px; margin:0 auto;">
 
           <!-- 红包图标 -->
           <div style="font-size:7rem; line-height:1; flex-shrink:0; filter:drop-shadow(0 6px 24px rgba(255,193,7,0.5));">🧧</div>
 
           <!-- 文字 -->
-          <div style="flex:1; min-width:0; color:#fff;">
+          <div style="flex:1; min-width:280px; color:#fff;">
             <div style="display:flex; align-items:center; gap:var(--s2); margin-bottom:var(--s3); flex-wrap:wrap;">
               <span style="font-size:var(--text-base); font-weight:700; color:#FFD700; letter-spacing:0.1em;">CHINA EXCLUSIVE · 中国用户专享</span>
             </div>
@@ -408,7 +408,7 @@
                 <li>撰写菜单介绍和每日特惠文案</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-restaurant.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
@@ -437,7 +437,7 @@
                 <li>制作服务介绍和节日促销文案</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-beauty.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
@@ -452,14 +452,13 @@
                 <li>生成预约提醒和随访跟进信息</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-clinic.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">🦷</div>
               <div class="pack-card-title">牙医 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于 AHPRA 注册华人牙医和双语诊所 · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">用 AI 处理新患双语接待、X-ray 与治疗方案中文讲解、多语种 recall 提醒，严守 AHPRA Advertising Guidelines 与 Health Records Act。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>新患接待 + Medicare CDBS / HICAPS 检查</li>
@@ -467,7 +466,7 @@
                 <li>中 / 英 / 越 / 韩四语 recall 与 drop-out 挽回</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-dentist.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
@@ -496,7 +495,7 @@
                 <li>制作房源社交媒体内容</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-realestate.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
@@ -511,7 +510,7 @@
                 <li>回复客户咨询和跟进通知</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-renovation.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
@@ -540,14 +539,13 @@
                 <li>生成合规提醒和财税科普内容</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-accounting.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">🌏</div>
               <div class="pack-card-title">留学移民服务 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于留学顾问、OMARA 注册移民代理 · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">学签 / 485 客户沟通、GTE 陈述要点提取、英文政策中译教育内容——AI 加速文书工作，专业判断仍由您把关。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>双语学签 / 485 询问回复模板</li>
@@ -555,14 +553,13 @@
                 <li>Home Affairs 政策一键转小红书 / 微信 / Instagram 内容</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-immigration.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">⚖️</div>
               <div class="pack-card-title">律师 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于华人持牌 solicitor 与小型律所 · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">新案接待、对方律师英文长信中文摘要、客户进度周报、Google 评论与小红书案例——5 个横向通用 SOP 覆盖移民法 / 房产 / 家庭 / 刑事 / 商业 5 大业务线。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>双语新案接待 + 紧急度判断 + Cost Disclosure 起草</li>
@@ -570,14 +567,13 @@
                 <li>Google 评论邀请 + 负评合规回复（Conduct Rule 36）</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-lawyer.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">🛡️</div>
               <div class="pack-card-title">保险经纪 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于华人 AFSL Authorised Rep 与小型 broking firm · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">新客风险评估、PDS 中文摘要、续保复盘、理赔协助、COI 合规——5 个横向通用 SOP 覆盖商业 / 餐饮 / 物业 / trades / PI 全业务线。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>行业风险缺口诊断 + 多承保市场 quote 请求</li>
@@ -585,14 +581,13 @@
                 <li>理赔协助 + AFCA 投诉升级 + COI 24 小时搞定</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-insurance.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">📦</div>
               <div class="pack-card-title">国际物流 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于华人货代、报关行与跨境电商物流 · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">询盘接待、报关与 ICS 申报、AQIS 检疫处理、货损理赔、客户状态更新——5 个横向通用 SOP 覆盖 FCL / LCL / 空运 / 跨境电商全场景。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>双语发货人 / 收货人接待 + Incoterms 厘清</li>
@@ -600,14 +595,13 @@
                 <li>货损理赔 + 多 FTA 优惠原产地利用</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-logistics.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">🏦</div>
               <div class="pack-card-title">房贷经纪 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于华人 MFAA / FBAA 持牌房贷经纪 · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">客户接待、还款能力评估、lender 产品比较、settlement 协调、复盘与 refinance——5 个横向通用 SOP 覆盖首置 / refinance / 投资者 / SMSF / 商业物业。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>双语首置 / refinance 接待 + 还款能力预审</li>
@@ -615,7 +609,7 @@
                 <li>Settlement 协调 + 售后复盘工作流</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-mortgage.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
@@ -644,14 +638,13 @@
                 <li>生成教学辅助材料和评估模板</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-education.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">🚗</div>
               <div class="pack-card-title">驾校 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于多语种驾校教练和小型驾校 · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">用 AI 处理试课双语接待、学员进度家长报告、DKT/HPT 母语教学，减少行政负担，专注教学和路考辅导。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>试课预约 + 双语报价标准化</li>
@@ -659,7 +652,7 @@
                 <li>DKT / HPT 学员母语拆解</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-driving-school.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
@@ -688,14 +681,13 @@
                 <li>生成安装案例和客户推荐内容</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-solar.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">⚡</div>
               <div class="pack-card-title">电工 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于持牌电工、个体工商户和小型电气承包商 · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">用 AI 处理 hipages / Airtasker / 微信报价、紧急派工 triage、CCEW 合规文档骨架，严守 AS/NZS 3000 持牌边界。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>新客户报价 + 现场评估标准化</li>
@@ -703,14 +695,13 @@
                 <li>客户安全教育 + 紧急派工 triage</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-electrician.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">🛠️</div>
               <div class="pack-card-title">防水屋頂 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于持牌 waterproofer + roofer、sole trader 和小型 trades 公司 · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">用 AI 处理屋顶漏水紧急 triage、Roof Restoration 大单报价、浴室与露台 BCA + AS 3740 合规、Strata recurring 维护、Home Building Act 1989 7 年 statutory warranty 文档。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>屋顶漏水紧急 triage + 上门 inspection</li>
@@ -718,14 +709,13 @@
                 <li>浴室与露台 BCA Part 3.8.1 + AS 3740 + 7 年保修</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-waterproofing-roofing.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">❄️</div>
               <div class="pack-card-title">空調暖通 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于 ARC 持牌 HVAC technician、sole trader 和小型空调公司 · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">用 AI 处理新装 split system 报价、Ducted air conditioning 大单咨询、季节性维修保养 emergency triage、Strata 商业 HVAC recurring 合同、ARC license 合规文档。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>新装 split system 报价 + 现场评估（kW 匹数 + 品牌对比）</li>
@@ -733,14 +723,13 @@
                 <li>Strata 商业 HVAC recurring 合同 + ARC 合规</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-hvac.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">🔧</div>
               <div class="pack-card-title">水暖油漆 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于持牌 plumber + painter、sole trader 和双工种小型 trades 公司 · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">用 AI 处理紧急水管漏水 / 堵塞 dispatch、油漆翻新报价 + 表面处理 + 颜色咨询、物业 maintenance + 出租房 turnover、NSW Plumbing Compliance Certificate、pre-1970s lead paint 安全。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>紧急水管 dispatch + 安全 triage（24h response）</li>
@@ -748,7 +737,7 @@
                 <li>NSW Plumbing Compliance Certificate（PCA + AS/NZS 3500）</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-plumbing-painting.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
@@ -777,14 +766,13 @@
                 <li>生成社交推广和季节性促销内容</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-cleaning.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">🏢</div>
               <div class="pack-card-title">商业清洁 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于商业清洁 sole trader、Strata + 写字楼 + FM 转包 · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">用 AI 起草 Strata 招标书、办公夜间排班、WHS 风险评估与 SDS 登记、FM 转包月度 KPI 报告，符合 WHS Act 2011 与 BSCAA 行规。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>Strata committee 招标书 + sqm × 频次定价</li>
@@ -792,14 +780,13 @@
                 <li>FM 月度 KPI + scope-creep 升级脚本</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-commercial-cleaning.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">🏠</div>
               <div class="pack-card-title">家政服务 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于家政阿姨、recurring 上门、NDIS / aged-care 上门服务 · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">用 AI 处理 recurring 预约改期 + deep-clean 加购、NDIS Worker Screening 接客、Aged Care 守护文件、双语家庭沟通与冲突解决。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>Recurring 预约改期 + 季度 deep-clean 加购</li>
@@ -807,14 +794,13 @@
                 <li>双语家庭雇主沟通与冲突 de-escalation</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-domestic-help.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">🧼</div>
               <div class="pack-card-title">地毯清洗 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于地毯清洗 sole trader 和小型 contractor · 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">用 AI 处理 hipages / Airtasker / 微信新客户报价、End of Lease bond-back receipt、pet odour 多次治理，严守 IICRC / ACCI 标准与 ACL 边界。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>新客户 steam-vs-dry 报价 + 干燥时间预估</li>
@@ -822,14 +808,13 @@
                 <li>Pet odour / stain 专项多次治理 + 商业 recurring 维护</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-carpet-cleaning.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
             <div class="pack-card">
               <div class="pack-card-icon" aria-hidden="true">📦</div>
               <div class="pack-card-title">搬運服務 AI 行业包</div>
-              <p style="font-size:var(--text-xs); color:var(--mint-dark); font-weight:600; margin-bottom:var(--s3);">适用于搬运 sole trader 和小型搬家公司（2-5 人）· 🇦🇺 仅澳洲版</p>
               <p class="pack-card-desc">用 AI 处理 volume-based 报价 + access surcharge、packing service upsell、interstate logistics、AFRA-aligned damage liability 文档、End of Lease 协调。</p>
               <ul style="font-size:var(--text-sm); color:var(--text-secondary); margin:0 0 var(--s4) var(--s5); padding:0; line-height:1.9;">
                 <li>Volume-based 报价 + 楼梯 / 电梯 / 停车 access surcharge</li>
@@ -837,7 +822,7 @@
                 <li>AFRA-aligned damage liability + carrier insurance disclosure</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性购买</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-removalist.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
@@ -866,7 +851,7 @@
                 <li>前后对比社媒 + Google 评价邀请</li>
               </ul>
               <div class="pack-card-footer">
-                <div class="pack-card-price">A$49 <span>一次性 · 仅澳洲版</span></div>
+                <div class="pack-card-price">A$49</div>
                 <a href="zh-pack-signage.html" class="btn btn-primary btn-sm">查看详情 →</a>
               </div>
             </div>
