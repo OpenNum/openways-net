@@ -1508,6 +1508,10 @@ p, .section-sub, .hero-sub, li {
   .why-grid { grid-template-columns: 1fr; }
 }
 
+/* ── Founder bio sections hidden site-wide ────────────────────── */
+.founder-strip,
+.founder-mini { display: none !important; }
+
 /* ── zh-packs.html mobile fixes ───────────────────────────────── */
 @media (max-width: 768px) {
   /* Hero grid: hide pack preview images on mobile, show text full width */
