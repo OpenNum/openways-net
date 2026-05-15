@@ -1516,7 +1516,7 @@ p, .section-sub, .hero-sub, li {
 @media (max-width: 768px) {
   /* Hero grid: hide pack preview images on mobile, show text full width */
   .packs-hero-grid { grid-template-columns: 1fr !important; }
-  .packs-hero-grid > div:last-child { display: none; }
+  .packs-hero-grid > div:last-child { display: none !important; }
 }
 
 /* ── Trust Bar ───────────────────────────────────────────────── */
@@ -1733,7 +1733,6 @@ p, .section-sub, .hero-sub, li {
 @media (max-width: 768px) {
   .method-step { grid-template-columns: 1fr; gap: var(--s3); }
   .method-step-num { font-size: var(--text-3xl); }
-  .hero-title { font-size: var(--text-4xl); }
 }
 
 /* ── Nav JS scroll class ─────────────────────────────────────── */
