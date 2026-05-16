@@ -17,13 +17,13 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* ── CN Packs – full-bleed photo wall ─────────────────────── */
+    /* ── CN Packs ──────────────────────────────────────────────── */
     body { background: #08101e; }
 
-    /* Hero – horizontal split */
+    /* Hero */
     .cn-hero {
       background: #08101e;
-      padding: var(--s7) 0 var(--s6);
+      padding: calc(var(--nav-h) + var(--s10)) 0 var(--s8);
       border-bottom: 1px solid rgba(90,168,138,0.12);
     }
     .cn-hero-inner {
@@ -56,45 +56,51 @@
       max-width: 420px;
       margin: 0;
     }
-    .cn-price-block { text-align: right; }
+    .cn-price-block { text-align: right; line-height: 1; }
     .cn-price-big {
-      font-size: clamp(3.8rem, 7vw, 5.8rem);
+      font-size: clamp(3.5rem, 6vw, 5.2rem);
       font-weight: 900;
       color: #fff;
       letter-spacing: -0.04em;
       line-height: 1;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
-    .cn-price-big sup {
-      font-size: 0.38em;
+    .cn-price-big .cn-yen {
+      font-size: 0.46em;
       font-weight: 700;
-      vertical-align: super;
       color: #5AA88A;
+      vertical-align: 0.12em;
+      margin-right: 1px;
     }
     .cn-price-note {
       font-size: 11px;
       color: rgba(255,255,255,0.3);
       margin: 0;
+      text-align: right;
     }
-    @media (max-width: 640px) {
+    @media (max-width: 600px) {
+      .cn-hero-inner { flex-direction: column; align-items: flex-start; gap: var(--s4); }
       .cn-price-block { text-align: left; }
-      .cn-price-big { font-size: 3rem; }
+      .cn-price-note  { text-align: left; }
+      .cn-price-big   { font-size: 3rem; }
     }
 
-    /* ── Photo wall – full bleed ─── */
+    /* ── Photo grid (inside container) ─── */
     .cn-wall {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 3px;
-      background: #08101e;
+      gap: 8px;
+      margin-top: var(--s8);
+      margin-bottom: var(--s8);
     }
-    @media (max-width: 900px)  { .cn-wall { grid-template-columns: repeat(4, 1fr); } }
-    @media (max-width: 560px)  { .cn-wall { grid-template-columns: repeat(3, 1fr); gap: 2px; } }
+    @media (max-width: 900px) { .cn-wall { grid-template-columns: repeat(4, 1fr); gap: 6px; } }
+    @media (max-width: 560px) { .cn-wall { grid-template-columns: repeat(3, 1fr); gap: 5px; } }
+    @media (max-width: 380px) { .cn-wall { grid-template-columns: repeat(2, 1fr); gap: 4px; } }
 
     .cn-card {
       overflow: hidden;
       aspect-ratio: 2/3;
-      cursor: default;
+      border-radius: 5px;
     }
     .cn-card-img {
       width: 100%;
@@ -102,11 +108,11 @@
       object-fit: cover;
       display: block;
       filter: brightness(1.04) saturate(1.06);
-      transition: filter 0.22s, transform 0.25s;
+      transition: filter 0.22s, transform 0.26s;
     }
     .cn-card:hover .cn-card-img {
-      filter: brightness(1.16) saturate(1.2);
-      transform: scale(1.04);
+      filter: brightness(1.14) saturate(1.18);
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -157,7 +163,7 @@
           <p class="cn-sub">25 个行业 · DeepSeek / 豆包 / 微信 / 抖音<br>简体中文 · 6 份 PDF + 视频套装</p>
         </div>
         <div class="cn-price-block">
-          <div class="cn-price-big"><sup>¥</sup>229</div>
+          <div class="cn-price-big"><span class="cn-yen">¥</span>229</div>
           <p class="cn-price-note">每个行业</p>
         </div>
       </div>
@@ -165,7 +171,8 @@
   </section>
 
 
-  <!-- ── 图片墙（全宽，无容器）─────────────────────────── -->
+  <!-- ── 图片墙 ──────────────────────────────────────── -->
+  <div class="container">
   <div class="cn-wall">
 
         <!-- 01 餐饮 — 现已上线 -->
@@ -294,6 +301,7 @@
         </div>
 
   </div><!-- /cn-wall -->
+  </div><!-- /container -->
 
 
   <!-- ── 购买咨询 ───────────────────────────────────────────── -->
