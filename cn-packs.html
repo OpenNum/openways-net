@@ -17,103 +17,97 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* ── CN Packs page ───────────────────────────────────────── */
+    /* ── CN Packs – full-bleed photo wall ─────────────────────── */
+    body { background: #08101e; }
+
+    /* Hero – horizontal split */
     .cn-hero {
-      background: var(--navy);
-      padding: var(--s16) 0 var(--s12);
-      text-align: center;
-      color: var(--white);
+      background: #08101e;
+      padding: var(--s7) 0 var(--s6);
+      border-bottom: 1px solid rgba(90,168,138,0.12);
     }
-    .cn-hero .eyebrow { color: var(--mint); }
-    .cn-hero h1 {
-      font-size: var(--text-5xl);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin: var(--s3) 0 var(--s4);
-    }
-    .cn-hero p {
-      font-size: var(--text-lg);
-      color: rgba(255,255,255,0.65);
-      max-width: 560px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-    .cn-badge-row {
+    .cn-hero-inner {
       display: flex;
-      justify-content: center;
-      gap: var(--s3);
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--s6);
       flex-wrap: wrap;
-      margin-top: var(--s6);
     }
-    .cn-badge {
-      font-size: var(--text-xs);
-      font-weight: 600;
-      padding: 5px 12px;
-      border-radius: 99px;
-      background: rgba(90,168,138,0.15);
-      color: var(--mint);
-      border: 1px solid rgba(90,168,138,0.3);
+    .cn-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #5AA88A;
+      margin-bottom: var(--s2);
     }
-    /* ── grid ───── */
-    .cn-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: var(--s4);
-      margin-top: var(--s10);
+    .cn-title {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin: 0 0 var(--s2);
+      line-height: 1.2;
     }
-    @media (max-width: 1024px) {
-      .cn-grid { grid-template-columns: repeat(4, 1fr); }
-      .cn-hero h1 { font-size: var(--text-4xl); }
+    .cn-sub {
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.45);
+      line-height: 1.65;
+      max-width: 420px;
+      margin: 0;
+    }
+    .cn-price-block { text-align: right; }
+    .cn-price-big {
+      font-size: clamp(3.8rem, 7vw, 5.8rem);
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .cn-price-big sup {
+      font-size: 0.38em;
+      font-weight: 700;
+      vertical-align: super;
+      color: #5AA88A;
+    }
+    .cn-price-note {
+      font-size: 11px;
+      color: rgba(255,255,255,0.3);
+      margin: 0;
     }
     @media (max-width: 640px) {
-      .cn-grid { grid-template-columns: repeat(2, 1fr); gap: var(--s3); }
-      .cn-hero h1 { font-size: var(--text-3xl); }
-      .cn-hero p { font-size: var(--text-base); }
+      .cn-price-block { text-align: left; }
+      .cn-price-big { font-size: 3rem; }
     }
-    /* ── card ───── */
+
+    /* ── Photo wall – full bleed ─── */
+    .cn-wall {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 3px;
+      background: #08101e;
+    }
+    @media (max-width: 900px)  { .cn-wall { grid-template-columns: repeat(4, 1fr); } }
+    @media (max-width: 560px)  { .cn-wall { grid-template-columns: repeat(3, 1fr); gap: 2px; } }
+
     .cn-card {
-      background: var(--white);
-      border-radius: var(--r-md);
       overflow: hidden;
-      border: 1.5px solid rgba(90,168,138,0.25);
-      display: flex;
-      flex-direction: column;
-      transition: box-shadow 0.18s, border-color 0.18s, transform 0.18s;
-    }
-    .cn-card:hover {
-      box-shadow: 0 6px 24px rgba(90,168,138,0.18);
-      border-color: var(--mint);
-      transform: translateY(-2px);
+      aspect-ratio: 2/3;
+      cursor: default;
     }
     .cn-card-img {
       width: 100%;
-      aspect-ratio: 2/3;
+      height: 100%;
       object-fit: cover;
       display: block;
-      filter: brightness(1.05) saturate(1.08);
-      transition: filter 0.18s;
+      filter: brightness(1.04) saturate(1.06);
+      transition: filter 0.22s, transform 0.25s;
     }
-    .cn-card:hover .cn-card-img { filter: brightness(1.12) saturate(1.15); }
-    .cn-card-body {
-      padding: var(--s3) var(--s3) var(--s4);
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      gap: var(--s2);
+    .cn-card:hover .cn-card-img {
+      filter: brightness(1.16) saturate(1.2);
+      transform: scale(1.04);
     }
-    .cn-card-name {
-      font-size: var(--text-sm);
-      font-weight: 700;
-      color: var(--navy);
-      line-height: 1.3;
-    }
-    .cn-price {
-      font-size: var(--text-sm);
-      font-weight: 800;
-      color: #e05c2a;
-      letter-spacing: -0.01em;
-    }
-
   </style>
 </head>
 <body>
@@ -156,270 +150,166 @@
   <!-- ── Hero ──────────────────────────────────────────── -->
   <section class="cn-hero">
     <div class="container">
-      <span class="eyebrow">内地版 · 专为大陆商家设计</span>
-      <h1>AI 锦囊</h1>
-      <p>用国内主流 AI 工具（DeepSeek、豆包、通义、Kimi）<br>提升您的业务效率 · 简体中文 · 买了就能用</p>
-      <div class="cn-badge-row">
-        <span class="cn-badge">📱 微信 / 抖音 / 小红书</span>
-        <span class="cn-badge">🤖 DeepSeek / 豆包 / 通义 / Kimi</span>
-        <span class="cn-badge">📄 6 份 PDF + 视频套装</span>
-        <span class="cn-badge">💰 原价 ¥229 / 行业</span>
+      <div class="cn-hero-inner">
+        <div>
+          <div class="cn-eyebrow">内地版 · 专为大陆商家设计</div>
+          <h1 class="cn-title">AI 锦囊</h1>
+          <p class="cn-sub">25 个行业 · DeepSeek / 豆包 / 微信 / 抖音<br>简体中文 · 6 份 PDF + 视频套装</p>
+        </div>
+        <div class="cn-price-block">
+          <div class="cn-price-big"><sup>¥</sup>229</div>
+          <p class="cn-price-note">每个行业</p>
+        </div>
       </div>
     </div>
   </section>
 
 
-  <!-- ── 行业包网格 ──────────────────────────────────────── -->
-  <section class="section" style="padding-top:var(--s10);">
-    <div class="container">
-      <div class="cn-grid">
+  <!-- ── 图片墙（全宽，无容器）─────────────────────────── -->
+  <div class="cn-wall">
 
         <!-- 01 餐饮 — 现已上线 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/01_餐饮_AI锦囊_闲鱼封面.jpg" alt="餐饮 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🍜 餐饮 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 02 美业 — 现已上线 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/02_美业_AI锦囊_闲鱼封面.jpg" alt="美业 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">💅 美业 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 08 教培 — 现已上线 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/08_教培_AI锦囊_闲鱼封面.jpg" alt="教培 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">📚 教培 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 03 房产 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/03_房产_AI锦囊_闲鱼封面.jpg" alt="房产 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🏠 房产 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 04 会计税务 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/04_会计税务_AI锦囊_闲鱼封面.jpg" alt="会计税务 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">📊 会计税务 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 05 清洁 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/05_清洁_AI锦囊_闲鱼封面.jpg" alt="清洁 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🧹 清洁 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 06 太阳能 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/06_太阳能_AI锦囊_闲鱼封面.jpg" alt="太阳能 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">☀️ 太阳能 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 07 房屋装修 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/07_房屋装修_AI锦囊_闲鱼封面.jpg" alt="房屋装修 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🔨 房屋装修 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 09 诊所 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/09_诊所_AI锦囊_闲鱼封面.jpg" alt="诊所 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🏥 诊所 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 10 保险经纪 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/10_保险经纪_AI锦囊_闲鱼封面.jpg" alt="保险经纪 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🛡️ 保险经纪 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 11 商业清洁 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/11_商业清洁_AI锦囊_闲鱼封面.jpg" alt="商业清洁 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🏢 商业清洁 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 12 国际物流 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/12_国际物流_AI锦囊_闲鱼封面.jpg" alt="国际物流 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🚚 国际物流 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 13 地毯清洗 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/13_地毯清洗_AI锦囊_闲鱼封面.jpg" alt="地毯清洗 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🧺 地毯清洗 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 14 家政服务 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/14_家政服务_AI锦囊_闲鱼封面.jpg" alt="家政服务 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🏡 家政服务 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 15 律师 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/15_律师_AI锦囊_闲鱼封面.jpg" alt="律师 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">⚖️ 律师 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 16 房屋贷款 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/16_房屋贷款_AI锦囊_闲鱼封面.jpg" alt="房屋贷款 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🏦 房屋贷款 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 17 招牌 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/17_招牌_AI锦囊_闲鱼封面.jpg" alt="招牌 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🪧 招牌 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 18 搬运服务 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/18_搬运服务_AI锦囊_闲鱼封面.jpg" alt="搬运服务 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">📦 搬运服务 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 19 水暖油漆 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/19_水暖油漆_AI锦囊_闲鱼封面.jpg" alt="水暖油漆 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🔧 水暖油漆 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 20 牙医 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/20_牙医_AI锦囊_闲鱼封面.jpg" alt="牙医 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🦷 牙医 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 21 留学移民服务 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/21_留学移民服务_AI锦囊_闲鱼封面.jpg" alt="留学移民 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">✈️ 留学移民 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 22 空调暖通 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/22_空调暖通_AI锦囊_闲鱼封面.jpg" alt="空调暖通 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">❄️ 空调暖通 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 23 防水屋顶 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/23_防水屋顶_AI锦囊_闲鱼封面.jpg" alt="防水屋顶 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🏗️ 防水屋顶 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 24 电工 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/24_电工_AI锦囊_闲鱼封面.jpg" alt="电工 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">⚡ 电工 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
         <!-- 25 驾校 -->
         <div class="cn-card">
           <img class="cn-card-img" src="cn-covers/25_驾校_AI锦囊_闲鱼封面.jpg" alt="驾校 AI 锦囊" loading="lazy">
-          <div class="cn-card-body">
-            <div class="cn-card-name">🚗 驾校 AI 锦囊</div>
-            <span class="cn-price">¥229</span>
-          </div>
         </div>
 
-      </div>
-
-    </div>
-  </section>
+  </div><!-- /cn-wall -->
 
 
   <!-- ── 购买咨询 ───────────────────────────────────────────── -->
-  <section style="background:#0f172a; padding:var(--s12) 0;">
-    <div class="container" style="max-width:720px; text-align:center;">
-      <span style="display:inline-block; font-size:var(--text-xs); font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#5AA88A; margin-bottom:var(--s3);">获取文件</span>
-      <h2 style="font-size:clamp(1.6rem,3vw,2.25rem); font-weight:900; color:#fff; margin:0 0 var(--s3); line-height:1.2;">微信或 WhatsApp 直接联系</h2>
-      <p style="color:rgba(255,255,255,0.7); font-size:var(--text-base); line-height:1.7; margin:0 0 var(--s8);">告知您的行业，即刻发送文件包。也可在闲鱼搜索「AI 锦囊内地版」找到我们。</p>
+  <section style="background:#08101e; padding:var(--s14) 0; border-top:1px solid rgba(90,168,138,0.12);">
+    <div class="container" style="max-width:680px; text-align:center;">
+      <h2 style="font-size:clamp(1.4rem,3vw,2rem); font-weight:900; color:#fff; margin:0 0 var(--s3); line-height:1.2;">购买咨询</h2>
+      <p style="color:rgba(255,255,255,0.5); font-size:var(--text-sm); line-height:1.7; margin:0 0 var(--s7);">告知行业，立即发送文件。也可在闲鱼搜索「AI 锦囊内地版」。</p>
       <div style="display:flex; flex-wrap:wrap; gap:var(--s4); justify-content:center;">
         <button type="button"
-          onclick="navigator.clipboard && navigator.clipboard.writeText('baycup'); this.textContent='✓ 已复制，去微信粘贴添加'; setTimeout(()=>{this.innerHTML='💬 微信联系 &nbsp;<strong style=\'color:#7BD9A8\'>baycup</strong>';}, 2500);"
+          onclick="navigator.clipboard && navigator.clipboard.writeText('baycup'); this.textContent='✓ 已复制，去微信粘贴添加'; setTimeout(()=>{this.innerHTML='💬 微信购买 &nbsp;<strong style=\'color:#7BD9A8\'>baycup</strong>';}, 2500);"
           style="display:inline-flex; align-items:center; gap:8px; padding:14px 28px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); color:#fff; font-weight:700; font-size:var(--text-base); border-radius:var(--r-full); cursor:pointer; transition:background 0.2s; white-space:nowrap;"
-          onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">💬 微信联系 &nbsp;<strong style="color:#7BD9A8">baycup</strong></button>
+          onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">💬 微信购买 &nbsp;<strong style="color:#7BD9A8">baycup</strong></button>
         <a href="https://wa.me/61479135888"
           target="_blank" rel="noopener"
           style="display:inline-flex; align-items:center; gap:8px; padding:14px 28px; background:#25D366; color:#fff; font-weight:700; font-size:var(--text-base); border-radius:var(--r-full); text-decoration:none; white-space:nowrap; transition:background 0.2s;"
-          onmouseover="this.style.background='#1ebe5a'" onmouseout="this.style.background='#25D366'">📱 WhatsApp +61 479 135 888</a>
+          onmouseover="this.style.background='#1ebe5a'" onmouseout="this.style.background='#25D366'">📱 WhatsApp 咨询</a>
       </div>
     </div>
   </section>
