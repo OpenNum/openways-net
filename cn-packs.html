@@ -435,6 +435,25 @@
   </section>
 
 
+  <!-- ── 购买咨询 ───────────────────────────────────────────── -->
+  <section style="background:#0f172a; padding:var(--s12) 0;">
+    <div class="container" style="max-width:720px; text-align:center;">
+      <span style="display:inline-block; font-size:var(--text-xs); font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#5AA88A; margin-bottom:var(--s3);">购买咨询</span>
+      <h2 style="font-size:clamp(1.6rem,3vw,2.25rem); font-weight:900; color:#fff; margin:0 0 var(--s3); line-height:1.2;">想购买？直接联系我们</h2>
+      <p style="color:rgba(255,255,255,0.7); font-size:var(--text-base); line-height:1.7; margin:0 0 var(--s8);">告诉我们您的行业，我们会为您发送对应的文件包。</p>
+      <div style="display:flex; flex-wrap:wrap; gap:var(--s4); justify-content:center;">
+        <button type="button"
+          onclick="navigator.clipboard && navigator.clipboard.writeText('baycup'); this.textContent='✓ 已复制，去微信粘贴添加'; setTimeout(()=>{this.innerHTML='💬 微信联系 &nbsp;<strong style=\'color:#7BD9A8\'>baycup</strong>';}, 2500);"
+          style="display:inline-flex; align-items:center; gap:8px; padding:14px 28px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); color:#fff; font-weight:700; font-size:var(--text-base); border-radius:var(--r-full); cursor:pointer; transition:background 0.2s; white-space:nowrap;"
+          onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">💬 微信联系 &nbsp;<strong style="color:#7BD9A8">baycup</strong></button>
+        <a href="https://wa.me/61479135888"
+          target="_blank" rel="noopener"
+          style="display:inline-flex; align-items:center; gap:8px; padding:14px 28px; background:#25D366; color:#fff; font-weight:700; font-size:var(--text-base); border-radius:var(--r-full); text-decoration:none; white-space:nowrap; transition:background 0.2s;"
+          onmouseover="this.style.background='#1ebe5a'" onmouseout="this.style.background='#25D366'">📱 WhatsApp +61 479 135 888</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ── 页脚 ─────────────────────────────────────────────── -->
   <footer class="footer" role="contentinfo" style="margin-top:var(--s16);">
     <div class="container">
