@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G6XV2WSYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5G6XV2WSYW");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI辅助BAS/GST客户解释模板 — 澳洲会计师实用指南 — OpenWays</title>
+  <meta name="description" content="每次新客户来都要重新解释BAS？五个ChatGPT提示词模板，帮澳洲会计师2分钟搞定客户教育——符合TPB准则，隐私法合规。" />
+  <meta name="keywords" content="BAS解释模板澳洲, ChatGPT解释GST给客户, 会计师BAS客户教育, 澳洲GST注册门槛, PAYG代扣说明, 华人会计师AI工具, OpenWays会计包" />
+  <link rel="canonical" href="https://openways.net/guide/accounting-bas-gst-australia-zh" />
+  <link rel="alternate" hreflang="en" href="https://openways.net/guide/accounting-bas-gst-australia" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/accounting-bas-gst-australia-zh" />
+  <link rel="alternate" hreflang="x-default" href="https://openways.net/guide/accounting-bas-gst-australia" />
+  <meta property="og:title" content="AI辅助BAS/GST客户解释模板 — 澳洲会计师实用指南" />
+  <meta property="og:description" content="每次新客户来都要重新解释BAS？五个ChatGPT模板，帮澳洲会计师2分钟搞定客户教育，符合TPB准则。" />
+  <meta property="og:url" content="https://openways.net/guide/accounting-bas-gst-australia-zh" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI辅助BAS/GST客户解释模板 — 澳洲会计师实用指南" />
+  <meta name="twitter:description" content="每次新客户来都要重新解释BAS？五个ChatGPT模板，帮澳洲会计师2分钟搞定客户教育，符合TPB准则。" />
+  <meta name="twitter:image" content="https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI辅助BAS/GST客户解释模板 — 澳洲会计师与BAS Agent实用指南",
+    "description": "每次新客户来都要重新解释BAS？五个ChatGPT提示词模板，帮澳洲华人会计师2分钟完成客户教育邮件——符合TPB职业行为准则，隐私法合规。",
+    "datePublished": "2026-05-17",
+    "dateModified": "2026-05-17",
+    "inLanguage": "zh-Hans",
+    "author": {"@type": "Person", "name": "Vince Yang", "url": "https://openways.net/about"},
+    "publisher": {"@type": "Organization", "name": "OpenWays", "logo": {"@type": "ImageObject", "url": "https://openways.net/logo_mark_green.png"}},
+    "image": "https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg",
+    "mainEntityOfPage": "https://openways.net/guide/accounting-bas-gst-australia-zh"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"首页","item":"https://openways.net/"},
+      {"@type":"ListItem","position":2,"name":"指南"},
+      {"@type":"ListItem","position":3,"name":"BAS/GST客户解释模板"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "我可以用ChatGPT帮我写给客户的BAS解释吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "可以用来起草通俗易懂的解释邮件和类比说明。但必须注意：不能让AI计算实际的BAS数字；不能把客户的TFN、真实营业额、GST金额输入ChatGPT；发送前必须亲自审阅。根据TPB职业行为准则，发给客户的每一封邮件都是你的专业责任，不是AI的。"}
+      },
+      {
+        "@type": "Question",
+        "name": "澳洲GST和中国增值税有什么区别？",
+        "acceptedAnswer": {"@type": "Answer", "text": "概念相似，都是消费税，都允许抵扣进项税。主要区别：澳洲GST是季度申报（通过BAS），中国增值税是月度申报；澳洲只有联邦ATO一个征管机构；澳洲的进项税抵扣直接在BAS表上申请，不需要单独的发票系统（不需要开增值税专用发票）；澳洲GST统一税率10%，中国有6%/9%/13%多档税率。"}
+      },
+      {
+        "@type": "Question",
+        "name": "澳洲GST注册门槛是多少？",
+        "acceptedAnswer": {"@type": "Answer", "text": "大多数企业的GST强制注册门槛是年营业额$75,000澳元。非营利组织门槛为$150,000。超过门槛后必须在21天内完成注册。未达门槛的企业可自愿注册。出租车和网约车司机无论营业额多少都必须注册。"}
+      },
+      {
+        "@type": "Question",
+        "name": "季度BAS的截止日期是什么时候？",
+        "acceptedAnswer": {"@type": "Answer", "text": "季度BAS截止日期：第一季度（7-9月）截止10月28日；第二季度（10-12月）截止2月28日；第三季度（1-3月）截止4月28日；第四季度（4-6月）截止7月28日。通过注册税务代理申报通常有延期。月度申报者截止日期为下个月的21日。"}
+      },
+      {
+        "@type": "Question",
+        "name": "用AI写BAS解释，会不会违反隐私法？",
+        "acceptedAnswer": {"@type": "Answer", "text": "只要不把敏感信息输入AI就不违规。具体来说：TFN（税号）属于《隐私法1988》下的敏感信息，绝对不能输入；实际的GST金额、PAYG金额、真实营业额也不应输入。用模糊描述代替真实数字——例如'年营业额约20万的餐馆'——然后自己把真实数字填进AI生成的文本里。"}
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="主导航">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo" aria-label="OpenWays 首页">
+        <img src="/logo_mark_dark.png" alt="" style="height:26px;width:auto;display:block;flex-shrink:0;">
+        <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.03em;line-height:1;"><span style="color:#0F1034">Open</span><span style="color:#5AA88A">Ways</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="/packs"   class="nav-link">工具包</a></li>
+        <li><a href="/updates" class="nav-link">Edge</a></li>
+        <li><a href="/custom"  class="nav-link">定制</a></li>
+        <li><a href="/book"    class="nav-link">免费指南</a></li>
+        <li><a href="/faq"     class="nav-link">FAQ</a></li>
+        <li><a href="/about"   class="nav-link">关于</a></li>
+        <li><a href="/contact" class="nav-link">联系</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="/guide/accounting-bas-gst-australia" class="nav-lang">English</a>
+        <a href="/packs" class="btn btn-primary btn-sm">浏览工具包</a>
+      </div>
+      <button class="nav-toggle" aria-label="展开菜单" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="/packs"   class="nav-link">工具包</a>
+      <a href="/updates" class="nav-link">Edge</a>
+      <a href="/custom"  class="nav-link">定制</a>
+      <a href="/book"    class="nav-link">免费指南</a>
+      <a href="/faq"     class="nav-link">FAQ</a>
+      <a href="/about"   class="nav-link">关于</a>
+      <a href="/contact" class="nav-link">联系</a>
+      <a href="/guide/accounting-bas-gst-australia" class="nav-link">English</a>
+      <a href="/packs" class="btn btn-primary" style="margin-top:1rem;justify-content:center;">浏览工具包</a>
+    </div>
+  </nav>
+
+
+  <section class="inner-hero">
+    <div class="container">
+      <nav aria-label="面包屑导航" style="margin-bottom:var(--s4);">
+        <a href="/" style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);text-decoration:none;">首页</a>
+        <span style="color:rgba(255,255,255,0.3);margin:0 var(--s2);">›</span>
+        <a href="/industry-professional-services" style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);text-decoration:none;">专业服务</a>
+        <span style="color:rgba(255,255,255,0.3);margin:0 var(--s2);">›</span>
+        <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.7);">BAS/GST客户解释模板</span>
+      </nav>
+      <span class="eyebrow">📖 实用指南 · 阅读约9分钟</span>
+      <h1>AI辅助BAS/GST客户解释模板：澳洲会计师省时指南</h1>
+      <p style="max-width:680px;">写给在澳洲执业的华人会计师和BAS Agent。每次新客户来都要重新解释BAS，从头讲一遍要半小时——这五个ChatGPT提示词模板，帮你把客户教育压缩到2分钟，符合TPB准则，隐私法合规。</p>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container" style="max-width:760px;margin:0 auto;">
+      <div style="font-size:var(--text-base);color:var(--text-secondary);line-height:1.85;">
+
+        <p style="font-size:var(--text-lg);color:var(--text);font-weight:500;line-height:1.7;">每次新客户来，都要重新解释BAS是什么，从头到尾讲一遍要半小时。</p>
+
+        <p>这个场景你熟悉吗：一位刚拿到ABN、开了家小餐馆或清洁公司的新移民客户坐在你对面，问："这个BAS是什么东西？我为什么每季度都要报？我明明不赚多少钱，为什么还要交钱给ATO？"</p>
+
+        <p>你解释GST是什么。你解释PAYG代扣是什么。你解释为什么这两件事都在同一张表上。然后下一季度同一个客户又来，又问了一遍。然后下一个新客户来了，又是同样的对话。</p>
+
+        <p>AI不能帮你做税务工作。但AI可以帮你建一个客户教育模板库——你用2分钟定制，发出去之前自己审核一遍，客户收到的是专业的个性化说明，你节省的是每次重复讲解的时间。</p>
+
+        <p>下面是五个最常用场景的提示词模板。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">1. 先说清楚：澳洲GST和中国增值税不是一回事</h2>
+
+        <p>很多从中国大陆来的客户，听到GST第一反应是"哦，就是增值税嘛"——这个直觉有一半对，有一半会让他们产生误解。</p>
+
+        <p><strong>相似的地方：</strong>都是消费税，都是卖方收取后上缴给税务机关，都可以抵扣进项税（买东西的税）。</p>
+
+        <p><strong>关键差异，你需要在第一次沟通时说清楚：</strong></p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><strong>申报频率不同：</strong>澳洲GST是季度申报（通过BAS），不是中国的月度申报</li>
+          <li><strong>征管机构不同：</strong>澳洲只有联邦ATO一个机构，没有国税/地税之分</li>
+          <li><strong>抵扣方式不同：</strong>进项税（ITC）直接在BAS表上抵扣，不需要专用发票，不需要认证，收据足够（一般需保留$82.50以上的税务发票）</li>
+          <li><strong>税率不同：</strong>澳洲统一10%，中国有13%/9%/6%多档</li>
+          <li><strong>门槛不同：</strong>年营业额低于$75,000可以不注册GST，中国增值税小规模纳税人门槛和处理方式不同</li>
+        </ul>
+
+        <p>很多新移民客户会问："我注册了GST，是不是我赚的钱就少了10%？"这个误解非常普遍，要主动解释：GST是替ATO收的，本来就不是你的收入，注册前后你的实际利润不变（前提是客户也是GST注册企业，可以抵扣）。</p>
+
+        <p>下面五个模板，都可以加一句指令让ChatGPT融入这个对比说明。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">2. 五个提示词模板——复制、修改、发送</h2>
+
+        <p>每个模板下方是中文指令版本，你直接复制进ChatGPT，把方括号内容替换成客户实际情况，审核输出后发送。</p>
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">2.1 向全新客户解释BAS是什么（第一次报税）</h3>
+
+        <p>适用场景：刚注册ABN、从未报过BAS的新移民客户，常见于餐饮、清洁、进出口贸易行业。</p>
+
+        <p><code style="background:var(--bg-off);padding:var(--s3) var(--s4);border-radius:4px;font-size:0.88em;display:block;white-space:pre-wrap;line-height:1.7;">用简单易懂的中文写一封邮件，向一位[行业，例如：开小餐馆/做清洁服务/做进口贸易]、刚注册ABN、从未报过BAS的新移民客户解释什么是BAS（Business Activity Statement）。假设客户有一定生意经验，但对澳洲税务系统完全不了解。需要涵盖：BAS是什么、为什么每季度要报、GST对他们生意的实际影响（收款时收10%、买东西可以抵扣）、如果错过截止日期会怎样。字数在300字以内。语气专业但亲切。不要写具体金额或日期，这些我会手动添加。</code></p>
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">2.2 解释为什么这季度GST退税比预期少</h3>
+
+        <p>适用场景：客户打来电话说"上季度退了我$800，这季度怎么只退了$200"——这类对话如果没有提前铺垫，很容易变成投诉。用这个模板在电话前先发一封简短说明。</p>
+
+        <p><code style="background:var(--bg-off);padding:var(--s3) var(--s4);border-radius:4px;font-size:0.88em;display:block;white-space:pre-wrap;line-height:1.7;">用简单的中文写一段150字以内的说明，解释为什么一家小企业这季度的GST退税可能比上季度少，即使营业额没有太大变化。列出三个最常见原因：应税销售比例升高、可抵扣的商业采购减少、上季度有一次性大额进项税抵扣。用事实性的陈述语气，不要写成道歉信。具体金额和原因我会在发送前自行补充。</code></p>
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">2.3 向刚雇了第一个员工的客户解释PAYG代扣</h3>
+
+        <p>适用场景：客户第一次雇人，收到你发的BAS草稿，看到PAYG Withholding那一栏，问"这是什么？我还要帮员工交税？"</p>
+
+        <p><code style="background:var(--bg-off);padding:var(--s3) var(--s4);border-radius:4px;font-size:0.88em;display:block;white-space:pre-wrap;line-height:1.7;">用简单中文写一段200字以内的说明，解释PAYG Withholding（雇主代扣代缴个人所得税）是什么，为什么它出现在BAS表上，以及雇主的义务：每次发工资要代扣员工的个人所得税，每季度通过BAS申报并缴给ATO。同时说明：这和Super（养老金）是两回事，Super不在BAS上报。尽量少用缩写，第一次出现时要解释全称。具体代扣金额我会另行补充。</code></p>
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">2.4 向生意增长中的客户解释GST注册门槛</h3>
+
+        <p>适用场景：个体户或小企业营业额接近$75,000，还不确定是否需要注册GST，或者已经超过门槛但还没注册（这种情况需要你推动他们尽快行动）。</p>
+
+        <p><code style="background:var(--bg-off);padding:var(--s3) var(--s4);border-radius:4px;font-size:0.88em;display:block;white-space:pre-wrap;line-height:1.7;">用简单中文写一段250字以内的说明，向一位年营业额接近$75,000的小企业主解释澳洲GST注册门槛。需要涵盖：门槛是什么意思、超过后必须在21天内注册、注册后有什么变化（对客户收取GST、购买商业用品可以抵扣、每季度报BAS）、澄清一个常见误解——注册GST不代表自己赚的钱少了，GST本来就是帮ATO收的不是自己的收入。语气要让客户放心而不是紧张。具体预计达标时间和金额我会在发送前补充。</code></p>
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">2.5 BAS申报后的客户通知邮件（报完税发什么）</h3>
+
+        <p>适用场景：你帮客户申报完BAS，客户最想知道"发生了什么，我需要做什么"。这个模板生成通知邮件框架，你填入实际数字后发送。</p>
+
+        <p><code style="background:var(--bg-off);padding:var(--s3) var(--s4);border-radius:4px;font-size:0.88em;display:block;white-space:pre-wrap;line-height:1.7;">用简单中文写一个季度BAS申报完成后的客户通知邮件模板，供会计师使用。邮件需要包含：已完成向ATO的BAS申报、用通俗语言解释三个主要数字是什么（GST应付/退还、PAYG代扣、净额）、客户下一步需要做什么（在[日期]前付款，或预计在[日期]前收到退款）、一句关于下个季度的前瞻性提醒。所有具体金额和日期都用[占位符]标注，我会自行填入。语气专业温暖，250字以内。</code></p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">3. 中英双语模板：适合有语言需求的客户</h2>
+
+        <p>不少华人客户，尤其是第一代移民，中文读起来更自在，但又需要看到英文版本保存记录或和银行/ATO沟通。对这类客户，在任何一个模板后面加这句指令：</p>
+
+        <p><code style="background:var(--bg-off);padding:var(--s3) var(--s4);border-radius:4px;font-size:0.88em;display:block;white-space:pre-wrap;line-height:1.7;">请将以上内容格式化为双语文档：每段先写英文，紧接着是同一段的简体中文。所有澳洲税务术语（BAS、GST、PAYG、ATO）在中英文中都保留英文原文，首次出现时在括号内加中文解释。</code></p>
+
+        <p>另一个场景：客户本人中文流利，但他的生意伙伴或配偶看英文。双语格式一次解决两个读者。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">4. 绝对不能做的几件事</h2>
+
+        <p>很多"AI帮助会计师"的文章只讲怎么用，不讲边界。这部分最重要。</p>
+
+        <p style="background:#fff5f0;border-left:3px solid #d05a3a;padding:var(--s4) var(--s5);margin:var(--s5) 0;color:#7a1f0a;">
+          <strong>这几条是硬性红线，不是建议：</strong>
+        </p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><strong>不能把客户TFN输入ChatGPT。</strong> TFN（Tax File Number，税号）在《隐私法1988》和《税号指引》下属于敏感信息。把TFN输入境外AI系统，无论出于什么意图，都是潜在违规。发给AI的任何内容必须先去掉TFN。</li>
+          <li><strong>不能输入真实的GST金额、PAYG金额或真实营业额。</strong> 这些数字能识别客户的财务状况。用模糊描述代替——"年营业额约20万的餐馆"——你自己把真实数字填进AI生成的文本里。</li>
+          <li><strong>不能让AI计算BAS数字。</strong> ChatGPT是语言模型，不是税务计算器，会出算术错误。BAS的数字是你的专业工作成果——你算、你核、你申报。AI负责解释，你负责数字。</li>
+          <li><strong>发送前必须亲自审核AI生成的内容。</strong> 根据TPB职业行为准则，发给客户的每一封邮件都是你的专业责任。AI写的GST税率说错了，这是你的错，不是ChatGPT的错。</li>
+          <li><strong>SMSF、复杂信托结构、加密货币相关GST问题，不要用AI起草解释。</strong> 这些领域细节复杂，ATO指引变化快。AI给出的解释有较大概率在关键细节上出错。涉及这类问题，先找专科顾问，再写客户沟通。</li>
+        </ul>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">5. 不要漏掉的燃油税抵免（Fuel Tax Credits）</h2>
+
+        <p>在华人小企业客户里，做建筑、清洁、园艺、货运的比例不低。Fuel Tax Credits（燃油税抵免）是BAS上被遗漏最多的一项——很多客户注册时没人告诉他们，结果每季度都少申报了一笔本可以拿回来的钱。</p>
+
+        <p>在你的新客户入职问卷或者第一次BAS沟通里，加这个模板：</p>
+
+        <p><code style="background:var(--bg-off);padding:var(--s3) var(--s4);border-radius:4px;font-size:0.88em;display:block;white-space:pre-wrap;line-height:1.7;">用简单中文写一段150字以内的说明，向一位[建筑/清洁/园艺/货运]行业的小企业主解释什么是Fuel Tax Credits（燃油税抵免）、哪类用途的燃油可以申请、以及这个抵免可以在BAS上申请。注明：具体抵免税率每年2月和8月会由ATO更新，我会核实最新税率后补充到这份说明里。</code></p>
+
+        <p>注意：ATO每年两次更新燃油税抵免税率（2月和8月）。不要让ChatGPT告诉你当前税率——它可能已经过期。每次用前去ATO官网核实。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">6. 10分钟客户通知流程</h2>
+
+        <p>把上面五个模板整合进你的日常工作流：</p>
+
+        <ol style="padding-left:var(--s5);">
+          <li><strong>正常申报BAS。</strong>你的软件、你的数字、你的责任——这部分AI不参与。</li>
+          <li><strong>打开ChatGPT（建议用Temporary Chat模式）。</strong>粘贴模板2.5，生成申报完成通知邮件框架。</li>
+          <li><strong>填入真实数字。</strong>把每一个[占位符]替换成客户的实际数字：GST应付/退还、PAYG代扣、净额、付款截止日或退款预计日期。</li>
+          <li><strong>以客户视角读一遍。</strong>检查有没有生硬的措辞，确认数字逻辑一致，调整一两句话让它符合你事务所的风格。</li>
+          <li><strong>发送。</strong>客户在BAS申报当天就收到专业、个性化的说明——在他们来电询问之前。</li>
+        </ol>
+
+        <p>主动用法：新客户入职时发模板2.1，不等他们问；客户营业额接近$75k时发模板2.4；客户提到要招第一个员工时发模板2.3。</p>
+
+        <p>这是规模化的客户教育——但不是用更多时间换来的，是用更好的工具换来的。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">7. 下一步</h2>
+
+        <p>如果这篇文章的模板已经够你用：复制上面五个提示词，存进团队共用的笔记，用一两个月迭代成你事务所自己的风格。大概能覆盖80%的BAS沟通场景。</p>
+
+        <p>如果你想要一套完整的会计专用提示词库——涵盖客户入职、季度审查邮件、GST注册通知、PAYG分期变更、年终客户沟通、中英双语模板——已经写好、合规检查过的版本：</p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><a href="/pack-accounting" style="color:var(--mint-dark);font-weight:600;">会计AI工具包 — 一次性A$49，无订阅费</a></li>
+          <li><a href="/industry-professional-services" style="color:var(--mint-dark);font-weight:600;">浏览其他专业服务行业工具包</a>（法律、理财规划、移民）</li>
+        </ul>
+
+        <p>如果你的事务所有特定需求——多名员工处理BAS、大量华人移民客户、需要普通话和粤语双语沟通——需要定制方案：</p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><a href="/custom" style="color:var(--mint-dark);font-weight:600;">定制AI配置</a> — Vince会走一遍你事务所的工作流，根据你的客户群和合规要求定制提示词库。</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--off">
+    <div class="container" style="max-width:760px;margin:0 auto;">
+      <h2 style="margin-bottom:var(--s5);color:var(--text);">常见问题</h2>
+      <div style="font-size:var(--text-base);color:var(--text-secondary);line-height:1.75;">
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">我可以用ChatGPT帮我写给客户的BAS解释吗？</h3>
+          <p>可以用来起草通俗易懂的解释邮件和类比说明。但必须注意：不能让AI计算实际的BAS数字；不能把客户的TFN、真实营业额、GST金额输入ChatGPT；发送前必须亲自审阅。根据TPB职业行为准则，发给客户的每一封邮件都是你的专业责任，不是AI的。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">澳洲GST和中国增值税有什么区别？</h3>
+          <p>概念相似，都是消费税，都可以抵扣进项税。主要区别：澳洲GST是季度申报，不是月度；澳洲只有联邦ATO一个征管机构；进项税抵扣直接在BAS上做，不需要增值税专用发票；澳洲统一10%税率，中国有多档。很多新移民客户会担心"注册GST后收入少了"——其实GST本就不是你的收入，注册前后实际利润不变。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">澳洲GST注册门槛是多少？</h3>
+          <p>大多数企业的强制注册门槛是年营业额$75,000澳元。非营利组织门槛为$150,000。超过门槛后必须在21天内完成注册。未达门槛的企业可自愿注册。出租车和网约车司机无论营业额多少都必须注册。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">季度BAS的截止日期是什么时候？</h3>
+          <p>第一季度（7-9月）截止10月28日；第二季度（10-12月）截止2月28日；第三季度（1-3月）截止4月28日；第四季度（4-6月）截止7月28日。通过注册税务代理申报通常有延期。月度申报者截止日期为下个月的21日。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">用AI写BAS解释，会不会违反隐私法？</h3>
+          <p>只要不把敏感信息输入AI就不违规。TFN绝对不能输入。真实的GST金额、PAYG金额、实际营业额也不应输入。用模糊描述代替真实数字——比如"年营业额约20万的餐馆"——然后自己把真实数字填进AI生成的文本里再发送。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--navy" aria-label="底部行动号召">
+    <div class="container" style="text-align:center;max-width:680px;margin:0 auto;">
+      <h2 class="section-heading" style="color:var(--white);margin-bottom:var(--s4);">获取完整会计AI工具包</h2>
+      <p style="color:rgba(255,255,255,0.75);margin-bottom:var(--s6);">BAS解释模板、客户入职邮件、季度审查说明、GST注册通知……一次性A$49，无订阅。</p>
+      <div style="display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap;">
+        <a href="/pack-accounting" class="btn btn-primary">获取会计工具包 — A$49</a>
+        <a href="/custom" class="btn btn-outline-light">或预约定制配置</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div style="display:flex;align-items:center;gap:0.4em;"><img src="/logo_mark_green.png" alt="" style="height:22px;width:auto;flex-shrink:0;">
+          <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;line-height:1;white-space:nowrap;">Open<span style="color:#5AA88A">Ways</span></span></div>
+          <p class="footer-tagline" style="margin-top:var(--s4);">AI toolkits for modern small businesses. Practical, industry-specific, ready to use within 7 days.</p>
+          <a href="mailto:hi@openways.net" class="footer-link" style="margin-top:var(--s4);display:inline-block;">hi@openways.net</a>
+        </div>
+        <div>
+          <div class="footer-heading">Industries</div>
+          <div class="footer-links">
+            <a href="/industry-food-hospitality"     class="footer-link">Food &amp; Hospitality</a>
+            <a href="/industry-health-wellness"      class="footer-link">Health &amp; Wellness</a>
+            <a href="/industry-home-property"        class="footer-link">Home &amp; Property</a>
+            <a href="/industry-professional-services" class="footer-link">Professional Services</a>
+            <a href="/industry-education-training"   class="footer-link">Education &amp; Training</a>
+            <a href="/industry-trades-technical"     class="footer-link">Trades &amp; Technical</a>
+            <a href="/industry-lifestyle-services"   class="footer-link">Lifestyle Services</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <div class="footer-links">
+            <a href="/about"    class="footer-link">About</a>
+            <a href="/faq"      class="footer-link">FAQ</a>
+            <a href="/contact"  class="footer-link">Contact</a>
+            <a href="/partners" class="footer-link">Become a Partner</a>
+            <a href="/zh"       class="footer-link">中文版</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Legal</div>
+          <div class="footer-links">
+            <a href="/terms"   class="footer-link">Terms of Use</a>
+            <a href="/refund"  class="footer-link">Refund Policy</a>
+            <a href="/privacy" class="footer-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OpenWays. Built for small businesses across Australia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/ow-anim.js" defer></script>
+
+</body>
+</html>
