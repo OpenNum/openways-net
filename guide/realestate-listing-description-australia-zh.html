@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G6XV2WSYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5G6XV2WSYW");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>澳洲地产中介用 AI 写房源描述：5 个可直接用的提示词 — OpenWays</title>
+  <meta name="description" content="5 个可直接复制的 ChatGPT 提示词，帮澳洲华人地产中介在 10 分钟内写好 REA 和 Domain 房源描述，含中文买家版和 ACL 合规要点。" />
+  <meta name="keywords" content="澳洲房产中介 AI 房源描述, ChatGPT 地产文案澳洲, 房产中介 AI 工具澳洲, REA 房源描述 AI, ChatGPT 地产提示词, 澳洲华人地产中介工具, 小红书房源文案, OpenWays 地产包" />
+  <link rel="canonical" href="https://openways.net/guide/realestate-listing-description-australia-zh" />
+  <link rel="alternate" hreflang="en" href="https://openways.net/guide/realestate-listing-description-australia" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/realestate-listing-description-australia-zh" />
+  <link rel="alternate" hreflang="x-default" href="https://openways.net/guide/realestate-listing-description-australia" />
+  <meta property="og:title" content="澳洲地产中介用 AI 写房源描述：5 个可直接用的提示词" />
+  <meta property="og:description" content="5 个可直接复制的 ChatGPT 提示词，帮澳洲华人地产中介 10 分钟写好 REA 和 Domain 房源描述，含中文买家版和 ACL 合规要点。" />
+  <meta property="og:url" content="https://openways.net/guide/realestate-listing-description-australia-zh" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="澳洲地产中介用 AI 写房源描述：5 个可直接用的提示词" />
+  <meta name="twitter:description" content="5 个可直接复制的 ChatGPT 提示词，帮澳洲华人地产中介 10 分钟写好 REA 和 Domain 房源描述，含中文买家版和 ACL 合规要点。" />
+  <meta name="twitter:image" content="https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "澳洲地产中介用 AI 写房源描述：5 个可直接用的 ChatGPT 提示词",
+    "description": "5 个可直接复制的 ChatGPT 提示词，帮澳洲华人地产中介在 10 分钟内写好 REA 和 Domain 房源描述，含中文买家版和 ACL 合规要点。",
+    "datePublished": "2026-05-17",
+    "dateModified": "2026-05-17",
+    "inLanguage": "zh-Hans",
+    "author": {"@type": "Person", "name": "Vince Yang", "url": "https://openways.net/about"},
+    "publisher": {"@type": "Organization", "name": "OpenWays", "logo": {"@type": "ImageObject", "url": "https://openways.net/logo_mark_green.png"}},
+    "image": "https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg",
+    "mainEntityOfPage": "https://openways.net/guide/realestate-listing-description-australia-zh"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://openways.net/"},
+      {"@type": "ListItem", "position": 2, "name": "房屋与地产", "item": "https://openways.net/industry-home-property"},
+      {"@type": "ListItem", "position": 3, "name": "AI 房源描述 — 澳洲地产中介指南", "item": "https://openways.net/guide/realestate-listing-description-australia-zh"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ChatGPT 能写出符合澳洲市场的房源描述吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "可以，但需要正确的提示词。直接让 ChatGPT 写，它会套用美式风格，充满 「stunning」「must-see」 这类词，在 REA 上效果很差。解决方法是在提示词里提供城区背景、目标买家类型和具体生活卖点，本文的 5 个模板已经把这些要素都嵌进去了。"}
+      },
+      {
+        "@type": "Question",
+        "name": "澳洲地产中介用 AI 写房源文案合法吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "合法，但有明确边界。AI 可以写生活卖点、配套描述和城区介绍。不能让 AI 写价格区间、估值、土地面积、建筑面积或开发潜力，这些数字必须来自产权证书、议会记录或有执照的估价师。违规可能触发澳洲消费者法第 29 条（误导性陈述）。"}
+      },
+      {
+        "@type": "Question",
+        "name": "用 ChatGPT 写一个 listing 要多长时间？",
+        "acceptedAnswer": {"@type": "Answer", "text": "用本文模板大约 10 分钟：2 分钟填写房源信息，3 分钟生成并检查描述，2 分钟从 3 个标题选项里选一个，3 分钟按自己的风格做最终调整。手工写同样质量的文案通常需要 20 至 45 分钟。"}
+      },
+      {
+        "@type": "Question",
+        "name": "需要单独写一份中文版房源吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "如果你的客户群里有华人买家，值得写。华人买家通常同时在 REA 看英文房源，也在微信群、小红书上找房。一份专门针对校区、交通、投资收益的中文版本，转化效果远好于直接翻译英文 listing。本文的提示词 4 专门用于生成这类中文版本。"}
+      },
+      {
+        "@type": "Question",
+        "name": "OpenWays 地产包和自己用 ChatGPT 有什么区别？",
+        "acceptedAnswer": {"@type": "Answer", "text": "OpenWays 给你的是已经针对澳洲地产行业调好的提示词库，ACL 合规边界、双语买家偏好、投资者 vs 自住者文案切换都已内置，省去你自己摸索 2 至 3 个月。包含 25 个模板，覆盖 listing 描述、开放日跟进邮件、买家沟通和社交媒体文案。"}
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo" aria-label="OpenWays home">
+        <img src="/logo_mark_dark.png" alt="" style="height:26px;width:auto;display:block;flex-shrink:0;">
+        <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.03em;line-height:1;"><span style="color:#0F1034">Open</span><span style="color:#5AA88A">Ways</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="/packs"   class="nav-link">Packs</a></li>
+        <li><a href="/updates" class="nav-link">Edge</a></li>
+        <li><a href="/custom"  class="nav-link">Custom</a></li>
+        <li><a href="/book"    class="nav-link">Free Guide</a></li>
+        <li><a href="/faq"     class="nav-link">FAQ</a></li>
+        <li><a href="/about"   class="nav-link">About</a></li>
+        <li><a href="/contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="/guide/realestate-listing-description-australia" class="nav-lang">English</a>
+        <a href="/packs" class="btn btn-primary btn-sm">Browse Packs</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="/packs"   class="nav-link">Packs</a>
+      <a href="/updates" class="nav-link">Edge</a>
+      <a href="/custom"  class="nav-link">Custom</a>
+      <a href="/book"    class="nav-link">Free Guide</a>
+      <a href="/faq"     class="nav-link">FAQ</a>
+      <a href="/about"   class="nav-link">About</a>
+      <a href="/contact" class="nav-link">Contact</a>
+      <a href="/guide/realestate-listing-description-australia" class="nav-link">English</a>
+      <a href="/packs" class="btn btn-primary" style="margin-top:1rem;justify-content:center;">Browse Packs</a>
+    </div>
+  </nav>
+
+
+  <section class="inner-hero">
+    <div class="container">
+      <nav aria-label="Breadcrumb" style="margin-bottom:var(--s4);">
+        <a href="/" style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);text-decoration:none;">首页</a>
+        <span style="color:rgba(255,255,255,0.3);margin:0 var(--s2);">›</span>
+        <a href="/industry-home-property" style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);text-decoration:none;">房屋与地产</a>
+        <span style="color:rgba(255,255,255,0.3);margin:0 var(--s2);">›</span>
+        <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.7);">AI 房源描述指南</span>
+      </nav>
+      <span class="eyebrow">📖 实操指南 · 8 分钟阅读</span>
+      <h1>澳洲地产中介用 AI 写房源描述：5 个可直接复制的 ChatGPT 提示词</h1>
+      <p style="max-width:680px;">专为在 REA 和 Domain 挂牌的澳洲华人地产中介。这 5 个提示词让你把每篇 listing 的撰写时间从 35 分钟压到 10 分钟，含华人买家专用中文版和微信朋友圈格式，ACL 合规要点全部内置。</p>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container" style="max-width:760px;margin:0 auto;">
+      <div style="font-size:var(--text-base);color:var(--text-secondary);line-height:1.85;">
+
+        <p style="font-size:var(--text-lg);color:var(--text);font-weight:500;line-height:1.7;">很多澳洲华人地产中介每周要写 10 个以上的 listing，英文房源和中文房源都要写，每篇都要花半小时。这还不算打电话、带看和跟进买家的时间。</p>
+
+        <p>写 listing 本身不难，难的是每次都要从空白页开始。同样是三房两卫，写到第 8 个的时候，你很难不开始复制粘贴上一篇然后改几个词——这正是 REA 上大量描述读起来一模一样的原因。</p>
+
+        <p>华人中介还有一层额外负担：你的买家同时在 REA 看英文房源，也在微信群、小红书上找房。英文 listing 和中文房源简介是两份完全不同的文档，如果都要手写，工作量直接翻倍。</p>
+
+        <p>ChatGPT 能很好地处理这两件事——前提是给它正确的提示词。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">1. 为什么地产 listing 特别适合用 AI</h2>
+
+        <p>写 listing 需要两件同时发生的事：<strong>情感框架</strong>（为什么这套房子会改变某人的生活）和<strong>卖点排序</strong>（买家关心什么、按什么顺序关心）。</p>
+
+        <p>大多数中介会偏向其中一个。结果要么是一篇读起来像建筑规格表的文案，要么是三段都在讲"清晨阳光透过百叶窗洒入"、却把停车位埋在最后一行的抒情散文。</p>
+
+        <p>AI 的优势正是在于：给它正确的输入，它能同时做好两件事，30 秒出稿。你的工作变成：提供正确的输入，然后用 2 分钟把 AI 稿调成你的语气。</p>
+
+        <p>对于华人买家，AI 还有一个额外优势——它可以直接写简体中文，不需要你翻译英文稿，也不需要你另外找人来写。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">2. 什么样的 REA/Domain 房源描述才有效</h2>
+
+        <p>在进入提示词之前，先明确你在为哪些行为优化。REA 和 Domain 上的 listing 是被扫描的，不是被阅读的。买家看标题和前两句话，3 秒内决定要不要点进去。</p>
+
+        <p><strong>标题</strong>要用生活卖点开头，不要用卧室数量。"3 bed 2 bath" 是筛选条件，不是吸引点。"北向采光，步行 6 分钟至 Chatswood 火车站，Chatswood Public 校区" 才是让人点击的理由。</p>
+
+        <p><strong>卖点排序</strong>决定第一印象。华人买家（尤其是有孩子的家庭）的优先级大致是：校区 → 交通 → 停车和储物 → 采光 → 厨房质量 → 卧室布局 → 户外空间 → 其他。不要把双车库写在第四段。</p>
+
+        <p><strong>地点描述要具体</strong>。"靠近交通" 没有意义。"步行 5 分钟至 Burwood 火车站，Burwood Public 学区内" 才是买家在做决策时真正需要的信息。</p>
+
+        <p><strong>投资买家和自住买家读的是不同的文案。</strong> 自住买家要情感共鸣；投资买家要租金回报率、出租率、低维护成本。同一套房，面向不同买家需要两版不同的描述——提示词 5 专门处理这个场景。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">3. 5 个提示词模板（可直接复制）</h2>
+
+        <p>以下 5 个提示词可以直接用。把方括号里的内容换成你的房源信息，粘贴进 ChatGPT 或 Claude，30 秒出稿。</p>
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">提示词 1 — 标准 REA/Domain 房源描述</h3>
+        <p>适用于所有常规住宅 listing。"生活卖点" 这一行最关键，花 30 秒想清楚再填。</p>
+        <code style="background:var(--bg-off);padding:var(--s4) var(--s5);border-radius:4px;font-size:0.88em;display:block;white-space:pre-wrap;line-height:1.7;margin:var(--s3) 0;">请为 realestate.com.au 写一篇英文房源描述。
+房产：[地址和城区]，[卧室数]床/[卫生间数]浴/[车位数]车。
+主要特点：[列出 5–6 个，例如：北向客厅、石英石台面厨房、全屋中央空调、双锁车库、650 平方米地块]。
+生活卖点：[例如："步行可至 Chatswood 火车站，Chatswood Public 学区内"]。
+目标买家：[例如："从公寓升级的家庭" 或 "年轻专业人士夫妻"]。
+语气：温暖但专业，不用 "stunning" "gorgeous" 等过度修饰词。
+长度：120 至 150 个英文单词。
+开头用生活卖点，不要用卧室数量。</code>
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">提示词 2 — 仅生成 3 个标题选项</h3>
+        <p>在提示词 1 出稿后单独跑这个。从 3 个选项里选最匹配你目标买家的那个，不一定是听起来最"高端"的那个。</p>
+        <code style="background:var(--bg-off);padding:var(--s4) var(--s5);border-radius:4px;font-size:0.88em;display:block;white-space:pre-wrap;line-height:1.7;margin:var(--s3) 0;">请为以下 REA 房源写 3 个英文标题选项。
+房产：[简短描述，例如："4 床家庭住宅，Burwood，650 平方米北向地块"]。
+目标买家：[例如："华人家庭，校区优先"]。
+每个标题不超过 10 个英文单词。不用感叹号。不用 "stunning""gorgeous" 等修饰词。
+聚焦生活卖点或地段优势，不要只列规格。</code>
+
+        <p>好的输出示例：</p>
+        <blockquote style="border-left:3px solid var(--mint);padding:var(--s3) var(--s5);background:#f0f7f3;margin:var(--s5) 0;color:var(--text);">
+          "North sun, school catchment, room for the whole family"<br>
+          "Burwood Public catchment — 650sqm, north-facing, move-in ready"<br>
+          "The family upgrade on Belmore Road you've been waiting for"
+        </blockquote>
+
+        <p>没有好提示词时 ChatGPT 的默认输出：</p>
+        <blockquote style="border-left:3px solid var(--text-muted);padding:var(--s3) var(--s5);background:#fafafa;margin:var(--s5) 0;color:var(--text-secondary);">
+          "Stunning Family Home in Prime Location!"<br>
+          "Gorgeous 4-Bedroom Masterpiece — Must See!"<br>
+          "Dream Home Alert: Incredible Burwood Property"
+        </blockquote>
+
+        <p style="color:#a73a3a;"><strong>为什么第二组在 REA 上没用：</strong>感叹号显得急迫，"prime location" 等于什么都没说，"must see" 自 1998 年以来出现在每一篇 listing 里。买家已经学会了直接跳过这类词。</p>
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">提示词 3 — 翻新房或新建房的重点描述</h3>
+        <p>通用 AI 会写 "renovated throughout"——买家早就不相信这个词了。这个提示词强制 AI 说具体内容。</p>
+        <code style="background:var(--bg-off);padding:var(--s4) var(--s5);border-radius:4px;font-size:0.88em;display:block;white-space:pre-wrap;line-height:1.7;margin:var(--s3) 0;">请写一篇强调翻新质量的英文房源描述。
+原始建造年份：[例如：1972 年]。
+翻新范围：[例如："2023 年全新厨房和两间卫生间，全屋更换工程木地板，重新粉刷天花板"]。
+翻新亮点（买家真正在意的细节）：[例如："Smeg 家电，40mm Calacatta 石英石台面，无框淋浴屏，卫生间地砖铺到顶"]。
+不使用 "renovated throughout" 这个短语。提及每个房间时要具体。
+语气：自信但不夸张，130 至 160 个英文单词。</code>
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">提示词 4 — 华人买家专用中文版</h3>
+        <p>这是本文针对华人中介最独特的一个提示词。直接生成中文，用于微信群发送、小红书发帖或中文地产平台。华人买家优先看校区、交通、投资价值，文风要直接和具体——澳洲地产市场的华人买家对浮夸的语言是反感的。</p>
+        <code style="background:var(--bg-off);padding:var(--s4) var(--s5);border-radius:4px;font-size:0.88em;display:block;white-space:pre-wrap;line-height:1.7;margin:var(--s3) 0;">请用简体中文写一篇房源介绍，用于微信或中文地产平台。
+房产：[地址和城区]，[卧室数]床/[卫生间数]浴/[车位数]车，土地面积 [来自产权证的数字]。
+重点（填写适用的）：
+- 学区：[学校名称和年级范围]
+- 交通：[火车站名称，步行分钟数]
+- 华人配套：[例如："步行 5 分钟至 Eastwood 亚洲超市街"]
+- 投资参考：[估计租金回报率区间，仅限来自市场数据的数字]
+语气：直接、具体。华人买家偏好事实，不需要生活化的修辞。
+长度：不超过 200 个汉字。
+不包含任何价格估算或价格区间。</code>
+
+        <p>使用这个提示词的输出可以直接发到微信群，或复制到小红书。无需翻译，也无需另外找人代写中文文案。</p>
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">提示词 5 — 投资者版本改写</h3>
+        <p>自住买家文案和投资买家文案方向相反。自住买家要情感和生活化语言；投资买家要租金收益、出租稳定性、低维护成本。当你的卖家想吸引 SMSF 买家或跨州投资者时，用这个。</p>
+        <code style="background:var(--bg-off);padding:var(--s4) var(--s5);border-radius:4px;font-size:0.88em;display:block;white-space:pre-wrap;line-height:1.7;margin:var(--s3) 0;">请把以下房源描述改写为面向投资者的英文版本。
+原始描述：[粘贴你现有的房源文案]
+适用时加入：
+- 距离交通、大学或医院的具体距离（写出名字）
+- 当前出租状态：[空置 / 已出租，周租金 $X——仅在你有确认数字时填写]
+- 估计租金回报率区间：[仅限可核实的市场数据]
+删除：面向自住买家的生活化语言（晨光、娱乐露台等）。
+替换为：租客需求驱动因素、低维护特点、资本增长背景。
+语气：理性分析，不做销售式推销，120 至 140 个英文单词。</code>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">4. 为小红书和微信朋友圈写房源</h2>
+
+        <p>小红书和微信朋友圈的房源文案与 REA 完全是不同的格式。几个关键区别：</p>
+
+        <p><strong>更短。</strong>小红书正文最好控制在 150 字以内，朋友圈更短。买家在刷信息流，不是在读一篇文章。</p>
+
+        <p><strong>更感性的开头。</strong>小红书的逻辑是先用一句话引起共鸣，再说房子。"在澳洲买房，这个校区不要太香" 比直接列出房源规格更容易被人停下来看。</p>
+
+        <p><strong>图片说明要写进去。</strong>在小红书上，图片下面的文字说明是买家最先看到的，不是正文。每张图写一句话的说明，比全文更重要。</p>
+
+        <p>用提示词 4 生成基础中文版本，然后自己把开头改成一句共鸣句，再加上图片说明。整个过程 3 分钟。</p>
+
+        <p>适合小红书开头的共鸣句例子：</p>
+        <blockquote style="border-left:3px solid var(--mint);padding:var(--s3) var(--s5);background:#f0f7f3;margin:var(--s5) 0;color:var(--text);">
+          "买在这个校区，省下几十万的择校费"<br>
+          "从 CBD 开车 20 分钟，但住起来像是郊区别墅"<br>
+          "带孩子的家庭看过来，这个学区房真的不贵"
+        </blockquote>
+
+        <p>这类开头 ChatGPT 写不好——它不了解澳洲华人社区的语境。这一步自己写，30 秒，替换提示词 4 生成的第一句话。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">5. 澳洲消费者法（ACL）：AI 绝对不能写的内容</h2>
+
+        <p style="background:#fff5f0;border-left:3px solid #d05a3a;padding:var(--s4) var(--s5);margin:var(--s5) 0;color:#7a1f0a;">
+          <strong>硬性边界——以下内容绝对不能让 AI 生成：</strong>
+        </p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><strong>价格区间、价格指导或估值。</strong>澳洲消费者法第 29 条将房产价格的误导性陈述列为严重违规。AI 不知道卖家的底价，也不知道当前可比成交价，它会生成一个听起来合理的数字——但那个数字是它编的。永远不要包含 AI 生成的价格信息。</li>
+          <li><strong>土地面积、建筑面积或房间尺寸。</strong>这些数字必须来自产权证书、议会记录或有执照的估价师，不能来自 AI 估算。listing 中的尺寸错误是误导性陈述索赔的依据，在各州的《不动产法》和 ACL 下都有责任风险。</li>
+          <li><strong>"DA 已批准" 或 "开发潜力"。</strong>没有议会文件支撑，这类表述是你要为之负责的陈述。AI 不知道你的地块有没有挂牌限制或遗产保护，永远不要让它写开发类语言。</li>
+          <li><strong>拍卖条款或销售方式细节。</strong>澳洲各州对拍卖均有特定披露要求。拍卖相关文案需要有执照的中介审核，不能由 AI 生成。</li>
+          <li><strong>买家个人信息。</strong>不要把买家姓名、贷款预批金额、出价数字或联系方式粘贴进 ChatGPT。《1988 年隐私法》限制将可识别客户数据共享给境外处理商，且 ChatGPT 可能将你的输入用于模型训练，除非你调整了数据控制设置或使用临时聊天模式。</li>
+        </ul>
+
+        <p>安全边界总结：AI 写生活卖点、城区介绍、特点描述和标题文案。所有事实性数字（价格、面积、审批、销售方式）由你自己从核实来源输入。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">6. 我怎么用：10 分钟完成一篇 listing</h2>
+
+        <p>以下是我实际使用的顺序。从开始到结束，一篇 listing 10 分钟。</p>
+
+        <ol style="padding-left:var(--s5);">
+          <li><strong>整理输入信息（2 分钟）：</strong>房产地址、卧室/卫生间/车位，5–6 个特点（来自你的看房笔记），生活卖点（最近的火车站或学校），目标买家类型。这些信息直接填进提示词 1，不需要重新组织语言。</li>
+          <li><strong>生成英文描述（1 分钟）：</strong>粘贴提示词 1 加上房源信息到 ChatGPT，读一遍输出，检查每个事实性描述是否与你的看房笔记一致，有不符的地方直接改。</li>
+          <li><strong>生成 3 个标题选项（1 分钟）：</strong>跑提示词 2，从 3 个选项里选最匹配目标买家的那个。</li>
+          <li><strong>按自己语气调整（3 分钟）：</strong>加一个 AI 不可能知道的具体本地细节（一条街名、一个公园、一个翻新细节）。去掉任何听起来像其他中介的词。这一步大多数人会跳过——不要跳。</li>
+          <li><strong>如需中文版（2 分钟）：</strong>跑提示词 4，填入学校、火车站和华人配套。复制到微信群或中文地产平台。无需翻译。</li>
+          <li><strong>上传到 REA/Domain（1 分钟）：</strong>粘贴标题和描述，完成。</li>
+        </ol>
+
+        <p>对比以前的做法：打开空白文档，盯着看 5 分钟，写一版觉得太普通，改两遍，发现标题不够好，从头来过。35 分钟没了。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">7. 下一步</h2>
+
+        <p>如果上面的 5 个提示词已经够你入门：把它们复制到一个备忘录文件里，在接下来 3 个 listing 上跑一遍，根据输出调整语气指令。大多数中介到第 3–4 个 listing 就找到了自己的节奏。</p>
+
+        <p>如果你想要完整的提示词库——包含 listing 描述、开放日跟进邮件、买家沟通流程和每类房产的社交媒体文案，地产 AI 工具包已经把 ACL 合规语言和双语框架全部内置好了：</p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><a href="/pack-realestate" style="color:var(--mint-dark);font-weight:600;">地产 AI 工具包 — A$49（一次性，无订阅）</a></li>
+          <li><a href="/industry-home-property" style="color:var(--mint-dark);font-weight:600;">浏览所有房屋与地产工具包</a></li>
+        </ul>
+
+        <p>如果你管理多个办公室，需要根据你的房产类型、城区数据库和机构语气风格定制提示词库：</p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><a href="/custom" style="color:var(--mint-dark);font-weight:600;">定制 AI 方案</a> — 一对一梳理你的业务流程，为你的具体操作定制提示词库。</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--off">
+    <div class="container" style="max-width:760px;margin:0 auto;">
+      <h2 style="margin-bottom:var(--s5);color:var(--text);">常见问题</h2>
+      <div style="font-size:var(--text-base);color:var(--text-secondary);line-height:1.75;">
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">ChatGPT 能写出符合澳洲市场的房源描述吗？</h3>
+          <p>可以，但需要正确的提示词。直接让 ChatGPT 写，它会套用美式风格，充满 "stunning""must-see" 这类词，在 REA 上效果很差。解决方法是在提示词里提供城区背景、目标买家类型和具体生活卖点，本文的 5 个模板已经把这些要素都嵌进去了。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">澳洲地产中介用 AI 写房源文案合法吗？</h3>
+          <p>合法，但有明确边界。AI 可以写生活卖点、配套描述和城区介绍。不能让 AI 写价格区间、估值、土地面积、建筑面积或开发潜力，这些数字必须来自产权证书、议会记录或有执照的估价师。违规可能触发澳洲消费者法第 29 条（误导性陈述）。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">用 ChatGPT 写一个 listing 要多长时间？</h3>
+          <p>用本文模板大约 10 分钟：2 分钟填写房源信息，3 分钟生成并检查描述，2 分钟从 3 个标题选项里选一个，3 分钟按自己的风格做最终调整。手工写同样质量的文案通常需要 20 至 45 分钟。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">需要单独写一份中文版房源吗？</h3>
+          <p>如果你的客户群里有华人买家，值得写。华人买家通常同时在 REA 看英文房源，也在微信群、小红书上找房。一份专门针对校区、交通、投资收益的中文版本，转化效果远好于直接翻译英文 listing。本文的提示词 4 专门用于生成这类中文版本。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">OpenWays 地产包和自己用 ChatGPT 有什么区别？</h3>
+          <p>OpenWays 给你的是已经针对澳洲地产行业调好的提示词库，ACL 合规边界、双语买家偏好、投资者 vs 自住者文案切换都已内置，省去你自己摸索 2 至 3 个月。包含 25 个模板，覆盖 listing 描述、开放日跟进邮件、买家沟通和社交媒体文案。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--navy" aria-label="Bottom CTA">
+    <div class="container" style="text-align:center;max-width:680px;margin:0 auto;">
+      <h2 class="section-heading" style="color:var(--white);margin-bottom:var(--s4);">获取完整地产 AI 工具包</h2>
+      <p style="color:rgba(255,255,255,0.75);margin-bottom:var(--s6);">房源描述、开放日跟进、买家邮件和社交媒体文案的提示词模板全套。一次性 A$49，无需订阅。</p>
+      <div style="display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap;">
+        <a href="/pack-realestate" class="btn btn-primary">获取地产工具包 — A$49</a>
+        <a href="/custom" class="btn btn-outline-light">或预约定制方案</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div style="display:flex;align-items:center;gap:0.4em;"><img src="/logo_mark_green.png" alt="" style="height:22px;width:auto;flex-shrink:0;">
+          <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;line-height:1;white-space:nowrap;">Open<span style="color:#5AA88A">Ways</span></span></div>
+          <p class="footer-tagline" style="margin-top:var(--s4);">AI toolkits for modern small businesses. Practical, industry-specific, ready to use within 7 days.</p>
+          <a href="mailto:hi@openways.net" class="footer-link" style="margin-top:var(--s4);display:inline-block;">hi@openways.net</a>
+        </div>
+        <div>
+          <div class="footer-heading">Industries</div>
+          <div class="footer-links">
+            <a href="/industry-food-hospitality"      class="footer-link">Food &amp; Hospitality</a>
+            <a href="/industry-health-wellness"       class="footer-link">Health &amp; Wellness</a>
+            <a href="/industry-home-property"         class="footer-link">Home &amp; Property</a>
+            <a href="/industry-professional-services" class="footer-link">Professional Services</a>
+            <a href="/industry-education-training"    class="footer-link">Education &amp; Training</a>
+            <a href="/industry-trades-technical"      class="footer-link">Trades &amp; Technical</a>
+            <a href="/industry-lifestyle-services"    class="footer-link">Lifestyle Services</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <div class="footer-links">
+            <a href="/about"    class="footer-link">About</a>
+            <a href="/faq"      class="footer-link">FAQ</a>
+            <a href="/contact"  class="footer-link">Contact</a>
+            <a href="/partners" class="footer-link">Become a Partner</a>
+            <a href="/zh"       class="footer-link">中文版</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Legal</div>
+          <div class="footer-links">
+            <a href="/terms"   class="footer-link">Terms of Use</a>
+            <a href="/refund"  class="footer-link">Refund Policy</a>
+            <a href="/privacy" class="footer-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OpenWays. Built for small businesses across Australia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/ow-anim.js" defer></script>
+</body>
+</html>
