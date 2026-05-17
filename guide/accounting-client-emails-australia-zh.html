@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G6XV2WSYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5G6XV2WSYW");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>澳洲会计师用 AI 写客户邮件：5 个 ChatGPT 提示词模板 — OpenWays</title>
+  <meta name="description" content="澳洲会计师、BAS 代理人实用指南：5 个 ChatGPT 提示词模板，涵盖新客户入职、BAS 提醒、税表通知、逾期发票追款、中英双语客户邮件，符合 TPB 规范与隐私法要求。" />
+  <meta name="keywords" content="澳洲会计师AI邮件, ChatGPT会计客户沟通, BAS提醒邮件模板, 澳洲会计中英双语, TPB合规AI, 华人会计师AI工具, 税表通知邮件, ChatGPT BAS代理" />
+  <link rel="canonical" href="https://openways.net/guide/accounting-client-emails-australia-zh" />
+  <link rel="alternate" hreflang="en" href="https://openways.net/guide/accounting-client-emails-australia" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/accounting-client-emails-australia-zh" />
+  <link rel="alternate" hreflang="x-default" href="https://openways.net/guide/accounting-client-emails-australia" />
+  <meta property="og:title" content="澳洲会计师用 AI 写客户邮件：5 个 ChatGPT 提示词模板" />
+  <meta property="og:description" content="新客户入职、BAS 提醒、税表通知、逾期追款、中英双语客户信——5 个可直接复用的 ChatGPT 提示词骨架，附 TPB 合规与隐私法注意事项。" />
+  <meta property="og:url" content="https://openways.net/guide/accounting-client-emails-australia-zh" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="澳洲会计师用 AI 写客户邮件：5 个 ChatGPT 提示词模板" />
+  <meta name="twitter:description" content="新客户入职、BAS 提醒、税表通知、逾期追款、中英双语——5 个 ChatGPT 提示词骨架，符合 TPB 规范。" />
+  <meta name="twitter:image" content="https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "澳洲会计师用 AI 写客户邮件：5 个 ChatGPT 提示词模板",
+    "description": "澳洲会计师、BAS 代理人实用指南：5 个 ChatGPT 提示词模板，涵盖新客户入职、BAS 提醒、税表通知、逾期发票追款、中英双语客户邮件，符合 TPB 规范与隐私法要求。",
+    "datePublished": "2026-05-17",
+    "dateModified": "2026-05-17",
+    "inLanguage": "zh-Hans",
+    "author": {"@type": "Person", "name": "Vince Yang", "url": "https://openways.net/about"},
+    "publisher": {"@type": "Organization", "name": "OpenWays", "logo": {"@type": "ImageObject", "url": "https://openways.net/logo_mark_green.png"}},
+    "image": "https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg",
+    "mainEntityOfPage": "https://openways.net/guide/accounting-client-emails-australia-zh"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"首页","item":"https://openways.net/"},
+      {"@type":"ListItem","position":2,"name":"实用指南"},
+      {"@type":"ListItem","position":3,"name":"澳洲会计师 AI 客户邮件"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "澳洲会计师可以用 ChatGPT 写客户邮件吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "可以，用于起草日常沟通邮件，如入职欢迎信、BAS 提醒、税表通知等。但注册代理人必须在发送前逐一审核所有 AI 生成的内容。TPB 职业行为准则要求你对以自己名义发出的一切内容承担专业责任。发给 ATO 的任何信件，必须经过人工仔细审查后才能提交。"}
+      },
+      {
+        "@type": "Question",
+        "name": "可以把客户的 TFN 或收入信息粘贴到 ChatGPT 里吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "绝对不可以。客户的 TFN、ABN、收入数字、银行账户等均属于澳洲《隐私法 1988》下的敏感信息。OpenAI 的服务器在境外，将客户金融数据输入提示词可能构成数据泄露。在提示词中始终使用占位符，例如写"[客户姓名]"而非真实姓名。"}
+      },
+      {
+        "@type": "Question",
+        "name": "澳洲 BAS 的季度申报截止日期是哪几天？",
+        "acceptedAnswer": {"@type": "Answer", "text": "季度申报到期日为：第一季度（7–9 月）10 月 28 日；第二季度（10–12 月）2 月 28 日；第三季度（1–3 月）4 月 28 日；第四季度（4–6 月）7 月 28 日。注册税务代理一般享有 ATO 延期申报计划的宽限——每年核查 ATO 官网上的最新到期日。"}
+      },
+      {
+        "@type": "Question",
+        "name": "ChatGPT 能写中英双语的会计客户信吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "可以，而且质量相当不错。在提示词里说明客户背景（如"来自大陆的新移民，英文有限"）、需要解释的内容（如"什么是 BAS 以及为何需要每季申报"），然后要求输出英文在前、中文在后的双语版本。首次使用时，建议请母语为中文的同事审阅输出质量。"}
+      },
+      {
+        "@type": "Question",
+        "name": "哪些事情绝对不能交给 AI 来做？",
+        "acceptedAnswer": {"@type": "Answer", "text": "绝不能用 AI 在未经专业判断的情况下给出具体税务建议。不能用 AI 起草 ATO 异议信、SMSF 建议函、加密货币资本利得分析信，除非由专业人士全程审查。任何声称税务结果确定性的表述（如"您将获得退税 X 元"），若直接来自 AI 未经审核就发出，将使您面临客户投诉 TPB 的风险。"}
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo" aria-label="OpenWays home">
+        <img src="/logo_mark_dark.png" alt="" style="height:26px;width:auto;display:block;flex-shrink:0;">
+        <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.03em;line-height:1;"><span style="color:#0F1034">Open</span><span style="color:#5AA88A">Ways</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="/packs"   class="nav-link">Packs</a></li>
+        <li><a href="/updates" class="nav-link">Edge</a></li>
+        <li><a href="/custom"  class="nav-link">Custom</a></li>
+        <li><a href="/book"    class="nav-link">Free Guide</a></li>
+        <li><a href="/faq"     class="nav-link">FAQ</a></li>
+        <li><a href="/about"   class="nav-link">About</a></li>
+        <li><a href="/contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="/guide/accounting-client-emails-australia" class="nav-lang">EN</a>
+        <a href="/packs" class="btn btn-primary btn-sm">Browse Packs</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="/packs"   class="nav-link">Packs</a>
+      <a href="/updates" class="nav-link">Edge</a>
+      <a href="/custom"  class="nav-link">Custom</a>
+      <a href="/book"    class="nav-link">Free Guide</a>
+      <a href="/faq"     class="nav-link">FAQ</a>
+      <a href="/about"   class="nav-link">About</a>
+      <a href="/contact" class="nav-link">Contact</a>
+      <a href="/guide/accounting-client-emails-australia" class="nav-link">EN</a>
+      <a href="/packs" class="btn btn-primary" style="margin-top:1rem;justify-content:center;">Browse Packs</a>
+    </div>
+  </nav>
+
+
+  <section class="inner-hero">
+    <div class="container">
+      <nav aria-label="Breadcrumb" style="margin-bottom:var(--s4);">
+        <a href="/" style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);text-decoration:none;">首页</a>
+        <span style="color:rgba(255,255,255,0.3);margin:0 var(--s2);">›</span>
+        <a href="/industry-professional-services" style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);text-decoration:none;">专业服务</a>
+        <span style="color:rgba(255,255,255,0.3);margin:0 var(--s2);">›</span>
+        <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.7);">AI 会计客户邮件</span>
+      </nav>
+      <span class="eyebrow">📖 实用指南 · 8 分钟阅读</span>
+      <h1>澳洲会计师用 AI 写客户邮件：5 个 ChatGPT 提示词模板</h1>
+      <p style="max-width:680px;">适合澳洲注册税务代理、BAS 代理人、记账师——尤其是服务华人客户的从业者。入职欢迎信、BAS 季度提醒、税表通知、逾期发票追款、给看不懂英文税单的新移民客户写中英双语解释信——五个可直接复用的提示词骨架，附 TPB 合规与隐私法红线。</p>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container" style="max-width:760px;margin:0 auto;">
+      <div style="font-size:var(--text-base);color:var(--text-secondary);line-height:1.85;">
+
+        <p style="font-size:var(--text-lg);color:var(--text);font-weight:500;line-height:1.7;">在澳洲做会计，最耗时的往往不是算账，而是写邮件。</p>
+
+        <p>一个拥有 80 个活跃客户的小型会计事务所，在 7 月到 10 月报税旺季，每位客户平均要来来回回发十几封邮件：催文件、解释 BAS 是什么、告知税表状态、提醒付款截止日。这些邮件内容高度重复，却每次都要重新写，因为每个客户感觉都不一样。</p>
+
+        <p>更难的是服务华人客户。许多大陆移民客户的英文只够签文件，看不懂税表通知，更别说理解资本利得税折扣或负扣税是什么意思。用中文解释一遍，再用英文发一遍——时间就是这样翻倍消耗的。</p>
+
+        <p>ChatGPT 替代不了你的专业判断，但它可以把"起草一封客户邮件"的时间从 12 分钟压到 90 秒。这篇指南给你五个实用提示词模板，可以直接复用，也可以根据自己的风格调整。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">1. 为什么客户沟通是会计师最大的隐形时间黑洞</h2>
+
+        <p>在一个运转良好的事务所里，理想状态是每次客户互动都能产生收费工作或加深关系。但实际上，大量的会计通讯是事务性的、重复性的：</p>
+
+        <ul style="padding-left:var(--s5);">
+          <li>催客户补交忘记发的文件</li>
+          <li>向刚过 $75,000 GST 门槛的新客户解释"BAS 是什么、为什么要申报"</li>
+          <li>通知客户税表准备好了，并列出他们接下来要做什么</li>
+          <li>一封、两封、三封地催逾期发票，又不想把关系搞僵</li>
+          <li>把负扣税、信托分配、资本利得折扣翻译成普通人能看懂的语言</li>
+        </ul>
+
+        <p>这些工作不需要你的学位，但每一项都在吃你的时间。这正是 AI 值得用的地方。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">2. ChatGPT 擅长什么，不擅长什么</h2>
+
+        <p><strong>擅长：</strong>根据你给的结构起草清晰、语气合适的邮件。用大白话解释复杂概念。写中英双语版本。调整正式或亲切的语气。快速生成多个变体（短版跟进、详细说明版）。</p>
+
+        <p><strong>不擅长：</strong>在你不告诉它的情况下了解你客户的具体情况。掌握最新的 ATO 税率、门槛或裁定（它的训练数据有截止日期，随时可能过期）。行使你作为注册代理人所需的专业判断。判断一封信是在提供"一般信息"还是"个人税务建议"——这条线由你来把握。</p>
+
+        <p>正确的心智模型：ChatGPT 是一个非常快的初稿写手，它对会计行业有广泛了解，但对你的具体客户一无所知，对 ATO 的最新动态也可能一无所知。你给它精准的指令，它起草，你审阅后发出。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">3. 五个实用提示词模板</h2>
+
+        <p>以下模板可直接复制使用。给出的背景越具体，AI 输出的质量越高。记住：<strong>永远不要把真实客户数据粘贴进提示词</strong>，用占位符代替所有敏感信息。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.1 新客户入职——欢迎信 + 需要提供的材料清单</h3>
+
+        <p>这封邮件奠定整个客户关系的基调。要让客户感到被照顾，同时把文件要求前置，避免后期反复催要。对华人新移民客户来说，在这封信里用中文简单说明流程，往往能大幅减少后续来回。</p>
+
+        <p>提示词骨架：</p>
+
+        <code style="display:block;background:var(--bg-off);padding:var(--s4);border-radius:6px;font-size:0.88em;line-height:1.7;white-space:pre-wrap;margin:var(--s4) 0;">写一封针对澳洲新客户的入职欢迎邮件。语气：热情但专业，不要企业化套话。
+包含：
+- 欢迎语，提到客户具体情况：[简短背景，如"个体经营零售业，刚注册 GST"]
+- 我们需要他们提供的文件清单：[TFN、上一年税表、营业收入记录等]
+- 我们接收文件的方式：[安全上传链接 / 邮件 / 到访办公室]
+- 接下来会发生什么，以及大约何时给他们回复
+- 联系人姓名和联系方式
+英文版本，200–280 字，避免专业术语。不要给出税务建议。</code>
+
+        <p>补充：如需中文版，在提示词末尾加一句："请同时提供简体中文版，语气自然，避免过于正式的官方用语。"</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.2 BAS 季度提醒——明确截止日期，推动客户行动</h3>
+
+        <p>澳洲季度 BAS 到期日：<strong>10 月 28 日</strong>（第一季度 7–9 月）、<strong>2 月 28 日</strong>（第二季度 10–12 月）、<strong>4 月 28 日</strong>（第三季度 1–3 月）、<strong>7 月 28 日</strong>（第四季度 4–6 月）。注册税务代理通常享有 ATO 延期申报计划的宽限——每年查核 ATO 官网确认你的事务所适用的具体日期。</p>
+
+        <p>华人客户中，很多人对 BAS 制度不熟悉，甚至不清楚为什么每季都要申报。一封好的 BAS 提醒要做三件事：告诉他们截止日期，告诉他们要发给你什么，告诉他们不申报的后果。</p>
+
+        <p>提示词骨架：</p>
+
+        <code style="display:block;background:var(--bg-off);padding:var(--s4);border-radius:6px;font-size:0.88em;line-height:1.7;white-space:pre-wrap;margin:var(--s4) 0;">写一封澳洲季度 BAS 申报提醒邮件，面向 GST 注册客户。到期日：[如 10 月 28 日]。
+语气：友好但有紧迫感——该客户习惯拖到最后一刻。
+包含：
+- 在前两句话里突出到期日
+- 客户需要发给我们的具体材料：[银行账单、销售记录、经营支出收据、如有员工则包括工资汇总]
+- 我们内部接收截止日期：[如我们需要在 10 月 21 日前收到所有材料才能按时申报]
+- 一句话说明 BAS 逾期的后果（ATO 可能开出逾期罚款）
+- 简单的行动指引：回复此邮件或通过 [上传链接] 提交
+150–200 字，简单英文，无会计专业术语。</code>
+
+        <p>建议：提前建四个版本，每季度对应一份，日期和申报期间预先填好，作为模板在每季初发出。如果你的客户群以华人为主，可以同时要求 AI 生成简体中文版本附在邮件结尾。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.3 税表已准备好——通知 + 客户需要做什么</h3>
+
+        <p>这封邮件是整个申报周期里最容易造成客户"收到就不动"的沟通节点。很多客户看到"您的税表已准备好"就以为搞定了，实际上他们还需要签授权书、审阅摘要、在截止日前回复。提示词要把"下一步"写清楚。</p>
+
+        <p>提示词骨架：</p>
+
+        <code style="display:block;background:var(--bg-off);padding:var(--s4);border-radius:6px;font-size:0.88em;line-height:1.7;white-space:pre-wrap;margin:var(--s4) 0;">写一封个人税表完成通知邮件，面向澳洲个人纳税客户。背景：[如"预计退税约 $X，客户由我们的税务代理延期计划处理"]。
+包含：
+- 税表已准备完毕，请客户审阅
+- 客户接下来需要做的编号步骤：[1. 审阅我们附上的税表摘要，2. 签署授权表格，3. 在 [日期] 前返回给我们以便申报]
+- 申报后会发生什么：ATO 处理时间（电子申报通常约 2 周），退税或税单通知方式
+- 如有应缴税款：一句平静、客观的说明，指出可选项（PAYG 分期、付款计划）
+- 联系方式供客户提问
+200–250 字，语气安抚、清晰。不要在邮件正文写具体金额——请客户参阅附件摘要。</code>
+
+        <p>针对华人客户的补充：很多大陆移民客户看到"tax payable"就慌了，不知道是否要坐牢。可以在提示词里加一句："如有应缴税款，请用中文额外补充一段简短说明，告知这是正常的年度税务结算，不是罚款。"</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.4 逾期发票跟进——专业追款，不伤关系</h3>
+
+        <p>这是大多数会计师最拖延发送的邮件类型。目标是在不破坏长期关系的前提下推动付款。语气要随着跟进次数递进：第一封假设对方是疏忽，第二封明确指出逾期，第三封说清楚后续步骤。</p>
+
+        <p>提示词骨架：</p>
+
+        <code style="display:block;background:var(--bg-off);padding:var(--s4);border-radius:6px;font-size:0.88em;line-height:1.7;white-space:pre-wrap;margin:var(--s4) 0;">写一封 [第一次 / 第二次 / 最终] 逾期发票跟进邮件，面向澳洲会计客户。
+发票信息：[发票编号、金额、原到期日——使用占位符，不填真实数字]
+背景：[如"该客户合作 4 年，关系良好，可能只是疏忽"]
+语气指引：
+- 第一次：友好，假设对方是疏忽，附上付款链接
+- 第二次：更明确，指出逾期天数，请对方确认付款日期
+- 最终通知（转催收前）：专业直接，清楚说明后续步骤
+包含付款链接或银行转账信息占位符：[付款链接 / BSB 和账号占位]
+除非是最终通知且明确要求，否则不要提及法律行动。
+120–180 字。</code>
+
+        <p>注意：最终通知若涉及催收或法律措辞，邮件发出前请你本人审阅——不要直接发 AI 初稿。这类措辞可能带来法律影响。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.5 用大白话解释复杂税务概念</h3>
+
+        <p>这是 ChatGPT 在会计场景里最能发挥价值的地方。把"50% 资本利得折扣是什么意思"、"负扣税怎么运作"、"信托分配为什么出现在我的税表里"用普通人能听懂的语言写清楚——一个好的会计师写这种邮件要 15 分钟。ChatGPT 20 秒就能出一版，你改 2 分钟就能发出去。</p>
+
+        <p>对华人客户来说，这类解释信尤其重要。很多新移民客户在澳洲是第一次接触个人所得税体系，BAS、PAYG、负扣税对他们来说是全新概念。用中文解释清楚一次，可以省去后续十次电话追问。</p>
+
+        <p>提示词骨架：</p>
+
+        <code style="display:block;background:var(--bg-off);padding:var(--s4);border-radius:6px;font-size:0.88em;line-height:1.7;white-space:pre-wrap;margin:var(--s4) 0;">用大白话解释以下概念，面向没有会计背景的澳洲客户：[概念，如"澳洲居民的 50% 资本利得税折扣"、"投资房产的负扣税"、"信托分配及其在税表中的体现"]。
+客户背景：[如"首次购置投资房产，持有 18 个月后出售，不理解为什么税单比预期少"]。
+要求：
+- 如果有用，用类比帮助理解
+- 专业词汇出现时附带解释
+- 最多 180 字
+- 结尾加一句：「以上为一般信息说明，不构成个人税务建议。如需进一步了解，欢迎来电或发邮件。」
+语气：温暖清晰，不要像教科书，也不要居高临下。
+请同时提供简体中文版本，语言自然，适合大陆移民客户阅读。</code>
+
+        <p>结尾那句免责声明不是可选项。根据 APES 110 和 TPB 行为准则，"一般信息"与"个人税务建议"是两回事。把免责声明写进提示词，确保 AI 输出里已经包含合适的措辞。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">4. 给华人客户写中英双语邮件：怎么用 ChatGPT 做</h2>
+
+        <p>澳洲华人会计事务所里，相当一部分客户是近年来的大陆新移民。他们的英文够用于日常生活，但不足以读懂税务通知，更不足以理解 BAS 申报要求背后的逻辑。</p>
+
+        <p>用中文写一遍解释，再发一封英文版本——过去这意味着双倍工作量。ChatGPT 可以一次生成双语版本，节省你大量时间。</p>
+
+        <p>如何提示双语输出：</p>
+
+        <code style="display:block;background:var(--bg-off);padding:var(--s4);border-radius:6px;font-size:0.88em;line-height:1.7;white-space:pre-wrap;margin:var(--s4) 0;">写以下客户邮件，分两个版本：英文在前，简体中文（大陆普通话）在后。
+客户背景：来自中国大陆的新移民，英文基础，首次在澳洲报税。
+需要解释的内容：[如"什么是 BAS，为什么每季需要申报，逾期不申报的后果"]
+英文版：150 字，简单语言，语气友好。
+中文版：翻译意思，不要逐字直译——用自然的普通话，避免官方公文腔。
+不要在邮件中包含任何具体金融数字——使用占位符代替。</code>
+
+        <p>一个实用提示：第一次使用时，请母语为中文的同事审阅 ChatGPT 的输出，看看语气和词汇是否符合你的客群（大陆客户 vs. 香港背景客户的用词习惯差异不小）。习惯之后，大多数输出只需要微调。</p>
+
+        <p>如果客户是香港或台湾背景，在提示词里改成：<code style="background:var(--bg-off);padding:2px 6px;border-radius:3px;font-size:0.9em;">"繁體中文（香港用語）"</code>，ChatGPT 会同时调整字符集和词汇选择。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">5. 绝对不能用 AI 做的事——合规红线</h2>
+
+        <p style="background:#fff5f0;border-left:3px solid #d05a3a;padding:var(--s4) var(--s5);margin:var(--s5) 0;color:#7a1f0a;"><strong>以下是红线，不是建议——是硬性要求。</strong></p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><strong>把真实客户数据粘贴进 ChatGPT</strong> — TFN、ABN、收入数字、银行账户、地址、Medicare 号码。这些是《隐私法 1988》下的敏感信息。OpenAI 服务器在境外；客户金融数据经过你的提示词可能构成数据泄露，需要通知义务。永远使用占位符。</li>
+          <li><strong>未经专业判断就给出具体税务建议</strong> — ChatGPT 可以解释 50% 资本利得折扣的一般规则，但它无法判断你的客户是否在自己的具体情况下符合条件。那是你的工作。"一般信息"和"个人税务建议"是 TPB 准则下截然不同的两件事。</li>
+          <li><strong>起草 ATO 通讯稿</strong> — 异议信、私人裁定申请、付款安排谈判。这些文件具有法律效力。AI 输出必须视为粗略初稿，由注册代理人逐行审阅后才能提交。</li>
+          <li><strong>SMSF 相关建议邮件</strong> — SMSF 是专业领域，缴费上限、退休金阶段、合规要求均有具体规定，出错的后果严重。任何涉及 SMSF 的客户沟通，应由专业人士起草，而非 AI。</li>
+          <li><strong>加密货币资本利得分析信</strong> — ATO 对加密货币的指引仍在更新中。ChatGPT 的训练数据可能已过时。加密资产的税务处理须对照 ATO 最新指引核查。</li>
+          <li><strong>任何声称税务结果具有确定性的表述</strong> — "您将获得退税 $X"或"这个结构能为您节省 $Y 税款"。AI 会非常自信地写出这些句子，但它们可能是错的，并可能让你面临客户向 TPB 投诉的风险。</li>
+        </ul>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">6. TPB 职业行为准则——AI 使用对你意味着什么</h2>
+
+        <p>澳洲注册税务代理和 BAS 代理人受《税务代理服务法 2009》下的税务从业委员会（TPB）职业行为准则约束。准则核心要求包括：</p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><strong>诚实正直地行事</strong> — 直接发出含有错误的 AI 输出而未经审阅，违反这一要求</li>
+          <li><strong>依法维护客户最佳利益</strong> — 一个未考虑客户具体情况的通用 AI 解释，可能并不符合其最佳利益</li>
+          <li><strong>保持专业能力</strong> — 你必须充分理解 AI 写出的内容，才能对其负责</li>
+          <li><strong>监督你的员工和承包商</strong> — 这一要求延伸到 AI 工具。你对以事务所名义发出的 AI 输出负责</li>
+        </ul>
+
+        <p>实际操作原则：AI 起草，你审阅，你发出。不要自动转发 AI 输出。如果你使用了集成 AI 生成功能的实务管理软件，同样的原则适用——每封邮件在离开系统前必须经过你的眼睛。</p>
+
+        <p>CPA Australia 和 CA ANZ 管理的 APES 110《专业会计师道德准则》同样要求以应有的谨慎和能力提供专业服务。AI 是支持这一目标的工具——不是替代品。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">7. 下一步</h2>
+
+        <p>如果以上五个提示词足够你自己搭建系统：复制这些骨架，建一个文档（Notion、Word 都可以），把你的事务所名称、上传链接、联系人和标准文件清单预先填好，按季度更新。这样能拿到大部分价值。</p>
+
+        <p>如果你想要更完整的系统——包括客户入职问卷、收费方案邮件、年终核查清单、ATO 通讯保留回复，以及面向华人客户的完整双语模板库：</p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><a href="/pack-accounting" style="color:var(--mint-dark);font-weight:600;">会计及记账 AI 行动包 — A$49（一次性付费，无订阅）</a></li>
+          <li><a href="/industry-professional-services" style="color:var(--mint-dark);font-weight:600;">浏览其他专业服务行业包</a>（理财规划、房贷经纪、法律）</li>
+        </ul>
+
+        <p>如果你的事务所有特定需求——大量华人客户群、SMSF 专项业务、多名员工需要统一使用提示词——想要量身定制的方案：</p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><a href="/custom" style="color:var(--mint-dark);font-weight:600;">定制 AI 搭建服务</a> — Vince 与你一起梳理事务所的沟通流程，针对你的客户类型和合规环境定制提示词库。</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--off">
+    <div class="container" style="max-width:760px;margin:0 auto;">
+      <h2 style="margin-bottom:var(--s5);color:var(--text);">常见问题</h2>
+      <div style="font-size:var(--text-base);color:var(--text-secondary);line-height:1.75;">
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">澳洲会计师可以用 ChatGPT 写客户邮件吗？</h3>
+          <p>可以，用于起草日常沟通邮件，如入职欢迎信、BAS 提醒、税表通知等。但注册代理人必须在发送前逐一审核所有 AI 生成的内容。TPB 职业行为准则要求你对以自己名义发出的一切内容承担专业责任。发给 ATO 的任何信件，必须经过人工仔细审查后才能提交。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">可以把客户的 TFN 或收入信息粘贴到 ChatGPT 里吗？</h3>
+          <p>绝对不可以。客户的 TFN、ABN、收入数字、银行账户等均属于澳洲《隐私法 1988》下的敏感信息。OpenAI 的服务器在境外，将客户金融数据输入提示词可能构成数据泄露。在提示词中始终使用占位符，例如写「[客户姓名]」而非真实姓名。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">澳洲 BAS 的季度申报截止日期是哪几天？</h3>
+          <p>季度申报到期日：第一季度（7–9 月）<strong>10 月 28 日</strong>；第二季度（10–12 月）<strong>2 月 28 日</strong>；第三季度（1–3 月）<strong>4 月 28 日</strong>；第四季度（4–6 月）<strong>7 月 28 日</strong>。注册税务代理一般享有 ATO 延期申报计划的宽限——每年核查 ATO 官网确认你的事务所适用的具体日期。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">ChatGPT 能写中英双语的会计客户信吗？</h3>
+          <p>可以，而且质量相当不错。在提示词里说明客户背景（如「来自大陆的新移民，英文有限」）、需要解释的内容（如「什么是 BAS 以及为何需要每季申报」），然后要求输出英文在前、中文在后的双语版本。首次使用时，建议请母语为中文的同事审阅输出质量，之后大多数内容只需微调。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">哪些事情绝对不能交给 AI 来做？</h3>
+          <p>绝不能用 AI 在未经专业判断的情况下给出具体税务建议。不能用 AI 起草 ATO 异议信、SMSF 建议函、加密货币资本利得分析信，除非由专业人士全程审查。任何声称税务结果确定性的表述（如「您将获得退税 X 元」），若直接来自 AI 未经审核就发出，将使您面临客户投诉 TPB 的风险。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--navy" aria-label="Bottom CTA">
+    <div class="container" style="text-align:center;max-width:680px;margin:0 auto;">
+      <h2 class="section-heading" style="color:var(--white);margin-bottom:var(--s4);">获取完整会计 AI 行动包</h2>
+      <p style="color:rgba(255,255,255,0.75);margin-bottom:var(--s6);">面向澳洲会计师和 BAS 代理人的完整提示词库：入职信、BAS 提醒、税表通知、逾期发票追款、中英双语客户信等。一次性付费 A$49，无订阅费。</p>
+      <div style="display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap;">
+        <a href="/pack-accounting" class="btn btn-primary">获取会计行动包 — A$49</a>
+        <a href="/custom" class="btn btn-outline-light">或预约定制搭建服务</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div style="display:flex;align-items:center;gap:0.4em;"><img src="/logo_mark_green.png" alt="" style="height:22px;width:auto;flex-shrink:0;">
+          <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;line-height:1;white-space:nowrap;">Open<span style="color:#5AA88A">Ways</span></span></div>
+          <p class="footer-tagline" style="margin-top:var(--s4);">AI toolkits for modern small businesses. Practical, industry-specific, ready to use within 7 days.</p>
+          <a href="mailto:hi@openways.net" class="footer-link" style="margin-top:var(--s4);display:inline-block;">hi@openways.net</a>
+        </div>
+        <div>
+          <div class="footer-heading">Industries</div>
+          <div class="footer-links">
+            <a href="/industry-food-hospitality"      class="footer-link">Food &amp; Hospitality</a>
+            <a href="/industry-health-wellness"       class="footer-link">Health &amp; Wellness</a>
+            <a href="/industry-home-property"         class="footer-link">Home &amp; Property</a>
+            <a href="/industry-professional-services" class="footer-link">Professional Services</a>
+            <a href="/industry-education-training"    class="footer-link">Education &amp; Training</a>
+            <a href="/industry-trades-technical"      class="footer-link">Trades &amp; Technical</a>
+            <a href="/industry-lifestyle-services"    class="footer-link">Lifestyle Services</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <div class="footer-links">
+            <a href="/about"    class="footer-link">About</a>
+            <a href="/faq"      class="footer-link">FAQ</a>
+            <a href="/contact"  class="footer-link">Contact</a>
+            <a href="/partners" class="footer-link">Become a Partner</a>
+            <a href="/zh"       class="footer-link">中文版</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Legal</div>
+          <div class="footer-links">
+            <a href="/terms"   class="footer-link">Terms of Use</a>
+            <a href="/refund"  class="footer-link">Refund Policy</a>
+            <a href="/privacy" class="footer-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OpenWays. Built for small businesses across Australia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/ow-anim.js" defer></script>
+</body>
+</html>
