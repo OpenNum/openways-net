@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G6XV2WSYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5G6XV2WSYW");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>澳洲移民中介 AI 客户沟通：5 个 ChatGPT 模板 — OpenWays</title>
+  <meta name="description" content="澳洲注册移民代理（OMARA）用 ChatGPT 批量处理客户更新邮件的实操指南：5 个提示词模板，含中文客户版本，符合 OMARA 职业行为准则。" />
+  <meta name="keywords" content="澳洲移民中介 AI 客户沟通, ChatGPT 移民中介邮件模板, 澳洲注册移民代理 AI 工具, OMARA 合规 AI, 移民签证进度更新邮件" />
+  <link rel="canonical" href="https://openways.net/guide/immigration-agent-client-communication-australia-zh" />
+  <link rel="alternate" hreflang="en" href="https://openways.net/guide/immigration-agent-client-communication-australia" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/immigration-agent-client-communication-australia-zh" />
+  <link rel="alternate" hreflang="x-default" href="https://openways.net/guide/immigration-agent-client-communication-australia" />
+  <meta property="og:title" content="澳洲移民中介 AI 客户沟通：5 个 ChatGPT 提示词模板 — OpenWays" />
+  <meta property="og:description" content="OMARA 注册移民代理实操指南：用 ChatGPT 批量起草签证进度更新、文件催收、申请确认邮件，含中文客户专版，符合 OMARA 职业行为准则。" />
+  <meta property="og:url" content="https://openways.net/guide/immigration-agent-client-communication-australia-zh" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="澳洲移民中介 AI 客户沟通：5 个 ChatGPT 提示词模板 — OpenWays" />
+  <meta name="twitter:description" content="OMARA 注册移民代理实操指南：用 ChatGPT 批量起草签证进度更新，含中文客户专版，符合 OMARA 职业行为准则。" />
+  <meta name="twitter:image" content="https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "澳洲移民中介 AI 客户沟通：5 个 ChatGPT 提示词模板（OMARA 合规版）",
+    "description": "OMARA 注册移民代理用 ChatGPT 处理客户沟通的实操指南：咨询跟进、文件催收、申请确认、签证进度更新、中文客户专版，含 OMARA 职业行为准则合规要点。",
+    "datePublished": "2026-05-18",
+    "dateModified": "2026-05-18",
+    "inLanguage": "zh-Hans",
+    "author": {"@type": "Person", "name": "Vince Yang", "url": "https://openways.net/about"},
+    "publisher": {"@type": "Organization", "name": "OpenWays", "logo": {"@type": "ImageObject", "url": "https://openways.net/logo_mark_green.png"}},
+    "image": "https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg",
+    "url": "https://openways.net/guide/immigration-agent-client-communication-australia-zh",
+    "mainEntityOfPage": "https://openways.net/guide/immigration-agent-client-communication-australia-zh"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"首页","item":"https://openways.net/"},
+      {"@type":"ListItem","position":2,"name":"专业服务","item":"https://openways.net/industry-professional-services"},
+      {"@type":"ListItem","position":3,"name":"移民中介 AI 客户沟通"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "澳洲注册移民代理可以用 ChatGPT 写客户邮件吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "可以，用于常规客户沟通，例如咨询跟进邮件、文件催收邮件、签证进度更新。但注册代理必须在发送前审核每一份 AI 生成的内容。OMARA 职业行为准则要求代理对以其名义发出的所有通讯负责。AI 起草框架，代理对内容负责。"}
+      },
+      {
+        "@type": "Question",
+        "name": "把客户签证信息粘贴进 ChatGPT 是否违反隐私法？",
+        "acceptedAnswer": {"@type": "Answer", "text": "是的，存在《1988 年隐私法》合规风险。护照号、签证申请 ID（TRN）、税务档案号（TFN）等个人标识符属于澳洲隐私法下的敏感信息。OpenAI 服务器位于境外，将真实客户数据提交给 AI 工具可能构成跨境披露。请始终使用占位符——在提示词中写「[客户姓名]」和「[签证类别]」，而不是实际信息。"}
+      },
+      {
+        "@type": "Question",
+        "name": "AI 能预测签证会不会批下来吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "不能——注册移民代理也不应该做出预测。OMARA 职业行为准则明确禁止代理就签证结果误导客户。如果 AI 生成的草稿中出现任何涉及批准可能性、预期结果或办理时间保证的表述，必须在发送前删除。ChatGPT 会写出听起来很有把握的预测——你的提示词必须明确指示它不要猜测。"}
+      },
+      {
+        "@type": "Question",
+        "name": "澳洲签证一般要审多久？",
+        "acceptedAnswer": {"@type": "Answer", "text": "办理时间因签证类别而异，且经常变化。移民局（DHA）官网发布各类签证的当前参考时间——请始终将客户引导至 DHA 官网查询，不要在邮件中自行引用具体时间。许多常见签证在高峰期需要 6 至 18 个月甚至更长时间。本文的进度更新模板专门避免了隐含时间保证的表述。"}
+      },
+      {
+        "@type": "Question",
+        "name": "AI 可以用于 AAT 行政上诉或联邦法院移民案件吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "只能用于行政性沟通，例如向客户解释 AAT 审查流程是什么。AI 不得起草审查理由、陈述书、法庭提交文件或任何正式法律材料。这些文件需要注册代理或移民律师的专业判断和法律监督。"}
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="主导航">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo" aria-label="OpenWays 首页">
+        <img src="/logo_mark_dark.png" alt="" style="height:26px;width:auto;display:block;flex-shrink:0;">
+        <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.03em;line-height:1;"><span style="color:#0F1034">Open</span><span style="color:#5AA88A">Ways</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="/packs"   class="nav-link">行业包</a></li>
+        <li><a href="/updates" class="nav-link">Edge</a></li>
+        <li><a href="/custom"  class="nav-link">定制</a></li>
+        <li><a href="/book"    class="nav-link">免费指南</a></li>
+        <li><a href="/faq"     class="nav-link">常见问题</a></li>
+        <li><a href="/about"   class="nav-link">关于</a></li>
+        <li><a href="/contact" class="nav-link">联系</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="/guide/immigration-agent-client-communication-australia" class="nav-lang">English</a>
+        <a href="/packs" class="btn btn-primary btn-sm">浏览行业包</a>
+      </div>
+      <button class="nav-toggle" aria-label="展开菜单" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="/packs"   class="nav-link">行业包</a>
+      <a href="/updates" class="nav-link">Edge</a>
+      <a href="/custom"  class="nav-link">定制</a>
+      <a href="/book"    class="nav-link">免费指南</a>
+      <a href="/faq"     class="nav-link">常见问题</a>
+      <a href="/about"   class="nav-link">关于</a>
+      <a href="/contact" class="nav-link">联系</a>
+      <a href="/guide/immigration-agent-client-communication-australia" class="nav-link">English</a>
+      <a href="/packs" class="btn btn-primary" style="margin-top:1rem;justify-content:center;">浏览行业包</a>
+    </div>
+  </nav>
+
+
+  <section class="inner-hero">
+    <div class="container">
+      <nav aria-label="面包屑导航" style="margin-bottom:var(--s4);">
+        <a href="/" style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);text-decoration:none;">首页</a>
+        <span style="color:rgba(255,255,255,0.3);margin:0 var(--s2);">›</span>
+        <a href="/industry-professional-services" style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);text-decoration:none;">专业服务</a>
+        <span style="color:rgba(255,255,255,0.3);margin:0 var(--s2);">›</span>
+        <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.7);">移民中介</span>
+      </nav>
+      <span class="eyebrow">📖 实操指南 · 阅读约 8 分钟</span>
+      <h1>澳洲移民中介 AI 客户沟通：5 个 ChatGPT 提示词模板（OMARA 合规版）</h1>
+      <p style="max-width:680px;">移民中介最大的时间杀手不是专业判断，而是重复性的客户更新——每个月给几十个客户发"您的签证还在审理中"的邮件。这里有五个可以直接用的 ChatGPT 模板，覆盖咨询跟进、文件催收、申请确认、进度更新和中文客户专版，以及绝对不能让 AI 碰的地方。</p>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container" style="max-width:760px;margin:0 auto;">
+      <div style="font-size:var(--text-base);color:var(--text-secondary);line-height:1.85;">
+
+        <p style="font-size:var(--text-lg);color:var(--text);font-weight:500;line-height:1.7;">一个手上有三四十个活跃案子的移民代理，每周光是常规客户沟通就要花两三个小时——而这些邮件大多数传递的信息只有一句话：还没消息，等着。</p>
+
+        <p>这不是说移民代理的工作不专业。恰恰相反——真正需要专业判断的部分：评估签证路径、准备法定声明、应对移民局的补件要求，这些才是注册代理的核心价值。但围绕这些工作的通讯脚手架——咨询结束后的跟进邮件、催收材料的邮件、申请递交后的确认邮件、每个月的进度更新——这些事情重复性强、格式相对固定，却照样要逐封写、逐封发。</p>
+
+        <p>更难的地方在于，澳洲许多常见签证的审理周期是六到十八个月。在这段时间里，客户没有新进展可以告知，但不更新的代价是：焦虑的电话、重复的邮件、"是不是出了什么问题"的担忧。保持定期沟通本身就是服务的一部分，而 AI 可以让这件事从每封邮件花八分钟变成每封邮件花不到两分钟。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">1. 真正的问题：是量，不是难度</h2>
+
+        <p>移民工作有两个层次。第一个层次是专业判断：这个客户适合走哪条签证路径，雇主担保是否合规，拒签后有没有申诉空间。这个层次不能外包给 AI——它需要你的注册资质、你的经验、你的职业责任。</p>
+
+        <p>第二个层次是通讯执行：把那些专业判断传达给客户的邮件，确认咨询内容的跟进信，催收文件的请求，告知申请进展（或者没有进展）的更新，用普通人能看懂的语言解释移民局流程的说明。</p>
+
+        <p>移民代理大量时间被消耗在第二个层次。AI 在这里最有用，也最安全。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">2. AI 能做什么，不能做什么</h2>
+
+        <p><strong>AI 擅长：</strong></p>
+        <ul style="padding-left:var(--s5);">
+          <li>起草结构清晰、语气专业的进度更新邮件，只陈述事实，不作预测</li>
+          <li>写出解释"为什么需要这份材料、需要什么格式"的文件催收邮件</li>
+          <li>用普通话写出中文客户能看懂的签证流程说明</li>
+          <li>生成双语版本（英文 + 简体中文）的同一封邮件</li>
+          <li>咨询结束后的标准化跟进邮件</li>
+        </ul>
+
+        <p><strong>必须由代理本人负责：</strong></p>
+        <ul style="padding-left:var(--s5);">
+          <li>任何具体的移民策略建议——走哪条路径、是否值得申请豁免</li>
+          <li>OMARA 职业行为准则的全部义务，尤其是不得误导客户的条款</li>
+          <li>任何涉及签证批准可能性、办理时间预测或移民官员自由裁量权的表述</li>
+          <li>递交决定、撤回申请、回应移民局补件要求</li>
+          <li>法定声明、品格证明及所有递交给移民局或复审庭的文件</li>
+        </ul>
+
+        <p>正确的工作模式：AI 起草，代理审核，代理发送。每次都是，没有例外。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">3. 五个 ChatGPT 提示词模板</h2>
+
+        <p>以下模板可以直接用。把方括号里的内容替换成客户的具体情况后再运行。绝对不要把真实护照号、签证申请 ID（TRN）或税务档案号（TFN）粘贴进任何 AI 工具——始终用占位符。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.1 咨询结束后的跟进邮件</h3>
+
+        <p>这封邮件确认了咨询中讨论的内容，让客户知道下一步做什么，减少最常见的后续电话："那我现在要干什么？"</p>
+
+        <p>提示词模板：</p>
+
+        <code style="background:var(--bg-off);padding:2px 6px;border-radius:3px;font-size:0.9em;display:block;white-space:pre-wrap;line-height:1.6;margin:var(--s3) 0;">写一封移民咨询结束后的跟进邮件。客户情况：[讨论的签证类别或路径，例如「配偶签证 820/801」]。咨询中涵盖的要点：[2-3 条]。客户下一步需要做的事：[文件清单或需要做出的决定]。语气：清晰、专业、有安全感。不超过 200 字。不得对签证结果作出任何预测。</code>
+
+        <p>需要自定义的部分：签证类别、咨询中的具体要点、客户的下一步行动。如果下一步是文件清单，把你需要的材料列出来——不要让 AI 猜测某类签证需要哪些材料。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.2 文件催收邮件</h3>
+
+        <p>大多数移民申请的瓶颈是材料来得晚、格式不对、或者漏了关键文件。一封解释"为什么需要这份材料、需要什么格式"的催收邮件，能大幅减少来回沟通的次数。</p>
+
+        <p>提示词模板：</p>
+
+        <code style="background:var(--bg-off);padding:2px 6px;border-radius:3px;font-size:0.9em;display:block;white-space:pre-wrap;line-height:1.6;margin:var(--s3) 0;">写一封针对 [签证类别] 申请的文件催收邮件。客户姓名：[占位符]。所需材料：[列表——例如护照、出生证明、无犯罪记录证明、技能评估]。每份材料：说明为何需要以及要求的格式（公证副本、原件等）。提交截止日期：[日期]。不超过 250 字。语气：有条理、乐于助人，不要官腔。</code>
+
+        <p>技巧：为你最常处理的五类签证分别建一份标准文件清单，放在一个文档里，每次粘贴进提示词。AI 负责组织语言，你提供准确的材料要求。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.3 申请递交确认邮件</h3>
+
+        <p>刚递交签证申请的客户通常最焦虑。这封邮件提供确认，同时设定合理预期，减少审理期间的重复询问。</p>
+
+        <p>提示词模板：</p>
+
+        <code style="background:var(--bg-off);padding:2px 6px;border-radius:3px;font-size:0.9em;display:block;white-space:pre-wrap;line-height:1.6;margin:var(--s3) 0;">写一封向客户确认签证申请已递交的邮件。签证类别：[编号和名称]。申请编号/TRN：[由代理填入的占位符]。预计办理时间：[参考移民局官网数据——代理需核实当前时间]。客户接下来会经历什么：[体检/品格审查、生物特征采集（如适用）]。提醒客户在确认签证状态前不要出行。不超过 200 字。</code>
+
+        <p>关键：发送前，用移民局官网的当前数据替换办理时间占位符。不要依赖 AI 提供时间数字——这些数据变化频繁，AI 训练数据可能已过时。直接引导客户查看移民局官网。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.4 月度进度更新——无新进展</h3>
+
+        <p>这是移民实务中发件量最高的邮件类型。每个月信息都一样：还在队列里，移民局按顺序处理，有进展立即通知你。难点在于写得有人情味，而不像批量群发。</p>
+
+        <p>提示词模板：</p>
+
+        <code style="background:var(--bg-off);padding:2px 6px;border-radius:3px;font-size:0.9em;display:block;white-space:pre-wrap;line-height:1.6;margin:var(--s3) 0;">写一封给签证申请仍在审理中的客户的月度进度更新邮件。签证：[类别]。递交后已过月数：[数字]。内容：承认等待令人煎熬，确认申请在队列中，说明移民局通常按顺序处理案件，确认代理一旦有进展会立即通知。语气：有同理心但陈述事实。不超过 150 字。不得对批准可能性或时间作出任何猜测。</code>
+
+        <p>工作流技巧：每月从案件管理系统导出活跃案件列表，针对每位客户运行这个提示词（代入签证类别和递交月数），每十封审核一批，批量发送。40 个活跃案件的进度更新，不到一小时就能处理完。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.5 中文客户专版进度更新</h3>
+
+        <p>很多大陆背景的签证申请人选择中文移民代理，正是因为语言和文化的对接。一封清晰的中文进度更新——而不是一封英文的"no update"邮件——两分钟用 AI 就能写好，能大幅减少"你有没有收到我的邮件"的追问电话。</p>
+
+        <p>提示词模板：</p>
+
+        <code style="background:var(--bg-off);padding:2px 6px;border-radius:3px;font-size:0.9em;display:block;white-space:pre-wrap;line-height:1.6;margin:var(--s3) 0;">用简体中文写一封给中文客户的签证进度更新邮件。签证：[类别]。本次更新：[一句话，例如「申请正在等待体检结果」]。下一步（如有）：[填写]。说明代理持续跟进中。语气：直接、平稳，避免让非专业读者困惑的法律套话。不超过 150 个汉字。</code>
+
+        <p>ChatGPT 的简体中文客户沟通质量是可用的。香港或台湾背景的客户，在提示词里改成"繁體中文（香港慣用）"。和所有 AI 输出一样，初期建议让一位母语是中文的同事审核几封，校准质量。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">4. OMARA 职业行为准则：不能碰的红线</h2>
+
+        <p style="background:#fff5f0;border-left:3px solid #d05a3a;padding:var(--s4) var(--s5);margin:var(--s5) 0;color:#7a1f0a;"><strong>以下是硬性红线，不是参考建议。AI 生成的内容触碰这些红线，必须修改后再发送。</strong></p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><strong>不允许 AI 预测签证结果。</strong>OMARA 职业行为准则明确禁止注册代理就签证批准可能性误导客户。ChatGPT 在提示词不够明确时会写出听起来很有把握的预测——你的提示词必须明确禁止它猜测。发送前删除所有此类表述。</li>
+          <li><strong>不允许 AI 把办理时间说成保证。</strong>移民局的审理时间持续变化。AI 给出的任何具体数字可能是几个月前的数据。始终引导客户去移民局官网查询当前参考时间，而不是在自己的邮件里引用一个无法保证的时间范围。</li>
+          <li><strong>绝对不要把真实客户标识符粘贴进 ChatGPT。</strong>护照号、TRN、TFN、家庭住址、出生日期属于《1988 年隐私法》下的个人信息。OpenAI 服务器在境外，提交真实客户数据可能构成跨境披露，违反 OMARA 隐私义务。始终使用占位符。</li>
+          <li><strong>不允许 AI 起草法定声明或任何宣誓文件。</strong>这些是法律文件，有规定的格式要求，很多情况下需要在太平绅士或授权见证人面前签署。AI 输出不能作为任何宣誓文件的基础。</li>
+          <li><strong>AAT 和联邦法院案件：仅限行政沟通。</strong>AI 可以帮助写向客户解释 AAT 审查流程的说明性邮件。不得起草审查理由、陈述书或任何递交给复审庭或法院的文件——这些需要注册代理或移民律师的专业判断和法律监督。</li>
+        </ul>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">5. 为什么中文沟通是竞争优势，不只是便利</h2>
+
+        <p>很多大陆背景的签证申请人，在选移民代理时有一个隐性标准：这个代理能用中文跟我沟通吗？他们的沟通方式是我熟悉的那种吗？</p>
+
+        <p>这背后有一个文化预期差的问题值得重视。国内政府部门办事通常速度更快、主动告知更频繁——很多大陆客户对"队列处理"这个概念是不熟悉的。他们不理解为什么一个申请递交了四个月，移民局没有任何主动联系。这种沉默在他们的经验框架里意味着"出了问题"。</p>
+
+        <p>帮客户管理这种预期差，本身就是一项服务。一封月度中文更新邮件——哪怕内容只有"申请正常排队中，有进展我会第一时间通知您"——传递的信息不只是进度状态，而是：你的代理在关注着，这种沉默是正常的，不是出了问题的信号。</p>
+
+        <p>这封邮件用 AI 两分钟可以写好。它能防止三通焦虑的电话、两封追问的邮件，还有来自家属的"你们怎么没有消息"的压力。更长远的效果是：建立信任，产生转介绍。这不是效率的问题，是服务品质的差异。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">6. 实操工作流：30 个以上活跃案件的做法</h2>
+
+        <p><strong>月度批量进度更新：</strong></p>
+        <ol style="padding-left:var(--s5);">
+          <li>从案件管理系统导出活跃案件列表</li>
+          <li>针对每位客户，粘贴模板 3.4 或 3.5（中文客户），代入签证类别和递交月数</li>
+          <li>每十封批量审核，删除任何预测性表述</li>
+          <li>个性化称呼后发送</li>
+        </ol>
+
+        <p><strong>新申请递交当天：</strong></p>
+        <ol style="padding-left:var(--s5);">
+          <li>递交后立即运行模板 3.3</li>
+          <li>从 ImmiAccount 填入 TRN</li>
+          <li>查移民局官网核实当前办理时间参考范围后填入</li>
+          <li>当天发送</li>
+        </ol>
+
+        <p><strong>预计节省时间：</strong>对于有 30 个以上活跃案件的事务所，以上五个模板每周可节省两到三小时的客户沟通时间，全年约 100 到 150 小时。这些时间可以用于案件准备、开发新客户，或更多计费咨询工作。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">7. 下一步</h2>
+
+        <p>如果以上五个模板已经够用，就把它们整理进一个工作文档——Notion、Word、或者你用的任何工具——预填入你的事务所名称、各类签证的标准材料清单、你的联系方式。每当移民局更新重大政策或处理时间时更新一次。</p>
+
+        <p>如果你需要更完整的系统——包括技能评估跟进、雇主担保沟通、拒签解释信、符合 OMARA 规范的委托协议语言，以及完整的中文客户模板库：</p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><a href="/pack-immigration" style="color:var(--mint-dark);font-weight:600;">移民代理 AI 行动包 — A$49（一次性，无订阅）</a></li>
+          <li><a href="/industry-professional-services" style="color:var(--mint-dark);font-weight:600;">浏览其他专业服务行业包</a>（会计、法律、理财规划）</li>
+        </ul>
+
+        <p>如果你的事务所有特定需求——大量中文客户群、担保签证专项、或复审案件为主——需要针对你的客户类型和 OMARA 合规环境定制提示词系统：</p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><a href="/custom" style="color:var(--mint-dark);font-weight:600;">定制 AI 配置</a> — Vince 会和你梳理事务所的沟通工作流，为你的客户类型和合规环境搭建专属提示词库。</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--off">
+    <div class="container" style="max-width:760px;margin:0 auto;">
+      <h2 style="margin-bottom:var(--s5);color:var(--text);">常见问题</h2>
+      <div style="font-size:var(--text-base);color:var(--text-secondary);line-height:1.75;">
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">澳洲注册移民代理可以用 ChatGPT 写客户邮件吗？</h3>
+          <p>可以，用于常规客户沟通，例如咨询跟进邮件、文件催收邮件、签证进度更新。但注册代理必须在发送前审核每一份 AI 生成的内容。OMARA 职业行为准则要求代理对以其名义发出的所有通讯负责。AI 起草框架，代理对内容负责。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">把客户签证信息粘贴进 ChatGPT 是否违反隐私法？</h3>
+          <p>是的，存在《1988 年隐私法》合规风险。护照号、TRN、TFN 等个人标识符属于澳洲隐私法下的敏感信息。OpenAI 服务器在境外，提交真实客户数据可能构成跨境披露。请始终在提示词中使用占位符，例如 <code style="background:var(--bg-off);padding:2px 5px;border-radius:3px;font-size:0.9em;">[客户姓名]</code>、<code style="background:var(--bg-off);padding:2px 5px;border-radius:3px;font-size:0.9em;">[签证类别]</code>，而不是真实信息。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">AI 能预测签证会不会批下来吗？</h3>
+          <p>不能——注册移民代理也不应该做出预测。OMARA 职业行为准则明确禁止代理就签证结果误导客户。如果 AI 生成的草稿中出现任何涉及批准可能性的表述，必须在发送前删除。本文的提示词模板明确要求 AI 不得猜测——这是必要的，不是可选的。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">澳洲签证一般要审多久？</h3>
+          <p>办理时间因签证类别而异，且经常变化。移民局（DHA）官网发布各类签证的当前参考时间——请始终将客户引导至 DHA 官网查询，不要在邮件中自行引用具体时间。许多常见签证在高峰期需要 6 至 18 个月甚至更长时间。本文的进度更新模板专门避免了隐含时间保证的表述。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">AI 可以用于 AAT 行政上诉或联邦法院移民案件吗？</h3>
+          <p>只能用于行政性沟通，例如向客户解释 AAT 审查流程是什么。AI 不得起草审查理由、陈述书、法庭提交文件或任何正式法律材料。这些文件需要注册代理或移民律师的专业判断和法律监督。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--navy" aria-label="底部行动入口">
+    <div class="container" style="text-align:center;max-width:680px;margin:0 auto;">
+      <h2 class="section-heading" style="color:var(--white);margin-bottom:var(--s4);">获取完整移民代理 AI 行动包</h2>
+      <p style="color:rgba(255,255,255,0.75);margin-bottom:var(--s6);">为 OMARA 注册移民代理定制的完整提示词库：咨询跟进、文件催收、进度更新、拒签解释信、中文客户全套模板，以及更多。一次性 A$49，无订阅费。</p>
+      <div style="display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap;">
+        <a href="/pack-immigration" class="btn btn-primary">获取移民代理行动包 — A$49</a>
+        <a href="/custom" class="btn btn-outline-light">或预约定制配置</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div style="display:flex;align-items:center;gap:0.4em;"><img src="/logo_mark_green.png" alt="" style="height:22px;width:auto;flex-shrink:0;">
+          <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;line-height:1;white-space:nowrap;">Open<span style="color:#5AA88A">Ways</span></span></div>
+          <p class="footer-tagline" style="margin-top:var(--s4);">AI toolkits for modern small businesses. Practical, industry-specific, ready to use within 7 days.</p>
+          <a href="mailto:hi@openways.net" class="footer-link" style="margin-top:var(--s4);display:inline-block;">hi@openways.net</a>
+        </div>
+        <div>
+          <div class="footer-heading">Industries</div>
+          <div class="footer-links">
+            <a href="/industry-food-hospitality"      class="footer-link">Food &amp; Hospitality</a>
+            <a href="/industry-health-wellness"       class="footer-link">Health &amp; Wellness</a>
+            <a href="/industry-home-property"         class="footer-link">Home &amp; Property</a>
+            <a href="/industry-professional-services" class="footer-link">Professional Services</a>
+            <a href="/industry-education-training"    class="footer-link">Education &amp; Training</a>
+            <a href="/industry-trades-technical"      class="footer-link">Trades &amp; Technical</a>
+            <a href="/industry-lifestyle-services"    class="footer-link">Lifestyle Services</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <div class="footer-links">
+            <a href="/about"    class="footer-link">About</a>
+            <a href="/faq"      class="footer-link">FAQ</a>
+            <a href="/contact"  class="footer-link">Contact</a>
+            <a href="/partners" class="footer-link">Become a Partner</a>
+            <a href="/zh"       class="footer-link">中文版</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Legal</div>
+          <div class="footer-links">
+            <a href="/terms"   class="footer-link">Terms of Use</a>
+            <a href="/refund"  class="footer-link">Refund Policy</a>
+            <a href="/privacy" class="footer-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OpenWays. Built for small businesses across Australia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/ow-anim.js" defer></script>
+</body>
+</html>

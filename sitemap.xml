@@ -686,4 +686,44 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://openways.net/guide/realestate-open-home-followup-australia"/>
   </url>
 
+  <url>
+    <loc>https://openways.net/guide/lawyer-client-emails-australia</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/guide/lawyer-client-emails-australia"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/lawyer-client-emails-australia-zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://openways.net/guide/lawyer-client-emails-australia"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/guide/lawyer-client-emails-australia-zh</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/guide/lawyer-client-emails-australia"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/lawyer-client-emails-australia-zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://openways.net/guide/lawyer-client-emails-australia"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/guide/immigration-agent-client-communication-australia</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/guide/immigration-agent-client-communication-australia"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/immigration-agent-client-communication-australia-zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://openways.net/guide/immigration-agent-client-communication-australia"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/guide/immigration-agent-client-communication-australia-zh</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/guide/immigration-agent-client-communication-australia"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/immigration-agent-client-communication-australia-zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://openways.net/guide/immigration-agent-client-communication-australia"/>
+  </url>
+
 </urlset>
