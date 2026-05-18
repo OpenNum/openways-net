@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G6XV2WSYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-5G6XV2WSYW");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>澳洲律师用 AI 写客户邮件：5 个 ChatGPT 提示词模板 — OpenWays</title>
+  <meta name="description" content="澳洲华人律所实用指南：5 个 ChatGPT 提示词模板，涵盖委托信、状态更新、费用披露、文件索取、中文客户邮件，符合 LPUL 规范与隐私法要求。" />
+  <meta name="keywords" content="澳洲律师AI客户邮件, ChatGPT律所客户沟通, 澳洲华人律师AI工具, 澳洲律师中英双语邮件, LPUL合规AI, 律所客户信模板澳洲" />
+  <link rel="canonical" href="https://openways.net/guide/lawyer-client-emails-australia-zh" />
+  <link rel="alternate" hreflang="en" href="https://openways.net/guide/lawyer-client-emails-australia" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/lawyer-client-emails-australia-zh" />
+  <link rel="alternate" hreflang="x-default" href="https://openways.net/guide/lawyer-client-emails-australia" />
+  <meta property="og:title" content="澳洲律师用 AI 写客户邮件：5 个 ChatGPT 提示词模板" />
+  <meta property="og:description" content="委托信开头、状态更新、费用披露、文件索取、中文客户邮件——5 个可直接复用的 ChatGPT 提示词骨架，附 LPUL 合规与特权保护红线。" />
+  <meta property="og:url" content="https://openways.net/guide/lawyer-client-emails-australia-zh" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="澳洲律师用 AI 写客户邮件：5 个 ChatGPT 提示词模板" />
+  <meta name="twitter:description" content="委托信、状态更新、费用披露、中文客户邮件——5 个 ChatGPT 提示词骨架，符合 LPUL 规范。" />
+  <meta name="twitter:image" content="https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "澳洲律师用 AI 写客户邮件：5 个 ChatGPT 提示词模板",
+    "description": "澳洲华人律所实用指南：5 个 ChatGPT 提示词模板，涵盖委托信开头、状态更新、费用披露、文件索取、中文客户邮件，符合澳洲法律职业统一法（LPUL）规范与隐私法要求。",
+    "datePublished": "2026-05-18",
+    "dateModified": "2026-05-18",
+    "inLanguage": "zh-Hans",
+    "author": {"@type": "Person", "name": "Vince Yang", "url": "https://openways.net/about"},
+    "publisher": {"@type": "Organization", "name": "OpenWays", "logo": {"@type": "ImageObject", "url": "https://openways.net/logo_mark_green.png"}},
+    "image": "https://openways.net/gumroad-covers/OpenWays_Edge_cover.jpg",
+    "mainEntityOfPage": "https://openways.net/guide/lawyer-client-emails-australia-zh"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"首页","item":"https://openways.net/"},
+      {"@type":"ListItem","position":2,"name":"专业服务","item":"https://openways.net/industry-professional-services"},
+      {"@type":"ListItem","position":3,"name":"澳洲律师 AI 客户邮件"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "澳洲律师可以用 ChatGPT 写客户邮件吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "可以，用于起草日常沟通邮件，如委托信开头、案件状态更新、文件索取邮件和费用披露通知。但负责律师必须在发送前审核所有 AI 生成的内容。《法律职业统一行为规则》下的执业能力义务适用于 AI 辅助工作——律师对以自己名义发出的所有内容承担全部责任，无论内容如何起草。"}
+      },
+      {
+        "@type": "Question",
+        "name": "可以把客户案件详情粘贴到 ChatGPT 里吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "绝对不可以。客户与律师之间的沟通受法律职业特权和保密义务保护。将受特权保护的案件策略或客户身份信息粘贴到 ChatGPT，相当于将 OpenAI 视为第三方接收人，可能构成特权放弃或违反保密义务。在所有提示词中使用占位符，永远不要输入真实客户姓名、案件细节或案件策略。"}
+      },
+      {
+        "@type": "Question",
+        "name": "澳洲律师协会对使用 AI 有什么立场？",
+        "acceptedAnswer": {"@type": "Answer", "text": "新南威尔士州律师协会和维多利亚州律师公会均已发布指引，确认 AI 工具可以协助起草，但负责律师对以其名义发出的所有内容承担全部责任。2015 年《法律职业统一行为规则》（联邦）下的执业能力义务延伸至 AI 辅助工作。这意味着你必须有能力在 AI 输出送达客户或法庭前对其进行审核和验证。"}
+      },
+      {
+        "@type": "Question",
+        "name": "ChatGPT 能为律所写中英双语客户邮件吗？",
+        "acceptedAnswer": {"@type": "Answer", "text": "可以，质量相当不错。简体中文（大陆客户）和繁体中文（港台背景客户）均适用。一封附有中文摘要的双语状态更新，能大幅减少华人客户的误解和追问电话。在提示词中说明客户背景、需要传达的核心内容，并要求中文部分不超过 150 字以保持可读性。首次使用时建议请母语为中文的同事审阅输出质量。"}
+      },
+      {
+        "@type": "Question",
+        "name": "澳洲律师绝对不能用 AI 做哪些事？",
+        "acceptedAnswer": {"@type": "Answer", "text": "绝不能在未经律师全面审核和签发的情况下，让 AI 起草发给客户的具体法律意见。不能让 AI 写入任何结果预测，即使措辞为估计值。费用披露必须符合《法律职业统一法》（LPUL），且必须由律师填入准确数字，而非 AI 生成的估算。AML/CTF 客户身份核实必须由律师本人完成，不得在 AI 生成的通讯中暗示已完成核实。"}
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230F1034'/><text y='.9em' font-size='60' x='12' fill='%235AA88A'>O</text></svg>" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo" aria-label="OpenWays home">
+        <img src="/logo_mark_dark.png" alt="" style="height:26px;width:auto;display:block;flex-shrink:0;">
+        <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.03em;line-height:1;"><span style="color:#0F1034">Open</span><span style="color:#5AA88A">Ways</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="/packs"   class="nav-link">Packs</a></li>
+        <li><a href="/updates" class="nav-link">Edge</a></li>
+        <li><a href="/custom"  class="nav-link">Custom</a></li>
+        <li><a href="/book"    class="nav-link">Free Guide</a></li>
+        <li><a href="/faq"     class="nav-link">FAQ</a></li>
+        <li><a href="/about"   class="nav-link">About</a></li>
+        <li><a href="/contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="/guide/lawyer-client-emails-australia" class="nav-lang">EN</a>
+        <a href="/packs" class="btn btn-primary btn-sm">Browse Packs</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="/packs"   class="nav-link">Packs</a>
+      <a href="/updates" class="nav-link">Edge</a>
+      <a href="/custom"  class="nav-link">Custom</a>
+      <a href="/book"    class="nav-link">Free Guide</a>
+      <a href="/faq"     class="nav-link">FAQ</a>
+      <a href="/about"   class="nav-link">About</a>
+      <a href="/contact" class="nav-link">Contact</a>
+      <a href="/guide/lawyer-client-emails-australia" class="nav-link">EN</a>
+      <a href="/packs" class="btn btn-primary" style="margin-top:1rem;justify-content:center;">Browse Packs</a>
+    </div>
+  </nav>
+
+
+  <section class="inner-hero">
+    <div class="container">
+      <nav aria-label="Breadcrumb" style="margin-bottom:var(--s4);">
+        <a href="/" style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);text-decoration:none;">首页</a>
+        <span style="color:rgba(255,255,255,0.3);margin:0 var(--s2);">›</span>
+        <a href="/industry-professional-services" style="font-size:var(--text-xs);color:rgba(255,255,255,0.5);text-decoration:none;">专业服务</a>
+        <span style="color:rgba(255,255,255,0.3);margin:0 var(--s2);">›</span>
+        <span style="font-size:var(--text-xs);color:rgba(255,255,255,0.7);">AI 律师客户邮件</span>
+      </nav>
+      <span class="eyebrow">📖 实用指南 · 8 分钟阅读</span>
+      <h1>澳洲律师用 AI 写客户邮件：5 个 ChatGPT 提示词模板</h1>
+      <p style="max-width:680px;">很多澳洲华人律所每周要给几十个客户发状态更新、账单说明和文件索取邮件——中英文都要写。委托信开头、案件进展通知、费用披露、文件清单、给看不懂法律英文的华人客户发中文摘要——五个可直接复用的提示词骨架，附 LPUL 合规与保密义务红线。</p>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container" style="max-width:760px;margin:0 auto;">
+      <div style="font-size:var(--text-base);color:var(--text-secondary);line-height:1.85;">
+
+        <p style="font-size:var(--text-lg);color:var(--text);font-weight:500;line-height:1.7;">在澳洲做律师，最耗时的隐形工作往往不是出庭或写法律意见——而是写客户邮件。</p>
+
+        <p>一个有 40 个活跃案件的律师，每周大概要花三到五个小时在日常客户通讯上：状态更新邮件（客户读完需要 45 秒）、文件索取邮件（还要追三遍）、费用披露通知（需要用普通人看得懂的语言写，但总是写成合同腔）。这些工作不需要你的法学学位，但每一项都在吃你的时间。</p>
+
+        <p>对澳洲华人律所来说，还有一层额外负担。很多华人客户——尤其是近年来的大陆新移民——来自一个律师沟通频率极低的法律文化背景。在中国，委托律师之后，往往等到有结果才有消息。澳洲的法律实践完全不同：定期更新、费用到达门槛时主动披露、每个重要步骤都需要客户签署授权。把这套系统解释给刚来的华人客户，本身就需要时间。用中文解释一遍，再用英文发一遍，时间就这样翻倍消耗。</p>
+
+        <p>ChatGPT 替代不了你的专业判断。但它可以在两分钟内起草一封委托信的结构框架，让你用五分钟填入实质内容——而不是从空白开始花二十五分钟。这篇指南给你五个提示词模板，覆盖律所最常见的客户通讯场景，并附上每一处你必须亲自把关的合规红线。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">1. 真正的问题：量大、重复、加上双语负担</h2>
+
+        <p>客户通讯的时间成本容易被低估，因为每封邮件单独来看都感觉很小。但加起来就不一样了。</p>
+
+        <p>华人律所还面临一个独特挑战：许多华人客户对澳洲法律程序的节奏和费用结构完全陌生。在中国，很多人不习惯律师每隔几周就发来状态更新，更没想到每个阶段都要收到费用估算。第一次收到费用披露通知的华人客户，有时以为出了什么问题，或者以为被多收钱了——其实只是澳洲法律要求律师必须这样做。</p>
+
+        <p>用中文提前解释这套逻辑，不仅能减少误解，还能减少"我的案子到底怎么了"这类追问电话。AI 让这件事变得经济可行。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">2. 我怎么用 ChatGPT：正确的分工</h2>
+
+        <p><strong>AI 擅长处理：</strong>邮件结构和行文流畅度。专业但易读的语气。法律程序步骤的通俗解释。从一个提示词生成双语版本。起草委托信或费用披露的框架，让律师填入实质内容。</p>
+
+        <p><strong>律师必须亲自提供和核实：</strong>任何具体法律意见。费用估算和账单数字——这些必须准确且符合 LPUL。案件策略。截止日期（AI 不知道你具体案件的实际日期）。任何形式的结果评估。</p>
+
+        <p>正确的心智模型：ChatGPT 是一个速度极快的初稿撰写助手，它对澳洲法律实践有广泛了解，但对你的具体案件和客户情况一无所知——除非你告诉它。你给它精准指令（用占位符代替所有客户信息），它起草，你审阅并填入法律实质，然后发出。</p>
+
+        <p>绝对不能让 AI 起草法律意见在未经审核的情况下以你的名义发出。这是底线。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">3. 五个实用提示词模板</h2>
+
+        <p>以下模板可直接复制使用。提示词中的背景信息越具体，AI 输出的质量越高。<strong>永远不要把真实客户数据、案件细节或案件策略粘贴进提示词</strong>，用占位符代替所有敏感信息。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.1 委托信开头段</h3>
+
+        <p>委托信是新客户收到的第一份正式文件，奠定整个委托关系的基调。AI 起草结构框架；律师填入工作范围、具体费用和相关意见。对华人新客户，在信中用中文简短说明澳洲律师沟通方式与国内不同，往往能有效减少后续误解。</p>
+
+        <p>提示词骨架：</p>
+
+        <code style="background:var(--bg-off);padding:2px 6px;border-radius:3px;font-size:0.9em;display:block;white-space:pre-wrap;line-height:1.6;margin:var(--s3) 0;">起草一封澳洲律所客户委托信的开头段落。案件类型：[家庭法 / 房产 / 遗产规划 / 移民 / 商业 / 等]。客户背景：[简短背景，如"首次购房，在新州购置 75 万元住宅"]。包含：事务所介绍、工作范围描述（留空白供律师填写，用清晰占位符标注）、下一步行动。语气：专业但易于理解，用普通英语，避免法律术语。不超过 200 字。不要包含具体费用、法律意见或结果预测。</code>
+
+        <p>AI 起草后你需要做的：填入这个案件具体的工作范围，插入符合 LPUL 要求的费用估算或费用披露，加上实际的下一步和真实日期，以及你事务所惯用的结尾措辞。AI 给你框架，你填入法律实质。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.2 案件状态更新邮件</h3>
+
+        <p>状态更新是大多数律所最高频的日常通讯。客户需要它，律师却常常拖着不发，因为感觉每一封都"很小"。一封结构良好的状态更新邮件用 AI 生成只需 90 秒，审阅和个性化需要五分钟——而从头写需要 15–20 分钟。</p>
+
+        <p>对华人客户来说，定期收到简短的中文状态更新，能显著减少「我的案子到底怎么样了」这类焦虑性电话。不是因为有新进展，而是因为「有消息就是好消息」这个逻辑在他们习惯的沟通文化里并不成立。</p>
+
+        <p>提示词骨架：</p>
+
+        <code style="background:var(--bg-off);padding:2px 6px;border-radius:3px;font-size:0.9em;display:block;white-space:pre-wrap;line-height:1.6;margin:var(--s3) 0;">写一封 [案件类型] 案件的客户状态更新邮件。主要进展：[一句话总结发生了什么或正在等待什么，如「我们已收到对方回复，正在审阅」]。需要客户配合的事项：[如有，写明；如无，写「目前无需客户行动」]。预期下一个里程碑：[日期或事件，如「我们预计在 [日期] 前准备好回复」]。语气：清晰、让人安心——该客户对进展感到焦虑。不超过 150 字。不要包含法律意见、结果预测或具体法律策略。</code>
+
+        <p>生成后：插入实际日期，确认下一个里程碑准确，添加与该客户案件相关的具体意见或行动要求。删除任何听起来回避的措辞——华人客户对模糊的语气尤其敏感，容易读出「律师在隐瞒什么」。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.3 费用披露 / 账单更新邮件</h3>
+
+        <p>费用披露是澳洲《法律职业统一法》（LPUL）规定的法律义务。AI 可以起草格式和语气；律师必须插入准确数字。永远不要在未核实每个数字的情况下发出 AI 生成的费用估算。永远不要把任何数字表述为保证值。</p>
+
+        <p>很多华人客户第一次收到费用更新通知时会感到困惑，甚至紧张。在邮件中用简短的中文说明「这是澳洲法律要求的标准费用说明，不是追加收费通知」，往往能直接避免一通电话。</p>
+
+        <p>提示词骨架：</p>
+
+        <code style="background:var(--bg-off);padding:2px 6px;border-radius:3px;font-size:0.9em;display:block;white-space:pre-wrap;line-height:1.6;margin:var(--s3) 0;">写一封向客户说明账单更新的邮件，针对澳洲法律服务。迄今已收费总额：[占位符——律师必须填入准确数字]。本期完成的工作：[简短摘要，如「起草并提交申请，出席方向聆讯」]。预计剩余费用：[占位符——律师填入区间或注明待定]。语气：透明、专业——客户应感到被告知，而不是被突袭。提及客户可随时要求提供逐项发票。不超过 200 字。不要将任何费用预测表述为保证值。不要声称费用固定，除非确实如此。</code>
+
+        <p>生成后必须做的：用你账单系统里的真实数字替换所有占位符。检查邮件中是否有任何暗示费用上限或保证的措辞。确保披露内容符合 LPUL 以及你所在州律师协会对相关案件类型的具体要求。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.4 文件索取邮件</h3>
+
+        <p>文件索取邮件失败的常见原因：措辞模糊、列了清单但没说明为什么需要每一项、没有明确截止日期或提交方式。英文有限的客户往往不知道「certified copy」（认证副本）是什么意思，也不明白为什么房产案件需要他们的结婚证。</p>
+
+        <p>好的文件索取邮件要做三件事：告诉客户要提供什么，为什么需要，怎么提交，截止日期是哪天。AI 可以用通俗语言把每一项解释清楚，省去客户打来追问「这个是什么」的电话。</p>
+
+        <p>提示词骨架：</p>
+
+        <code style="background:var(--bg-off);padding:2px 6px;border-radius:3px;font-size:0.9em;display:block;white-space:pre-wrap;line-height:1.6;margin:var(--s3) 0;">写一封向客户索取文件的邮件，用于 [案件类型] 案件。所需文件：[逐项列出]。每项文件的用途：[每项一行，用通俗语言说明为什么需要这份文件]。截止日期：[日期]。提交方式：[邮件 / 安全上传链接 / 到访办公室]。语气：清晰、有行动导向——客户应该知道下一步怎么做以及为什么要做。不要官僚腔。不超过 150 字。不要包含法律意见或案件策略。</code>
+
+        <p>生成后：确认文件清单对这个具体案件是完整的，核实截止日期准确，检查提交方式与你事务所当前系统一致。如果某些文件需要认证副本或特定表格，在提示词里注明——AI 不知道，除非你告诉它。</p>
+
+
+        <h3 style="color:var(--text);margin-top:var(--s6);">3.5 给华人客户的中文状态更新</h3>
+
+        <p>这是 AI 在华人律所场景里最直接创造价值的地方。一个不能完全读懂英文法律通讯的华人客户，要么不按邮件行动，要么打电话来问——往往在你最忙的时候，用普通话。一封简短的中文摘要邮件，或者附在英文版结尾的中文段落，能消除大部分这类摩擦。</p>
+
+        <p>更深一层的价值在于建立信任。很多大陆客户不习惯律师主动联系，收到定期中文更新本身就传递了「你被照顾着」的信号，这比邮件内容本身更重要。</p>
+
+        <p>提示词骨架：</p>
+
+        <code style="background:var(--bg-off);padding:2px 6px;border-radius:3px;font-size:0.9em;display:block;white-space:pre-wrap;line-height:1.6;margin:var(--s3) 0;">写一封给华人客户的简体中文状态更新邮件。案件：[简短说明，如「房产购买，目前处于合同交换阶段」]。需要传达的核心内容：[一句话，如「合同已交换，冷静期将于 [日期] 结束」]。需要客户配合的事项：[如有；如无，写「目前无需客户行动」]。语气：尊重、直接——华人客户更希望听到事实，而不是法律套话。不超过 150 个汉字。不要包含具体法律预测或结果估算。</code>
+
+        <p>关于字符集：上面的提示词生成简体中文（适合大陆客户）。如果客户是香港或台湾背景，把提示词改为「繁體中文（香港用語）」——ChatGPT 会同时调整字符集和部分词汇选择。首次使用时，请母语为中文的同事审阅一下，确认语气和用词符合你的客户群。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">4. 澳洲法律合规硬性红线</h2>
+
+        <p style="background:#fff5f0;border-left:3px solid #d05a3a;padding:var(--s4) var(--s5);margin:var(--s5) 0;color:#7a1f0a;"><strong>以下是硬性红线，不是建议——每一条都要读完。</strong></p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><strong>绝不能让 AI 起草具体法律意见后直接发出。</strong>负责律师必须添加、核实并对所有法律意见负责，然后才能发送。AI 生成结构和语气，不生成专业法律意见。</li>
+          <li><strong>绝不能包含具体结果预测。</strong>「你会赢」、「你的索赔价值 $X」、「对方可能以 $Y 和解」——即使措辞为估计值，也不能出现在客户通讯中，除非由律师基于具体案情判断后选择加入并加以适当限定。AI 会非常自信地写出这些句子。不要让它们发出去。</li>
+          <li><strong>费用披露必须符合 LPUL。</strong>《法律职业统一法》要求费用披露准确、及时、符合规定格式。AI 可以起草格式和语气，律师必须插入准确数字并确保披露符合所在州的全部要求。永远不要把 AI 生成的费用估算当作经过核实的正式披露发出。</li>
+          <li><strong>不要把受特权保护的案件策略输入 ChatGPT。</strong>律师与客户之间的沟通受法律职业特权保护。将该信息输入外部 AI 工具，相当于将 OpenAI 视为第三方接收人——这可能构成特权放弃或违反保密义务。在所有提示词中只使用占位符和通用背景信息。</li>
+          <li><strong>客户身份和财务信息受保护。</strong>客户姓名、联系方式、财务信息和案件细节受《隐私法 1988》（联邦）和律师协会保密义务约束。在没有适当数据处理协议的情况下，不要把真实客户数据输入任何 AI 工具。</li>
+          <li><strong>AML/CTF 身份核实必须由律师完成。</strong>反洗钱和反恐融资义务要求律师核实客户身份。这必须由律师本人完成。AI 生成的通讯不得以任何形式声明或暗示身份核实已通过自动化流程完成。</li>
+        </ul>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">5. 澳洲律师协会对 AI 的立场：对你意味着什么</h2>
+
+        <p>新南威尔士州律师协会和维多利亚州律师公会均已发布指引，确认 AI 工具可以协助起草，但负责律师对以其名义发出的所有内容承担全部责任。这不是灰色地带——这是将长期确立的专业责任原则应用于一种新工具。</p>
+
+        <p>2015 年《法律职业统一行为规则》（联邦）下的执业能力义务延伸至 AI 辅助工作。这意味着使用 AI 不能成为向客户或法庭发出不正确、误导性或不完整通讯的借口。你必须有能力在 AI 输出送达客户或法庭前对其进行审核和验证。</p>
+
+        <p>实际操作原则：AI 起草，律师审阅，律师发出。如果你使用了集成 AI 生成功能的法律实务管理软件，同样的原则适用——每一封通讯在离开事务所前必须经过负责律师的判断。</p>
+
+        <p>有大量华人客户群、或在家庭法财产结算、移民、商业诉讼等合规要求复杂的专业领域执业的律师，可以考虑制定事务所层面的 AI 使用政策。律师协会的指引文件值得认真阅读。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">6. 实际工作流程：新客户入职和每周状态邮件</h2>
+
+        <p><strong>新客户入职流程：</strong>用模板 3.1（委托信开头）生成结构框架。打开草稿。填入这个案件具体的工作范围——AI 无法做这一步，必须由你完成。按照 LPUL 要求插入费用估算或费用披露。加上实际的下一步和真实日期。审阅语气，根据客户关系调整正式或亲切程度。发送。总用时：约 8 分钟，而非从头写的 25 分钟。</p>
+
+        <p><strong>每周状态邮件——批量处理多个案件：</strong>打开模板 3.2，对每个案件运行一次，替换每个客户的核心进展和下一步行动。逐一审阅输出——结构相似，但你填入的实质内容各不同。对于华人客户，同步运行模板 3.5，附在英文版结尾或单独发送。总用时：每位客户约 8 分钟，而非单独手写的 20–25 分钟。</p>
+
+        <p>建立提示词库后效率会进一步提升。把最常用的提示词变体——预先填入你的事务所名称、上传链接、各案件类型的标准文件清单——存在一个共享文档里。每季度更新一次，随着业务发展和 AI 工具改进持续优化。</p>
+
+
+        <h2 style="color:var(--text);margin-top:var(--s8);">7. 下一步</h2>
+
+        <p>如果以上五个提示词足够你自己搭建系统：把骨架复制进去，建一个文档（Notion、Word 都行），预先填好你的事务所名称、上传链接和各类型案件的标准文件清单，每季度更新。这样能拿到大部分价值。</p>
+
+        <p>如果你想要更完整的系统——包括客户入职问卷、账单争议回复、和解邀约覆信、出庭准备摘要，以及面向华人客户的完整双语模板库：</p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><a href="/pack-lawyer" style="color:var(--mint-dark);font-weight:600;">法律服务 AI 行动包 — A$49（一次性付费，无订阅）</a></li>
+          <li><a href="/industry-professional-services" style="color:var(--mint-dark);font-weight:600;">浏览其他专业服务行业包</a>（会计、理财规划、房贷经纪）</li>
+        </ul>
+
+        <p>如果你的事务所有特定需求——多名费用产生人、大量华人客户群、家庭法/移民/商业诉讼等合规要求复杂的专业领域——想要量身定制的方案：</p>
+
+        <ul style="padding-left:var(--s5);">
+          <li><a href="/custom" style="color:var(--mint-dark);font-weight:600;">定制 AI 搭建服务</a> — Vince 与你一起梳理事务所的通讯工作流程，针对你的案件类型、客户群和合规环境定制提示词库。</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--off">
+    <div class="container" style="max-width:760px;margin:0 auto;">
+      <h2 style="margin-bottom:var(--s5);color:var(--text);">常见问题</h2>
+      <div style="font-size:var(--text-base);color:var(--text-secondary);line-height:1.75;">
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">澳洲律师可以用 ChatGPT 写客户邮件吗？</h3>
+          <p>可以，用于起草日常沟通邮件，如委托信开头、案件状态更新、文件索取邮件和费用披露通知。但负责律师必须在发送前审核所有 AI 生成的内容。《法律职业统一行为规则》下的执业能力义务适用于 AI 辅助工作——律师对以自己名义发出的所有内容承担全部责任，无论内容如何起草。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">可以把客户案件详情粘贴到 ChatGPT 里吗？</h3>
+          <p>绝对不可以。客户与律师之间的沟通受法律职业特权和保密义务保护。将受特权保护的案件策略或客户身份信息粘贴到 ChatGPT，相当于将 OpenAI 视为第三方接收人，可能构成特权放弃或违反保密义务。在所有提示词中使用占位符，永远不要输入真实客户姓名、案件细节或案件策略。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">澳洲律师协会对使用 AI 有什么立场？</h3>
+          <p>新南威尔士州律师协会和维多利亚州律师公会均已发布指引，确认 AI 工具可以协助起草，但负责律师对以其名义发出的所有内容承担全部责任。2015 年《法律职业统一行为规则》（联邦）下的执业能力义务延伸至 AI 辅助工作。你必须有能力在 AI 输出送达客户或法庭前对其进行审核和验证。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">ChatGPT 能为律所写中英双语客户邮件吗？</h3>
+          <p>可以，质量相当不错。简体中文（适合大陆客户）和繁体中文（适合港台背景客户）均适用。一封附有中文摘要的双语状态更新，能显著减少华人客户的误解和追问电话。在提示词中说明客户背景、需要传达的核心内容，并要求中文部分不超过 150 汉字以保持可读性。首次使用时，建议请母语为中文的同事审阅输出质量，之后大多数内容只需微调。</p>
+        </div>
+        <div style="margin-bottom:var(--s5);">
+          <h3 style="font-size:var(--text-lg);color:var(--text);margin-bottom:var(--s2);">澳洲律师绝对不能用 AI 做哪些事？</h3>
+          <p>绝不能在未经律师全面审核和签发的情况下，让 AI 起草发给客户的具体法律意见。不能让 AI 写入任何结果预测，即使措辞为估计值。费用披露必须符合《法律职业统一法》（LPUL），且必须由律师填入准确数字，而非 AI 生成的估算。AML/CTF 客户身份核实必须由律师本人完成，不得在 AI 生成的通讯中暗示已完成核实。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--navy" aria-label="Bottom CTA">
+    <div class="container" style="text-align:center;max-width:680px;margin:0 auto;">
+      <h2 class="section-heading" style="color:var(--white);margin-bottom:var(--s4);">获取完整法律服务 AI 行动包</h2>
+      <p style="color:rgba(255,255,255,0.75);margin-bottom:var(--s6);">面向澳洲律师和律所的完整提示词库：委托信、状态更新、费用披露、文件索取、中英双语华人客户邮件等。一次性付费 A$49，无订阅费。</p>
+      <div style="display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap;">
+        <a href="/pack-lawyer" class="btn btn-primary">获取法律服务行动包 — A$49</a>
+        <a href="/custom" class="btn btn-outline-light">或预约定制搭建服务</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div style="display:flex;align-items:center;gap:0.4em;"><img src="/logo_mark_green.png" alt="" style="height:22px;width:auto;flex-shrink:0;">
+          <span style="font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;line-height:1;white-space:nowrap;">Open<span style="color:#5AA88A">Ways</span></span></div>
+          <p class="footer-tagline" style="margin-top:var(--s4);">AI toolkits for modern small businesses. Practical, industry-specific, ready to use within 7 days.</p>
+          <a href="mailto:hi@openways.net" class="footer-link" style="margin-top:var(--s4);display:inline-block;">hi@openways.net</a>
+        </div>
+        <div>
+          <div class="footer-heading">Industries</div>
+          <div class="footer-links">
+            <a href="/industry-food-hospitality"      class="footer-link">Food &amp; Hospitality</a>
+            <a href="/industry-health-wellness"       class="footer-link">Health &amp; Wellness</a>
+            <a href="/industry-home-property"         class="footer-link">Home &amp; Property</a>
+            <a href="/industry-professional-services" class="footer-link">Professional Services</a>
+            <a href="/industry-education-training"    class="footer-link">Education &amp; Training</a>
+            <a href="/industry-trades-technical"      class="footer-link">Trades &amp; Technical</a>
+            <a href="/industry-lifestyle-services"    class="footer-link">Lifestyle Services</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <div class="footer-links">
+            <a href="/about"    class="footer-link">About</a>
+            <a href="/faq"      class="footer-link">FAQ</a>
+            <a href="/contact"  class="footer-link">Contact</a>
+            <a href="/partners" class="footer-link">Become a Partner</a>
+            <a href="/zh"       class="footer-link">中文版</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Legal</div>
+          <div class="footer-links">
+            <a href="/terms"   class="footer-link">Terms of Use</a>
+            <a href="/refund"  class="footer-link">Refund Policy</a>
+            <a href="/privacy" class="footer-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OpenWays. Built for small businesses across Australia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/ow-anim.js" defer></script>
+</body>
+</html>
