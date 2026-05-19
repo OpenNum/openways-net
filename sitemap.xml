@@ -726,4 +726,44 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://openways.net/guide/immigration-agent-client-communication-australia"/>
   </url>
 
+  <url>
+    <loc>https://openways.net/guide/cleaning-business-ai-australia</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/guide/cleaning-business-ai-australia"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/cleaning-business-ai-australia-zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://openways.net/guide/cleaning-business-ai-australia"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/guide/cleaning-business-ai-australia-zh</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/guide/cleaning-business-ai-australia"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/cleaning-business-ai-australia-zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://openways.net/guide/cleaning-business-ai-australia"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/guide/trades-business-ai-australia</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/guide/trades-business-ai-australia"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/trades-business-ai-australia-zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://openways.net/guide/trades-business-ai-australia"/>
+  </url>
+
+  <url>
+    <loc>https://openways.net/guide/trades-business-ai-australia-zh</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/guide/trades-business-ai-australia"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/guide/trades-business-ai-australia-zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://openways.net/guide/trades-business-ai-australia"/>
+  </url>
+
 </urlset>
