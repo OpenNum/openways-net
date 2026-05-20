@@ -766,12 +766,4 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://openways.net/guide/trades-business-ai-australia"/>
   </url>
 
-  <url>
-    <loc>https://openways.net/guides</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openways.net/guides"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://openways.net/zh-guides"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://openways.net/guides"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 </urlset>
