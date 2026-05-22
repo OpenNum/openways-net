@@ -477,13 +477,6 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Payment guide (zh) -->
-  <url>
-    <loc>https://openways.net/zh-pay</loc>
-    <lastmod>2026-04-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
 
 
   <url>

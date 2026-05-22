@@ -1496,6 +1496,11 @@ p, .section-sub, .hero-sub, li {
   .included-grid { grid-template-columns: 1fr; }
   .product-title { font-size: var(--text-4xl); }
 
+  /* Pack page mobile overflow fix */
+  .product-content-area { min-width: 0; max-width: 100%; }
+  .product-section { max-width: 100%; overflow-wrap: anywhere; }
+  .included-item { min-width: 0; max-width: 100%; }
+
   .updates-banner { padding: var(--s8); }
   .updates-banner h2 { font-size: var(--text-2xl); }
 }
