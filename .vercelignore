@@ -1,0 +1,25 @@
+# OpenWays is deployed from the repository root, but these paths are the local
+# workbench and production source material rather than public website assets.
+_archive/
+_seo/
+_tasks/
+.vercel/
+.claude/
+book/
+products/
+production/
+reference/
+gumroad video/
+video/
+内容营销/
+
+# Root-level operational documentation is not part of the public website.
+*.md
+*.OLD
+*.OLD.*
+
+# Gumroad source material stays local. Only the social-share images referenced
+# by live Open Graph and Twitter metadata are deployed.
+gumroad-covers/*
+!gumroad-covers/*_Australia_cover.jpg
+!gumroad-covers/OpenWays_Edge_cover.jpg

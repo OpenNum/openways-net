@@ -23,7 +23,12 @@ __pycache__/
 # These directories stay on your Mac and are NOT part of the Vercel site.
 /book/
 /gumroad video/
-/gumroad-covers/
+/video/
+# Gumroad source assets stay local, but the 26 social-share covers referenced
+# by live Open Graph / Twitter metadata must ship with the website.
+/gumroad-covers/*
+!/gumroad-covers/*_Australia_cover.jpg
+!/gumroad-covers/OpenWays_Edge_cover.jpg
 /products/
 /production/
 /reference/

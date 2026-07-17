@@ -5,6 +5,82 @@
 (function () {
   'use strict';
 
+  const isZhPage = document.documentElement.lang.toLowerCase().startsWith('zh');
+
+  // ── Conversion helpers ──────────────────────────────────────
+  // Product pages: keep a compact purchase route within thumb reach on mobile.
+  const purchase = document.getElementById('purchase');
+  if (purchase) {
+    const bar = document.createElement('div');
+    bar.className = 'mobile-purchase-bar';
+    bar.setAttribute('role', 'region');
+    bar.setAttribute('aria-label', isZhPage ? '购买此行业包' : 'Purchase this pack');
+    bar.innerHTML =
+      '<div class="mobile-purchase-bar__inner">' +
+        '<div class="mobile-purchase-bar__meta">' +
+          '<strong>A$49</strong>' +
+          '<span>' + (isZhPage ? '一次性付款 · 即时下载' : 'One-time · instant download') + '</span>' +
+        '</div>' +
+        '<a class="btn btn-primary btn-sm mobile-purchase-bar__cta" href="#purchase">' +
+          (isZhPage ? '选择版本' : 'Choose edition') +
+        '</a>' +
+      '</div>';
+    document.body.appendChild(bar);
+    document.body.classList.add('has-mobile-purchase-bar');
+  }
+
+  // Packs directory: use the real product artwork instead of emoji-only cards.
+  const packGrid = document.getElementById('packGrid');
+  if (packGrid) {
+    const coverBySlug = {
+      'accounting': 'Accounting_Australia_cover.jpg',
+      'beauty': 'Beauty_Australia_cover.jpg',
+      'carpet-cleaning': 'Carpet_Cleaning_Australia_cover.jpg',
+      'cleaning': 'Cleaning_Australia_cover.jpg',
+      'clinic': 'Clinic_Australia_cover.jpg',
+      'commercial-cleaning': 'Commercial_Cleaning_Australia_cover.jpg',
+      'dentist': 'Dentist_Australia_cover.jpg',
+      'domestic-help': 'Domestic_Help_Australia_cover.jpg',
+      'driving-school': 'Driving_School_Australia_cover.jpg',
+      'education': 'Education_Australia_cover.jpg',
+      'electrician': 'Electrician_Australia_cover.jpg',
+      'hvac': 'HVAC_Australia_cover.jpg',
+      'immigration': 'Education_&_Migration_Australia_cover.jpg',
+      'insurance': 'Insurance_Broker_Australia_cover.jpg',
+      'lawyer': 'Lawyer_Australia_cover.jpg',
+      'logistics': 'International_Logistics_Australia_cover.jpg',
+      'mortgage': 'Mortgage_Broker_Australia_cover.jpg',
+      'plumbing-painting': 'Plumbing_&_Painting_Australia_cover.jpg',
+      'realestate': 'Real_Estate_Australia_cover.jpg',
+      'removalist': 'Removalist_Australia_cover.jpg',
+      'renovation': 'Renovation_Australia_cover.jpg',
+      'restaurant': 'Restaurant_Australia_cover.jpg',
+      'signage': 'Signage_Australia_cover.jpg',
+      'solar': 'Solar_Australia_cover.jpg',
+      'waterproofing-roofing': 'Waterproofing_&_Roofing_Australia_cover.jpg'
+    };
+
+    packGrid.querySelectorAll('.pack-card').forEach(function (card) {
+      const link = card.querySelector('a[href*="pack-"]');
+      if (!link) return;
+      const match = link.getAttribute('href').match(/(?:zh-)?pack-([^./?#]+)\.html/);
+      if (!match || !coverBySlug[match[1]]) return;
+
+      const title = card.querySelector('.pack-card-title');
+      const cover = document.createElement('div');
+      const img = document.createElement('img');
+      cover.className = 'pack-card-cover';
+      img.src = 'gumroad-covers/' + encodeURIComponent(coverBySlug[match[1]]);
+      img.alt = (title ? title.textContent.trim() : 'OpenWays AI Pack') + (isZhPage ? '封面' : ' cover');
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      img.width = 1280;
+      img.height = 720;
+      cover.appendChild(img);
+      card.insertBefore(cover, card.firstChild);
+    });
+  }
+
   // Respect reduced-motion preference: bail out, CSS already makes .reveal visible
   const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (mq.matches) {
